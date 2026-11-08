@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}How it works · Paper Radar{% endblock %}
+{% block main %}
+<section class="intro">
+  <p class="kicker">Method</p>
+  <h1>How it works</h1>
+  <p class="summary">A reading list that builds itself: every weekday, the new anomaly-detection papers on arXiv, sorted by how relevant they are to one research question.</p>
+</section>
+<article class="prose">
+  <h2>The question</h2>
+  <p>My TÜBİTAK 2209-A project at Ege University asks how early machine learning can detect abnormal water consumption: leaks and bursts in distribution networks, and unusual use in buildings' smart meters. The radar follows the literature around that question.</p>
+
+  <h2>1. Cast a wide net</h2>
+  <p>After each arXiv announcement, the radar asks the arXiv API for the newest papers whose abstract mentions anomalies, outliers, leaks, fault detection, change points or novelty detection, in machine learning, statistics, signal processing, systems and data-analysis categories. Papers it has already seen are skipped.</p>
+
+  <h2>2. Rank by meaning, not keywords</h2>
+  <p>Each title and abstract is turned into a vector with <a href="https://huggingface.co/BAAI/bge-small-en-v1.5">BGE-small</a>, a sentence-embedding model run on CPU through <a href="https://github.com/qdrant/fastembed">fastembed</a>. The research question is split into three directions, each written as a short description:</p>
+  <ul>
+  {% for i in interests %}<li><span class="tag tag-{{ i.key }}">{{ i.name }}</span> {{ i.text }}</li>{% endfor %}
+  </ul>
+  <p>A paper's score is its cosine similarity to the closest direction, and its tag says which one. A paper about "data leakage" in model training matches the keywords but lands near the bottom, because its meaning is far from water leaks.</p>
+
+  <h2>3. Daily and weekly</h2>
+  <p>arXiv announces new papers Sunday to Thursday evenings (US Eastern time), so digests appear on weekdays. On the weekend the radar collects the week's best papers into a weekly digest.</p>
+
+  <h2>Limits</h2>
+  <p>Similarity is not quality. The score says a paper is <em>about</em> the right thing, not that it is good. The ranking is a starting point for reading, not a review.</p>
+
+  <p>Code, data and tests are on <a href="{{ repo_url }}">GitHub</a>. Every digest is also available as JSON: <a href="{{ root }}api/latest.json">api/latest.json</a>.</p>
+</article>
+{% endblock %}

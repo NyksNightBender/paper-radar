@@ -1,0 +1,89 @@
+name: Daily digest
+
+# arXiv announces new papers Sunday to Thursday evenings (US Eastern), around midnight UTC.
+# Four slots a day make sure a late or skipped scheduled run never loses a digest; runs that
+# find nothing new exit without committing.
+on:
+  schedule:
+    - cron: "17 1 * * *"
+    - cron: "17 7 * * *"
+    - cron: "17 13 * * *"
+    - cron: "17 19 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["src/**", "pyproject.toml", "uv.lock", ".github/workflows/daily.yml"]
+
+concurrency:
+  group: digest
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    outputs:
+      publish: ${{ steps.decide.outputs.publish }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10.3.3
+      - run: uv sync --locked --no-dev
+      - uses: actions/cache@v6
+        if: github.event_name != 'push'
+        with:
+          path: .cache/fastembed
+          key: fastembed-bge-small-en-v1.5
+
+      - name: Score new papers
+        id: fetch
+        if: github.event_name != 'push'
+        run: uv run --no-dev paper-radar fetch
+
+      - name: Commit new digests
+        if: steps.fetch.outputs.written != '' && steps.fetch.outputs.written != '0'
+        env:
+          LABELS: ${{ steps.fetch.outputs.labels }}
+        run: |
+          uv run --no-dev paper-radar readme
+          git config user.name "Ege Çelik"
+          git config user.email "213240166+NyksNightBender@users.noreply.github.com"
+          git add data README.md
+          git commit -m "digest: ${LABELS// /, }"
+          git push
+
+      - name: Decide whether to republish the site
+        id: decide
+        env:
+          EVENT: ${{ github.event_name }}
+          WRITTEN: ${{ steps.fetch.outputs.written }}
+        run: |
+          if [ "$EVENT" != "schedule" ] || { [ -n "$WRITTEN" ] && [ "$WRITTEN" != "0" ]; }; then
+            echo "publish=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  pages:
+    needs: digest
+    if: needs.digest.outputs.publish == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: astral-sh/setup-uv@v10.3.3
+      - run: uv sync --locked --no-dev
+      - run: uv run --no-dev paper-radar site --out _site
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v5

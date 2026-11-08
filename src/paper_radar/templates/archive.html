@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Archive · Paper Radar{% endblock %}
+{% block main %}
+<section class="intro">
+  <p class="kicker">Archive</p>
+  <h1>All digests</h1>
+  <p class="summary">{{ days|length }} daily and {{ weeks|length }} weekly digests.</p>
+</section>
+{% if weeks %}
+<section class="month">
+  <h2>Weekly</h2>
+  <ul class="archive">
+  {% for w in weeks %}
+    <li><a href="{{ root }}weeks/{{ w.week }}.html">{{ w.week|week_title }}</a><span>{{ w.papers[0].title if w.papers else "no papers" }}</span></li>
+  {% endfor %}
+  </ul>
+</section>
+{% endif %}
+<section class="month">
+  <h2>Daily</h2>
+  <ul class="archive">
+  {% for d in days %}
+    <li><a href="{{ root }}days/{{ d.date }}.html">{{ d.date|long_date }}</a><span>{{ d.count }} papers · {{ d.papers[0].title if d.papers else "" }}</span></li>
+  {% endfor %}
+  </ul>
+</section>
+{% endblock %}

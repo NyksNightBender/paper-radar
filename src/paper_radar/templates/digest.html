@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block title %}{% if digest and not is_index %}{% if kind == "week" %}{{ digest.week|week_title }}{% else %}{{ digest.date|long_date }}{% endif %} · {% endif %}Paper Radar{% endblock %}
+{% block main %}
+{% if not digest %}
+<section class="intro">
+  <p class="kicker">New research, ranked for one question</p>
+  <h1>No digest yet</h1>
+  <p class="summary">The first run fills this page.</p>
+</section>
+{% else %}
+<section class="intro">
+  <p class="kicker">{% if is_index %}New on arXiv, closest to early detection of abnormal water consumption{% elif kind == "week" %}Weekly digest{% else %}Daily digest{% endif %}</p>
+  <h1>{% if kind == "week" %}{{ digest.week|week_title }}{% else %}{{ digest.date|long_date }}{% endif %}</h1>
+  <p class="summary">{{ digest.count }} new paper{{ "s" if digest.count != 1 }} on anomaly, outlier, leak or fault detection {% if kind == "week" %}this week{% else %}appeared{% endif %}. Ranked by how close each one is to the research topic, using sentence embeddings.</p>
+  <ul class="legend">
+  {% for i in interests %}<li><span class="tag tag-{{ i.key }}">{{ i.name }}</span></li>{% endfor %}
+  </ul>
+  {% if kind == "day" %}
+  <nav class="day-nav" aria-label="Days">
+    {% if prev %}<a href="{{ root }}days/{{ prev }}.html">← {{ prev|short_date }}</a>{% else %}<span></span>{% endif %}
+    <a href="{{ root }}archive.html">All digests</a>
+    {% if next %}<a href="{{ root }}days/{{ next }}.html">{{ next|short_date }} →</a>{% else %}<span></span>{% endif %}
+  </nav>
+  {% endif %}
+</section>
+
+{% set top = digest.papers[:10] %}
+<ol class="papers">
+{% for p in top %}
+  <li class="paper">
+    <div class="score" title="Cosine similarity to the closest research direction">
+      <strong>{{ "%.2f"|format(p.score) }}</strong>
+      <span class="bar"><span style="width: {{ p.score|bar }}%"></span></span>
+    </div>
+    <div class="body">
+      <h2><a href="{{ p.url }}">{{ p.title }}</a></h2>
+      <p class="meta">{{ p.authors|authors }} · {{ p.primary }} · {{ p.published|short_date }}{% if p.date %} · digest {{ p.date|short_date }}{% endif %}</p>
+      <p class="tags"><span class="tag tag-{{ p.interest }}">{{ p.interest|topic }}</span></p>
+      <details class="abstract">
+        <summary>{{ p.abstract[:220] }}{% if p.abstract|length > 220 %}…{% endif %}</summary>
+        <p>{{ p.abstract }}</p>
+      </details>
+      <p class="links"><a href="{{ p.url }}">arXiv</a> · <a href="{{ p.pdf }}">PDF</a></p>
+    </div>
+  </li>
+{% endfor %}
+</ol>
+
+{% if digest.papers|length > 10 and kind == "day" %}
+<details class="more">
+  <summary>{{ digest.papers|length - 10 }} more, further from the topic</summary>
+  <ol start="11">
+  {% for p in digest.papers[10:] %}
+    <li><a href="{{ p.url }}">{{ p.title }}</a> <span>{{ "%.2f"|format(p.score) }} · {{ p.interest|topic }}</span></li>
+  {% endfor %}
+  </ol>
+</details>
+{% endif %}
+
+{% if this_week %}
+<section class="week">
+  <h2>Best of {{ this_week.week|week_title|lower }}</h2>
+  <ol>
+  {% for p in this_week.papers[:5] %}
+    <li><a href="{{ p.url }}">{{ p.title }}</a><span>{{ "%.2f"|format(p.score) }}</span></li>
+  {% endfor %}
+  </ol>
+  <p><a href="{{ root }}weeks/{{ this_week.week }}.html">Full weekly digest →</a></p>
+</section>
+{% endif %}
+{% endif %}
+{% endblock %}
