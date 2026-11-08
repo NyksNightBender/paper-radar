@@ -59,7 +59,7 @@
 
 {% if this_week %}
 <section class="week">
-  <h2>Best of {{ this_week.week|week_title|lower }}</h2>
+  <h2>This week's closest papers</h2>
   <ol>
   {% for p in this_week.papers[:5] %}
     <li><a href="{{ p.url }}">{{ p.title }}</a><span>{{ "%.2f"|format(p.score) }}</span></li>
