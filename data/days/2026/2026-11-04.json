@@ -1,0 +1,537 @@
+{
+ "date": "2026-11-04",
+ "generated_at": "2026-11-08T13:06:28+00:00",
+ "model": "BAAI/bge-small-en-v1.5",
+ "interests": [
+  {
+   "key": "water",
+   "name": "Water networks"
+  },
+  {
+   "key": "meters",
+   "name": "Meters and consumption"
+  },
+  {
+   "key": "methods",
+   "name": "Time-series anomaly detection"
+  }
+ ],
+ "count": 18,
+ "papers": [
+  {
+   "id": "2611.06441",
+   "version": 1,
+   "title": "Graph Foundation Models Can Become Effective Multivariate Time Series Anomaly Detectors",
+   "abstract": "Multivariate time series anomaly detection (MTSAD) relies on modeling both temporal dynamics and inter-sensor dependencies to identify complex system faults. Although graph-based detectors explicitly model sensor topologies, they train task-specific networks from scratch on limited target-domain data, remaining vulnerable to spurious correlations and unable to reuse transferable priors. While pretrained Graph Foundation Models (GFMs) offer transferable topological priors and anomaly discriminability, directly adapting them to MTSAD is hindered by cross-modal feature-topology mismatch, unreliable pseudo-anomaly supervision, and decision distortion during node-to-window aggregation. To fill these gaps, we propose a novel adaptation framework, Gfm4Mtsad, which unleashes pretrained GFMs for MTSAD. We introduce the Structure-and-Information Contract Alignment (SICA) module to bridge continuous time series and the pretrained GFM space. This module harmonizes principal subspace token projection, normal-prior-guided graph construction, and residual recovery to suppress spurious edges while retaining fine-grained temporal details. We propose a Mechanism-Aligned Pseudo-Anomaly Screening strategy (MAPS) to steer unsupervised learning. It applies localized dependency breaks while preserving empirical residuals, selecting hard negatives near the normal boundary for targeted supervision. We develop a Tail-Gated Evidence Calibration mechanism (TGEC) to eliminate node-to-window aggregation distortion. It calibrates multi-granular graph responses against normal operational references, strictly preserving benign score rankings while selectively refining extreme anomaly candidates in the tail distribution for reliable window detection and interpretable sensor evidence. Extensive evaluations with two GFM backbones demonstrate that Gfm4Mtsad achieves superior detection performance over existing baselines.",
+   "authors": [
+    "Zhuangyan Hu",
+    "Zhuoxuan Liang",
+    "Wei Li",
+    "Xiaohua Jia",
+    "Moustafa Youssef",
+    "Sumi Helal"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-04T12:43:16+00:00",
+   "url": "https://arxiv.org/abs/2611.06441",
+   "pdf": "https://arxiv.org/pdf/2611.06441",
+   "score": 0.8218,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7223,
+    "meters": 0.698,
+    "methods": 0.8218
+   }
+  },
+  {
+   "id": "2611.06194",
+   "version": 2,
+   "title": "Cross-Asset Knowledge Transfer for Early Fault Detection of Data-Scarce Assets Without Target Fault Data",
+   "abstract": "Reliability management of industrial fleets depends on early fault warnings, yet lifecycle data across similar assets are highly imbalanced. A few assets accumulate run-to-failure histories, while newly installed or rarely failing assets provide only normal-condition data. This paper asks how diagnostic knowledge can be transferred from a data-rich source asset to a data-scarce target asset when no fault data have been observed on the target. We formulate cross-asset early fault detection as a zero-shot domain adaptation problem, in which zero-shot refers to the absence of target fault samples, and propose a framework that requires only normal data from the target. The framework comprises (1) a statistical process control step that labels the source asset run-to-failure data with an exponentially weighted moving average chart, reducing manual annotation to verifying flagged segments, (2) an Adapted Domain-Adversarial Neural Network (ADANN) that combines domain-adversarial training and a Maximum Mean Discrepancy penalty with an Adapted Classification-Domain (ACD) loss, which anchors the classifier normal region to the target own normal data, and (3) an ahead-of-time labeling scheme with a prediction horizon that targets incipient faults. Under an exact-classification assumption, a theoretical analysis characterizes the domain-adversarial term for a normal-only target and the alignment state in which source fault features remain separated from target normal features. On a public run-to-failure bearing dataset, ADANN attains the highest mean F1-score among four transfer baselines, with a nominally significant precision gain over the strongest baseline, and its robustness is examined under synthetic noise.",
+   "authors": [
+    "Zekai Wang",
+    "Yuxuan Li",
+    "Zhangyue Shi"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-04T09:08:30+00:00",
+   "url": "https://arxiv.org/abs/2611.06194",
+   "pdf": "https://arxiv.org/pdf/2611.06194",
+   "score": 0.7275,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6838,
+    "meters": 0.6429,
+    "methods": 0.7275
+   }
+  },
+  {
+   "id": "2611.05866",
+   "version": 1,
+   "title": "Auditable Unlearning for LLMs",
+   "abstract": "Machine unlearning aims to remove a user's data from a trained model after a deletion request. Existing methods are majorly evaluated on three axes - how well they forget, how much capability they retain, and how robust they are to membership inference attacks, but not on whether the provider can offer the user any evidence that the deletion occurred. To fill this gap, we introduce auditability as a fourth axis, defined as the separation between requested (forget set) and retained (retain set) data under a statistic the provider computes. We show that across eleven unlearning methods on TOFU, MUSE and RWKU no method satisfies all four axes, with different methods falling short on different axes. To address this, we propose a two stage method that can be used on top of any unlearning method, in the the first stage we propose ${GapWiden}$ which uses a hinge loss to increase the difference between audit statistics of forget set and retain set. In the second stage we propose ${GapVeil}$, an inference time rejection-sampler which uses the base model as the drafter and re-samples based on the audit statistics of the drafted response. We observe that using our method, auditability and leakage reach oracle parity for every unlearning method, and forget performance converges to the oracle; retain performance improves for nine of eleven methods but remains short of parity. Our results show that evidence of deletion or auditability can be constructed by design, and that treating it as an explicit requirement changes the viability of existing unlearning methods.",
+   "authors": [
+    "Piyush Tiwary",
+    "Anushka Srivastava",
+    "Prathosh A. P"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-04T02:58:44+00:00",
+   "url": "https://arxiv.org/abs/2611.05866",
+   "pdf": "https://arxiv.org/pdf/2611.05866",
+   "score": 0.6905,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6014,
+    "meters": 0.5763,
+    "methods": 0.6905
+   }
+  },
+  {
+   "id": "2611.06990",
+   "version": 1,
+   "title": "ToroFit: Fitting Wedge Sums of Tori to High-Dimensional Data",
+   "abstract": "Data arising in scientific applications often exhibits complex nonlinear structure. Identifying and parameterizing said nonlinearities can enable better modeling, enhance predictive analysis, data interpolation, denoising, and anomaly detection. In this paper, we develop theoretical and computational methods to detect and parametrize Euclidean point cloud data lying near a wedge sum of tori. Specifically, we use persistent cohomology and cup products to identify the distinct toroidal components, and on each component, we optimize over low-energy multivariate trigonometric polynomials for best data fit. The ensuing optimization problem reduces to generalized ridge regression, which can be solved efficiently via standard techniques. We demonstrate the utility of the proposed framework in both synthetic and real datasets, including interpolation of low frame-rate recurrent videos, attractor recovery in quasiperiodic dynamical systems, and the parametrization of gene-space cycle data for parasites and humans.",
+   "authors": [
+    "Tanishq Bhatia",
+    "Jose A. Perea",
+    "Tarek M. Zikry"
+   ],
+   "primary": "stat.ML",
+   "categories": [
+    "stat.ML",
+    "cs.LG",
+    "math.AT"
+   ],
+   "published": "2026-11-04T17:33:00+00:00",
+   "url": "https://arxiv.org/abs/2611.06990",
+   "pdf": "https://arxiv.org/pdf/2611.06990",
+   "score": 0.6888,
+   "interest": "methods",
+   "scores": {
+    "water": 0.623,
+    "meters": 0.5958,
+    "methods": 0.6888
+   }
+  },
+  {
+   "id": "2611.05901",
+   "version": 1,
+   "title": "Retrieval Supersedes Scale: Efficient Log Level Prediction via Multiplex Socio-Technical Context",
+   "abstract": "Developers insert logging statements in source code to record its execution, and the resulting logs are essential for detecting and troubleshooting system anomalies. A key part of these statements is the log level (e.g., DEBUG, INFO, WARN, ERROR), which determines whether a message is recorded. Choosing it is a trade-off: levels set too low mask important information in production, while levels set too high create noisy logs and extra I/O and storage overhead. Recent work uses Large Language Models (LLMs) with In-Context Learning (ICL) to predict log levels, but typically augments the prompt with randomly sampled examples. We argue that this overlooks the socio-technical nature of logging, where conventions vary by component and development team. Off-the-shelf LLMs using random examples are reported to achieve median AUCs of only 0.56 to 0.76, leaving room for improvement without fine-tuning. In this paper, we propose a retrieval approach for LLM-powered log level prediction that prioritizes context relevance over random selection and basic similarity. Our method retrieves logging examples relevant along two socio-technical dimensions: (i) functionality (code performing similar operations) and (ii) ownership (code maintained by the same developers). Evaluating four LLMs across ten popular Java projects, we find that this retrieval improves AUC over random baselines by 0.07 (median), and combining both signals yields median AUCs of 0.83 to 0.97. Our ablation studies show that each signal improves on random retrieval, and that combining them outperforms the stronger of the two on all ten projects. Our results also significantly exceed state-of-the-art supervised predictors (e.g., DeepLV) by a median AUC of 0.12 to 0.19. Our findings highlight the importance of socio-technical signals such as code functionality and ownership for LLM-powered log level prediction.",
+   "authors": [
+    "Youssef Esseddiq Ouatiti",
+    "Mohammed Sayagh",
+    "Bram Adams",
+    "Ahmed E. Hassan"
+   ],
+   "primary": "cs.SE",
+   "categories": [
+    "cs.SE",
+    "cs.LG"
+   ],
+   "published": "2026-11-04T03:50:55+00:00",
+   "url": "https://arxiv.org/abs/2611.05901",
+   "pdf": "https://arxiv.org/pdf/2611.05901",
+   "score": 0.6885,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6277,
+    "meters": 0.6444,
+    "methods": 0.6885
+   }
+  },
+  {
+   "id": "2611.06173",
+   "version": 1,
+   "title": "Network Intrusion Forensic Detection System with Explainable Artificial Intelligence and Digital Chain of Custody",
+   "abstract": "Deploying an explainable intrusion detection model from a validated laboratory setting into a forensic workflow requires guarantees that benchmarks do not test: that the certified model is the exact artifact applied to a case, that heterogeneous evidence can be classified reliably, and that every step is verifiable. We present MODEXRE, a forensic pipeline that extends a previously validated synthetic-data-trained XGBoost classifier with SHAP explainability (arXiv:2607.00763) into a dual-mode architecture: a Laboratory mode, where models are trained and certified on public and synthetic data, and a Formal mode, where a frozen, hash-verified model performs inference on case evidence under a SHA-256 hash-chained chain of custody. Suricata alerts, CEF firewall logs and packet captures are normalized through OCSF. Four design decisions, each triggered by an observed failure, shaped the architecture: a timestamp leak that inflated Kitsune performance (F1-macro 0.984, 0.662 after correction); a feature-coverage gap that made the 78-feature reference model misclassify a real SSH alert; causal temporal flow aggregation, which raised Kitsune multiclass F1-macro from 0.394 to 0.932; and a certification defect, exposed only by a real packet capture, whereby the pipeline had always trained a binary classifier. After correction, the same capture went from 100% of events flagged as malicious to 87% classified as Normal, with the scanning host identified as Reconnaissance. The default four-class certified model reaches F1-macro = 0.9538 on CICIDS2017-derived evidence; the recertified 18-category model reaches 0.6214, reflecting the real multiclass task. Chain-of-custody verification, model integrity hashing and per-prediction SHAP explanations are reported as measured outcomes.",
+   "authors": [
+    "Jose Luis Vela Alonso",
+    "Carmen Pellicer"
+   ],
+   "primary": "cs.CR",
+   "categories": [
+    "cs.CR",
+    "cs.LG"
+   ],
+   "published": "2026-11-04T08:54:57+00:00",
+   "url": "https://arxiv.org/abs/2611.06173",
+   "pdf": "https://arxiv.org/pdf/2611.06173",
+   "score": 0.6768,
+   "interest": "water",
+   "scores": {
+    "water": 0.6768,
+    "meters": 0.5997,
+    "methods": 0.6605
+   }
+  },
+  {
+   "id": "2611.06912",
+   "version": 1,
+   "title": "FlowReconBench: Accuracy, calibration and cost of learned and classical flow reconstruction from sparse sensors",
+   "abstract": "Reconstructing full flow fields from sparse sensors requires prior assumptions about unmeasured regions and physical variables. Yet it remains unclear when learned models outperform classical estimators and which aspects of their predictions can be trusted. FlowReconBench evaluates ten learned and five classical methods on three regimes: a laminar cylinder wake across Reynolds numbers, two-dimensional Kolmogorov turbulence and a large-scale three-dimensional (3D) isotropic turbulence. Methods share leakage-controlled splits and sensor draws and are scored on per-channel error, ensemble spread, calibration, spectra and cost. The leading method changes for each regime. Classical methods perform strongly in low-order and dense-sensing regimes. On the cylinder wake, linear stochastic estimation and gappy proper orthogonal decomposition lead, including for unobserved pressure. In 3D, inverse-distance weighting matches the best learned methods on observed channels. Data-driven methods become superior at decreasing sensor density or poor sensor observability. On Kolmogorov flow, continuous ranked probability score and error yield different method rankings: generative models offer broader but underdispersed ensembles, while deterministic models prioritize pointwise error. Generative models balance this tradeoff through their sampler budget, with a larger budget improving ensemble quality at higher computational cost. In 3D, scaling tests demonstrate that queryable methods are flat in memory, while full-grid construction methods run out of memory. Observing only 2 of 4 fields leaves the problem kinematically underconstrained, yet a latent model can reproduce structural similarities to the ground truth.",
+   "authors": [
+    "Nicolas Tricard",
+    "Linzheng Wang",
+    "Jason Chen",
+    "Sili Deng"
+   ],
+   "primary": "physics.flu-dyn",
+   "categories": [
+    "physics.flu-dyn",
+    "cs.LG"
+   ],
+   "published": "2026-11-04T18:57:47+00:00",
+   "url": "https://arxiv.org/abs/2611.06912",
+   "pdf": "https://arxiv.org/pdf/2611.06912",
+   "score": 0.6557,
+   "interest": "water",
+   "scores": {
+    "water": 0.6557,
+    "meters": 0.6144,
+    "methods": 0.6262
+   }
+  },
+  {
+   "id": "2611.05895",
+   "version": 1,
+   "title": "Information-Matched Auditing of Conversational Emotion-Shift Forecasting: A Leakage-Safe Evaluation Protocol",
+   "abstract": "Comparisons in conversational emotion-shift forecasting are easily distorted when a learned model receives rich features but its transition baseline is given a noisy or unavailable current-emotion label, when hyperparameter budgets differ, or when target-turn information enters the representation. We present an information-matched, leakage-safe auditing protocol that closes these gaps with an explicit commitment point, executable causality tests, equal four-configuration validation searches, and seed-dialogue-aware inference. Applying it to six causal model families on four text corpora and two feature-source sensitivity configurations shows that a deployable train-only current-emotion classifier feeding the transition baseline yields a different verdict than an oracle diagnostic where both sides receive gold current emotion. Under the deployable condition, learned models improve over the predicted-label baseline on all four primary corpora; DailyDialog gains are large and survive a 72-comparison Holm correction (best ROC-AUC gain = +0.167, adjusted p=.0144). Under matched gold information, the baseline remains competitive on IEMOCAP and stronger on MELD, while every model retains a large DailyDialog advantage. We additionally report precision-recall AUC, calibration, a strictly utterance-local feature control, same-person self-shift forecasting, and a future-access dose-response test. An eight-item leakage checklist accompanies the protocol. Code, raw seed predictions, and reporting artifacts are available from the corresponding author upon request.",
+   "authors": [
+    "Bin Wen",
+    "Dai-Qiao Zhang",
+    "Tien-Ping Tan"
+   ],
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL",
+    "cs.LG"
+   ],
+   "published": "2026-11-04T03:36:17+00:00",
+   "url": "https://arxiv.org/abs/2611.05895",
+   "pdf": "https://arxiv.org/pdf/2611.05895",
+   "score": 0.6277,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5602,
+    "meters": 0.591,
+    "methods": 0.6277
+   }
+  },
+  {
+   "id": "2611.07217",
+   "version": 1,
+   "title": "TileQuant: Tile as the Precision-Allocation Unit for LLM Mixed-Precision Post-Training Quantization",
+   "abstract": "Post-training quantization (PTQ) reduces large language model (LLM) deployment costs, but preserving quality requires accounting for uneven weight sensitivity. Uniform PTQ uses one weight bit-width, importance-aware PTQ adjusts scales or reconstructs weights within that width, and column-wise mixed precision retains selected columns at higher precision. However, sensitivity varies within columns, so whole-column retention also protects less sensitive weights, while runtime outlier detection adds decoding overhead. We therefore introduce TileQuant, a training-free framework that assigns precision to hardware-aligned 2D weight tiles. Offline calibration provides input-activation-aware scoring from forward statistics for lower calibration cost and gradient-informed scoring from loss sensitivity for stronger quality preservation. Within each projection's retention budget, the highest-scoring tiles remain at 16-bit and the rest use 8-bit. The resulting map guides reconstruction into compact weight buffers, which the kernel reuses for native integer and 16-bit computation with local accumulation to reduce memory traffic. Experiments show that TileQuant reaches 2.66x the original model's generation throughput. Across language modeling, reasoning, long-context retrieval, and question answering, it preserves quality and surpasses quantized and original models on multiple tasks. These results support selecting precision units that capture local sensitivity while enabling efficient hardware execution. The implementation is: https://github.com/HanzhiZhang-Ulrica/TileQuant",
+   "authors": [
+    "Hanzhi Zhang",
+    "Qiao Zhang",
+    "Qinglei Cao",
+    "Heng Fan",
+    "Yan Huang",
+    "Kewei Sha",
+    "Yunhe Feng"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-04T23:09:34+00:00",
+   "url": "https://arxiv.org/abs/2611.07217",
+   "pdf": "https://arxiv.org/pdf/2611.07217",
+   "score": 0.6123,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5854,
+    "meters": 0.5782,
+    "methods": 0.6123
+   }
+  },
+  {
+   "id": "2611.06168",
+   "version": 1,
+   "title": "Reasoning-Aware Cross-Modal Association Unlearning in Multimodal Large Reasoning Models",
+   "abstract": "Multimodal large reasoning models (MLRMs) integrate visual inputs with textual and parametric knowledge, allowing sensitive information to be accessed through cross-modal associations during reasoning. This raises privacy concerns when a visual input should no longer provide access to such information. Machine unlearning can remove this influence without retraining the model from scratch. However, multimodal unlearning methods mainly target samples, concepts, or knowledge content, without separating the knowledge from the cross-modal association through which it is accessed. In reasoning models, target information may disappear from the final answer while remaining in intermediate reasoning, or be replaced by incorrect substitute knowledge. We therefore study cross-modal association unlearning, where the forget target is a designated visual-to-knowledge association: the model should suppress target-bearing behavior under the designated visual context while preserving access to the same knowledge in permitted contexts. We propose Visual-Keyed Counterfactual Rebinding (VKCR), a parameter-efficient framework for cross-modal association editing. VKCR first localizes the edit to a compact association-conditioned parameter subspace. It then reduces support for the designated target at task outputs and counterfactually rebinds the affected reasoning behavior by discouraging target-bearing or unsupported continuations while favoring valid non-sensitive alternatives. We further introduce CLEAR-R and MLLMU-R to evaluate target leakage, hallucinated reassociation, reasoning preservation, and modality-specific utility. Experiments show that VKCR substantially reduces image-conditioned target leakage and hallucinated reassociation, including across heterogeneous task formulations, while preserving non-sensitive visual reasoning and permitted text-only knowledge.",
+   "authors": [
+    "Xinghao Li",
+    "Chenchen Tan",
+    "Youyang Qu",
+    "Shujie Cui",
+    "Xingliang Yuan",
+    "Cunjian Chen",
+    "Chi Liu",
+    "Longxiang Gao"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI"
+   ],
+   "published": "2026-11-04T08:48:07+00:00",
+   "url": "https://arxiv.org/abs/2611.06168",
+   "pdf": "https://arxiv.org/pdf/2611.06168",
+   "score": 0.6123,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5278,
+    "meters": 0.5372,
+    "methods": 0.6123
+   }
+  },
+  {
+   "id": "2611.06585",
+   "version": 1,
+   "title": "Signed, Sealed, Leaked: Trust Beyond Signature for MCP Toolchains",
+   "abstract": "AI agents rely on third-party tools, such as Model Context Protocol (MCP) servers, whose publishers can be authenticated and whose execution can be restricted by runtime security policies. Yet authenticity does not guarantee benign behaviour: a legitimately signed tool may perform its advertised function while concealing malicious code that leaks confidential information. We demonstrate this trust failure with a signed MCP tool that embeds sensitive data in requests to a policy-allowed destination. Meta's MCPGuard-Dynamic, a state-of-the-art runtime defence, blocks a direct exfiltration attempt in the same run, yet fails to prevent this attack in every trial. We introduce germline execution, which limits information disclosure without inspecting or trusting tool implementations. Each tool invocation runs in ephemeral copies forked from a data-free germline process, each receiving only information authorised for its destination. Even if malicious code executes, what it can disclose is bounded by the data available to its copy. Under explicit assumptions on copy confinement and a data-free germline, we prove sink noninterference for every signed release and, for releases deterministic within our replay model, show that a verified witness establishes a flow violation. Across 153 attack runs, no unauthorised disclosure was detected under germline execution, compared with 5.9-74.5% of runs under baseline defences and an ablation. Invocations served by a single copy completed in 10-49 ms, 2-28x faster than restarting the tool for every invocation, the conventional way to clear state. These results show that data-isolated execution protects agent toolchains against malicious code concealed within authenticated software.",
+   "authors": [
+    "Yichiet Aun",
+    "Mohammed A. Alhartomi",
+    "Jing Jie Tan",
+    "Waqas Nadeem",
+    "Adeb Salh",
+    "Shankar Karuppayah",
+    "Sin Chee Tan"
+   ],
+   "primary": "cs.CR",
+   "categories": [
+    "cs.CR",
+    "cs.AI",
+    "cs.MA"
+   ],
+   "published": "2026-11-04T14:40:32+00:00",
+   "url": "https://arxiv.org/abs/2611.06585",
+   "pdf": "https://arxiv.org/pdf/2611.06585",
+   "score": 0.6118,
+   "interest": "water",
+   "scores": {
+    "water": 0.6118,
+    "meters": 0.5241,
+    "methods": 0.547
+   }
+  },
+  {
+   "id": "2611.06911",
+   "version": 1,
+   "title": "BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories",
+   "abstract": "Self-Driving Chemical Laboratories (SDCLs) are moving chemical experimentation toward embodied automation, where machines must perceive laboratory scenes, reason about experimental states, and act under physical, procedural, and safety constraints. Although Multimodal Large Language Models (MLLMs) are increasingly considered as embodied brains for such systems, existing laboratory benchmarks mainly focus on safety, anomaly detection, or general scientific understanding, leaving their execution-oriented embodied capabilities underexplored. To fill this gap, we introduce BEAKER, a Benchmark for evaluating Embodied Actionability, Knowledge, Experimentation, and Reasoning in SDCLs. BEAKER contains 1,000 expert-curated question-answer samples across 11 image and video task types, covering key judgments required for chemical laboratory execution, including affordance grounding, trajectory planning, equipment, state, and safety recognition, apparatus setup, operation and step reasoning, and temporal procedure reasoning. All questions and annotations are manually created and reviewed by chemistry and embodied Artificial Intelligence (AI) experts, without AI-assisted generation or annotation. We evaluate 28 general-purpose, science-oriented, chemistry-specialized, and embodied MLLMs in an offline, single-turn setting. Results show that current models can follow coarse experimental procedures in videos, but still struggle to ground actions into operable regions and feasible trajectories, to recognize fine-grained laboratory apparatus, states, and safety norms, and to order steps in mid-length procedures. BEAKER thus reveals a clear gap between coarse procedural understanding and the precise, action-grounded perception required for laboratory execution, providing a diagnostic benchmark for future MLLMs in SDCLs.",
+   "authors": [
+    "Fei Lin",
+    "Tengchao Zhang",
+    "Ziyang Gong",
+    "Xiaotong Yu",
+    "Bohan Zhang",
+    "Yifan Zhou",
+    "Qihao Yang",
+    "Ji Dai",
+    "Dong Li",
+    "Yining Jiang",
+    "Qinghua Ni",
+    "Jun Huang",
+    "Qiang Zhang",
+    "Yue Zhou",
+    "Zhihang Zhong",
+    "Yonglin Tian",
+    "Fei-Yue Wang",
+    "Xue Yang"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-04T18:57:17+00:00",
+   "url": "https://arxiv.org/abs/2611.06911",
+   "pdf": "https://arxiv.org/pdf/2611.06911",
+   "score": 0.5968,
+   "interest": "meters",
+   "scores": {
+    "water": 0.5844,
+    "meters": 0.5968,
+    "methods": 0.5866
+   }
+  },
+  {
+   "id": "2611.05999",
+   "version": 1,
+   "title": "SIM-Enabled Wave-Domain Processing in MIMO-OFDM Receivers: Architecture, Modeling, and Validation",
+   "abstract": "This paper develops a wave-domain linear receiver for wideband MIMO-OFDM, where the main high-dimensional linear processing conventionally performed after sampling is physically shifted to propagation through stacked intelligent metasurfaces (SIMs). The proposed receiver transforms receive-port waveforms into OFDM-domain symbols through three cascaded SIM-enabled functional sections. The first section, SIM_1, performs channel-memory processing and channel shortening in an energy-concentration sense, suppressing the out-of-cyclic-prefix (CP) effective tail before OFDM analysis. SIM_2 realizes CP removal and discrete Fourier transform (DFT) analysis as cyclic-windowed OFDM matched filtering by exploiting useful-window memory and analytical Fourier phase coding. SIM_3 implements residual virtual-subcarrier MIMO linear detection, completing the wave-domain linear receive chain up to symbol slicing. Synchronization, control, slicing, and decoding remain digital, while the dominant linear receive operations are moved to the wave domain. A staged configuration framework is developed: the numerology-dependent OFDM analyzer is compiled offline, whereas the channel-dependent memory processor and detector are configured over the coherence time using architecture-aware learning-assisted control. Numerical results validate both functional replacement and link performance, confirming nearly lossless replacement under CP-sufficient MIMO-OFDM conditions, with robustness to residual timing offsets and effective channel-delay-profile perturbations. Substantial gains under CP-insufficient channels are also demonstrated by suppressing out-of-CP leakage before OFDM analysis.",
+   "authors": [
+    "Zheao Li",
+    "Jiancheng An",
+    "Chau Yuen"
+   ],
+   "primary": "eess.SP",
+   "categories": [
+    "eess.SP"
+   ],
+   "published": "2026-11-04T05:47:23+00:00",
+   "url": "https://arxiv.org/abs/2611.05999",
+   "pdf": "https://arxiv.org/pdf/2611.05999",
+   "score": 0.5909,
+   "interest": "water",
+   "scores": {
+    "water": 0.5909,
+    "meters": 0.5367,
+    "methods": 0.5554
+   }
+  },
+  {
+   "id": "2611.06157",
+   "version": 2,
+   "title": "Neural Stochastic Forecasting for Lateral Molecular Diffusion Simulations",
+   "abstract": "Predicting the long-time diffusion of membrane proteins is challenging because molecular dynamics (MD) simulations are computationally expensive, while experimental single-particle tracking is often limited by finite observation times. Here, we introduce a neural stochastic (NS) model for forecasting the collective diffusion of membrane proteins from coarse-grained MD trajectories. The model combines a transformer-based representation of protein configurations, recurrent networks operating at multiple temporal scales, and a stochastic latent process with learned memory. A cross-attention decoder then generates correlated protein displacements while accounting for the instantaneous system geometry and periodic boundary conditions. We evaluate the model in two membrane systems: seven interacting PIEZO channels and a mixed system containing seven PIEZO and ten TREK channels. For the seven PIEZO system, the NS model reproduces the anomalous diffusion exponent measured in MD simulations $α\\sim 1$, substantially improving on a previously developed variational autoregressive model that exhibits superdiffusive behavior. The model also generates trajectories extending to 40,000 frames and captures the distinct diffusion characteristics of PIEZO and TREK populations in the mixed system. Comparisons of time-averaged mean-square displacements, Van Hove displacement distributions, and non-Gaussian parameters show that the model preserves key statistical features of the simulated dynamics. These results establish neural stochastic modeling as a promising approach for generating long trajectories of multi-protein membrane diffusion and extending the statistical analysis of molecular dynamics simulations.",
+   "authors": [
+    "Jacob Ede Levine",
+    "Mario Hidalgo-Soria",
+    "Chen Yun Wen",
+    "Yun Lyna Luo",
+    "Sai Chandra Kosaraju"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-04T08:38:11+00:00",
+   "url": "https://arxiv.org/abs/2611.06157",
+   "pdf": "https://arxiv.org/pdf/2611.06157",
+   "score": 0.5876,
+   "interest": "methods",
+   "scores": {
+    "water": 0.559,
+    "meters": 0.5803,
+    "methods": 0.5876
+   }
+  },
+  {
+   "id": "2611.05851",
+   "version": 1,
+   "title": "Risk Control Certifies Rates, Not Magnitudes: An Audit of Selective Fetal Biometry",
+   "abstract": "Prenatal ultrasound biometry must return a head circumference (HC) and refuse when the image cannot support one. Selective prediction trades coverage against error, but its finite-sample guarantees bound the rate of gross errors, not their magnitude. We audit a tool-grounded biometry pipeline on two separately pre-registered four-way splits of the 999 labelled HC18 images, retraining the segmenter three times on each. Calibrating the contour-completeness threshold by exact Clopper-Pearson risk control returns a certificate indistinguishable from a hand-set floor, yet the pipeline still emits a 271.3 mm error: a small, geometrically complete ring fitted to an image whose true HC is 324.6 mm. The accepted candidate scores 0.94 completeness, so the score cannot see the failure, and one outlier among $\\approx 150$ answers leaves the certified risk bound ($α= 0.10$) intact. A second, untouched split reproduces the mechanism on a different image (233.3 mm). Constraining the admissibility region---the anatomical range in which the measurand is defined---removes the family instead: raising the lower bound from 50 to 55 mm costs 0.4 coverage points and cuts the worst-case error on both splits to 11.4 and 11.1 mm, whereas suppressing it through the completeness threshold costs 19.0 and 12.1 points. At an anatomically defined 70 mm the frozen tests give 1.91 and 1.81 mm MAE.",
+   "authors": [
+    "Zhengshuai Yang",
+    "Linna Jiang",
+    "Changyun Li",
+    "Guihu Zhao"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "cs.CV"
+   ],
+   "published": "2026-11-04T02:41:56+00:00",
+   "url": "https://arxiv.org/abs/2611.05851",
+   "pdf": "https://arxiv.org/pdf/2611.05851",
+   "score": 0.5852,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5456,
+    "meters": 0.528,
+    "methods": 0.5852
+   }
+  },
+  {
+   "id": "2611.06063",
+   "version": 1,
+   "title": "AFDMA with Heterogeneous Post-Chirp Parameters: Supporting User-Specific Waveform Configurations",
+   "abstract": "This paper investigates a downlink affine frequency division multiple access (AFDMA) framework supporting flexible user-specific waveform configurations with heterogeneous post-chirp parameters. The proposed framework is in sharp contrast to conventional disjoint chirp-subcarrier allocation, which may destroy inter-user orthogonality when users employ heterogeneous post-chirp parameters. Such a loss of orthogonality manifests as cross-basis leakage onto user-allocated chirp subcarriers, which we characterize by analyzing the cross-projection between user-specific discrete affine Fourier transform bases. Specifically, we express the cross-projection entries as quadratic Gauss sums whose quadratic coefficients depend on pairwise post-chirp differences. This yields a sufficient pairwise residue-class orthogonality rule that preserves inter-user orthogonality by satisfying the leakage-free condition. The resulting chirp-subcarrier allocation problem with pairwise modular constraints is reduced to the residue-class level. To solve this problem, we develop a two-stage framework that recursively searches for a feasible representative allocation and deterministically assigns the remaining residue classes. We prove that the problem is either infeasible or admits an optimal full-loading solution. Simulations show that the proposed allocation avoids the bit error rate (BER) floors and signal-to-interference-plus-noise ratio (SINR) ceiling of conventional localized allocation, achieves near-single-user BER, and provides comparable BER while reducing receiver complexity compared with conventional common-maximum-post-chirp AFDMA.",
+   "authors": [
+    "Hengyou Kong",
+    "Xiaoli Xu",
+    "Zilong Liu",
+    "Yanqun Tang",
+    "Yong Zeng"
+   ],
+   "primary": "eess.SP",
+   "categories": [
+    "eess.SP"
+   ],
+   "published": "2026-11-04T07:08:22+00:00",
+   "url": "https://arxiv.org/abs/2611.06063",
+   "pdf": "https://arxiv.org/pdf/2611.06063",
+   "score": 0.561,
+   "interest": "water",
+   "scores": {
+    "water": 0.561,
+    "meters": 0.5018,
+    "methods": 0.5271
+   }
+  },
+  {
+   "id": "2611.06726",
+   "version": 1,
+   "title": "Intra-Cell Spatial Reuse in LEO Downlinks: Beam-Leakage-Aware Satellite Scheduling",
+   "abstract": "Dense low-earth-orbit (LEO) constellations offer an opportunity to increase local broadband capacity by serving multiple terminals in the same cell through concurrent satellite beams. However, interference between overlapping beams limits spatial reuse, and satellite selection based solely on link strength or angular separation may result in suboptimal performance. This paper proposes beam-leakage-aware satellite scheduling for Ku-band LEO downlink transmissions. With matched transmit and receive beamforming, we formulate a fixed-cardinality sum-rate maximization problem that jointly accounts for satellite-dependent received powers and pairwise receive-array leakage. A beam-leakage-aware branch-and-bound (BL-BnB) algorithm combines an admissible upper bound with greedy-plus-swap initialization to obtain globally optimal schedules for the reference-point model. We evaluate the method using a 24-h ephemeris-derived Starlink visibility trace with antenna and transmit-power models calibrated to public SpaceX filings. The results show that total capacity increases with beam count, but less than proportionally. With eight concurrent beams, BL-BnB improves mean per-beam capacity by 27.2% over nearest-satellite selection, primarily benefiting weaker links. BL-BnB achieves millisecond-scale runtimes in our evaluation, supporting the computational feasibility of optimal scheduling.",
+   "authors": [
+    "Shizhen Jia",
+    "Hao Guo",
+    "Ruoyu Sun",
+    "Hans Geerdes",
+    "Mark Poletti",
+    "Songwei Dong",
+    "Lauryn Smith",
+    "Sundeep Rangan"
+   ],
+   "primary": "eess.SP",
+   "categories": [
+    "eess.SP"
+   ],
+   "published": "2026-11-04T16:15:36+00:00",
+   "url": "https://arxiv.org/abs/2611.06726",
+   "pdf": "https://arxiv.org/pdf/2611.06726",
+   "score": 0.5594,
+   "interest": "water",
+   "scores": {
+    "water": 0.5594,
+    "meters": 0.5244,
+    "methods": 0.491
+   }
+  },
+  {
+   "id": "2611.06122",
+   "version": 1,
+   "title": "Ab Initio Accuracy Beyond the Cutoff: Distributed Message-Passing Equivariant Attention at Tens-of-Millions-of-Atom Scale",
+   "abstract": "Molecular dynamics predicts molecular motion from atomic forces and trajectory integration. Density functional theory (DFT) provides first-principles forces, but its $O(N^3)$ cost limits simulations to thousands of atoms; empirical force fields scale to millions but miss bond breaking and charge transfer. Equivariant message-passing Transformers learn the ab initio potential at linear cost. Stacked layers propagate information beyond a single cutoff, giving four layers a receptive field up to 23Å. At this frontier, scale is limited by communication: layers exchange boundary features across devices, force backpropagation repeats the exchange, and moving atoms change neighbor graphs and tensor shapes. We present Tessera, a distributed runtime that fixes workload shapes between rebuilds. It sorts atoms along a space-filling curve into equal-count shards, ensuring identical atom counts and tensor shapes per rank. Peer sets scale as $K^{0.5}$, not $K$. A conservative neighbor skin preserves topology across updates, enabling each rebuild interval to replay as one CUDA Graph. Fused kernels, three-level neighbor search, and overlapped All-to-All complete it. On 512 GPUs, Tessera sustains 30.7M atoms at 89.7% weak-scaling efficiency (77--90% across three per-GPU loads); per-step time rises 1.11--1.29x as machine and problem grow 16x. Graph reuse cuts full-step time $1.87\\times$. Across an $8\\times$ device increase, neighbor-search cost grows $1.7\\times$, versus $3.0\\times$ for Morton order. In a live $10.24$M-atom salt solution, NVE energy drift is $0.42\\,μ$eV/atom/ps over $10$ ps, and structure matches a serial reference. A 10.06M-atom Norovirus capsid sustains 100 ps of NVT at $\\approx 8$ ps/day on 256 A100 GPUs. Over 200,000 steps, it has no broken bonds or anomalously close pairs and uses three compiled variants, with no graph breaks or eager fallbacks.",
+   "authors": [
+    "Allex Kan",
+    "Ji Zhang",
+    "Hao Yin",
+    "Hao Li",
+    "Owen Fu",
+    "Xunxing Chen",
+    "Lin Huang",
+    "Zion Wang",
+    "Lucas Li",
+    "Jiajun Cheng",
+    "Arthur Jiang",
+    "Junping Zhao",
+    "Jia Zhang"
+   ],
+   "primary": "cs.DC",
+   "categories": [
+    "cs.DC",
+    "cs.AI",
+    "physics.bio-ph"
+   ],
+   "published": "2026-11-04T08:07:22+00:00",
+   "url": "https://arxiv.org/abs/2611.06122",
+   "pdf": "https://arxiv.org/pdf/2611.06122",
+   "score": 0.5425,
+   "interest": "methods",
+   "scores": {
+    "water": 0.533,
+    "meters": 0.5273,
+    "methods": 0.5425
+   }
+  }
+ ]
+}

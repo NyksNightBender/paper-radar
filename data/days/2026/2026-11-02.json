@@ -1,0 +1,447 @@
+{
+ "date": "2026-11-02",
+ "generated_at": "2026-11-08T13:06:24+00:00",
+ "model": "BAAI/bge-small-en-v1.5",
+ "interests": [
+  {
+   "key": "water",
+   "name": "Water networks"
+  },
+  {
+   "key": "meters",
+   "name": "Meters and consumption"
+  },
+  {
+   "key": "methods",
+   "name": "Time-series anomaly detection"
+  }
+ ],
+ "count": 16,
+ "papers": [
+  {
+   "id": "2611.03039",
+   "version": 1,
+   "title": "TSB-SEG: A Systematic Time-Series Segmentation Benchmark",
+   "abstract": "Time-series segmentation, studied as either Change Point Detection (CPD) or State Detection (SD), underpins a broad range of monitoring and diagnostic applications. However, the field suffers from a persistent divide between the statistical community (focusing on CPD) and the machine learning and data mining communities (focusing on SD). Consequently, the literature remains fragmented: evaluations typically cover narrow methodological families, datasets are often small or homogeneous, and CPD and SD are rarely evaluated together. We address these gaps with TSB-SEG, a unified benchmark comprising 592 univariate and multivariate time series from 8 heterogeneous datasets and surveying 26 algorithms that span five decades of progress. To ensure a fair comparison, we introduce a two-pool design: a scalable main pool of tractable detectors used for the aggregate ranking, and an extended-scope pool for computationally intensive methods. All methods are unified under tsseg, an open-source library to ensure full reproducibility. Our systematic evaluation yields three insights: (a) no single detector dominates across domains, and per-dataset hyperparameter tuning remains decisive for performance, (b) CPD accuracy is a useful, though imperfect, proxy for SD accuracy, and (c) data characteristics should guide method selection. We provide actionable guidance based on data properties, error tolerances, and tuning budgets, identify impactful hyperparameters, and characterize algorithm robustness to these choices.",
+   "authors": [
+    "Félix Chavelli",
+    "Arik Ermshaus",
+    "Fan Yang",
+    "Patrick Schäfer",
+    "John Paparrizos",
+    "Paul Boniol"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-02T12:38:17+00:00",
+   "url": "https://arxiv.org/abs/2611.03039",
+   "pdf": "https://arxiv.org/pdf/2611.03039",
+   "score": 0.7937,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6777,
+    "meters": 0.7273,
+    "methods": 0.7937
+   }
+  },
+  {
+   "id": "2611.03486",
+   "version": 1,
+   "title": "A Hybrid Visitor Prediction Framework using Interpretable Temporal features, Integrating IQR and Anomaly Detection in Lakes in Nebraska",
+   "abstract": "For effective resource management, infrastructure planning, and sustainable tourism, it is really important to predict accurate visitors. This paper estimates the daily visitation of Nebraska lakes using spatial, basic temporal, and interpretable temporal features. Moreover, we evaluate the base models with multiple metrics. Using the best three models, our method will ensemble hybrid models and choose the best hybrid technique. Further, we investigate the impact of lag features and how the models work with different outlier detection techniques such as Interquartile Range (IQR) and anomaly detection. The models are evaluated using regression metrics (MAE, MSE, RMSE, MAPE, and R2). Experiment results show that, after removing anomalies, MAE, MSE, RMSE, and MAPE are reduced. Adding lag features also shows some positive effects on the results. Moreover, anomaly detection techniques perform better than IQR in improving performance while preserving data. The reported anomaly-based cross-validation results favored the voting ensemble over the compared base models on the evaluated metrics. In anomaly-based cross-validation, VOTE improved prediction errors compared with MLP (256,128,64); improvements varied in the single-split comparison. Specifically, the hybrid model reduced MAE by 9.82%, MSE by 3.12%, RMSE by 1.76%, and MAPE by 6.77%. In the reported cross-validation comparison, the best anomaly-based hybrid model had lower MAE, MSE, RMSE, and MAPE than the best IQR-based hybrid model by 9.81%, 34.30%, 18.99%, and 0.66%, respectively.",
+   "authors": [
+    "Israt Zarin",
+    "Christopher Chizinski"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-02T17:28:55+00:00",
+   "url": "https://arxiv.org/abs/2611.03486",
+   "pdf": "https://arxiv.org/pdf/2611.03486",
+   "score": 0.7682,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7122,
+    "meters": 0.7469,
+    "methods": 0.7682
+   }
+  },
+  {
+   "id": "2611.03875",
+   "version": 1,
+   "title": "INSIGHT-HPC: An Interpretable System Intelligence for Global HPC Telemetry",
+   "abstract": "Modern high-performance computing (HPC) clusters integrate multi-generation CPUs and GPUs, which generate rich, high-dimensional telemetry streams from out-of-band baseboard management controllers (BMC), job schedulers, and facility power distribution units. Detecting anomalies within this telemetry is critical to prevent energy waste and costly node failures. Existing approaches often rely primarily on statistical deviations and require stronger labels than actual production environments can provide. In addition, these detectors have a limited operational context for interpreting alerts. We present INSIGHT-HPC, a multi-plane anomaly-detection architecture that combines statistical, workload-aware, and physics-guided evidence into operator-interpretable episodes. INSIGHT-HPC integrates heterogeneous, large-scale telemetry streams and transforms noisy minute-resolution observations into de-duplicated fault episodes with operator-facing explanations. This design allows the system to distinguish workload-explained behavior from genuine infrastructure anomalies while producing interpretable alert summaries for operators. On production HPC telemetry with weak operational labels and controlled HPC-relevant fault injections, INSIGHT-HPC achieves a stronger precision-recall balance than all evaluated baselines. The system achieves a precision of 0.913, a recall of 0.817, an F1 score of 0.862, and an AUROC of 0.896. These results demonstrate the value of combining workload context, physical consistency, and explainable episode-level fusion.",
+   "authors": [
+    "Rupak Kadel",
+    "Jie Li",
+    "Yong Chen"
+   ],
+   "primary": "cs.DC",
+   "categories": [
+    "cs.DC",
+    "cs.LG"
+   ],
+   "published": "2026-11-02T19:47:26+00:00",
+   "url": "https://arxiv.org/abs/2611.03875",
+   "pdf": "https://arxiv.org/pdf/2611.03875",
+   "score": 0.7328,
+   "interest": "water",
+   "scores": {
+    "water": 0.7328,
+    "meters": 0.6927,
+    "methods": 0.6925
+   }
+  },
+  {
+   "id": "2611.03849",
+   "version": 1,
+   "title": "LaplaceDiag: Fault Diagnosis through Changes in Learned Actuator Effects",
+   "abstract": "Identifying faulty components from sensor anomalies is difficult because fault effects can propagate through a plant and different faults can produce similar observations. Detailed component models and labeled fault examples may also be unavailable. We introduce LaplaceDiag, a data-driven method that uses changes in actuator effects to narrow the search for faulty equipment. Actuators act on specific devices and mechanisms, so their changed effects can provide clues to root causes. LaplaceDiag learns a healthy plant model with LaplaceNet, a neural network that operates in Laplace space. It separates nonlinear prediction based on measured history from an explicit matrix that describes how actuator values affect sensor values. Keeping the history predictor fixed allows current actuator effects to be estimated by linear regression without retraining the neural network. Comparison with a healthy reference accounts for estimation uncertainty and normal variation to detect changes and generate actuator-related diagnostic hypotheses. The method supports online and offline diagnosis, providing an intermediate step between anomaly detection and identifying faulty components. We successfully evaluate LaplaceDiag on two datasets.",
+   "authors": [
+    "Oliver Niggemann"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "cs.LG"
+   ],
+   "published": "2026-11-02T19:18:59+00:00",
+   "url": "https://arxiv.org/abs/2611.03849",
+   "pdf": "https://arxiv.org/pdf/2611.03849",
+   "score": 0.7174,
+   "interest": "water",
+   "scores": {
+    "water": 0.7174,
+    "meters": 0.6705,
+    "methods": 0.7171
+   }
+  },
+  {
+   "id": "2611.02312",
+   "version": 1,
+   "title": "Improving Financial Cybersecurity Through Fraud Transaction Detection with Deep Learning",
+   "abstract": "Financial fraud detection remains a critical challenge in cybersecurity, with traditional rule-based systems struggling to keep pace with evolving attack patterns. This paper presents a deep learning approach for fraud transaction detection, leveraging neural network architectures to identify anomalous financial behaviors with high accuracy. We evaluate multiple deep learning models including LSTM, CNN, and hybrid architectures on real-world financial transaction datasets, demonstrating significant improvements over conventional machine learning baselines. Our approach achieves robust performance in detecting fraudulent transactions while minimizing false positives, providing a scalable solution for enterprise financial cybersecurity systems",
+   "authors": [
+    "Harish Kant Pathak",
+    "Rahul Kumar"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-02T00:01:10+00:00",
+   "url": "https://arxiv.org/abs/2611.02312",
+   "pdf": "https://arxiv.org/pdf/2611.02312",
+   "score": 0.7027,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6777,
+    "meters": 0.6122,
+    "methods": 0.7027
+   }
+  },
+  {
+   "id": "2611.03250",
+   "version": 1,
+   "title": "Anomaly-ranked confirmation slows new-class learning",
+   "abstract": "Anomaly detectors rank unfamiliar examples for expert confirmation, and the confirmed examples teach a classifier to recognise a new class. Across five benchmarks from physics, medicine and computer vision, the members flagged by the detector are those the classifier learns first. In three systems, confirming the highest-ranked members of a new class gives lower recognition than confirming the same number of random members. Handing subsequent selection to the promoted classifier recovers part of this loss in two systems. A paired intervention further shows that replacing nearby known classes with distant ones sharply reduces the confirmations needed for recognition. These results distinguish finding a new class from selecting examples that teach its extent: within the tested classes, concentrating confirmations at the top of the anomaly ranking makes learning less efficient.",
+   "authors": [
+    "Argyro Sasli",
+    "Michael Coughlin"
+   ],
+   "primary": "astro-ph.IM",
+   "categories": [
+    "astro-ph.IM",
+    "cs.LG",
+    "physics.data-an"
+   ],
+   "published": "2026-11-02T14:58:12+00:00",
+   "url": "https://arxiv.org/abs/2611.03250",
+   "pdf": "https://arxiv.org/pdf/2611.03250",
+   "score": 0.6992,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6413,
+    "meters": 0.5896,
+    "methods": 0.6992
+   }
+  },
+  {
+   "id": "2611.02775",
+   "version": 2,
+   "title": "Human-Centred, Risk-Constrained Evaluation of Financial Document Recognition: Evidence, Critical Errors, and Selective Automation",
+   "abstract": "Financial document recognition is often assessed using character and word error rates, although these metrics do not express whether a system preserves the financial facts on which people and organisations act. This paper develops a human-centred, risk-constrained framework for evaluating financial document recognition as evidence recovery and decision support. It defines typed financial facts linked to visible source regions and separates verbatim transcription, deterministic normalization, and business interpretation. A layered quality model covers text, localization, layout, tables, fields, fact correctness, evidence grounding, uncertainty, robustness, and operational performance. Non-compensatory acceptance gates use one-sided uncertainty bounds for critical-field errors, preventing strong aggregate scores from masking failures in amounts, identifiers, signs, periods, or entity associations. Selective automation is formulated as a constrained routing problem that accounts for residual risk, human-review capacity, and review cost. The framework further specifies annotation and adjudication procedures, leakage-resistant benchmark partitions, statistical estimands, subgroup analyses, and a reproducibility card. Formal results establish the limitations of compensatory scoring, the non-zero upper risk bound after zero observed errors, and a loss sensitive decision rule for routing uncertain cases to human review. The contribution is theoretical and methodological; no new model, dataset, or empirical performance result is claimed.",
+   "authors": [
+    "Subodh Lonkar"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI"
+   ],
+   "published": "2026-11-02T08:51:01+00:00",
+   "url": "https://arxiv.org/abs/2611.02775",
+   "pdf": "https://arxiv.org/pdf/2611.02775",
+   "score": 0.6705,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6049,
+    "meters": 0.5943,
+    "methods": 0.6705
+   }
+  },
+  {
+   "id": "2611.03015",
+   "version": 1,
+   "title": "Comparative study of global pooling for pre-departure ship fuel consumption prediction: Advantages over per-ship and adaptation-based approaches",
+   "abstract": "Most fuel oil consumption (FOC) models for voyage planning are per-ship models and thus generalize poorly beyond each vessel's records. Transfer and federated learning have been reported to perform better, but under different protocols that often use inputs unavailable before departure or random data splits. It therefore remains unclear which approach performs best. In this study, we compare 11 per-ship, adaptation-based, and global methods on 21 vessels. To prevent leakage, all methods receive identical inputs known or forecast before departure, excluding engine RPM and shaft power, and are tested on intact voyage legs after all training records of each vessel. Global pooling, in which one model describes each vessel by its ship identity and seven ship specifications, performs best overall in every setting examined. For in-fleet vessels, Global LightGBM reaches an overall MAPE of 8.92%, against 11.14% for Per-Ship LightGBM, and outperforms every per-ship and adaptation-based model. Global models of five architectures, including a Transformer, all outperform the per-ship and federated models. Fine-tuning a global model for each vessel, even by low-rank adaptation of the Transformer, adds no accuracy. Without any records of a vessel, the global model reaches a median MAPE of 11.20% and outperforms a per-ship model trained on that vessel's records for 14 of 21 vessels. Adding its first records to the pooled data is as accurate as vessel-specific adaptation. Ship identity and specifications are largely interchangeable for in-fleet vessels, but only the specifications support zero-shot prediction. Its error grows as a vessel's specifications differ from the fleet's. Per-ship models and vessel-specific adaptation are therefore unnecessary under fair comparison. One global model can serve a whole fleet, including newly delivered vessels with similar specifications.",
+   "authors": [
+    "Heungjun Im",
+    "Bongmin Cha",
+    "Agung Nugraha",
+    "Donghyun Kim",
+    "Seongphil Kang",
+    "Minwook Choi",
+    "Jeongmin Park",
+    "Jihwan Lee"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-02T12:14:49+00:00",
+   "url": "https://arxiv.org/abs/2611.03015",
+   "pdf": "https://arxiv.org/pdf/2611.03015",
+   "score": 0.6425,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6283,
+    "meters": 0.6354,
+    "methods": 0.6425
+   }
+  },
+  {
+   "id": "2611.02744",
+   "version": 1,
+   "title": "Subspace Representations for Synthetic-to-Real Transfer in 3-D Surface Inspection",
+   "abstract": "This paper studies what subspace representations contribute to synthetic-to-real transfer in 3-D surface inspection, where models learn from synthetic defects and the only real data before deployment are scans of good parts. We use three classical constructions as instruments: the nearest-subspace classifier, one-class template subspaces and the generalized difference subspace (GDS). On 1,197 MVTec 3D-AD scans without target annotation we find that every decision rule ranks real defects at a similar window AUC, that image-level detection stays at chance, and that no rule keeps its in-domain threshold. We show that the margin of a nearest-subspace rule moves by at most the part of the feature shift outside its class subspaces, and that this leakage, measured from unlabeled good scans, bounds the displacement observed on unseen scans. On 597 Real3D-AD objects, a one-class subspace of registered templates evaluated at every location on frozen features reaches point AUROC 0.957 on pre-registered scans and a category-mean object AUROC of 78 to 81 with no training on the benchmark. Our results suggest that a subspace helps under shift in proportion to the shift it spans, and that in reference-based inspection the reference and its registration matter more than the subspace.",
+   "authors": [
+    "Abdulla Nasir Chowdhury",
+    "Naish Ibrahim",
+    "Gulpi Qorik Oktagalu Pratamasunu",
+    "Kazuhiro Fukui"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.LG"
+   ],
+   "published": "2026-11-02T08:30:09+00:00",
+   "url": "https://arxiv.org/abs/2611.02744",
+   "pdf": "https://arxiv.org/pdf/2611.02744",
+   "score": 0.6348,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5872,
+    "meters": 0.5593,
+    "methods": 0.6348
+   }
+  },
+  {
+   "id": "2611.02938",
+   "version": 1,
+   "title": "Leakage-Aware Encrypted Semantic Communication with Key-Conditioned Signal Perturbation",
+   "abstract": "Encrypted semantic communication systems protect transmitted messages by inserting key-conditioned modules into a deep-learning semantic communication pipeline, but existing designs rely on a fixed adversarial weight and operate mainly at the semantic-feature level. We propose two changes to the encrypted semantic communication system (ESCS): a key-conditioned signal-domain perturbation layer, called learned adversarial perturbation injection (LAPI), and an information noise-contrastive estimation (InfoNCE)-guided adaptive training rule that {adds an adaptive leakage penalty alongside the fixed adversarial objective} using an InfoNCE-based proxy for mutual information leakage. Experiments on the Europarl corpus over additive white Gaussian noise (AWGN) and Rayleigh fading channels show that InfoNCE-guided training is the primary source of eavesdropper suppression, reducing the eavesdropper's bilingual evaluation understudy (BLEU) score to approximately 0.07 at high signal-to-noise ratio (SNR). Adding LAPI to the InfoNCE-guided objective further lowers the InfoNCE-estimated leakage by 5-9% with low measured inference overhead, while its impact on legitimate-receiver BLEU depends on channel conditions. The two mechanisms operate on different parts of the pipeline and can be jointly applied.",
+   "authors": [
+    "Omar Kaaki",
+    "Maria Slim",
+    "Mariette Awad",
+    "Hadi Sarieddeen"
+   ],
+   "primary": "cs.CR",
+   "categories": [
+    "cs.CR",
+    "eess.SP"
+   ],
+   "published": "2026-11-02T11:05:01+00:00",
+   "url": "https://arxiv.org/abs/2611.02938",
+   "pdf": "https://arxiv.org/pdf/2611.02938",
+   "score": 0.6273,
+   "interest": "water",
+   "scores": {
+    "water": 0.6273,
+    "meters": 0.5495,
+    "methods": 0.5438
+   }
+  },
+  {
+   "id": "2611.02837",
+   "version": 1,
+   "title": "Green Composites for Safer and Durable Water Pipelines",
+   "abstract": "The intensifying water shortage in Algeria makes clear the need of novel, sustainable strategies to protect distribution networks. Current infrastructure struggles with frequent failures, particularly leaks stemming from corrosion or handling damage during transport and installation. High-density polyethylene (HDPE) has become a material of choice because it handles these challenges well; it is cost-efficient, flexible, and tough enough to withstand harsh environments.This work investigates the failure risks of HDPE pipelines manufactured by ITP Alg{é}rie -- Innovation Transformation Polym{è}re. Mechanical tests were performed on HDPE 100 to determine its fundamental properties, including burst tests under internal pressure and load/unload experiments aimed at establishing a material-specific damage law revealed the dominant degradation mechanisms that occur under different operational and environmental conditions. Based on these findings, a predictive numerical model was developed to simulate damage progression and anticipate potential failures in service. This study introduces a unique hybrid composite patch designed for the precise rehabilitation of compromised pipeline sections. It shows strong promise for rebuilding the mechanical integrity of pipes, which is vital for maintaining a safe and long-lasting drinking water supply.",
+   "authors": [
+    "Djebbara Benzerga",
+    "Faycal Sotehi",
+    "Adel Chouiter",
+    "Abdelkader Haddi",
+    "Nahla Benzerga"
+   ],
+   "primary": "cs.CE",
+   "categories": [
+    "cs.CE"
+   ],
+   "published": "2026-11-02T09:37:55+00:00",
+   "url": "https://arxiv.org/abs/2611.02837",
+   "pdf": "https://arxiv.org/pdf/2611.02837",
+   "score": 0.617,
+   "interest": "water",
+   "scores": {
+    "water": 0.617,
+    "meters": 0.5759,
+    "methods": 0.4815
+   }
+  },
+  {
+   "id": "2611.03344",
+   "version": 1,
+   "title": "FLAMIA: FLAsh MIcroscaling Attention for Fast and Causally Safe Training on Blackwell",
+   "abstract": "Attention remains a substantial computational cost in Transformer training, particularly at long context lengths. NVIDIA Blackwell GPUs provide high-throughput low-precision matrix multiplication, but exploiting it in attention requires addressing quantization overhead, causal information leakage through shared scales, and numerical inconsistencies between the forward and backward passes. We present FLAMIA, a family of attention kernels for Blackwell with MXFP8 and mixed NVFP4/FP8 training paths. Our design combines token-block scaling that reuses quantized operands across matrix orientations, targeted safeguards against scale-induced leakage, and consistent forward and backward computations. Fused quantization and architecture-specific kernel optimizations reduce overhead, while document-local scaling and workload-aware scheduling support variable-length documents directly in packed layouts without repacking. Across various causal packed-document workloads, the MXFP8 path accelerates the combined forward and backward attention call, including quantization, by factors of $1.10$--$1.40\\times$ on B200 and $1.06$--$1.42\\times$ on B300 relative to the fastest evaluated baseline for each workload. We validate training stability and quality preservation on pretraining Llama-style models. These results show how jointly designing quantization, training numerics, and document scheduling translates low-bit hardware throughput into practical attention acceleration.",
+   "authors": [
+    "Fedor Velikonivtsev",
+    "Mikhail Koltakov",
+    "Denis Kuznedelev"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-02T16:00:12+00:00",
+   "url": "https://arxiv.org/abs/2611.03344",
+   "pdf": "https://arxiv.org/pdf/2611.03344",
+   "score": 0.6146,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5895,
+    "meters": 0.5763,
+    "methods": 0.6146
+   }
+  },
+  {
+   "id": "2611.02378",
+   "version": 1,
+   "title": "A Beam-Switched Sparse Circular Array for Passive Wi-Fi Sensing",
+   "abstract": "Wi-Fi sensing applications require unambiguous angle-of-arrival (AoA) estimation over the full azimuth plane. Uniform circular arrays (UCAs) are shown to remove this ambiguity, but deploying the four RF chains typically available on commercial Wi-Fi chipsets into a sparse layout suffers from spatial undersampling. Such undersampling produces strong grating lobes. To overcome this hardware bottleneck, we first establish a generalized array manifold incorporating element radiation patterns, revealing the suitability and degradation mechanisms of directional UCAs. Then we propose an angularly staggered beam-switched UCA architecture that leverages the spatial complementarity. Numerical evaluations demonstrate that the proposed scheme effectively mitigates grating-lobe ambiguities without increasing the number of RF chains, significantly reducing AoA estimation outliers and improving omnidirectional tracking performance.",
+   "authors": [
+    "Yang Chen",
+    "Riccardo Bersan",
+    "Daniele Piazza",
+    "Stefano Savazzi",
+    "Michele D'Amico"
+   ],
+   "primary": "eess.SP",
+   "categories": [
+    "eess.SP",
+    "cs.IT"
+   ],
+   "published": "2026-11-02T01:46:03+00:00",
+   "url": "https://arxiv.org/abs/2611.02378",
+   "pdf": "https://arxiv.org/pdf/2611.02378",
+   "score": 0.6107,
+   "interest": "water",
+   "scores": {
+    "water": 0.6107,
+    "meters": 0.5594,
+    "methods": 0.5519
+   }
+  },
+  {
+   "id": "2611.03415",
+   "version": 1,
+   "title": "O2N2: Efficient Doubly Oblivious Approximate Nearest Neighbor Search",
+   "abstract": "Privacy-preserving approximate nearest neighbor (ANN) search allows clients to search from an untrusted server without revealing sensitive queries, and is useful in scenarios like medical diagnostics and credit scoring. Among the various privacy-preserving primitives, trusted execution environments (TEEs) have much lower overhead than heavy cryptographic ones, yet they leak memory access patterns, enabling adversaries to infer query contents. Oblivious RAM (ORAM) can be used to hide those access patterns at $\\mathrm{O}(\\log N)$ asymptotic cost, but existing high-performance ANN search algorithms (e.g., IVF or HNSW) exhibit complex, data-dependent access patterns that are unfriendly for ORAM. Furthermore, standard ORAM constructions typically assume there exists a small amount of trusted storage, which weakens the security guarantees and is not always feasible. Solutions that eliminate such trusted storage (known as {\\em double obliviousness}) typically degrade performance further to $\\mathrm{O}(\\log^2 N)$. We introduce O2N2, a doubly oblivious ANN framework built around single-path search in randomly rotated $k$-d tree forests. A pointer-based Circuit ORAM stores the search structure, with separate storage for compact internal nodes and vector-bearing leaves. Each visited leaf is processed by an oblivious selection network, and fixed-schedule duplicate removal and selection combine the local results into the final top-$k$. We evaluate O2N2 on real-world datasets and further test its scalability on 100 million vectors. For 10-NN and 100-NN search at the specified high-recall targets, it achieves a $9.8$--$125.9\\times$ speedup over the fastest doubly oblivious baselines.",
+   "authors": [
+    "Zhechen Li",
+    "Zimai Guo",
+    "Mingxun Zhou",
+    "Chang Shi",
+    "Cheng Hong"
+   ],
+   "primary": "cs.CR",
+   "categories": [
+    "cs.CR",
+    "cs.DB"
+   ],
+   "published": "2026-11-02T16:38:53+00:00",
+   "url": "https://arxiv.org/abs/2611.03415",
+   "pdf": "https://arxiv.org/pdf/2611.03415",
+   "score": 0.609,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6072,
+    "meters": 0.5631,
+    "methods": 0.609
+   }
+  },
+  {
+   "id": "2611.03238",
+   "version": 1,
+   "title": "ScienceCUA: Resource-to-Skill Construction and Execution-Guided Skill Evolution for Scientific Computer Use Agents",
+   "abstract": "Computer-use agents for scientific software require application-specific expertise. Much of this expertise is documented in human-authored software manuals and web pages. However, turning these resources into executable, reusable skills remains challenging due to mismatches between documented and deployed software versions and differences in scope between documentation coverage and task requirements. We introduce ScienceCUA, a two-stage framework combining resource-to-skill construction with execution-guided skill evolution. First, ScienceCUA identifies tasks supported by the software from its documentation, infers operational trajectories, and generalizes them into reusable Skills. Command catalogs, syntax constraints, and shortcuts are organized separately as References for on-demand lookup. Then, ScienceCUA uses execution feedback to drive skill self-evolution by contrasting successful and failed trajectories for the same task, identifying deficiencies, revising existing skills or adding new ones, and updating the skill library only after repeated validation in real environments. To enable reliable evaluation without benchmark noise or task leakage, we introduce two improved benchmarks. ScienceBoard-Verified provides an audited and corrected basis for measuring task performance, while ScienceBoard-VE separates skill evolution from final testing through disjoint evolution and test tasks and further supports native-agent evaluation. Experiments show that the initial Skills and References improve average task success rate by up to 7.23 percentage points over the base model, while skill self-evolution increases the total gain over the baseline to as much as 17.12 percentage points. ScienceCUA turns software documentation into an evolving set of executable skills and queryable references, offering a practical way for general-purpose agents to use scientific software reliably and at scale.",
+   "authors": [
+    "Daiqiang Li",
+    "Jingyi Peng",
+    "Rui Hu",
+    "Jia Li",
+    "Xuyang Liu",
+    "Guanren Qiao",
+    "Yujia Xiang",
+    "Qiuzhuang Sun",
+    "Zhiping Xu",
+    "Mingrui Luo"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-02T14:50:06+00:00",
+   "url": "https://arxiv.org/abs/2611.03238",
+   "pdf": "https://arxiv.org/pdf/2611.03238",
+   "score": 0.5755,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5625,
+    "meters": 0.558,
+    "methods": 0.5755
+   }
+  },
+  {
+   "id": "2611.02509",
+   "version": 1,
+   "title": "A balloon effect: ban one channel and a hidden trait finds another",
+   "abstract": "Language models trained on the outputs of other models can acquire traits that those outputs never mention, such as a preference for an animal carried by lists of numbers. Such subliminal learning can pass on unwanted traits. The intuitive defence is to find and forbid the tokens through which a trait shows, but how a trait's trace behaves under such bans, and what of it a student learns, has not been resolved. We closed a trait's outlets one by one in two stress tests, a preference chain and a name chain, across two models, six output formats and 16 traits. Bans did not remove the trait. Much as squeezing a balloon in one place makes it bulge in another, the trait moved to wherever the format still allowed, an effect we call the balloon effect. Decomposing this transfer, which bans on surface features cannot stop, down to single heads and neurons, we show that it can be cut at the circuit that writes the trait into the output. Patching that circuit while the teacher writes numbers stopped the chains, sharply reduced the overt name leak and halved the trait passed to a student, whereas the same number of random heads produced no detectable reduction. These results give a mechanistic account of how unwanted hidden traits are transferred and a route to preventing it.",
+   "authors": [
+    "Keuntae Kim",
+    "Yong Suk Choi"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-02T04:30:35+00:00",
+   "url": "https://arxiv.org/abs/2611.02509",
+   "pdf": "https://arxiv.org/pdf/2611.02509",
+   "score": 0.5736,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5565,
+    "meters": 0.544,
+    "methods": 0.5736
+   }
+  }
+ ]
+}

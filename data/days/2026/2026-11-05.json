@@ -1,0 +1,385 @@
+{
+ "date": "2026-11-05",
+ "generated_at": "2026-11-08T13:06:30+00:00",
+ "model": "BAAI/bge-small-en-v1.5",
+ "interests": [
+  {
+   "key": "water",
+   "name": "Water networks"
+  },
+  {
+   "key": "meters",
+   "name": "Meters and consumption"
+  },
+  {
+   "key": "methods",
+   "name": "Time-series anomaly detection"
+  }
+ ],
+ "count": 13,
+ "papers": [
+  {
+   "id": "2611.07720",
+   "version": 1,
+   "title": "Evaluating Language Model Features for Zero-Shot Time-Series Anomaly Detection Under Isolation Assumption",
+   "abstract": "Time-Series Anomaly Detection (TSAD) is a fundamentally challenging task: it is unsupervised, requires high local precision capabilities, and suffers from limited labelled data. Recent work has explored adapting Large Language Models (LLMs) to time-series via cross-modal transfer. However, existing approaches are poorly suited to Multivariate TSAD (MTSAD), as tokenisation often obscures fine-grained temporal and variables structures, and most methods optimise auxiliary objectives such as forecasting or reconstruction. We posit that these surrogate objectives become unreliable as model capacity increases. Highly expressive models risk reconstructing or forecasting anomalies, undermining the foundations of both strategies. Instead, we propose to use LLMs purely as feature extractors and directly analyse their induced feature spaces. In this work, investigate the ability of LLMs to provide useful representations for MTSADs in a zero-shot setting through classification. To this end, we study the separability of the extracted features, under the assumption that anomalous features should be isolated from normal ones. We analyse their temporal and contextual discriminative ability using simple step-wise tokenisation schemes, with one time-step per token, which preserve fine-grained local information. Their usability for MTSAD is assessed using an unsupervised Isolation Forest, enabling a direct evaluation of the resulting representation quality. We further investigate whether the observed performance can be attributed to the language-related pre-training of the LLMs or arises independently of it. Our results provide empirical insight into the ability of LLMs to represent multivariate time-series for anomaly detection and highlight broader applications of cross-modal foundation models.",
+   "authors": [
+    "Romain Hermary",
+    "Nesryne Mejri",
+    "Djamila Aouada"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-05T09:37:57+00:00",
+   "url": "https://arxiv.org/abs/2611.07720",
+   "pdf": "https://arxiv.org/pdf/2611.07720",
+   "score": 0.8387,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6722,
+    "meters": 0.6864,
+    "methods": 0.8387
+   }
+  },
+  {
+   "id": "2611.08136",
+   "version": 1,
+   "title": "How Far Can Untrained Neural Networks Go in Anomaly Detection? From Tables to Pixels",
+   "abstract": "Anomaly detection (AD) is often framed as a representation-learning problem, where strong performance is expected to require learned features or AD-specific optimization. However, this view can overlook the intrinsic separability of anomalies from normal references, even in the absence of learned representations. We therefore investigate how far untrained neural networks can go in anomaly detection. To this end, we propose PRISM, a framework combining fixed random nonlinear features with normal-reference Mahalanobis scoring for tabular detection and dense visual localization. Across 47 tabular datasets in ADBench, PRISM-T achieves the highest mean AUROC (86.4%) and the second-highest mean AUPRC (65.9%) among the compared methods. On MVTec AD and VisA, covering 27 visual categories, PRISM-V achieves mean image-level and pixel-level AUROCs of 90.4% and 96.4%, respectively. Notably, both models achieve these results without neural weight optimization or pretrained representations. A theoretical analysis further characterizes how nonlinear transformations affect the mean and covariance contributions to the Mahalanobis score gap, while empirical analyses examine the resulting score separability. These findings establish PRISM as both a competitive anomaly detector and a prior-to-learning baseline for assessing the added value of learned representations in anomaly detection.",
+   "authors": [
+    "Hyojun Yi",
+    "Geunyoung Kim",
+    "Hogeon Seo",
+    "Seunghyoung Ryu"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.CV"
+   ],
+   "published": "2026-11-05T15:01:17+00:00",
+   "url": "https://arxiv.org/abs/2611.08136",
+   "pdf": "https://arxiv.org/pdf/2611.08136",
+   "score": 0.7956,
+   "interest": "methods",
+   "scores": {
+    "water": 0.702,
+    "meters": 0.6568,
+    "methods": 0.7956
+   }
+  },
+  {
+   "id": "2611.07706",
+   "version": 1,
+   "title": "Towards Generalist Graph-Level Anomaly Detection",
+   "abstract": "Graph-level anomaly detection (GLAD) aims to identify graphs that deviate significantly from the majority. While recent advances have achieved competitive performance, existing approaches mainly follow a dataset-specific paradigm, requiring substantial in-domain data and training cost when applied to new application scenarios. This limits their scalability and practicality in real-world applications where labeled data is scarce and diverse domains are continuously emerging. In this paper, we investigate the problem of generalist GLAD, which seeks to learn a single unified model capable of detecting anomalous graphs across multiple domains with minimal supervision on the target data. This problem introduces key challenges, including learning transferable patterns from heterogeneous graph datasets and effective adaptation under limited supervision. To address these challenges, we propose GenGLAD, a generalist GLAD approach that leverages discriminative subgraph extraction as the core mechanism to learn transferable anomaly knowledge and enable efficient adaptation to new domains. Specifically, GenGLAD employs a graph neural network-based discriminative subgraph extraction model to learn the anomaly-discriminative substructures that distinguish anomalous and normal graphs across diverse domains. During the test-time adaptation phase, multi-dimensional discrepancies between the extracted subgraph and multi-level contextual information are calculated to characterize anomalies from multiple perspectives. For efficient adaptation, a lightweight scoring module is introduced to automatically decide the most informative signals, improving robustness against misleading patterns. Extensive experiments on diverse benchmark datasets demonstrate that the proposed approach achieves strong performance, superior generalization ability, and improved data efficiency compared to existing methods.",
+   "authors": [
+    "Junjun Pan",
+    "Yixin Liu",
+    "Yu Zheng",
+    "Fuyi Li",
+    "Alan Wee-Chung Liew",
+    "Shirui Pan"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-05T09:26:57+00:00",
+   "url": "https://arxiv.org/abs/2611.07706",
+   "pdf": "https://arxiv.org/pdf/2611.07706",
+   "score": 0.7695,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6972,
+    "meters": 0.6429,
+    "methods": 0.7695
+   }
+  },
+  {
+   "id": "2611.08271",
+   "version": 1,
+   "title": "DART: Domain-Agnostic Residual Transfer for Generalist Anomaly Detection",
+   "abstract": "Generalist Anomaly Detection (GAD) aims to detect anomalies in unseen domains using only a few reference samples. Recent normal-abnormal guided methods improve this setting by exploiting abnormal references, but their residuals often mix transferable anomaly cues with domain-specific appearance factors such as texture, geometry, and acquisition conditions. This residual domain entanglement limits cross-domain transfer and may produce spurious activations on novel domains. We propose DART, a plug-in framework for normal-abnormal guided GAD that learns to separate residuals into anomaly-relevant and domain-specific components. DART combines a Residual Disentanglement Module, which preserves anomaly-discriminative information while suppressing domain information, with Cross-Domain Meta-Training, which forms episodes across source domains to make the separation effective. The method is architecture-agnostic and can be inserted between residual computation and the detection head of existing GAD pipelines. Experiments on MVTec AD, VisA, and BraTS show consistent improvements over multiple base methods, with the largest gains under stronger domain shifts. https://github.com/aqeeelmirza/DART",
+   "authors": [
+    "Muhammad Aqeel",
+    "Maham Nazir",
+    "Marco Cristani",
+    "Francesco Setti"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG"
+   ],
+   "published": "2026-11-05T16:43:20+00:00",
+   "url": "https://arxiv.org/abs/2611.08271",
+   "pdf": "https://arxiv.org/pdf/2611.08271",
+   "score": 0.7224,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6673,
+    "meters": 0.6074,
+    "methods": 0.7224
+   }
+  },
+  {
+   "id": "2611.07356",
+   "version": 1,
+   "title": "Acoustic Anomaly Detection for Early Identification of Drill Jamming",
+   "abstract": "In the context of Industry 4.0, predictive maintenance is essential to minimize unplanned downtime and ensure operational safety. In machining processes, drill jamming is a critical failure that compromises both workpiece quality and tool integrity. This work proposes an acoustic anomaly detection system using ultrasonic sensors to identify pre-failure patterns in Computer Numerical Control (CNC) machining. We release a public dataset of time- and frequency-domain acoustic features from 17 drills, and benchmark semi-supervised autoencoder-based normality modelling against supervised XGBoost classification using Leave-One-Drill-Out validation. The results demonstrate that the Autoencoder is highly effective for industrial safety, achieving a Recall of 1.00 and a consolidated F1-score of 0.81. Furthermore, the threshold-independent analysis shows that the Autoencoder better separates normal and pre-failure acoustic patterns, achieving a consolidated AUC of 0.8294, compared with 0.7559 for the supervised model under inter-tool covariate shift. In contrast, the supervised XGBoost achieved an average F1-score of 0.55 and failed to detect failures in some of the evaluated drills. The findings highlight that the ultrasonic spectrum provides a reliable window for identifying incipient mechanical instabilities, and the AE model offers a robust safety envelope by anticipating all jamming events across the tested drill bits.",
+   "authors": [
+    "Maria Beatriz Silva",
+    "Lucas Edson Silva de Araújo",
+    "Sergio F. Chevtchenko",
+    "Ermeson Andrade",
+    "Danilo Araujo",
+    "Saeed Afshar"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-05T02:50:29+00:00",
+   "url": "https://arxiv.org/abs/2611.07356",
+   "pdf": "https://arxiv.org/pdf/2611.07356",
+   "score": 0.7216,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6999,
+    "meters": 0.6337,
+    "methods": 0.7216
+   }
+  },
+  {
+   "id": "2611.07858",
+   "version": 1,
+   "title": "MSR-CP: A Modified Segmented Regression Approach to Change Point Estimation in Rainfall Patterns in West Bengal",
+   "abstract": "This study presents a methodology for detecting change point in precipitation series using a smooth version of segmented regression model. We examine several existing change point detection methods and identify their limitations in capturing gradual changes commonly observed in climate data. To address these limitations, we discuss an extension of the traditional segmented regression model enabling the detection of gradual shifts in trend. The developed methodology is further extended to accommodate dependent error structures, which are common in time series data. Extensive simulation studies are conducted to evaluate the performance and computational efficiency of the proposed approach relative to existing methods. The methodology is subsequently applied to 60 years of monsoon rainfall data from two districts of West Bengal, India. This approach offers improved insights into evolving rainfall patterns and serves as a useful tool for climate data analysis and long-term forecasting.",
+   "authors": [
+    "Anirban Ghosh",
+    "Raju Maiti"
+   ],
+   "primary": "stat.ME",
+   "categories": [
+    "stat.ME",
+    "stat.AP"
+   ],
+   "published": "2026-11-05T11:36:01+00:00",
+   "url": "https://arxiv.org/abs/2611.07858",
+   "pdf": "https://arxiv.org/pdf/2611.07858",
+   "score": 0.6985,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6653,
+    "meters": 0.6732,
+    "methods": 0.6985
+   }
+  },
+  {
+   "id": "2611.07339",
+   "version": 1,
+   "title": "DiagDBench: Evaluating Agentic LLMs on Interactive Database Diagnosis and Anomaly Remediation",
+   "abstract": "Database diagnosis and anomaly remediation are essential to reliable database management system (DBMS) operation. Despite advances in large language model (LLM)-based database agents, constructing live DBMS environments that reproduce diverse anomalies at scale remains challenging, limiting the availability of executable samples for database agent training and evaluation. To this end, we introduce DiagDBench, a large-scale benchmark for training and evaluating database agents on interactive diagnosis, anomaly remediation, and optional workload performance optimization across diverse, realistic anomaly scenarios. Each sample pairs a user request, comprising an issue description and an anomaly-verified workload under which the issue was observed, with a self-contained, executable DBMS environment that supports real-time monitoring, interactive diagnosis, remediation, and workload execution. To construct these samples at scale, we propose an LLM-based framework with two complementary pipelines: Manual-Guided Anomaly Synthesis, which sequentially synthesizes user requests, database modifications, and anomaly-injection scripts grounded in DBA manuals and official DBMS documentation; and Incident-Guided Anomaly Reproduction, which reconstructs anomaly samples end to end from real-world enterprise online diagnosis incidents. Built using this framework with sample filtering, expert review, and refinement, DiagDBench comprises 6,940 synthesized training samples and a held-out test set of 454 expert-annotated samples, spanning three hardware configurations, two DBMSs, and three database schemas. Extensive evaluations of database agents powered by multiple LLMs demonstrate that even the best-performing agent, ReAct with GPT-6 Astra, scores only 56.24, whereas most agents score below 45, underscoring the difficulty of DiagDBench.",
+   "authors": [
+    "Xinxin Zhao",
+    "Rong Kang",
+    "Tieying Zhang",
+    "Cuiping Li",
+    "Hong Chen",
+    "Jing Zhang"
+   ],
+   "primary": "cs.DB",
+   "categories": [
+    "cs.DB"
+   ],
+   "published": "2026-11-05T02:27:03+00:00",
+   "url": "https://arxiv.org/abs/2611.07339",
+   "pdf": "https://arxiv.org/pdf/2611.07339",
+   "score": 0.6771,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6341,
+    "meters": 0.5863,
+    "methods": 0.6771
+   }
+  },
+  {
+   "id": "2611.08094",
+   "version": 1,
+   "title": "PersonaAgent: Retrieval-Augmented Transaction Anomaly Scoring with Refreshable Multi-Entity Persona Memory",
+   "abstract": "In large-scale payment networks, entities (card, merchant, etc.) and their interactions play a key role in transaction anomaly detection. However, transaction patterns between different entities usually change more frequently than the production model refresh schedule. Meanwhile, entity embedding tables suffer from high-cardinality and sparse interaction issues. To resolve the above challenges, we present PersonaAgent, an agentic transaction anomaly detection framework which represents the latest entity behavior signals as personas and saves them in a refreshable memory. Offline, a weekly scheduled batch job is used to extract the latest behavior signals and update them in the memory. At inference time, a lightweight adapter retrieves the corresponding entity behavior signals of each transaction from memory and uses them to augment the base anomaly classifier's scoring. Through comprehensive benchmarking with different anomaly detection models at Visa, PersonaAgent is able to score transactions efficiently (a 1,000-transaction CPU batch in 1-2 ms), lifting the PR-AUC by 0.65-6.58% and the production business metric by 8.93-14.24% relatively in deployment.",
+   "authors": [
+    "Zhengyu Fang",
+    "Liang Wang",
+    "Yingtong Dou",
+    "Yuzhong Chen",
+    "Shubham Jain",
+    "Junpeng Wang",
+    "Xiran Fan",
+    "Menghai Pan",
+    "Jiarui Sun",
+    "Yan Zheng",
+    "Yiwei Cai"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-05T14:37:16+00:00",
+   "url": "https://arxiv.org/abs/2611.08094",
+   "pdf": "https://arxiv.org/pdf/2611.08094",
+   "score": 0.674,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6401,
+    "meters": 0.5841,
+    "methods": 0.674
+   }
+  },
+  {
+   "id": "2611.07540",
+   "version": 1,
+   "title": "Action-Conditioned VLM Monitoring for Autonomous Vehicle Semantic Anomalies",
+   "abstract": "We study action-conditioned monitoring of autonomous-vehicle behavior in semantically unusual driving scenes. The target is whether the executed ego action is appropriate for the scene: the same scene can admit both normal and anomalous behavior, so visual unusualness alone does not determine the monitoring label. A Vision-Language Model (VLM) first predicts the scene-required action from an outcome-hidden video window; the monitor then compares that expectation with the realized ego-motion trajectory under an explicit compatibility rule. To study this monitoring task, we contribute a six-field taxonomy of 112 paired scenarios spanning both failure polarities (42 derived from documented incidents), a generated video corpus with estimated trajectories, and an exploratory two-stage monitor on that corpus. On 235 clips from 15 scenario families, the two-stage protocol with a fixed T-2.5 s window obtains 83.0% accuracy and anomaly recall 0.773, versus 74.5% and 0.536 for a single-stage video-only baseline; specificity is 0.880 versus 0.928.",
+   "authors": [
+    "Daniel Adejumo",
+    "Omkar Ankalkope",
+    "Kunal Runwal",
+    "Aliasghar Arab"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI"
+   ],
+   "published": "2026-11-05T06:48:39+00:00",
+   "url": "https://arxiv.org/abs/2611.07540",
+   "pdf": "https://arxiv.org/pdf/2611.07540",
+   "score": 0.671,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6077,
+    "meters": 0.614,
+    "methods": 0.671
+   }
+  },
+  {
+   "id": "2611.07610",
+   "version": 1,
+   "title": "Embedding-Space Fingerprinting of LoRA Fine-Tunes: Recovering the Training-Data Domain from the Model Artifact Alone",
+   "abstract": "When a base language model is fine-tuned with Low-Rank Adaptation (LoRA), how much of the training data domain leaks into the resulting artifact? This paper studies whether a simple classifier can recover the domain of a fine-tune given only the model artifact (weight deltas, internal activations on a fixed probe set, or generated text) without ever observing the training data. Using one base model (Qwen3.5-0.8B), 36 LoRA fine-tunes are produced over 18 public datasets in five domains (medical, code, mathematics, non-English text, narrative prose), and three feature families are extracted at decreasing levels of access: white-box weights, gray-box activations, and black-box outputs. A leave-one-dataset-out (LODO) protocol, frozen before any result was seen, tests whether the domain of a fine-tune trained on a previously unseen dataset can be identified. The domain is recoverable well above chance (20%) from gray-box activations (61%) and black-box outputs (64%); white-box weight statistics reach 42%. Contrary to the pre-registered hypothesis that signal decays monotonically from weights to activations to outputs, activations and outputs were more informative than the weight-delta statistics. The black-box result holds unchanged (64%) when only generated text is used, without token probabilities. Domain accuracy is also stable when a third run per dataset is trained on an independently drawn data subsample, and black-box predictions are unaffected by the LoRA rank (8-64). All code and per-run feature vectors are released.",
+   "authors": [
+    "Shivesh Rane"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "cs.CL",
+    "cs.LG"
+   ],
+   "published": "2026-11-05T07:55:05+00:00",
+   "url": "https://arxiv.org/abs/2611.07610",
+   "pdf": "https://arxiv.org/pdf/2611.07610",
+   "score": 0.6656,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5675,
+    "meters": 0.5787,
+    "methods": 0.6656
+   }
+  },
+  {
+   "id": "2611.07950",
+   "version": 1,
+   "title": "Leakage- and Label-Aware Benchmarking of Class-Imbalance Strategies for Multimodal Chest X-Ray and EHR Classification",
+   "abstract": "Benchmarks of class-imbalance strategies for multimodal chest X-ray (CXR) and electronic health record (EHR) prediction are often evaluated on record-level splits of cohorts in which one patient contributes several radiographs. We audit such a benchmark on 29,083 MIMIC-CXR radiographs of 10,479 patients with eight diagnosis targets. First, the record-split benchmark was misleading: a lookup table that copies the label of a development-set radiograph with the same EHR vector nearly matched the best model, and on unseen patients every model fell to the level of predicting every case positive. Second, tracing the labels back to MIMIC-IV explained why: each patient's labels are keyword matches on the diagnosis codes of a single admission, copied, with one EHR vector per patient, to all of the patient's radiographs, so about a third of the radiographs carry labels that differ from the codes of their own admission. Third, under patient-separated evaluation with admission-aligned and rule-refined labels, the initial conclusions do not hold: in the evaluated configurations no imbalance strategy raised the observed mean macro F2 over no augmentation by more than 0.01, tuned tree ensembles showed no consistent advantage over tuned logistic regression, and the released EHR variables stayed at the level of the all-positive baseline, whereas the diagnostic history available at imaging time and image embeddings exceeded it, including, with rule-refined labels, a CheXpert-trained encoder that never saw these radiographs; RAD-DINO had seen 96.6% of them during self-supervised pretraining. Adding either encoder to the diagnostic history gave no statistically significant F2 gain; exploratory AUROC gains were significant with RAD-DINO but not with DenseNet. We provide reusable diagnostics, a leakage-aware protocol and a checklist.",
+   "authors": [
+    "Dang-Khoa Bui",
+    "Quang-Huy Tran",
+    "Minh-Khoi Nguyen-Bui",
+    "Duc-Tuan Ngo",
+    "Thanh-Trong Tran",
+    "Tuan-Khoi Nguyen",
+    "Hoang-Anh Ngo"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.CV"
+   ],
+   "published": "2026-11-05T12:47:38+00:00",
+   "url": "https://arxiv.org/abs/2611.07950",
+   "pdf": "https://arxiv.org/pdf/2611.07950",
+   "score": 0.6522,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5969,
+    "meters": 0.596,
+    "methods": 0.6522
+   }
+  },
+  {
+   "id": "2611.07410",
+   "version": 1,
+   "title": "Spectral symmetry fingerprints in equivariant representations",
+   "abstract": "Symmetry governs the organization of physical structures, while symmetry breaking reveals their transformations. In geometric deep learning, symmetry imposes rank constraints on equivariant representations, limiting the expressive capacity of equivariant graph neural networks (GNNs). Here we show that these constraints can instead be exploited: the singular-value spectra of equivariant representations provide a unified fingerprint of structural symmetry. We introduce spectral symmetry fingerprints (SymFP), which enable discrete point-group identification through rank-template matching and continuous symmetry analysis by quantifying spectral energy beyond target rank constraints. SymFP is orientation invariant and architecture agnostic, enabling a parameter-free GNN implementation. Its spectra can be reused across multiple target groups, and the resulting leakage scores satisfy subgroup monotonicity. Across synthetic structures, molecules, coordination complexes and large biological assemblies, SymFP accurately identifies point groups, tracks controlled symmetry breaking and reveals local and degree-resolved symmetry changes that can be obscured by global geometric measures. These results establish the spectral structure of equivariant representations as a general framework for characterizing symmetry across physical systems.",
+   "authors": [
+    "Jiacheng Cen",
+    "Anyi Li",
+    "Ning Lin",
+    "Zihe Wang",
+    "Ji-Rong Wen",
+    "Wenbing Huang"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cond-mat.mtrl-sci",
+    "math-ph",
+    "physics.chem-ph"
+   ],
+   "published": "2026-11-05T04:02:47+00:00",
+   "url": "https://arxiv.org/abs/2611.07410",
+   "pdf": "https://arxiv.org/pdf/2611.07410",
+   "score": 0.5832,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5665,
+    "meters": 0.5461,
+    "methods": 0.5832
+   }
+  },
+  {
+   "id": "2611.08331",
+   "version": 1,
+   "title": "Electromagnetically Consistent Monostatic ISAC Beamforming: Mutual Coupling, Active Mismatch and Tx-Rx Leakage in Compact Dipole Arrays",
+   "abstract": "Beamforming for integrated sensing and communication (ISAC) is usually designed on ideal array manifolds with a norm constraint on the transmit signal. In a compact monostatic transceiver this hides three antenna effects: distorted embedded patterns, beam-dependent active mismatch at the power amplifiers, and transmit-to-receive leakage that raises the radar noise floor. We build a multiport scattering model of a shared-aperture dipole array directly from method-of-moments simulations and use it to formulate a Cramer-Rao bound minimizing ISAC beamformer with multiuser SINR constraints, per-port active reflection constraints and a leakage budget, solved as a semidefinite program with a one-dimensional budget search. Full-wave evaluation shows that coupling-unaware designs miss their SINR targets by up to 6.2 dB and drive amplifiers to an equivalent VSWR above 3.3 at small spacings. For spacings from 0.3 to 0.5 wavelengths, the proposed design meets all targets with an equivalent VSWR below 2 and lowers the root Cramer-Rao bound by 32 to 53 percent for 80 dB of self-interference cancellation and by a factor of 3.4 to 5.6 for 70 dB. An independent finite-difference time-domain model of the final layout in openEMS confirms that the leakage null and the ranking of the designs are preserved.",
+   "authors": [
+    "Stylianos D. Asimonis",
+    "Christos Tselios",
+    "Dimitrios Tyrovolas",
+    "Ilias Politis",
+    "George K. Karagiannidis"
+   ],
+   "primary": "eess.SP",
+   "categories": [
+    "eess.SP"
+   ],
+   "published": "2026-11-05T17:21:25+00:00",
+   "url": "https://arxiv.org/abs/2611.08331",
+   "pdf": "https://arxiv.org/pdf/2611.08331",
+   "score": 0.5807,
+   "interest": "water",
+   "scores": {
+    "water": 0.5807,
+    "meters": 0.5111,
+    "methods": 0.5271
+   }
+  }
+ ]
+}

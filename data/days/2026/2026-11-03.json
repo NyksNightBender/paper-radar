@@ -1,0 +1,354 @@
+{
+ "date": "2026-11-03",
+ "generated_at": "2026-11-08T13:06:25+00:00",
+ "model": "BAAI/bge-small-en-v1.5",
+ "interests": [
+  {
+   "key": "water",
+   "name": "Water networks"
+  },
+  {
+   "key": "meters",
+   "name": "Meters and consumption"
+  },
+  {
+   "key": "methods",
+   "name": "Time-series anomaly detection"
+  }
+ ],
+ "count": 12,
+ "papers": [
+  {
+   "id": "2611.04682",
+   "version": 1,
+   "title": "Bayesian Change-Point Detection and Fault Scoring in District Heating Systems",
+   "abstract": "Smart heat meter data provide an important basis for monitoring district-heating installations, but fault reports are delayed, incomplete and temporally coarse: a report follows the appearance of a fault, sometimes by weeks, so the onset is unknown. This blurs the distinction between statistical changes and operational faults and prevents the reliable labelling that fault classifiers require. Changepoint detectors such as the Bayesian Estimator of Abrupt Change, Seasonality, and Trend (BEAST) report only the probability that a change occurred, so a large jump and a much smaller one can receive the same probability, and probabilities alone cannot tell a utility which installation to inspect first. We therefore develop a decision score that applies BEAST to temperature difference and flow and scores each detected changepoint by its posterior probability together with its deviation from recent operation, jump size, local behaviour and physical direction. Cases with unfavourable changes in both channels, the pattern of insufficient cooling, receive the highest priority. Of 1,522 cases, 648 had a reported fault; these made up 96% of the 25 highest-priority cases and 90% of the highest 200, and Average Precision was 0.771 against a reported-fault prevalence of 0.426. As cases without a report are not verified to be fault-free, these figures are likely conservative. Without using the report date, the strongest unfavourable flow change in reported-fault cases fell a median of 11 days before the report. Level-based screening of temperature difference, as practised by utilities, ranked the cases comparably but cannot date the change, and the two kinds of evidence were complementary. The method can serve as the first step in a fault-detection workflow, providing a manageable subset of installations for inspection and candidate onset dates for training fault classifiers.",
+   "authors": [
+    "Tanja Korsten Bugajski",
+    "Nicolai Peder Bülow Pedersen",
+    "J. Eduardo Vera-Valdés",
+    "Michal Zbigniew Pomianowski",
+    "Anna Marszal-Pomianowska"
+   ],
+   "primary": "stat.AP",
+   "categories": [
+    "stat.AP",
+    "stat.ME"
+   ],
+   "published": "2026-11-03T11:06:40+00:00",
+   "url": "https://arxiv.org/abs/2611.04682",
+   "pdf": "https://arxiv.org/pdf/2611.04682",
+   "score": 0.7932,
+   "interest": "meters",
+   "scores": {
+    "water": 0.7826,
+    "meters": 0.7932,
+    "methods": 0.7468
+   }
+  },
+  {
+   "id": "2611.04835",
+   "version": 1,
+   "title": "Anomaly Detection on Resource-Constrained Devices with Reservoir Computing",
+   "abstract": "Anomaly detection at the edge requires the deployment of models that achieve competitive performance, while minimizing computational cost and memory footprint. In this article, we investigate the suitability of the Mahalanobis Distance of Reservoir States (MDRS), an unsupervised time-series anomaly detection method, for resource-constrained devices and propose two optimizations to reduce its computational requirements. Specifically, we replace random reservoir connectivity (MDRS-Rand) with a circular shift (MDRS-Circ) and show that the anomaly score for an entire time series can be computed from the final reservoir state alone. Furthermore, we show that exploiting the reservoir's temporal memory enables more efficient input preprocessing, further reducing computational cost. We evaluate the MDRS variants on the MLPerf Tiny anomaly detection benchmark against the reference autoencoder and other anomaly detection methods, and deploy their inference kernels on a NUCLEO-F401RE microcontroller to assess latency, estimate energy consumption, and measure memory footprint. Among the evaluated methods, only MDRS and the autoencoder meet the benchmark's performance target, with MDRS requiring fewer operations and smaller models. With optimized preprocessing, MDRS achieves an ROC AUC of 0.869, a model size of 24 KB, an estimated energy consumption of 24 uJ per inference, and a latency of 0.32 ms, corresponding to a 75.9x speedup over the autoencoder with standard preprocessing.",
+   "authors": [
+    "Marco Angioli",
+    "Mathias Persson",
+    "Hiroto Tamura",
+    "Hadi Banaee",
+    "Amy Loutfi",
+    "Gouhei Tanaka",
+    "Alberto Giaretta",
+    "Denis Kleyko"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-03T13:04:50+00:00",
+   "url": "https://arxiv.org/abs/2611.04835",
+   "pdf": "https://arxiv.org/pdf/2611.04835",
+   "score": 0.7885,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7774,
+    "meters": 0.7253,
+    "methods": 0.7885
+   }
+  },
+  {
+   "id": "2611.04660",
+   "version": 1,
+   "title": "Leakage-free evaluation of residual graph convolutional networks for network intrusion detection",
+   "abstract": "Graph neural networks are increasingly proposed for network intrusion detection, yet many reported results come from protocols in which test flows shape the graph used for training, duplicated flows sit on both sides of the split, or a single split is reported. This study measures what a residual graph convolutional network gains over simpler models once these sources of optimism are removed. CICIDS2017 and NF-UNSW-NB15-v2 were cleaned with label-aware removal of exact duplicates, removing 69% of NF-UNSW-NB15-v2 flows. Flows were linked in a nearest-neighbour graph built from training flows only, and validation and test flows were attached to their nearest training flows at prediction time. A two-layer residual network was compared with eight models under the same settings, including a nearest-neighbour vote over the same graph, gradient-boosted trees and a random forest, over three seeds that each draw a new split, with ablations, leave-one-family-out and feature-noise tests. On CICIDS2017 the residual network reached a binary F1 of 98.11% (SD 0.18) and on NF-UNSW-NB15-v2 90.57% (0.38), indistinguishable from a multilayer perceptron without the graph and from other graph networks. Tree ensembles were 1.48 to 1.57 F1 points higher on CICIDS2017 and led on the area under the precision-recall curve on both datasets; their CICIDS2017 multiclass macro-F1 reached 93.08% against 64.51%, a gap mainly from benign flows the residual network assigned to small attack classes. No ablation, including transductive graph construction, changed F1 beyond seed variation. Under Gaussian feature noise (SD 0.5), the residual network kept an F1 of 96.16%, while XGBoost fell to 0.67%. Under a leakage-controlled protocol, message passing over flow graphs adds no measurable accuracy over a perceptron, and tree ensembles remain stronger on both; the advantage of graph models lies in robustness to feature noise.",
+   "authors": [
+    "Zahid Iqbal"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-03T10:49:29+00:00",
+   "url": "https://arxiv.org/abs/2611.04660",
+   "pdf": "https://arxiv.org/pdf/2611.04660",
+   "score": 0.7138,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7015,
+    "meters": 0.6283,
+    "methods": 0.7138
+   }
+  },
+  {
+   "id": "2611.04782",
+   "version": 1,
+   "title": "Reducing Logprob Without Causal Verification: Diagnosing SAE-Based PII Suppression in LLMs",
+   "abstract": "SAE-based feature-level interventions to suppress PII leakage in LLMs are primarily evaluated by log-probability reduction. We show that this criterion cannot distinguish feature specific suppression from a magnitude artifact: a direction-agnostic effect of sufficiently large activation perturbations. Across 36 (model, layer, PII type) cases, we compare selected SAE feature interventions with coherencematched random direction controls using logprob and rank-aware metrics. While 17 cases (47%) appear successful under logprob-only evaluation, only 1 case (2.8%) passes our multimetric framework. The rest reveal two failure modes: random directions outperform selected features, and feature selection collapse across PII types. These results indicate that existing evaluations cannot verify whether interventions target causal pathways of PII leakage. A 9,000 run causal mediation feasibility study corroborates this: the verifier separates candidates reliably, but correlation-selected candidates rarely pass it. We therefore propose a new research mission for NLP: causally grounded PII suppression through circuit-level localization and causal mediation analysis.",
+   "authors": [
+    "Chaerin Lee",
+    "Wonho Lee",
+    "Sohee Park",
+    "Daeseon Choi"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-03T12:22:01+00:00",
+   "url": "https://arxiv.org/abs/2611.04782",
+   "pdf": "https://arxiv.org/pdf/2611.04782",
+   "score": 0.6743,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6472,
+    "meters": 0.6244,
+    "methods": 0.6743
+   }
+  },
+  {
+   "id": "2611.05680",
+   "version": 1,
+   "title": "Toward an Optimal Configuration for Tree Species Classification from Bark Images: A Leakage-Safe Ablation Study",
+   "abstract": "Background: The automatic identification of tree species from bark photographs is of practical interest for forestry inventory and the wood-processing industry, yet the design choices that govern the accuracy of deep-learning approaches have not been studied systematically, and some prior results may be inflated by leakage of images of the same trunk across training and test partitions. Methods: A systematic ablation study is conducted on the public BarkNet 1.0 dataset (20 species) under the established tree-level, leakage-safe partitioning scheme. Using ConvNeXt-V2 backbones, the following factors are varied in turn and evaluated by five-fold cross-validation: patch size, the strategy by which per-patch predictions are aggregated into an image-level decision, the training regime (single- versus two-stage), backbone capacity, the whole-image baseline, and the number of patches available at inference. Results: Per-patch accuracy rises monotonically with patch size (from 75.6% at 160 px to 89.6% at 512 px), and image-level accuracy rises in step, plateauing near 94.9% around 512 px. Learned aggregation exceeds majority voting by at most 0.7 pp, an advantage that shrinks as patches grow and attention becomes near-uniform. Backbone capacity (pico to tiny) alters accuracy by less than a point, and two-stage training offers no advantage over one-stage. Whole-image classification (91.9%) trails patch-based aggregation, since it admits no bag to average over; accuracy increases with the number of patches at inference, saturating around 64. Conclusions: The study yields a simple recommended configuration: patches as large as possible while leaving enough to average over (around 512 px here), with a nano backbone. It also quantifies the second-order role of learned aggregation and model capacity, providing a reproducible reference point for practitioners and future research",
+   "authors": [
+    "Maeve Côté"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.LG"
+   ],
+   "published": "2026-11-03T22:05:57+00:00",
+   "url": "https://arxiv.org/abs/2611.05680",
+   "pdf": "https://arxiv.org/pdf/2611.05680",
+   "score": 0.6707,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6092,
+    "meters": 0.5853,
+    "methods": 0.6707
+   }
+  },
+  {
+   "id": "2611.04912",
+   "version": 1,
+   "title": "MiCaDe: Online LiDAR-Camera Miscalibration Change Detection for Autonomous Driving",
+   "abstract": "Reliable multi-sensor perception in autonomous vehicles requires accurate calibration between cameras and LiDAR. However, calibration drift is often unavoidable in long-term deployments: vibrations, thermal effects, and minor mechanical shocks may alter the relative pose between sensors, leading to systematic errors in downstream fusion tasks. We propose MiCaDe (Miscalibration Change Detection), an online solution detecting when the extrinsic LiDAR-camera calibration parameters are no longer accurate by means of sequential change detection. MiCaDe requires no calibration targets, or modification of the perception stack, providing low false-alarm rates with negligible computational overhead. Our key insight is that 3D and 2D bounding boxes produced by standard object detectors should remain geometrically consistent under correct calibration. By matching cross-modal detections, we derive geometric consistency metrics that serve as sensitive indicators of extrinsic drift. These metrics are aggregated into fixed-size batches and scored against a reference distribution, producing a likelihood stream that is monitored by a Change Point Model (CPM). Crucially, the CPM accumulates statistical evidence over time, enabling detection of subtle drifts that would otherwise go unnoticed. Experiments on multiple long-sequence datasets and on a real-world dataset with physically induced miscalibration confirm reliable detection under diverse conditions. Code available at: https://github.com/CarloSgaravatti/MiCaDe.",
+   "authors": [
+    "Carlo Sgaravatti",
+    "Riccardo Pieroni",
+    "Matteo Corno",
+    "Sergio M. Savaresi",
+    "Luca Magri",
+    "Giacomo Boracchi"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.LG"
+   ],
+   "published": "2026-11-03T13:52:45+00:00",
+   "url": "https://arxiv.org/abs/2611.04912",
+   "pdf": "https://arxiv.org/pdf/2611.04912",
+   "score": 0.6572,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6381,
+    "meters": 0.6162,
+    "methods": 0.6572
+   }
+  },
+  {
+   "id": "2611.05690",
+   "version": 1,
+   "title": "Turbocharging PiPNN for Proximity and $k$-NN Graph Building",
+   "abstract": "Graph-based Approximate Nearest Neighbor Search (ANNS) indexes such as HNSW and Vamana deliver state-of-the-art query performance at the cost of large indexing times. The recently introduced PiPNN method drastically accelerated index construction by way of a partitioning-based algorithm leveraging dense matrix multiplication and top-$K$ aggregation kernels. In this paper, we unlock the full potential of PiPNN's hardware-friendly algorithm design. We introduce PiPNN II, which optimizes multiple steps of the PiPNN recipe, giving up to $8\\times$ speedups for graph-based ANNS index construction. In addition, we present GPiPNN, a GPU implementation which builds comparable ANNS indices up to $43.7\\times$ faster than Jasper and up to $50\\times$ faster than CAGRA. We also extend PiPNN II and GPiPNN to compute high-quality $k$-NN graphs directly, which unlocks massive speedups over methods used in many existing systems for clustering, anomaly detection, and more. For 10-NN graph building at $90\\%$ recall, we obtain up to a $13\\times$ speedup on CPUs and $6.6\\times$ on GPUs as compared to the prior best methods. PiPNN II can build a billion-scale 10-NN graph in under 16 minutes. Common to both PiPNN II and GPiPNN is the use of quantization to reduce memory traffic and leverage fast low-precision matrix operations. Top-$K$ emerges as a new bottleneck, which we optimize with specialized code for specific $K$, and by fusing with the matrix kernel to avoid materializing the distance matrix to memory. On CPUs, we demonstrate further performance improvements by leveraging our matrix kernels in the RobustPrune procedure proposed in Vamana and used in PiPNN. On GPUs, we flatten recursive partitioning into segmented batches, use one fused top-$K$ abstraction for partitioning and leaf scoring, and prune with already-witnessed direct edges rather than new candidate-to-candidate scoring passes.",
+   "authors": [
+    "Tobias Rubel",
+    "Richard Wen",
+    "Guy Blelloch",
+    "Laxman Dhulipala",
+    "Lars Gottesbüren",
+    "Jakub Łącki",
+    "Vahab Mirrokni"
+   ],
+   "primary": "cs.DB",
+   "categories": [
+    "cs.DB",
+    "cs.IR"
+   ],
+   "published": "2026-11-03T22:20:36+00:00",
+   "url": "https://arxiv.org/abs/2611.05690",
+   "pdf": "https://arxiv.org/pdf/2611.05690",
+   "score": 0.6509,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6288,
+    "meters": 0.6071,
+    "methods": 0.6509
+   }
+  },
+  {
+   "id": "2611.04515",
+   "version": 1,
+   "title": "Learnings and Pitfalls from AI-Assisted A/B Experimentation at Scale",
+   "abstract": "A/B testing underpins product decisions by providing trustworthy, reproducible quantification of proposed changes' effects. Growing large language model (LLM) capabilities have motivated efforts to automate experimentation workflows. Yet LLMs are nondeterministic and prone to hallucination, properties that conflict with the trust experimentation systems must provide. Experiments are also operationally messy: diagnosing anomalies, debugging configurations, and conducting bespoke follow-up analyses require flexible reasoning and manual effort. These tasks let agents accelerate experimentation without replacing its deterministic statistical foundations. We report lessons from building and operating such an agent. Our central finding is that this tension is resolved not by making the model deterministic, but by bounding where its nondeterminism can reach; the model selects and sequences procedures, while deterministic code computes every quantity it reports. Three consequences surprised us: withholding information from the model improved its answers, demand concentrated on mundane retrieval rather than the autonomous decisions we anticipated, and the agent's eagerness to help threatened statistical validity.",
+   "authors": [
+    "Brett Daley",
+    "Ilya Gorbachev",
+    "Anubhav Natani",
+    "Nicholas Brown",
+    "Athena Dai",
+    "Rachel Song",
+    "Marcin Pekalski",
+    "Josip Domazet",
+    "Anchal Choubey",
+    "Daniel Ting"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-03T08:41:31+00:00",
+   "url": "https://arxiv.org/abs/2611.04515",
+   "pdf": "https://arxiv.org/pdf/2611.04515",
+   "score": 0.6071,
+   "interest": "water",
+   "scores": {
+    "water": 0.6071,
+    "meters": 0.5677,
+    "methods": 0.6055
+   }
+  },
+  {
+   "id": "2611.04192",
+   "version": 1,
+   "title": "Where Did the Update Go? Certifying Declared Change Envelopes for Model Updates",
+   "abstract": "Deployed language models are updated continually, and regulators increasingly accept changes that were declared in advance. Showing that an update changed behavior only where it was declared to is a different statistical problem from bounding how much it changed: a useful update is meant to change some decisions, so global disagreement and regression bounds cannot certify it. We formalize the problem with declared change envelopes. Before training, the developer commits to a region of inputs, and every decision that changes outside it counts as leakage. Leakage compares two models, so it can be certified from unlabeled traffic with anytime-valid tests whose sample cost we bound from above and below, and per-update certificates compose into a bound on lifetime drift outside all declared scopes. We measure leakage for LoRA and full fine-tuning, preference optimization, reinforcement learning, and knowledge editing on models from 1.5B to 72B parameters. Narrow updates leak widely: domain and policy LoRA updates keep only about 7-36% of the decisions they change inside the declared scope. Across 256 trained variants, leakage tracks the update's KL divergence to the incumbent on out-of-scope inputs (Spearman 0.94). None of the customary remedies we tested makes a rule-like update certifiable without giving up much of its intended change. Distilling the incumbent's decisions on unlabeled prompts in the deployment format does: anchored LoRA, GRPO, and (at a small learning rate) full fine-tuning updates certify 5% leakage from a few hundred to a few thousand unlabeled samples, and the certificates replicate on held-out traffic and on written answers. The certificates cover decision-like outputs only; on open-ended chat, re-batching alone changes 11-21% of responses and no update certifies. Code: https://github.com/Usama1002/declared-change-envelopes",
+   "authors": [
+    "Muhammad Usama",
+    "Muhammad Saad Qadir"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-03T02:26:33+00:00",
+   "url": "https://arxiv.org/abs/2611.04192",
+   "pdf": "https://arxiv.org/pdf/2611.04192",
+   "score": 0.6056,
+   "interest": "water",
+   "scores": {
+    "water": 0.6056,
+    "meters": 0.5477,
+    "methods": 0.5783
+   }
+  },
+  {
+   "id": "2611.05738",
+   "version": 1,
+   "title": "OdorSpaces: Visual-Olfactory Embodied Navigation in 3D Environments",
+   "abstract": "Olfaction provides critical information about airborne chemical cues, yet it remains largely underexplored in embodied AI, with limited prior machine olfaction work focusing primarily on semantic odor perception. We introduce OdorSpaces, a physics-based simulation platform and benchmark for visual-olfactory embodied navigation. OdorSpaces augments Habitat-Sim with 3D odor transport and dispersion simulated by Fire Dynamics Simulator (FDS), enabling agents to navigate photorealistic indoor environments using both visual and olfactory observations. The benchmark includes two representative source-seeking scenarios: invisible gas-leak localization and early-stage fire localization. We develop an initial multimodal reinforcement learning policy that integrates visual observations and olfactory measurements over time. Experiments show that the policy outperforms a diverse set of baselines, establishing a strong reference for future research on visual-olfactory embodied navigation.",
+   "authors": [
+    "Changyeon Lee",
+    "Kelin Yu",
+    "Zheng Wei",
+    "Shuna Ni",
+    "Ruohan Gao"
+   ],
+   "primary": "cs.RO",
+   "categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CV",
+    "cs.LG"
+   ],
+   "published": "2026-11-03T23:21:27+00:00",
+   "url": "https://arxiv.org/abs/2611.05738",
+   "pdf": "https://arxiv.org/pdf/2611.05738",
+   "score": 0.5904,
+   "interest": "meters",
+   "scores": {
+    "water": 0.5624,
+    "meters": 0.5904,
+    "methods": 0.5592
+   }
+  },
+  {
+   "id": "2611.04887",
+   "version": 1,
+   "title": "FourSight: Stable FP4 RL Post-Training via Sequence Filtering and Sparse Channel Compensation",
+   "abstract": "Reinforcement learning (RL) post-training increasingly targets low-bit deployment, with NVFP4 weight-and activation quantization (W4A4) becoming the state-of-the-practice format. However, integrating NVFP4 into RL degrades rollout quality and amplifies cross-engine training-inference mismatch (TIM), destabilizing training. We show that these failures are concentrated rather than uniform - severely mismatched tail tokens concentrate in a few outlier sequences, while policy weights remain largely intact and quantization error concentrates in a few high-variance activation channels. Guided by this, we present FourSight, an algorithm-system co-design with two targeted solutions: TIM-aware sequence filtering that excludes drifted trajectories from policy updates, and sparse precision compensation that keeps only top-variance channels in BF16 while retaining native NVFP4 elsewhere. We further design a fused SpliceGEMM kernel with specialized prefill and decode datapaths to minimize overhead. FourSight sustains near-BF16 accuracy and strong FP4 deployment quality across models and engines, while improving step-to-accuracy by 1.76-2.60x and staying within 2.3% of FP4 step time up to 120B-scale models.",
+   "authors": [
+    "Yining Wei",
+    "Tianyuan Wu",
+    "Gu Gong",
+    "Yuechen Tao",
+    "Yinghao Yu",
+    "Xiaowen Chu",
+    "Wei Wang"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "cs.LG"
+   ],
+   "published": "2026-11-03T13:33:46+00:00",
+   "url": "https://arxiv.org/abs/2611.04887",
+   "pdf": "https://arxiv.org/pdf/2611.04887",
+   "score": 0.5898,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5751,
+    "meters": 0.555,
+    "methods": 0.5898
+   }
+  },
+  {
+   "id": "2611.04321",
+   "version": 1,
+   "title": "ATC: Agent Trajectory Control for Role-Contract Enforcement in Black-Box Multi-Agent Systems",
+   "abstract": "Multi-agent LLM systems assign different responsibilities to different agents: one plans, another retrieves evidence, another verifies, another executes. This division of labor is only meaningful if each agent stays within the functions it is authorized to perform. Over many turns, however, an agent can produce a locally reasonable message that exercises authority belonging to another role: a verifier that begins planning, a retriever that asserts unsupported conclusions, an executor that changes state no one approved. We formalize this as role drift, a turn-level breach of an agent's role contract. We introduce Agent Trajectory Control (ATC), which makes each role's authority explicit as a contract and enforces it at the point where a message would enter the shared conversation. ATC scores a proposed output for out-of-role deviation, leakage into the functions of other roles, impermissible speech acts, and logical contract breaches, then computes a leakage-regularized target that constrains regeneration; the revised message is re-checked before admission. Enforcement acts on the message rather than the generator, so ATC governs agents whose internal representations are unavailable. Across homogeneous and heterogeneous teams, ATC improves task performance and role consistency while lowering role-drift energy relative to strong baselines spanning prompting, memory, workflow control, and activation editing, with the largest gains under explicit role-confusion stress tests and in larger, more diverse teams.",
+   "authors": [
+    "Maisha Maliha",
+    "Vishal Pramanik",
+    "Sumit Kumar Jha"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "cs.MA"
+   ],
+   "published": "2026-11-03T04:57:47+00:00",
+   "url": "https://arxiv.org/abs/2611.04321",
+   "pdf": "https://arxiv.org/pdf/2611.04321",
+   "score": 0.5833,
+   "interest": "water",
+   "scores": {
+    "water": 0.5833,
+    "meters": 0.537,
+    "methods": 0.5508
+   }
+  }
+ ]
+}

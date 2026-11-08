@@ -1,0 +1,482 @@
+{
+ "date": "2026-11-01",
+ "generated_at": "2026-11-08T13:06:22+00:00",
+ "model": "BAAI/bge-small-en-v1.5",
+ "interests": [
+  {
+   "key": "water",
+   "name": "Water networks"
+  },
+  {
+   "key": "meters",
+   "name": "Meters and consumption"
+  },
+  {
+   "key": "methods",
+   "name": "Time-series anomaly detection"
+  }
+ ],
+ "count": 17,
+ "papers": [
+  {
+   "id": "2611.01661",
+   "version": 1,
+   "title": "A Hybrid Anomaly Detection Method for Multivariate Time Series",
+   "abstract": "Multivariate time series are ubiquitous in monitoring smart systems such as power plants, smart houses, and servers. These systems use multiple sensors to collect the system's status over time. Those sensors represent the status of the whole system as one entity. Anomaly detection in such smart systems is of critical importance to prevent system failure and maintain functionality. But anomaly detection in such multivariate time series data is very challenging since this type of data includes both temporal and spatial information. Capturing both of these pieces of information is important to detect anomalies. In this paper, we propose a hybrid deep learning-based anomaly detection method, which captures both temporal and spatial information. We propose to take advantage of the feature extraction capabilities of 2d convolutional network in a variational autoencoder, alongside a prediction-based deep neural network of 2d convolutional networks and a gated recurrent unit network to capture both spatial and temporal information. Experiments on public data against state-of-the-art show the potential of our method.",
+   "authors": [
+    "Ali Babalhavaeji",
+    "Hui Song",
+    "Mahdi Jalili"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-01T07:14:37+00:00",
+   "url": "https://arxiv.org/abs/2611.01661",
+   "pdf": "https://arxiv.org/pdf/2611.01661",
+   "score": 0.8618,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7567,
+    "meters": 0.7778,
+    "methods": 0.8618
+   }
+  },
+  {
+   "id": "2611.01655",
+   "version": 1,
+   "title": "A Hybrid Anomaly Detection Method for Electric Vehicle Identification from Smart Meter Recordings",
+   "abstract": "In recent years, electric vehicles (EVs) have attracted much attention due to their potential to decarbonize the transport system. EV charging imposes challenges on power grids, such as load imbalance and voltage instability. Therefore, electricity distributors need to identify which users have an EV. Smart meter recordings can be effectively used for this purpose. The major issue associated with such data is the imbalance problem, where the majority of the data belongs to users without EVs. The existing methods for EV identification from smart meter recordings have framed it as a classification task. In this paper, we frame the problem as an unsupervised problem and propose a hybrid anomaly detection method that combines the power of prediction-based and reconstruction-based anomaly detection methods. The proposed model considers temporal and stochastic representation information of smart meter time series via prediction-based and reconstruction-based components, respectively. The performance of the proposed model is compared with state-of-the-art supervised and unsupervised methods. Its superiority is verified on real-world data.",
+   "authors": [
+    "Ali Babalhavaeji",
+    "Hui Song",
+    "Mohammadreza Radmanesh",
+    "Mahdi Jalili"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-01T07:05:03+00:00",
+   "url": "https://arxiv.org/abs/2611.01655",
+   "pdf": "https://arxiv.org/pdf/2611.01655",
+   "score": 0.7862,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7486,
+    "meters": 0.7838,
+    "methods": 0.7862
+   }
+  },
+  {
+   "id": "2611.01898",
+   "version": 1,
+   "title": "Robust Remote ECG Monitoring under Energy Constraints: Anomaly Filtering versus Predictive Uncertainty",
+   "abstract": "Machine learning for remote electrocardiogram monitoring must handle noise and diseases absent from training under tight resource constraints. We investigate whether upstream unsupervised anomaly detection can improve monitoring decisions more efficiently than classifier-derived uncertainty. We evaluate five detectors on PTB-XL and BUT QDB and compare a two-stage filter-classifier system with Monte Carlo Dropout and deep ensembles under unseen-disease and noise conditions. Performance is averaged over five training seeds. We measure single-pass energy, latency, and graph memory on a microcontroller's central processing unit (CPU) and neural processing unit (NPU). Per-score neural network costs account for repeated evaluations but exclude scoring outside deployed graphs. Energy equations relate filtering and rejection to avoided classifier execution. Across four disease scenarios, Deep Support Vector Data Description (Deep SVDD) achieves the highest mean area under the receiver operating characteristic curve within all tested finite CPU energy budgets. On the NPU, it leads at 1 mJ, while Monte Carlo Dropout has slightly higher means at 10 and 100 mJ. With a narrow CPU classifier, the Deep SVDD two-stage system increases the fraction of correctly classified or correctly rejected inputs by 15.0-19.4 percentage points over classification without rejection. Estimated energy per input is 1.93-6.99 mJ, compared with 52.53 mJ for Monte Carlo Dropout and 8.76-17.51 mJ for deep ensembles, at each method's retrospectively selected test accuracy peak. These results support upstream filtering for efficient remote monitoring, while independent validation and complete-system measurements remain necessary.",
+   "authors": [
+    "Mustafa Fuad Rifet Ibrahim",
+    "Maurice Meijer",
+    "Alexander Schlaefer",
+    "Peer Stelldinger"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.PF"
+   ],
+   "published": "2026-11-01T13:40:21+00:00",
+   "url": "https://arxiv.org/abs/2611.01898",
+   "pdf": "https://arxiv.org/pdf/2611.01898",
+   "score": 0.7642,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7379,
+    "meters": 0.7337,
+    "methods": 0.7642
+   }
+  },
+  {
+   "id": "2611.01425",
+   "version": 1,
+   "title": "Uncertainty-Aware Joint Generative Modeling of Fault Event Sequences and Sensor Time Series in Solar PV Plants",
+   "abstract": "This paper presents a multimodal generative model designed to simulate a solar energy plant system for predictive maintenance and fault prediction. We propose a novel approach to enhance system generation through conditional generation by leveraging both event sequences and time-series data and improve next event prediction. The framework employs a Transformer Hawkes Process (THP) to encode event data and an iTransformer to encode time-series data, integrated via a co-attention mechanism that effectively captures cross-modal dependencies between discrete events and continuous signals. From these integrated representations, we employ two specialized decoders for simulation: a Conditional Latent Diffusion Model (CLDM) for modeling future sensor trajectories and the Score Matching-based UnceRtainty quantiFication for Transformer Hawkes Process (SMURF-THP) for high-fidelity event prediction. This dual-decoder strategy supports uncertainty-aware, history-conditioned simulation by rolling the model forward for a specified number of generation iterations, producing finite stochastic scenarios rather than deterministic extrapolations over the full observational record. Evaluated on a comprehensive dataset from the Red Rock Solar Site in Arizona, our approach improves aggregate event-prediction F1 relative to baselines and supports applications in predictive maintenance, fault detection, and energy optimization for solar power systems.",
+   "authors": [
+    "Jiayu Huang",
+    "Boyang Xu",
+    "Yongming Liu",
+    "Hao Yan"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "eess.SY"
+   ],
+   "published": "2026-11-01T02:07:45+00:00",
+   "url": "https://arxiv.org/abs/2611.01425",
+   "pdf": "https://arxiv.org/pdf/2611.01425",
+   "score": 0.7052,
+   "interest": "meters",
+   "scores": {
+    "water": 0.6817,
+    "meters": 0.7052,
+    "methods": 0.7013
+   }
+  },
+  {
+   "id": "2611.02211",
+   "version": 1,
+   "title": "Forecasting Earth Surface Change in Embedding Space",
+   "abstract": "Repeated satellite imagery permits understanding of how our planet changes over time, letting us predict its future and plan mitigating actions. Most existing studies that rely on a time series of satellite observations forecast the spectral values at each pixel for a future target date. However, clouds, shadows, and sensor noise often corrupt these observations, so that spectral forecasters waste much of their capacity on low-level features or noise rather than real change. With the advent of Earth foundation models, we argue that forecasting in embedding space is a feasible and more effective alternative. To this end, we design a token space that handles irregular histories from different sensors and foundation models and supports forecasts at any query date. Tokens from this space are inputs to our proposed forecaster, E$^2$Forecast, which is a transformer with two branches: a Gaussian branch that directly predicts a mean point forecast and per-dimension standard deviations, and a rectified-flow branch that generates forecast ensembles. On Sentinel-1 and Sentinel-2 benchmarks, forecasting embeddings instead of spectral values halves the cosine distance (from 0.20 to 0.10) and greatly reduces overconfidence, lowering the z-score standard deviation from 2.63 to 1.22. By comparing new observations with its forecasts, E$^2$Forecast can also detect anomalous changes without labels or retraining, raising F$_1$ from 41.58 to 48.70 on a global benchmark. This consistent superiority is validated on nine remote sensing foundation models. Beyond change detection, we believe our approach advances the field by permitting effective reuse of diverse pretrained task heads. Our code is publicly available at https://github.com/ucam-eo/e2forecast.",
+   "authors": [
+    "Jingtao Li",
+    "Sadiq Jaffer",
+    "Anil Madhavapeddy",
+    "Pedro Sousa",
+    "Anthony Ortiz",
+    "Kyle Gao",
+    "Zhengpeng Feng",
+    "Yanfei Zhong",
+    "Kevin White",
+    "Srinivasan Keshav"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI"
+   ],
+   "published": "2026-11-01T21:11:19+00:00",
+   "url": "https://arxiv.org/abs/2611.02211",
+   "pdf": "https://arxiv.org/pdf/2611.02211",
+   "score": 0.6645,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5942,
+    "meters": 0.6427,
+    "methods": 0.6645
+   }
+  },
+  {
+   "id": "2611.03737",
+   "version": 1,
+   "title": "SSPE: Robust Sequential Staypoint Extraction in Degraded Trajectory Data",
+   "abstract": "Extracting semantically meaningful staypoints from raw trajectory streams is a foundational prerequisite for mobility analytics. However, real-world trajectory data is frequently degraded by severe spatial noise and protracted temporal dropouts. Classic threshold-based extraction methods, such as the widely adopted sliding-window algorithm, are highly sensitive to these anomalies, routinely fracturing continuous stationary episodes into disjointed fragments. To overcome this limitation, we propose the Sequential Staypoint Extraction (SSPE) algorithm. SSPE employs a resilient, state-driven architecture that replaces static spatial anchors with a dynamic centroid and introduces an $n$-step lookahead heuristic to structurally tolerate transient coordinate drift. Concurrently, it utilizes temporal bridging mechanisms to prevent artificial fragmentation during prolonged signal loss. Since optimal extraction parameters vary significantly across datasets, we further introduce a fully unsupervised, consensus-based parameter estimation framework. This framework derives baseline statistical scales directly from the raw trajectory data and identifies the optimal parameter configuration by maximizing structural agreement, thereby eliminating the reliance on annotated ground truth. We evaluate SSPE on the ExtraSensory dataset, a real-world mobility corpus with manually verified ground-truth staypoints, against the sliding-window implementation of Trackintel, one of the most widely adopted extraction baselines in the field. Empirical results demonstrate that SSPE achieves superior accuracy, yielding higher F1-scores while simultaneously improving computational efficiency over this standard.",
+   "authors": [
+    "Yueyang Liu",
+    "Lance Kennedy",
+    "Andreas Züfle"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.DB"
+   ],
+   "published": "2026-11-01T23:17:21+00:00",
+   "url": "https://arxiv.org/abs/2611.03737",
+   "pdf": "https://arxiv.org/pdf/2611.03737",
+   "score": 0.6642,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6191,
+    "meters": 0.623,
+    "methods": 0.6642
+   }
+  },
+  {
+   "id": "2611.02139",
+   "version": 1,
+   "title": "Adversarial Robustness of Retrieval-Based Fact-Checking: Detecting and Mitigating Evidence Contamination",
+   "abstract": "Retrieval-based fact-checking systems ground verification in large document collections, creating a critical vulnerability: adversarial evidence contamination. We demonstrate that factually inconsistent but contextually coherent evidence generated to satisfy both retrieval-similarity and linguistic-fluency constraints can systematically mislead verification models. Contaminating just 3.1-7.4% of training corpora with five label-specific strategies causes adversarial content to penetrate up to 35.2% of top-k retrievals, degrading verification accuracy by up to 46.9% relative F1. Existing retrieval-stage defenses, validated against gradient-optimized or syntactically anomalous attacks, transfer poorly to this threat model: detection rates collapse and F1 recovery exhibits high variance across seeds. We propose GLAD (Geometric-Lexical Adversarial Defense), which fuses dense embedding peer-coherence with lexical distributional isolation. Across two benchmarks, two embedding models, and five random seeds, GLAD achieves the highest detection rates (70-86%) and the most consistent F1 recovery, reclaiming 73-80% of contamination-induced degradation on LIAR-RAW while approaching clean baselines on RAWFC. Crucially, unlike defenses that trade clean performance for robustness, GLAD imposes negligible cost on uncontaminated corpora.",
+   "authors": [
+    "Alamgir Munir Qazi",
+    "John P. McCrae",
+    "Jamal Abdul Nasir"
+   ],
+   "primary": "cs.IR",
+   "categories": [
+    "cs.IR",
+    "cs.LG"
+   ],
+   "published": "2026-11-01T19:18:07+00:00",
+   "url": "https://arxiv.org/abs/2611.02139",
+   "pdf": "https://arxiv.org/pdf/2611.02139",
+   "score": 0.6498,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5966,
+    "meters": 0.5567,
+    "methods": 0.6498
+   }
+  },
+  {
+   "id": "2611.01407",
+   "version": 1,
+   "title": "Label-Free Performance Estimation of Deep Learning Based Radar Detectors in Time-Varying Environments",
+   "abstract": "Deep-learning-based radar target detectors can achieve strong performance in complex sensing environments. However, in time-varying environments, changes in clutter characteristics may cause the distribution of echoes to deviate from that of the training data, thereby degrading detector reliability. Timely identification of such degradation requires an accurate assessment of the deployed detector's performance; however, ground-truth labels for radar echoes are typically unavailable during deployment. This paper investigates label-free performance estimation for deployed deep learning-based radar target detectors. We first show that confidence-based estimators tend to overestimate detection performance under distribution shift because they fail to account for the discrepancy between the detector-induced pseudo-label distribution and the true label distribution. To address this limitation, we propose probabilistic optimal transport (POT), which assesses deployment performance by computing the Wasserstein distance between the detector's output probability distribution on unlabeled deployment echoes and the label distribution in the training data. We further develop thresholded probabilistic optimal transport (TPOT), which suppresses the influence of anomalous transport costs on the Wasserstein-distance-based estimate, thereby improving estimation robustness. Experiments on a publicly measured radar dataset demonstrate that POT and TPOT consistently outperform representative label-free baselines across deployment scenarios with varying degrees of data distribution shift.",
+   "authors": [
+    "Chuanfei Zang",
+    "Yiru Lin",
+    "Yumiao Wang",
+    "Xingyu Chen",
+    "Xiaobo Yang",
+    "Guolong Cui"
+   ],
+   "primary": "eess.SP",
+   "categories": [
+    "eess.SP"
+   ],
+   "published": "2026-11-01T01:27:32+00:00",
+   "url": "https://arxiv.org/abs/2611.01407",
+   "pdf": "https://arxiv.org/pdf/2611.01407",
+   "score": 0.6461,
+   "interest": "methods",
+   "scores": {
+    "water": 0.64,
+    "meters": 0.6103,
+    "methods": 0.6461
+   }
+  },
+  {
+   "id": "2611.02031",
+   "version": 1,
+   "title": "SensOFormer: Foundation Models for Particle Accelerators",
+   "abstract": "Large-scale scientific facilities, such as particle accelerators, are complex systems composed of thousands of interacting components that must operate collectively to support diagnostics and control, and ensure safe, reliable operation. These facilities rely on extensive sensor networks that generate large volumes of heterogeneous, incomplete, and noisy telemetry, often sampled at different rates across subsystems. In this paper, we adopt the foundation-model paradigm to learn general-purpose sensor representations from historical accelerator data through self-supervised pretraining. We introduce SensOFormer, a denoising masked transformer with a Perceiver-style encoder-decoder architecture designed to handle variable sensor sets, accommodate heterogeneous sampling rates, and learn robust representations from noisy measurements. The model is pretrained on multiple particle-accelerator datasets and transferred to downstream tasks, including missing-data imputation, anomaly detection, cavity identification, and fault identification. Through extensive evaluations and comparisons, we demonstrate that a single self-supervised model can learn reusable representations for diverse operational tasks in large-scale scientific facilities. Project page: https://mahindrautela.github.io/sensoformer.",
+   "authors": [
+    "Mahindra Rautela",
+    "Alexander Scheinker"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "physics.acc-ph"
+   ],
+   "published": "2026-11-01T16:25:32+00:00",
+   "url": "https://arxiv.org/abs/2611.02031",
+   "pdf": "https://arxiv.org/pdf/2611.02031",
+   "score": 0.6428,
+   "interest": "water",
+   "scores": {
+    "water": 0.6428,
+    "meters": 0.6356,
+    "methods": 0.6289
+   }
+  },
+  {
+   "id": "2611.02119",
+   "version": 2,
+   "title": "Testing concept-level audits of melanoma classifiers with diffusion counterfactuals and matched positive controls",
+   "abstract": "Concept-based explanations of melanoma classifiers are rarely tested against controls with known targets. We built a counterfactual audit from a diffusion model conditioned on seven 7-point checklist concepts and tested it with such controls. Colour-calibrated start noise reduced colour outliers from 78.5-84.8\\% to 6.6-13.3\\%. Four of seven knobs were target-dominant but also changed other concepts. Quartile-based positive controls were confounded, and the audit failed its pre-specified rule. It recovered the targets of all 16 controls matched on the generator's pseudo-labels and of 12 of 12 controls labelled by a second evaluator, for three concepts; concept activation vectors recovered fewer (11 of 16). In 18 permuted-label classifiers, significant sweep responses and target rankings also arose, whereas standardised effect margins separated the controls from these null classifiers. The pigmentation sweep raised the melanoma logit in 15 of 15 ISIC 2020 classifiers (+3.12 on average) and 6 of 6 HAM10000 classifiers (+4.01), about four times the null response in scale-free units; the regression effect did not transfer. An exploratory decomposition, evaluated against the controls, suggested that knob cross-talk partly hides vascular responses. Matched controls and null classifiers are practical checks of concept audits.",
+   "authors": [
+    "Md Shohanoor Rahman",
+    "Md Hasibul Islam",
+    "Md Kishor Morol",
+    "Dip Nandi",
+    "Tze Hui Liew"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG"
+   ],
+   "published": "2026-11-01T18:48:33+00:00",
+   "url": "https://arxiv.org/abs/2611.02119",
+   "pdf": "https://arxiv.org/pdf/2611.02119",
+   "score": 0.6417,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5773,
+    "meters": 0.5966,
+    "methods": 0.6417
+   }
+  },
+  {
+   "id": "2611.02065",
+   "version": 1,
+   "title": "Fragility Is Not Reducible to Hardness: Conditional Causal Difficulty for LLMs",
+   "abstract": "Large language models show large and seemingly arbitrary performance drops when a task is rewritten in ways that leave its requirements untouched. We recast task difficulty as a causal quantity: the treatment effect of meaning-preserving perturbations on a model. A meaning-preserving rewrite can only be observed to hurt a task the model can already solve, so we place the estimand on the principal stratum where the degradation occurs: the conditional causal difficulty (CCD), the probability that a randomly drawn twin breaks a solvable task. Because harder tasks tend to be more phrasing-sensitive, complexity enters as an effect modifier rather than a confounder, and we residualize it out to obtain complexity-residualized difficulty (CRD); zero for a task exactly as fragile as its complexity predicts, positive for anomalously fragile ones. Current benchmarks do not supply the data CCD requires, so we introduce GlassGSM and GlassMATH, augmenting GSM8K and MATH with twins built from perturbation families, raising fragility on GlassGSM by $\\approx 12\\times$ over GSM-IC-style distractors on the same problems ($3.7\\%\\to44.9\\%$) while keeping the answer key unchanged. Our predictor Frail learns the per-perturbation break probability and reaches $0.613{\\pm}0.023$ of the suite reliability ceiling on GlassGSM and $0.557{\\pm}0.023$ on GlassMATH, against $0.171$/$0.401$ for a surface-feature baseline and $0.444$/$0.463$ for supervised baselines such as VAP3, and, at a $5\\%$ curation budget on GlassGSM, doubles random recall of fragile items, matching an oracle ranking. Additionally, cross-fitted residualization leaves CRD uncorrelated with the declared proxy in practice. Code is available at https://github.com/upwork/Conditional_Causal_Difficulty_for_LLMs",
+   "authors": [
+    "Mohammad Reza Rezaei",
+    "Dingxian Wang",
+    "Nikhil Verma",
+    "Sajjad Pakdamansavoji",
+    "Andrew Rabinovich",
+    "Zhao Chen"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-01T17:10:02+00:00",
+   "url": "https://arxiv.org/abs/2611.02065",
+   "pdf": "https://arxiv.org/pdf/2611.02065",
+   "score": 0.6404,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5311,
+    "meters": 0.5426,
+    "methods": 0.6404
+   }
+  },
+  {
+   "id": "2611.01612",
+   "version": 1,
+   "title": "Halal-NeSyNet: Clause-Scoped Neuro-Symbolic Cross-Attention for Automated Food Ingredient Auditing and Risk-Aware Halal Logistics Triage",
+   "abstract": "Verifying that a packaged food is Halal requires reading ingredient declarations and E-number additives before goods enter certified warehouses. Dual-origin additives such as E471, E422, E441 and E920 are Mushbooh (doubtful) unless a botanical, microbial or certified-Halal qualifier appears in the same ingredient clause, so a plant-based qualifier on one clause must not clear an unqualified additive in another. We call a failure to respect this scope cross-clause modifier confounding and build a benchmark of 3,199 items (277 Open Food Facts records and 2,922 template-generated clause-swap items, labelled by an explicit 50-code rule base rather than by a certification authority) with a 540-item counterfactual suite. We propose Halal-NeSyNet, which couples a DistilBERT encoder with a 16-dimensional rule-derived symbolic vector through cross-attention and gated fusion, trained with an asymmetric false-Halal risk loss. Over five seeds, text-only TF-IDF baselines reach 86.25-86.71 % accuracy with 13.42-21.73 % false-Halal leakage and 6.33-26.00 % counterfactual triad consistency, whereas Halal-NeSyNet reaches 97.04+/-0.34 % and 99.67+/-0.50 %. Gradient boosting given the same symbolic vector reaches 96.25+/-1.24 % (+0.59 points from Halal-NeSyNet, 95 % CI [-1.11, +2.28]), so most of the gain comes from clause-scoped symbolic features and not from the network, and the risk loss did not help. Holding out whole template families, text-only models fall to 61.91-78.35 %, Halal-NeSyNet to 90.87+/-11.76 % and logistic regression with the symbolic vector to 91.11+/-2.88 %, with far more spread for Halal-NeSyNet. A three-lane receiving simulation auto-clears 49.33 % of cargo at 0.76 % green-lane contamination. Because labels and features come from one rule engine and 91.3 % of the items are templated, the results measure fidelity to a rule policy, not religious certification.",
+   "authors": [
+    "Mochamad Rizal Fauzan",
+    "Naila Nursyifa",
+    "Irgi Surya"
+   ],
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL",
+    "cs.AI",
+    "cs.LG"
+   ],
+   "published": "2026-11-01T05:56:41+00:00",
+   "url": "https://arxiv.org/abs/2611.01612",
+   "pdf": "https://arxiv.org/pdf/2611.01612",
+   "score": 0.6346,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6195,
+    "meters": 0.6167,
+    "methods": 0.6346
+   }
+  },
+  {
+   "id": "2611.01669",
+   "version": 1,
+   "title": "How Much Does Random Rotation Help GPTQ? Sharp Worst-Case Rate Gaps in the High-Rate Regime",
+   "abstract": "GPTQ is Babai's nearest-plane algorithm on the lattice of the Cholesky factor of the layer's input second moment $Σ$. In the high-rate, entropy-coded regime it needs $\\tfrac12\\log_2(\\AM/\\GM)$ of its Cholesky pivots more bits than WaterSIC, which is within $0.255$ bit of the rate-distortion limit for every $Σ$; random rotations close most of this gap in practice, and Ordentlich and Polyanskiy asked for the worst-case gap between rotated GPTQ and WaterSIC. We show that after a Haar rotation the $k$-th pivot converges almost surely, uniformly in $k\\geδn$ and over spectra $ν$ of bounded condition number, to $1/S_ν(-k/n)$, a classical formula from the theory of Lyapunov exponents, and use it to answer the question. Over spectra with condition number $κ$ the worst rotated gap is $\\tfrac12\\log_2κ-\\log_2\\lnκ+\\tfrac12-\\tfrac1{\\ln2}+o(1)$ bits, attained only by two-point spectra, just $\\tfrac12\\log_2\\lnκ+O(1)$ bits below the worst case without rotation, so rotation cannot replace waterfilling in general. It nearly can on real layers: rotation cuts the cost of an $η$-fraction of outlier eigenvalues of size $μ$ from about $ημ$ to $η^2μ/2$ to leading order, but cannot remove spectral spread on a logarithmic scale; for non-Gaussian weights it also adds a weight-side rate cost, which we characterize exactly under a standard high-rate assumption. On $96$ Hessians of Qwen3 and Llama-3.1 the rotated gap has median $0.04$ bit and maximum $0.36$ bit, against $2$--$5$ bits in the worst case for the same condition numbers, and the limit matches it to within $0.009$ bit.",
+   "authors": [
+    "Runguo Li"
+   ],
+   "primary": "cs.IT",
+   "categories": [
+    "cs.IT",
+    "cs.LG"
+   ],
+   "published": "2026-11-01T07:30:30+00:00",
+   "url": "https://arxiv.org/abs/2611.01669",
+   "pdf": "https://arxiv.org/pdf/2611.01669",
+   "score": 0.6255,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5917,
+    "meters": 0.5588,
+    "methods": 0.6255
+   }
+  },
+  {
+   "id": "2611.01864",
+   "version": 1,
+   "title": "Quantizing Recurrent Language Models Is Easier Than You Think",
+   "abstract": "Linear recurrences are becoming an increasingly common building block in large language models, replacing the growing KV cache of softmax attention with a fixed-size recurrent state that enables efficient decoding. However, the quantization stack has largely been developed around softmax Transformers, whose numerical properties and inference state differ from those of recurrent models. Our goal is to understand these differences and study the design space of quantization methods for recurrent models. In our analysis, we differentiate between two targets. First, extra-state quantization concerns weights and activations outside the recurrent state, whose distributions are shaped indirectly by the sequence mixer during training. In controlled 1.3B parameter models, we find that decayed recurrences develop weaker residual outlier channels than softmax attention and are therefore easier to quantize without incoherence processing. Second, intra-state quantization concerns the recurrent state itself during decode, where repeated updates create a different numerical problem from KV cache quantization. We instantiate our findings as LoReS, a state quantization pipeline combining value-axis scale grouping to match output channel magnitude, decay-based mixed-precision to protect slowly decaying heads or channels, and stochastic rounding to limit error accumulation under repeated requantization. Across Qwen-3.5 9B, Nemotron-H 8B, and Kimi-Linear 48B-A3B, LoReS supports robust 8-bit state quantization and lower effective precision on shorter decode horizons. We implement LoReS in vLLM and demonstrate end-to-end decode speedups.",
+   "authors": [
+    "Philipp Nazari",
+    "Neehal Tumma",
+    "Daniela Rus",
+    "T. Konstantin Rusch"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CL"
+   ],
+   "published": "2026-11-01T12:55:09+00:00",
+   "url": "https://arxiv.org/abs/2611.01864",
+   "pdf": "https://arxiv.org/pdf/2611.01864",
+   "score": 0.6229,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5545,
+    "meters": 0.5566,
+    "methods": 0.6229
+   }
+  },
+  {
+   "id": "2611.01411",
+   "version": 1,
+   "title": "Sensitivity Inflation from Cross-Record Precision Routing in Private Quantized Fine-Tuning",
+   "abstract": "Private fine-tuning of large language models increasingly pairs DP-SGD with low-rank adapters on frozen, quantized backbones, and every such stack inherits one unstated premise: frozen layers keep each record's clipped gradient a function of that record alone. We show that LLM.int8 breaks this premise. It routes outlier activation columns to a higher-precision path using a union over the whole batch, so one record decides how every other record's activations are computed, even though the weights are frozen and the quantization scales are per row. We bound the resulting sensitivity inflation, state a record-isolation contract that restores the standard bound, and define record-owned precision dispatch that meets it with the same GEMMs as batched LLM.int8, so isolation needs no extra arithmetic. We then audit the native CUDA stack (bitsandbytes, PEFT, Opacus) against four matched controls. A constructed LoRA-Opacus witness reaches $15.0\\times$ the add/remove bound. On pretrained OPT-125M with natural text, other records alter 20% of record-layer precision splits at batch size 16. An exploratory re-clipping analysis finds 10 of 64 candidate neighbors above the bound once every gradient is clipped; the top pair, revalidated natively, reaches $1.065C$ while every control stays within $C$, and forcing one layer's outlier mask removes the excess. A two-million-draw audit of the released adapters yields $\\varepsilon$ lower bounds ($3.25$ at $δ=10^{-5}$) below the advertised guarantee ($4.38$). Resolving an excess this small at the release level would take about 200 times more draws, whereas checking the sensitivity contract directly exposes it in a few native runs, which makes contract checking the practical audit for private quantized training.",
+   "authors": [
+    "Annan Zhang",
+    "Shengjie Song",
+    "Wenshuai Yao",
+    "Lihao Zhang",
+    "Tianmiao"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-01T01:45:29+00:00",
+   "url": "https://arxiv.org/abs/2611.01411",
+   "pdf": "https://arxiv.org/pdf/2611.01411",
+   "score": 0.6206,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5792,
+    "meters": 0.5654,
+    "methods": 0.6206
+   }
+  },
+  {
+   "id": "2611.01700",
+   "version": 1,
+   "title": "MemHarmBench: Evaluating Cross-Session Prompt Injection in Memory-Persistent AI Agents",
+   "abstract": "AI agents often rely on persistent memory to retain user preferences and operational rules across sessions. However, this capability introduces a new safety risk: malicious instructions from messages, documents, or Web content can be retained in memory and influence future tasks even after the original attack content is removed. Existing attack success metrics, however, fail to capture who is affected and how attacks translate into downstream harm during otherwise normal task execution. We introduce MemHarmBench, a victim-centric benchmark for evaluating cross-session prompt injection in memory-persistent AI agents. MemHarmBench considers three categories of potential victims: users, workspace/project owners, and external stakeholders. Our evaluation first exposes an agent to malicious instructions and tests whether they are retained in memory. We then remove the attack content and initiate a new session with a legitimate task while preserving the agent's memory. We jointly evaluate whether the agent follows the attacker's intent, completes the legitimate task, and exhibits observable execution anomalies. Across multiple agent systems, we find that cross-session attacks can remain behaviorally stealthy: agents often complete tasks normally and exhibit no detectable anomalies while still making critical decisions aligned with the attacker's intent. By connecting malicious memory retention to downstream decisions and affected parties, MemHarmBench provides a systematic framework for exposing safety risks that conventional attack- and task-success metrics may overlook. We publicly release MemHarmBench at https://github.com/Kirito14IT/MemHarmBench.",
+   "authors": [
+    "Zhihua Wang",
+    "Yunhao Feng",
+    "Yifeng Gao",
+    "Rui Pan",
+    "Baiheng Zhao",
+    "Zixing Chen",
+    "Xingjun Ma"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-01T08:36:16+00:00",
+   "url": "https://arxiv.org/abs/2611.01700",
+   "pdf": "https://arxiv.org/pdf/2611.01700",
+   "score": 0.5983,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5948,
+    "meters": 0.5632,
+    "methods": 0.5983
+   }
+  },
+  {
+   "id": "2611.01868",
+   "version": 1,
+   "title": "A Self-Generated Floor on Adam's $\\varepsilon$: Evidence from Power-Law Matrix Sensing",
+   "abstract": "In nonconvex Burer--Monteiro low-rank matrix sensing of $U^\\ast \\in \\mathbb{R}^{V \\times D}$ under power-law covariance $Σ= \\mathrm{diag}(j^{-s})_{j=1}^V$, the precision-wall approximation predicts that Adam stalls when the smallest non-gauge Hessian eigenvalue drops below its denominator floor, giving $s^\\ast(V,D) = [\\log(1/\\varepsilon_{\\mathrm{eff}}) - \\log V]/\\log(VD) + δ_{\\mathrm{Adam}}$. If $\\varepsilon_{\\mathrm{eff}}$ were set by $\\varepsilon_0$, lowering $\\varepsilon_0$ from $10^{-10}$ to $10^{-12}$ would raise $s^\\ast$ by $0.95\\text{--}1.33$. Instead, across six values of $\\varepsilon_0$ two decades apart, $10^{-2}$ to $10^{-12}$, the boundary follows the $\\varepsilon_0$ slope down to $10^{-6}$, bends near $10^{-8}$, and is flat below $10^{-8}$, while warm-started L-BFGS and Gauss--Newton reach machine precision on stalled instances. We trace this saturation to a self-generated dynamical floor $\\varepsilon_{\\mathrm{dyn}} \\propto α$: high-curvature modes oscillate persistently near the adaptive edge of stability with amplitude $\\propto α(1-β_1)/(1+β_1)$ and leak gradient fluctuations of scale $κα$ into rare modes via measurement coupling, pinning $\\sqrt{\\hat{v}_V} \\approx κα\\gg \\varepsilon_0$. Fitting a single threshold-crossing wall parameter $\\varepsilon_{\\mathrm{dyn}} = 4.76\\times 10^{-9}$ (with the detection lag frozen at its companion calibration) predicts the saturated failure boundary for $D \\ge 4$ across five $(V,D)$ scales to RMS $0.098$ (breaking down at $D = 2$), while shrinking $\\varepsilon_0$ below $10^{-8}$ is ineffective and lowering the step size $α$ reduces the floor directly.",
+   "authors": [
+    "Lngel Kyo"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-01T12:59:38+00:00",
+   "url": "https://arxiv.org/abs/2611.01868",
+   "pdf": "https://arxiv.org/pdf/2611.01868",
+   "score": 0.5869,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5828,
+    "meters": 0.5619,
+    "methods": 0.5869
+   }
+  }
+ ]
+}

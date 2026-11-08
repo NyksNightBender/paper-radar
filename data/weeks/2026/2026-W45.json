@@ -1,0 +1,310 @@
+{
+ "week": "2026-W45",
+ "start": "2026-11-02",
+ "end": "2026-11-05",
+ "days": [
+  "2026-11-02",
+  "2026-11-03",
+  "2026-11-04",
+  "2026-11-05"
+ ],
+ "generated_at": "2026-11-08T13:06:30+00:00",
+ "model": "BAAI/bge-small-en-v1.5",
+ "interests": [
+  {
+   "key": "water",
+   "name": "Water networks"
+  },
+  {
+   "key": "meters",
+   "name": "Meters and consumption"
+  },
+  {
+   "key": "methods",
+   "name": "Time-series anomaly detection"
+  }
+ ],
+ "count": 59,
+ "papers": [
+  {
+   "id": "2611.07720",
+   "version": 1,
+   "title": "Evaluating Language Model Features for Zero-Shot Time-Series Anomaly Detection Under Isolation Assumption",
+   "abstract": "Time-Series Anomaly Detection (TSAD) is a fundamentally challenging task: it is unsupervised, requires high local precision capabilities, and suffers from limited labelled data. Recent work has explored adapting Large Language Models (LLMs) to time-series via cross-modal transfer. However, existing approaches are poorly suited to Multivariate TSAD (MTSAD), as tokenisation often obscures fine-grained temporal and variables structures, and most methods optimise auxiliary objectives such as forecasting or reconstruction. We posit that these surrogate objectives become unreliable as model capacity increases. Highly expressive models risk reconstructing or forecasting anomalies, undermining the foundations of both strategies. Instead, we propose to use LLMs purely as feature extractors and directly analyse their induced feature spaces. In this work, investigate the ability of LLMs to provide useful representations for MTSADs in a zero-shot setting through classification. To this end, we study the separability of the extracted features, under the assumption that anomalous features should be isolated from normal ones. We analyse their temporal and contextual discriminative ability using simple step-wise tokenisation schemes, with one time-step per token, which preserve fine-grained local information. Their usability for MTSAD is assessed using an unsupervised Isolation Forest, enabling a direct evaluation of the resulting representation quality. We further investigate whether the observed performance can be attributed to the language-related pre-training of the LLMs or arises independently of it. Our results provide empirical insight into the ability of LLMs to represent multivariate time-series for anomaly detection and highlight broader applications of cross-modal foundation models.",
+   "authors": [
+    "Romain Hermary",
+    "Nesryne Mejri",
+    "Djamila Aouada"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-05T09:37:57+00:00",
+   "url": "https://arxiv.org/abs/2611.07720",
+   "pdf": "https://arxiv.org/pdf/2611.07720",
+   "score": 0.8387,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6722,
+    "meters": 0.6864,
+    "methods": 0.8387
+   },
+   "date": "2026-11-05"
+  },
+  {
+   "id": "2611.06441",
+   "version": 1,
+   "title": "Graph Foundation Models Can Become Effective Multivariate Time Series Anomaly Detectors",
+   "abstract": "Multivariate time series anomaly detection (MTSAD) relies on modeling both temporal dynamics and inter-sensor dependencies to identify complex system faults. Although graph-based detectors explicitly model sensor topologies, they train task-specific networks from scratch on limited target-domain data, remaining vulnerable to spurious correlations and unable to reuse transferable priors. While pretrained Graph Foundation Models (GFMs) offer transferable topological priors and anomaly discriminability, directly adapting them to MTSAD is hindered by cross-modal feature-topology mismatch, unreliable pseudo-anomaly supervision, and decision distortion during node-to-window aggregation. To fill these gaps, we propose a novel adaptation framework, Gfm4Mtsad, which unleashes pretrained GFMs for MTSAD. We introduce the Structure-and-Information Contract Alignment (SICA) module to bridge continuous time series and the pretrained GFM space. This module harmonizes principal subspace token projection, normal-prior-guided graph construction, and residual recovery to suppress spurious edges while retaining fine-grained temporal details. We propose a Mechanism-Aligned Pseudo-Anomaly Screening strategy (MAPS) to steer unsupervised learning. It applies localized dependency breaks while preserving empirical residuals, selecting hard negatives near the normal boundary for targeted supervision. We develop a Tail-Gated Evidence Calibration mechanism (TGEC) to eliminate node-to-window aggregation distortion. It calibrates multi-granular graph responses against normal operational references, strictly preserving benign score rankings while selectively refining extreme anomaly candidates in the tail distribution for reliable window detection and interpretable sensor evidence. Extensive evaluations with two GFM backbones demonstrate that Gfm4Mtsad achieves superior detection performance over existing baselines.",
+   "authors": [
+    "Zhuangyan Hu",
+    "Zhuoxuan Liang",
+    "Wei Li",
+    "Xiaohua Jia",
+    "Moustafa Youssef",
+    "Sumi Helal"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-04T12:43:16+00:00",
+   "url": "https://arxiv.org/abs/2611.06441",
+   "pdf": "https://arxiv.org/pdf/2611.06441",
+   "score": 0.8218,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7223,
+    "meters": 0.698,
+    "methods": 0.8218
+   },
+   "date": "2026-11-04"
+  },
+  {
+   "id": "2611.08136",
+   "version": 1,
+   "title": "How Far Can Untrained Neural Networks Go in Anomaly Detection? From Tables to Pixels",
+   "abstract": "Anomaly detection (AD) is often framed as a representation-learning problem, where strong performance is expected to require learned features or AD-specific optimization. However, this view can overlook the intrinsic separability of anomalies from normal references, even in the absence of learned representations. We therefore investigate how far untrained neural networks can go in anomaly detection. To this end, we propose PRISM, a framework combining fixed random nonlinear features with normal-reference Mahalanobis scoring for tabular detection and dense visual localization. Across 47 tabular datasets in ADBench, PRISM-T achieves the highest mean AUROC (86.4%) and the second-highest mean AUPRC (65.9%) among the compared methods. On MVTec AD and VisA, covering 27 visual categories, PRISM-V achieves mean image-level and pixel-level AUROCs of 90.4% and 96.4%, respectively. Notably, both models achieve these results without neural weight optimization or pretrained representations. A theoretical analysis further characterizes how nonlinear transformations affect the mean and covariance contributions to the Mahalanobis score gap, while empirical analyses examine the resulting score separability. These findings establish PRISM as both a competitive anomaly detector and a prior-to-learning baseline for assessing the added value of learned representations in anomaly detection.",
+   "authors": [
+    "Hyojun Yi",
+    "Geunyoung Kim",
+    "Hogeon Seo",
+    "Seunghyoung Ryu"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.CV"
+   ],
+   "published": "2026-11-05T15:01:17+00:00",
+   "url": "https://arxiv.org/abs/2611.08136",
+   "pdf": "https://arxiv.org/pdf/2611.08136",
+   "score": 0.7956,
+   "interest": "methods",
+   "scores": {
+    "water": 0.702,
+    "meters": 0.6568,
+    "methods": 0.7956
+   },
+   "date": "2026-11-05"
+  },
+  {
+   "id": "2611.03039",
+   "version": 1,
+   "title": "TSB-SEG: A Systematic Time-Series Segmentation Benchmark",
+   "abstract": "Time-series segmentation, studied as either Change Point Detection (CPD) or State Detection (SD), underpins a broad range of monitoring and diagnostic applications. However, the field suffers from a persistent divide between the statistical community (focusing on CPD) and the machine learning and data mining communities (focusing on SD). Consequently, the literature remains fragmented: evaluations typically cover narrow methodological families, datasets are often small or homogeneous, and CPD and SD are rarely evaluated together. We address these gaps with TSB-SEG, a unified benchmark comprising 592 univariate and multivariate time series from 8 heterogeneous datasets and surveying 26 algorithms that span five decades of progress. To ensure a fair comparison, we introduce a two-pool design: a scalable main pool of tractable detectors used for the aggregate ranking, and an extended-scope pool for computationally intensive methods. All methods are unified under tsseg, an open-source library to ensure full reproducibility. Our systematic evaluation yields three insights: (a) no single detector dominates across domains, and per-dataset hyperparameter tuning remains decisive for performance, (b) CPD accuracy is a useful, though imperfect, proxy for SD accuracy, and (c) data characteristics should guide method selection. We provide actionable guidance based on data properties, error tolerances, and tuning budgets, identify impactful hyperparameters, and characterize algorithm robustness to these choices.",
+   "authors": [
+    "Félix Chavelli",
+    "Arik Ermshaus",
+    "Fan Yang",
+    "Patrick Schäfer",
+    "John Paparrizos",
+    "Paul Boniol"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-02T12:38:17+00:00",
+   "url": "https://arxiv.org/abs/2611.03039",
+   "pdf": "https://arxiv.org/pdf/2611.03039",
+   "score": 0.7937,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6777,
+    "meters": 0.7273,
+    "methods": 0.7937
+   },
+   "date": "2026-11-02"
+  },
+  {
+   "id": "2611.04682",
+   "version": 1,
+   "title": "Bayesian Change-Point Detection and Fault Scoring in District Heating Systems",
+   "abstract": "Smart heat meter data provide an important basis for monitoring district-heating installations, but fault reports are delayed, incomplete and temporally coarse: a report follows the appearance of a fault, sometimes by weeks, so the onset is unknown. This blurs the distinction between statistical changes and operational faults and prevents the reliable labelling that fault classifiers require. Changepoint detectors such as the Bayesian Estimator of Abrupt Change, Seasonality, and Trend (BEAST) report only the probability that a change occurred, so a large jump and a much smaller one can receive the same probability, and probabilities alone cannot tell a utility which installation to inspect first. We therefore develop a decision score that applies BEAST to temperature difference and flow and scores each detected changepoint by its posterior probability together with its deviation from recent operation, jump size, local behaviour and physical direction. Cases with unfavourable changes in both channels, the pattern of insufficient cooling, receive the highest priority. Of 1,522 cases, 648 had a reported fault; these made up 96% of the 25 highest-priority cases and 90% of the highest 200, and Average Precision was 0.771 against a reported-fault prevalence of 0.426. As cases without a report are not verified to be fault-free, these figures are likely conservative. Without using the report date, the strongest unfavourable flow change in reported-fault cases fell a median of 11 days before the report. Level-based screening of temperature difference, as practised by utilities, ranked the cases comparably but cannot date the change, and the two kinds of evidence were complementary. The method can serve as the first step in a fault-detection workflow, providing a manageable subset of installations for inspection and candidate onset dates for training fault classifiers.",
+   "authors": [
+    "Tanja Korsten Bugajski",
+    "Nicolai Peder Bülow Pedersen",
+    "J. Eduardo Vera-Valdés",
+    "Michal Zbigniew Pomianowski",
+    "Anna Marszal-Pomianowska"
+   ],
+   "primary": "stat.AP",
+   "categories": [
+    "stat.AP",
+    "stat.ME"
+   ],
+   "published": "2026-11-03T11:06:40+00:00",
+   "url": "https://arxiv.org/abs/2611.04682",
+   "pdf": "https://arxiv.org/pdf/2611.04682",
+   "score": 0.7932,
+   "interest": "meters",
+   "scores": {
+    "water": 0.7826,
+    "meters": 0.7932,
+    "methods": 0.7468
+   },
+   "date": "2026-11-03"
+  },
+  {
+   "id": "2611.04835",
+   "version": 1,
+   "title": "Anomaly Detection on Resource-Constrained Devices with Reservoir Computing",
+   "abstract": "Anomaly detection at the edge requires the deployment of models that achieve competitive performance, while minimizing computational cost and memory footprint. In this article, we investigate the suitability of the Mahalanobis Distance of Reservoir States (MDRS), an unsupervised time-series anomaly detection method, for resource-constrained devices and propose two optimizations to reduce its computational requirements. Specifically, we replace random reservoir connectivity (MDRS-Rand) with a circular shift (MDRS-Circ) and show that the anomaly score for an entire time series can be computed from the final reservoir state alone. Furthermore, we show that exploiting the reservoir's temporal memory enables more efficient input preprocessing, further reducing computational cost. We evaluate the MDRS variants on the MLPerf Tiny anomaly detection benchmark against the reference autoencoder and other anomaly detection methods, and deploy their inference kernels on a NUCLEO-F401RE microcontroller to assess latency, estimate energy consumption, and measure memory footprint. Among the evaluated methods, only MDRS and the autoencoder meet the benchmark's performance target, with MDRS requiring fewer operations and smaller models. With optimized preprocessing, MDRS achieves an ROC AUC of 0.869, a model size of 24 KB, an estimated energy consumption of 24 uJ per inference, and a latency of 0.32 ms, corresponding to a 75.9x speedup over the autoencoder with standard preprocessing.",
+   "authors": [
+    "Marco Angioli",
+    "Mathias Persson",
+    "Hiroto Tamura",
+    "Hadi Banaee",
+    "Amy Loutfi",
+    "Gouhei Tanaka",
+    "Alberto Giaretta",
+    "Denis Kleyko"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-03T13:04:50+00:00",
+   "url": "https://arxiv.org/abs/2611.04835",
+   "pdf": "https://arxiv.org/pdf/2611.04835",
+   "score": 0.7885,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7774,
+    "meters": 0.7253,
+    "methods": 0.7885
+   },
+   "date": "2026-11-03"
+  },
+  {
+   "id": "2611.07706",
+   "version": 1,
+   "title": "Towards Generalist Graph-Level Anomaly Detection",
+   "abstract": "Graph-level anomaly detection (GLAD) aims to identify graphs that deviate significantly from the majority. While recent advances have achieved competitive performance, existing approaches mainly follow a dataset-specific paradigm, requiring substantial in-domain data and training cost when applied to new application scenarios. This limits their scalability and practicality in real-world applications where labeled data is scarce and diverse domains are continuously emerging. In this paper, we investigate the problem of generalist GLAD, which seeks to learn a single unified model capable of detecting anomalous graphs across multiple domains with minimal supervision on the target data. This problem introduces key challenges, including learning transferable patterns from heterogeneous graph datasets and effective adaptation under limited supervision. To address these challenges, we propose GenGLAD, a generalist GLAD approach that leverages discriminative subgraph extraction as the core mechanism to learn transferable anomaly knowledge and enable efficient adaptation to new domains. Specifically, GenGLAD employs a graph neural network-based discriminative subgraph extraction model to learn the anomaly-discriminative substructures that distinguish anomalous and normal graphs across diverse domains. During the test-time adaptation phase, multi-dimensional discrepancies between the extracted subgraph and multi-level contextual information are calculated to characterize anomalies from multiple perspectives. For efficient adaptation, a lightweight scoring module is introduced to automatically decide the most informative signals, improving robustness against misleading patterns. Extensive experiments on diverse benchmark datasets demonstrate that the proposed approach achieves strong performance, superior generalization ability, and improved data efficiency compared to existing methods.",
+   "authors": [
+    "Junjun Pan",
+    "Yixin Liu",
+    "Yu Zheng",
+    "Fuyi Li",
+    "Alan Wee-Chung Liew",
+    "Shirui Pan"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-05T09:26:57+00:00",
+   "url": "https://arxiv.org/abs/2611.07706",
+   "pdf": "https://arxiv.org/pdf/2611.07706",
+   "score": 0.7695,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6972,
+    "meters": 0.6429,
+    "methods": 0.7695
+   },
+   "date": "2026-11-05"
+  },
+  {
+   "id": "2611.03486",
+   "version": 1,
+   "title": "A Hybrid Visitor Prediction Framework using Interpretable Temporal features, Integrating IQR and Anomaly Detection in Lakes in Nebraska",
+   "abstract": "For effective resource management, infrastructure planning, and sustainable tourism, it is really important to predict accurate visitors. This paper estimates the daily visitation of Nebraska lakes using spatial, basic temporal, and interpretable temporal features. Moreover, we evaluate the base models with multiple metrics. Using the best three models, our method will ensemble hybrid models and choose the best hybrid technique. Further, we investigate the impact of lag features and how the models work with different outlier detection techniques such as Interquartile Range (IQR) and anomaly detection. The models are evaluated using regression metrics (MAE, MSE, RMSE, MAPE, and R2). Experiment results show that, after removing anomalies, MAE, MSE, RMSE, and MAPE are reduced. Adding lag features also shows some positive effects on the results. Moreover, anomaly detection techniques perform better than IQR in improving performance while preserving data. The reported anomaly-based cross-validation results favored the voting ensemble over the compared base models on the evaluated metrics. In anomaly-based cross-validation, VOTE improved prediction errors compared with MLP (256,128,64); improvements varied in the single-split comparison. Specifically, the hybrid model reduced MAE by 9.82%, MSE by 3.12%, RMSE by 1.76%, and MAPE by 6.77%. In the reported cross-validation comparison, the best anomaly-based hybrid model had lower MAE, MSE, RMSE, and MAPE than the best IQR-based hybrid model by 9.81%, 34.30%, 18.99%, and 0.66%, respectively.",
+   "authors": [
+    "Israt Zarin",
+    "Christopher Chizinski"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-02T17:28:55+00:00",
+   "url": "https://arxiv.org/abs/2611.03486",
+   "pdf": "https://arxiv.org/pdf/2611.03486",
+   "score": 0.7682,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7122,
+    "meters": 0.7469,
+    "methods": 0.7682
+   },
+   "date": "2026-11-02"
+  },
+  {
+   "id": "2611.03875",
+   "version": 1,
+   "title": "INSIGHT-HPC: An Interpretable System Intelligence for Global HPC Telemetry",
+   "abstract": "Modern high-performance computing (HPC) clusters integrate multi-generation CPUs and GPUs, which generate rich, high-dimensional telemetry streams from out-of-band baseboard management controllers (BMC), job schedulers, and facility power distribution units. Detecting anomalies within this telemetry is critical to prevent energy waste and costly node failures. Existing approaches often rely primarily on statistical deviations and require stronger labels than actual production environments can provide. In addition, these detectors have a limited operational context for interpreting alerts. We present INSIGHT-HPC, a multi-plane anomaly-detection architecture that combines statistical, workload-aware, and physics-guided evidence into operator-interpretable episodes. INSIGHT-HPC integrates heterogeneous, large-scale telemetry streams and transforms noisy minute-resolution observations into de-duplicated fault episodes with operator-facing explanations. This design allows the system to distinguish workload-explained behavior from genuine infrastructure anomalies while producing interpretable alert summaries for operators. On production HPC telemetry with weak operational labels and controlled HPC-relevant fault injections, INSIGHT-HPC achieves a stronger precision-recall balance than all evaluated baselines. The system achieves a precision of 0.913, a recall of 0.817, an F1 score of 0.862, and an AUROC of 0.896. These results demonstrate the value of combining workload context, physical consistency, and explainable episode-level fusion.",
+   "authors": [
+    "Rupak Kadel",
+    "Jie Li",
+    "Yong Chen"
+   ],
+   "primary": "cs.DC",
+   "categories": [
+    "cs.DC",
+    "cs.LG"
+   ],
+   "published": "2026-11-02T19:47:26+00:00",
+   "url": "https://arxiv.org/abs/2611.03875",
+   "pdf": "https://arxiv.org/pdf/2611.03875",
+   "score": 0.7328,
+   "interest": "water",
+   "scores": {
+    "water": 0.7328,
+    "meters": 0.6927,
+    "methods": 0.6925
+   },
+   "date": "2026-11-02"
+  },
+  {
+   "id": "2611.06194",
+   "version": 2,
+   "title": "Cross-Asset Knowledge Transfer for Early Fault Detection of Data-Scarce Assets Without Target Fault Data",
+   "abstract": "Reliability management of industrial fleets depends on early fault warnings, yet lifecycle data across similar assets are highly imbalanced. A few assets accumulate run-to-failure histories, while newly installed or rarely failing assets provide only normal-condition data. This paper asks how diagnostic knowledge can be transferred from a data-rich source asset to a data-scarce target asset when no fault data have been observed on the target. We formulate cross-asset early fault detection as a zero-shot domain adaptation problem, in which zero-shot refers to the absence of target fault samples, and propose a framework that requires only normal data from the target. The framework comprises (1) a statistical process control step that labels the source asset run-to-failure data with an exponentially weighted moving average chart, reducing manual annotation to verifying flagged segments, (2) an Adapted Domain-Adversarial Neural Network (ADANN) that combines domain-adversarial training and a Maximum Mean Discrepancy penalty with an Adapted Classification-Domain (ACD) loss, which anchors the classifier normal region to the target own normal data, and (3) an ahead-of-time labeling scheme with a prediction horizon that targets incipient faults. Under an exact-classification assumption, a theoretical analysis characterizes the domain-adversarial term for a normal-only target and the alignment state in which source fault features remain separated from target normal features. On a public run-to-failure bearing dataset, ADANN attains the highest mean F1-score among four transfer baselines, with a nominally significant precision gain over the strongest baseline, and its robustness is examined under synthetic noise.",
+   "authors": [
+    "Zekai Wang",
+    "Yuxuan Li",
+    "Zhangyue Shi"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-04T09:08:30+00:00",
+   "url": "https://arxiv.org/abs/2611.06194",
+   "pdf": "https://arxiv.org/pdf/2611.06194",
+   "score": 0.7275,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6838,
+    "meters": 0.6429,
+    "methods": 0.7275
+   },
+   "date": "2026-11-04"
+  }
+ ]
+}

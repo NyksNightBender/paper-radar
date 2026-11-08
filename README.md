@@ -8,7 +8,15 @@
 **Live site: [nyksnightbender.github.io/paper-radar](https://nyksnightbender.github.io/paper-radar/)** (daily and weekly digests, archive, RSS)
 
 <!-- LATEST:START -->
-_The first run fills this table._
+**Closest new papers, 5 November 2026** (13 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
+
+| Score | Paper | Topic |
+| ---: | --- | --- |
+| 0.84 | [Evaluating Language Model Features for Zero-Shot Time-Series Anomaly Detection Under Isolation Assumption](https://arxiv.org/abs/2611.07720) | Time-series anomaly detection |
+| 0.80 | [How Far Can Untrained Neural Networks Go in Anomaly Detection? From Tables to Pixels](https://arxiv.org/abs/2611.08136) | Time-series anomaly detection |
+| 0.77 | [Towards Generalist Graph-Level Anomaly Detection](https://arxiv.org/abs/2611.07706) | Time-series anomaly detection |
+| 0.72 | [DART: Domain-Agnostic Residual Transfer for Generalist Anomaly Detection](https://arxiv.org/abs/2611.08271) | Time-series anomaly detection |
+| 0.72 | [Acoustic Anomaly Detection for Early Identification of Drill Jamming](https://arxiv.org/abs/2611.07356) | Time-series anomaly detection |
 <!-- LATEST:END -->
 
 ## Why
