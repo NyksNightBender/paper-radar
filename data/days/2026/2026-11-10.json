@@ -1,0 +1,125 @@
+{
+ "date": "2026-11-10",
+ "generated_at": "2026-11-10T02:08:27+00:00",
+ "model": "BAAI/bge-small-en-v1.5",
+ "interests": [
+  {
+   "key": "water",
+   "name": "Water networks"
+  },
+  {
+   "key": "meters",
+   "name": "Meters and consumption"
+  },
+  {
+   "key": "methods",
+   "name": "Time-series anomaly detection"
+  }
+ ],
+ "count": 4,
+ "papers": [
+  {
+   "id": "2611.10352",
+   "version": 1,
+   "title": "TripletAD: Weakly Supervised Anomaly Detection in Embedding Space with Rare Anomalies and Scarce Labels",
+   "abstract": "Many practical anomaly detection problems come with only a handful of confirmed anomalies, and the unreviewed remainder of the data cannot be trusted to be normal. We study this setting under a curated-label protocol, in which unconfirmed anomalies are removed from training rather than relabelled as normal, and propose TripletAD, a weakly supervised detector that learns a triplet-margin embedding and calibrates a linear scoring head with two soft penalties: a partial cross-entropy on labelled anomalies and a relative-contrast hinge that separates the mean scores of anomalous and normal samples. Because every mined triplet contains a labelled anomaly, the few labels are reused across the entire training set instead of being diluted by it. On 24 ADBench datasets whose inputs are pre-trained embeddings (text, image and speech vectors), TripletAD outperforms established state-of-the-art weakly supervised detectors (DevNet, PReNet and DeepSAD) and gradient-boosted trees when anomalies are rare. At a 1% anomaly rate it has the highest mean AUCPR of six methods, 20% above DevNet; on the naturally rare Speech dataset it doubles the best baseline (0.394 vs. 0.196 AUCPR); and on MVTec-AD it is best when only a quarter or half of the anomalies are labelled. Pooled over 70 rare- or sparse-label settings, it has the best average rank (2.21 of 6) and outperforms each baseline under Wilcoxon signed-rank tests with Holm correction. When anomalies are more frequent it performs on par with these methods. The method needs no per-dataset tuning and is insensitive to its loss weights and training length; on raw tabular features, gradient-boosted trees remain the stronger choice.",
+   "authors": [
+    "Sumit Wadhwa",
+    "Souvik Nath"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-07T00:31:34+00:00",
+   "url": "https://arxiv.org/abs/2611.10352",
+   "pdf": "https://arxiv.org/pdf/2611.10352",
+   "score": 0.7477,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6426,
+    "meters": 0.6157,
+    "methods": 0.7477
+   }
+  },
+  {
+   "id": "2611.09997",
+   "version": 1,
+   "title": "SurvAD: How Anomalies Survive Diffusion Reconstruction",
+   "abstract": "Diffusion-based anomaly detectors reconstruct a test image towards normality, yet how much of an anomaly survives, its leak, remains uncharacterized. We show that a first-order deterministic sampler obeys an exact recursion along the anomaly, whose continuous limit is a survival law. The anomaly decays exponentially as the noise falls, at a rate set by the retention $r$, the share the model keeps on the states it visits. Because $r$ depends on the noise level and not on the step count, one measured path predicts the leak of other step counts, samplers and schedules from a nearby start to within a few hundredths, on four diffusion models and real defects. The law also shows that the leak's growth over steps is exposure bias and that normal details obey the same law, so changing the path or the training trades leak for detail error. We introduce SurvAD, which fine-tunes the reconstructor on inference-like starts and fits a comparator that adds evidence to the residual map without suppressing its ranking elsewhere. For under $2\\%$ more inference time, SurvAD raises the multi-class pixel average precision (P-AP) of DeCo-Diff from $76.8$ to $80.7$ on MVTec AD and from $57.5$ to $60.0$ on VisA. It matches CostFilter-AD on the same reconstructor with $9\\times$ fewer trainable parameters and, under Dinomaly's protocol, exceeds its reported P-AP on Dinomaly on both benchmarks.",
+   "authors": [
+    "Lexing Zhang"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG"
+   ],
+   "published": "2026-11-03T16:07:35+00:00",
+   "url": "https://arxiv.org/abs/2611.09997",
+   "pdf": "https://arxiv.org/pdf/2611.09997",
+   "score": 0.7001,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6553,
+    "meters": 0.5989,
+    "methods": 0.7001
+   }
+  },
+  {
+   "id": "2611.10404",
+   "version": 1,
+   "title": "Coding or Cheating? An Investigation of Frontier Coding LLMs",
+   "abstract": "Frontier agentic LLMs are trained on verifiable rewards in reinforcement learning (RL) environments built from real software repositories. A passing test suite is treated as the reward for solving the task. We show that, on hard problems, frontier models often satisfy these rewards by obtaining the answer instead of deriving it, known as reward hacking. Prior reports document this behavior on public benchmarks. We test its persistence on unseen problems. In a hardened environment where the answer cannot leak, nearly every model we tested attempted to recover the answer, escalating through tiers of increasingly specialized exploitation: mining the repository history for the upstream fix, inspecting the git object store directly, and sweeping the filesystem for a possible newer copy of the source or hidden tests. These attempts were concentrated on the hardest problems, and the models differed in whether, how often, and how deeply they escalated. Our position is that this behavior is a learned shortcut, acquired in RL environments that leak the answer, not a sign of intelligence. We release agent traces for these models to support further study at https://huggingface.co/datasets/logitly-ai/reward-hacking-raw-v1.",
+   "authors": [
+    "Yuntao Gui"
+   ],
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL",
+    "cs.AI"
+   ],
+   "published": "2026-11-07T02:29:54+00:00",
+   "url": "https://arxiv.org/abs/2611.10404",
+   "pdf": "https://arxiv.org/pdf/2611.10404",
+   "score": 0.593,
+   "interest": "water",
+   "scores": {
+    "water": 0.593,
+    "meters": 0.5366,
+    "methods": 0.5908
+   }
+  },
+  {
+   "id": "2611.10439",
+   "version": 1,
+   "title": "Who Remembers What? Multi-Granularity Memory Extraction for Multi-User, Multi-Agent Interaction",
+   "abstract": "Self-evolving agents improve their own skills, memory, and harness code from experience without retraining the base LLM, and group-evolving agents go further by sharing these lessons across agents. Yet most such systems overlook that sharing across users and heterogeneous agents requires deciding who can benefit from each lesson and what information must remain private. We present MixUA, a memory system that distills independent user-agent trajectories into lessons and assigns each lesson to a user-agent pair, user, agent, or global scope according to whom it benefits and what it may disclose. For evaluation, we introduce CrossLearnBench, a mixed-user-agent benchmark that pairs established agent tasks with user preferences and privacy probes that test whether private facts leak into memory other users can read. With five users and seven agents, MixUA raises pass rates by up to 16 points over no memory and 5 over a single global memory, even on tasks previously tried only by other users on other agents. It retains up to 90% of previously stated preferences, and at most 0.02% of privacy probes find a planted private fact in a forbidden scope. We hope MixUA offers a scalable path toward a global system where users and agents co-evolve.",
+   "authors": [
+    "Yunzhe Wang",
+    "Mesut Erhan Unal",
+    "Sheng Zhang",
+    "Shabnam Ghadar",
+    "Peng Tang"
+   ],
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL",
+    "cs.AI",
+    "cs.LG",
+    "cs.MA"
+   ],
+   "published": "2026-11-07T03:35:51+00:00",
+   "url": "https://arxiv.org/abs/2611.10439",
+   "pdf": "https://arxiv.org/pdf/2611.10439",
+   "score": 0.5802,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5527,
+    "meters": 0.5445,
+    "methods": 0.5802
+   }
+  }
+ ]
+}

@@ -8,15 +8,14 @@
 **Live site: [nyksnightbender.github.io/paper-radar](https://nyksnightbender.github.io/paper-radar/)** (daily and weekly digests, archive, RSS)
 
 <!-- LATEST:START -->
-**Closest new papers, 9 November 2026** (16 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
+**Closest new papers, 10 November 2026** (4 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
 
 | Score | Paper | Topic |
 | ---: | --- | --- |
-| 0.75 | [From Point Anomalies to Anomalous Driving Episodes: Interpreting Abnormal Driving from Vehicle Telematics](https://arxiv.org/abs/2611.09782) | Time-series anomaly detection |
-| 0.74 | [AnomSep: Bridging Optimization-Based Separation and Deep Neural Refinement for Anomaly Detection with Listenable Explanations](https://arxiv.org/abs/2611.09279) | Time-series anomaly detection |
-| 0.74 | [Multimodal Training with Knowledge Traction for Video Anomaly Detection](https://arxiv.org/abs/2611.09536) | Time-series anomaly detection |
-| 0.72 | [Enabling Privacy-Preserving Natural Language Access to Industrial Smart Meter Data](https://arxiv.org/abs/2611.09372) | Meters and consumption |
-| 0.70 | [Fifty-Two Shades of Pig: What the UCR Archive Really Asks Classifiers to Do](https://arxiv.org/abs/2611.09843) | Time-series anomaly detection |
+| 0.75 | [TripletAD: Weakly Supervised Anomaly Detection in Embedding Space with Rare Anomalies and Scarce Labels](https://arxiv.org/abs/2611.10352) | Time-series anomaly detection |
+| 0.70 | [SurvAD: How Anomalies Survive Diffusion Reconstruction](https://arxiv.org/abs/2611.09997) | Time-series anomaly detection |
+| 0.59 | [Coding or Cheating? An Investigation of Frontier Coding LLMs](https://arxiv.org/abs/2611.10404) | Water networks |
+| 0.58 | [Who Remembers What? Multi-Granularity Memory Extraction for Multi-User, Multi-Agent Interaction](https://arxiv.org/abs/2611.10439) | Time-series anomaly detection |
 <!-- LATEST:END -->
 
 ## Why
