@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "generated_at": "2026-11-10T02:08:27+00:00",
+ "generated_at": "2026-11-10T08:25:38+00:00",
  "model": "BAAI/bge-small-en-v1.5",
  "interests": [
   {
@@ -16,8 +16,142 @@
    "name": "Time-series anomaly detection"
   }
  ],
- "count": 4,
+ "count": 36,
  "papers": [
+  {
+   "id": "2611.12414",
+   "version": 1,
+   "title": "Sensor placement for real-life water distribution networks, ensuring observability under uncertainties",
+   "abstract": "Leakage detection in water distribution networks (WDNs) is crucial for limiting water losses. However, effective detection strongly depends on sensor availability and placement. Most existing sensor placement methods rely on extensive simulations or precise knowledge of hydraulic parameters, which are often uncertain in practice. In this paper, we propose using a scalable sensor placement framework based on structural observability that depends only on the network topology and the underlying pressure-flow interconnection structure. The approach guarantees structural observability independently of hydraulic parameters, and is therefore robust to parametric uncertainties, assuming that the network topology is correctly specified. The method is computationally efficient and its performance is demonstrated on several real-life WDNs provided by Brabant-Water. While the framework ensures full network observability, the required number of sensors can be high in large and cyclic networks, which may limit applicability in real-life and motivates future work on relaxed observability guarantees for sensor placement.",
+   "authors": [
+    "Jarne J. H. van Gemert",
+    "Valentina Breschi",
+    "Claudia Quintiliani",
+    "Doekle R. Yntema",
+    "Karel J. Keesman",
+    "Mircea Lazar"
+   ],
+   "primary": "eess.SY",
+   "categories": [
+    "eess.SY"
+   ],
+   "published": "2026-11-09T13:44:25+00:00",
+   "url": "https://arxiv.org/abs/2611.12414",
+   "pdf": "https://arxiv.org/pdf/2611.12414",
+   "score": 0.8307,
+   "interest": "water",
+   "scores": {
+    "water": 0.8307,
+    "meters": 0.7284,
+    "methods": 0.6164
+   }
+  },
+  {
+   "id": "2611.12775",
+   "version": 1,
+   "title": "LogCDM: Interpretable Log Anomaly Detection via Behavioral Graph Drift and Adaptive Signal Fusion",
+   "abstract": "Log-based anomaly detection is increasingly dominated by large pretrained models, from BERT-scale encoders to 8B-parameter language models, which require GPUs at inference time and are difficult to deploy on the monitoring nodes where logs are produced. We present LogCDM, a compact detector that scores each log session using three complementary signals: the next-event surprise of a small causal Transformer, the distance between a graph-attention embedding of the session's own transition graph and that of a normal reference graph, and a transition-drift statistic that we show is exactly a frequency-weighted chi-squared divergence between transition kernels. The divergence view yields an asymptotic null distribution, a length-standardized score, and a per-edge decomposition that explains each alarm. A sigmoid gate fuses the three signals; under a shared-covariance Gaussian model, this gate is the Bayes posterior, and its learned weights indicate which signal each dataset relies on. With 8.1-8.8M parameters and no GPU required at inference, LogCDM reaches F1 scores of 0.984 on HDFS, 0.870 on chronologically split BGL, and 0.850 on Thunderbird, within 0.013-0.12 of an 8.1B-parameter LLM detector evaluated under the same protocol and above all compact baselines on BGL. It scores a session in 5.5-10.5 ms on a CPU. Ablations show that the structural signals add 0.025-0.030 F1 on BGL and Thunderbird but almost nothing on HDFS, consistent with the learned fusion weights.",
+   "authors": [
+    "Suryansh Talukdar",
+    "Taha Sarwat",
+    "Jin Soung Yoo"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-09T17:48:31+00:00",
+   "url": "https://arxiv.org/abs/2611.12775",
+   "pdf": "https://arxiv.org/pdf/2611.12775",
+   "score": 0.7998,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7196,
+    "meters": 0.682,
+    "methods": 0.7998
+   }
+  },
+  {
+   "id": "2611.10856",
+   "version": 1,
+   "title": "Self-contained Data Cleaning for Unsupervised Anomaly Detection",
+   "abstract": "Training datasets for unsupervised anomaly detection are often assumed to be anomaly-free, but in practice, they frequently contain malicious or anomalous contamination. This contamination severely degrades the dependability and security of downstream detection models. While some contamination-robust methods exist, they rarely generalize across different model architectures and typically rely on a priori knowledge of the contamination ratio\\textemdash information that is rarely available in real-world security operations. In this paper, we propose a novel, self-contained preprocessing framework for anomaly detection that identifies and removes training set contamination without relying on known contamination ratios. Our approach performs a dynamic analysis of the cosine similarity between each data point and its reconstruction during the early training stages of an auto-encoder, mapping points into a dynamic space where anomalous regions naturally exhibit lower density. By executing ``hard cleaning''\\textemdash removing all identified anomalous candidates from the training pool\\textemdash we systematically improve data quality. Because this cleaning occurs at the data level, the security and reliability improvements generalize seamlessly across various downstream anomaly detection architectures. Evaluating our framework across 8 distinct models and 10 security-relevant datasets, our approach achieves up to 100\\% contamination reduction, yielding average improvements of 11.2\\% in F1 score and 7.3\\% in classification accuracy.",
+   "authors": [
+    "Jordan F. Masakuna",
+    "Ahmed Yacine",
+    "Djeff K. Nkashama",
+    "Arian Soltani",
+    "Marc Frappier",
+    "Pierre M. Tardif",
+    "Froduald Kabanza"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-07T17:09:47+00:00",
+   "url": "https://arxiv.org/abs/2611.10856",
+   "pdf": "https://arxiv.org/pdf/2611.10856",
+   "score": 0.7923,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7148,
+    "meters": 0.6586,
+    "methods": 0.7923
+   }
+  },
+  {
+   "id": "2611.12871",
+   "version": 1,
+   "title": "Vendi Anomaly Scores for Efficient and Accurate Anomaly Detection",
+   "abstract": "Anomaly detection (AD) is a critical for trustworthy machine learning and scientific discovery. Existing methods typically define anomalies through local density, isolation heuristics, or distance from a fitted distribution, making them sensitive to neighborhood scale, partitioning choices, or restrictive distributional assumptions. In this work, we introduce a new paradigm by formulating anomaly detection from a diversity perspective. We propose the $\\textit{Vendi Anomaly Score}$ (VAS), which detects anomalies by quantifying how much a sample changes the diversity of the dataset, as measured by the Vendi score, when removed. VAS captures both local redundancy and global data structure without relying on density estimation or partitioning heuristics. Moreover, VAS requires no hyperparameter tuning, instead adapting automatically to the spectral structure of the data. VAS is non-parametric and scales linearly with dataset size. Across 148 benchmark embedding datasets derived from 10 source datasets and 4 embedding architectures, VAS achieves state-of-the-art AD performance. We further validate VAS on large-scale ImageNet experiments, where it remains robust as both contamination rate and dataset scale increase.",
+   "authors": [
+    "Amey Pasarkar",
+    "Adji Bousso Dieng"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-09T18:56:15+00:00",
+   "url": "https://arxiv.org/abs/2611.12871",
+   "pdf": "https://arxiv.org/pdf/2611.12871",
+   "score": 0.7806,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7076,
+    "meters": 0.6413,
+    "methods": 0.7806
+   }
+  },
+  {
+   "id": "2611.11704",
+   "version": 1,
+   "title": "Scalable Counterfactual Explanations for Time Series via Policy Learning",
+   "abstract": "Generating counterfactual (CF) explanations for time series is challenging due to complex temporal dependencies and the computational inefficiency of traditional instance-specific optimization. We propose a policy learning framework for counterfactual explanation in time series, trained as a one-step contextual-bandit policy-learning problem. By training an actor-critic agent in the latent space of a pre-trained autoencoder, our method learns a transferable policy that captures global structural regularities. Unlike existing methods that rely on iterative optimization for each new input, the learned policy enables direct generation of valid and plausible counterfactuals through a single forward pass, avoiding per-instance optimization at inference time. Experiments on 13 UCR benchmark datasets show that our framework achieves high validity and strong plausibility across multiple anomaly detection metrics. Overall, by decoupling counterfactual generation from per-instance optimization, the proposed method provides an efficient and scalable alternative to existing approaches for time series counterfactual explanations.",
+   "authors": [
+    "Peiyu Li",
+    "Pouya Hosseinzadeh",
+    "Soukaina Filali Boubrahimi",
+    "Shah Muhammad Hamdi"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-09T00:00:16+00:00",
+   "url": "https://arxiv.org/abs/2611.11704",
+   "pdf": "https://arxiv.org/pdf/2611.11704",
+   "score": 0.7576,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6275,
+    "meters": 0.653,
+    "methods": 0.7576
+   }
+  },
   {
    "id": "2611.10352",
    "version": 1,
@@ -40,6 +174,133 @@
     "water": 0.6426,
     "meters": 0.6157,
     "methods": 0.7477
+   }
+  },
+  {
+   "id": "2611.11009",
+   "version": 1,
+   "title": "PIA: Agentic Physics-Informed Runtime Anomaly Detection",
+   "abstract": "Runtime anomaly detectors for cyber-physical systems are either learned as black boxes from normal data, which miss stealthy manipulations that keep every signal inside its normal range, or derived by hand from physical models, which requires expert effort for every plant. We introduce physicsinformed agents (PIA), in which a large language model agent writes the detector itself as a set of physical residuals, such as pump characteristics, tank mass balances, and controller logic, and refines every candidate against normal operating data through an evaluation workbench before deployment. The result is a compact, human-readable detector that runs in milliseconds and names the component behind each alarm. On the BATADAL water distribution attack benchmark, PIA with Claude Opus 5.5 reaches an F1 of 0.878 on the test attacks against 0.504 for the strongest of six statistical and deep baselines, keeps detecting attacks concealed by replayed and offset sensor readings, and attributes every detected test attack to the attacked component. Ablations show that testing hypotheses against data is decisive: agents that write residuals from the plant description alone lose up to 0.28 F1, whereas agents that see only anonymized signals recover most of the physical structure.",
+   "authors": [
+    "Ali Mohammadi Ruzbahani",
+    "Abbas Yazdinejad",
+    "Hadis Karimipour"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-07T23:12:31+00:00",
+   "url": "https://arxiv.org/abs/2611.11009",
+   "pdf": "https://arxiv.org/pdf/2611.11009",
+   "score": 0.7377,
+   "interest": "water",
+   "scores": {
+    "water": 0.7377,
+    "meters": 0.6575,
+    "methods": 0.6881
+   }
+  },
+  {
+   "id": "2611.10718",
+   "version": 1,
+   "title": "FedSGN: Federated Sparse Grassmann Newton Learning for IoT Anomaly Detection",
+   "abstract": "Anomaly detection plays a critical role in securing the Internet of things (IoT). Although existing federated principal component analysis (PCA) methods can learn the subspace of normal samples without sharing raw data, they often suffer from feature redundancy that may degrade detection performance. To address this limitation, we propose a novel and effective federated sparse Grassmann Newton (FedSGN) learning method for IoT anomaly detection. Technically, our FedSGN leverages the $\\ell_{2,0}$-norm constraint on the global projection matrix to eliminate redundancy and introduces an orthogonality penalty to preserve the intrinsic structure. Moreover, we develop an augmented Lagrangian solver integrated with a semismooth Newton scheme to enable parallel client updates and Grassmann projection for robustness. Numerical experiments demonstrate that the proposed method achieves favorable overall detection performance while reducing communication overhead. The source code is publicly available at https://github.com/xianchaoxiu/FedSGN",
+   "authors": [
+    "Jingjing Liu",
+    "Xiansen Ju",
+    "Xianchao Xiu",
+    "Wanquan Liu"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-07T13:25:53+00:00",
+   "url": "https://arxiv.org/abs/2611.10718",
+   "pdf": "https://arxiv.org/pdf/2611.10718",
+   "score": 0.7363,
+   "interest": "water",
+   "scores": {
+    "water": 0.7363,
+    "meters": 0.6709,
+    "methods": 0.719
+   }
+  },
+  {
+   "id": "2611.10733",
+   "version": 1,
+   "title": "Spectrogram-Based CNN Autoencoder for One-Class Anomaly Detection in Machining Vibration Signals",
+   "abstract": "This work presents a one-class anomaly detection framework for vibration-based condition monitoring in machining processes using a convolutional neural network autoencoder. Three-axis vibration signals acquired during industrial broaching are transformed into time--frequency spectrograms and combined into a compact three-channel representation, enabling convolutional feature learning on multivariate time-series data. The autoencoder is trained exclusively on normal process data and detects anomalous strokes based on reconstruction errors. Labeled validation data are used for threshold calibration and an independent test set is reserved for final performance evaluation. To improve sensitivity to short-lived process instabilities such as chatter, a localized residual-based metric termed Segmented Vertical Error (SVE) is introduced. Experimental results on approximately 10{,}000 broaching strokes show a clear separation between normal and anomalous process conditions under strong class imbalance. The processing pipeline is additionally evaluated on an external public turning dataset as a proof of concept, indicating preliminary applicability beyond the original broaching setup. The results suggest that spectrogram-based autoencoder models can provide a practical and scalable basis for one-class anomaly detection in industrial vibration monitoring.",
+   "authors": [
+    "Sebastian Zeleny",
+    "Christian Gawron"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-07T13:45:38+00:00",
+   "url": "https://arxiv.org/abs/2611.10733",
+   "pdf": "https://arxiv.org/pdf/2611.10733",
+   "score": 0.7275,
+   "interest": "methods",
+   "scores": {
+    "water": 0.687,
+    "meters": 0.6708,
+    "methods": 0.7275
+   }
+  },
+  {
+   "id": "2611.11613",
+   "version": 1,
+   "title": "Daily Emergency Call Volume Forecasting using Univariate and Multivariate TimeGPT",
+   "abstract": "This study investigates the potential of TimeGPT, a pretrained foundation model for timeseries, for forecasting daily emergency call volumes. Real-world emergency call data, comprising 2,101 daily observations, are used to evaluate both univariate and multivariate forecasting settings under one-step-ahead and seven-day multi-step-ahead scenarios. The multivariate forecasting incorporates temporal, meteorological, demographic, and socioeconomic variables. A chronological training, validation, and test split is adopted to prevent information leakage, while hyperparameters are selected using the validation set through grid search and early stopping when applicable. Forecasting performance is evaluated using multiple error metrics. Its forecasting performance is compared with several established forecasting approaches, including Seasonal Autoregressive Integrated Moving Average with Exogenous Regressors (SARIMAX), Poisson regression (PR), Negative Binomial regression (NBR), Extreme Gradient Boosting (XGBoost), Multilayer Perceptron (MLP), and Long Short-Term Memory (LSTM). The results show that SARIMAX achieves the best overall performance in the univariate setting. In the multivariate setting, NBR and PR provide best performance. These findings indicate that the large-scale pretraining of TimeGPT do not necessarily translate into superior forecasting accuracy for emergency call volumes. Frugal methods trained solely on the available data remain better for this application.",
+   "authors": [
+    "Feriel Fass",
+    "Djemel Ziou"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-08T20:46:04+00:00",
+   "url": "https://arxiv.org/abs/2611.11613",
+   "pdf": "https://arxiv.org/pdf/2611.11613",
+   "score": 0.7264,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6338,
+    "meters": 0.6952,
+    "methods": 0.7264
+   }
+  },
+  {
+   "id": "2611.11582",
+   "version": 1,
+   "title": "Robust Gaussian process regression: posterior contraction",
+   "abstract": "Gaussian processes form a popular and flexible class of prior distributions with principled uncertainty quantification, but the Gaussian likelihood on which the corresponding posterior relies makes them highly sensitive to outliers and contaminated observations. We study Gaussian process regression when among the $n$ observations, $m$ of these are possibly contaminated. A generic framework to obtain posterior contraction rates in this setting is considered, from a frequentist perspective as the sample size $n$ and the number of corrupted observations $m$ grow. We adopt a generalized Bayes approach in which the log--likelihood is replaced by a robustified version; we discuss various choices thereof, such as one recently proposed by Altamirano et al. that preserves conjugacy. We investigate the minimax rate of estimation under adversarial contamination in terms of the Sobolev smoothness $β$ of the regression function and $m$. The question of building adaptive procedures to both $β$ and $m$ is investigated, and we show that a polynomial loss for adaptation must be paid in general. We instantiate our results for Matérn Gaussian process and deep ReLU network priors. Numerical experiments for existing and new robust algorithms are provided, illustrating the practical applicability of our results.",
+   "authors": [
+    "Ismaël Castillo",
+    "Paul Egels",
+    "Riccardo Lazzarini",
+    "Botond Szabó"
+   ],
+   "primary": "math.ST",
+   "categories": [
+    "math.ST",
+    "stat.ML"
+   ],
+   "published": "2026-11-08T19:56:38+00:00",
+   "url": "https://arxiv.org/abs/2611.11582",
+   "pdf": "https://arxiv.org/pdf/2611.11582",
+   "score": 0.7136,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6385,
+    "meters": 0.6249,
+    "methods": 0.7136
    }
   },
   {
@@ -68,6 +329,515 @@
    }
   },
   {
+   "id": "2611.12579",
+   "version": 1,
+   "title": "Covert System Identification Under Timing Constraints: A Static Linear Model and Its Detectability Implications",
+   "abstract": "This paper studies covert system identification in cyber-physical systems, where an attacker infers plant dynamics while attempting to remain stealthy. We introduce a lightweight static linear model in which the time to execute a setpoint change is proportional to the commanded speed difference. On a Siemens PROFINET testbed this gain captures the drive's ramp response accurately but not its terminal overshoot. That omitted transient becomes the attacker's main exposure: on real traces, the residual left by the linear masking procedure is detected by two anomaly monitors, Process-Aware Stealthy-Attack Detection (PASAD) and the CUSUM change detector. Across the cascade identification and staircase attack strategies defined in the paper, the stealth boundary relates to the plant's own settling transients, a structural limit for this class of models under the adopted detector-calibration regime. Comparison against dynamic models obtained by N4SID, trained at multiple excitation amplitudes, shows that the evaluated N4SID models do not improve stealth over the structure-informed ramp model. Since per-cycle computation is negligible for both procedures, the binding trade-off is not inference cost but whether the attacker can acquire and refresh a model without injecting detectable perturbations.",
+   "authors": [
+    "Victor Mattos",
+    "Guilherme Sobreira",
+    "Amit Bhaya",
+    "Alan Oliveira de Sá",
+    "Charles B. Prado",
+    "Raphael Machado",
+    "Gaurav Srivastava",
+    "Daniel S. Menasche"
+   ],
+   "primary": "eess.SY",
+   "categories": [
+    "eess.SY",
+    "cs.CR"
+   ],
+   "published": "2026-11-09T15:36:53+00:00",
+   "url": "https://arxiv.org/abs/2611.12579",
+   "pdf": "https://arxiv.org/pdf/2611.12579",
+   "score": 0.6971,
+   "interest": "water",
+   "scores": {
+    "water": 0.6971,
+    "meters": 0.6,
+    "methods": 0.6661
+   }
+  },
+  {
+   "id": "2611.10514",
+   "version": 1,
+   "title": "FADE: Fractional Anomalous Dynamics Extrapolation for Training-Free Diffusion Transformers Acceleration",
+   "abstract": "Diffusion Transformers (DiTs) have established themselves as the preeminent paradigm for high-fidelity generative modeling across various modalities, yet their practical deployment is hindered by the severe computational overhead of iterative sampling. While recent feature-caching methods mitigate this latency through feature reuse or forecasting based on integer-order operators, they remain limited in adapting to the non-stationary and highly curved dynamics of DiT latent trajectories. In this work, we reveal that DiT feature evolution exhibits anomalous diffusion characteristics and a certain degree of spatiotemporal heterogeneity, rendering static, integer-order forecasting operators inadequate and prone to error accumulation. To address this, we propose Fractional Anomalous Dynamics Extrapolation (FADE), a unified framework for training-free diffusion transformers acceleration. FADE models DiT feature evolution via anomalous diffusion and employs a Mittag--Leffler fractional operator to better adapt to high-curvature and non-linear latent trajectories of DiTs. Leveraging the empirical observation that these complex dynamics maintain cross-sample stability, we further construct a Look-Up Table with multiple dimensions through offline profiling. This enables negligible LUT-retrieval overhead, spatiotemporally adaptive parameter retrieval during online inference. Extensive evaluations across diverse architectures and modalities demonstrate that FADE achieves state-of-the-art acceleration, preserving exceptional generation fidelity under aggressive skip intervals with negligible latency overhead. Our project page is available at https://youngkinlon.github.io/fade-project-page/.",
+   "authors": [
+    "Jinlong Yang",
+    "Lizilin",
+    "Jinke Wu",
+    "Yao Zhou"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-07T06:25:08+00:00",
+   "url": "https://arxiv.org/abs/2611.10514",
+   "pdf": "https://arxiv.org/pdf/2611.10514",
+   "score": 0.6846,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6104,
+    "meters": 0.6118,
+    "methods": 0.6846
+   }
+  },
+  {
+   "id": "2611.10779",
+   "version": 1,
+   "title": "Real-Time Threat Classification in Multi-Agent Systems via Topology-Coupled Hidden Markov Models",
+   "abstract": "Networked multi-agent systems coordinating in adversarial environments face compound cyber threats that alternate between false-data injection (FDI), denial-of-service (DoS), and stealthy decoy perturbations designed to mimic benign operational anomalies. Because the switching policy is latent and the plant dynamics evolve continuously, deterministic threshold detectors struggle to isolate deception without causing excessive false alarms. This paper presents an online, data-driven framework that couples distributed continuous time unknown input observers (UIOs) with a topology-aware Hidden Markov Model (HMM) for real-time attack detection and classification under unknown adversarial strategies. By decoupling FDI signals from augmented node states, distributed observers deployed across the network generate local augmented residuals that are discretized into emission sequences. The HMM embeds the underlying directed communication graph into the off-diagonal blocks of its transition probability matrix, explicitly capturing inter-agent attack propagation. Both transition and observation probabilities are updated recursively online via an Expectation-Maximization (EM) scheme, adapting the classifier to evolving threat behaviours without prior offline calibration. Numerical simulations on a directed network demonstrate that incorporating graph topology into the latent transition dynamics resolves the severe classification ambiguity between nominal and decoy modes, outperforming decoupled agent-independent decoders while restricting observer deployment to a sparse subset of nodes.",
+   "authors": [
+    "Ailin Barzegar",
+    "Davide Spinello",
+    "Mohammad Pirani"
+   ],
+   "primary": "eess.SY",
+   "categories": [
+    "eess.SY"
+   ],
+   "published": "2026-11-07T15:06:17+00:00",
+   "url": "https://arxiv.org/abs/2611.10779",
+   "pdf": "https://arxiv.org/pdf/2611.10779",
+   "score": 0.6786,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6745,
+    "meters": 0.6066,
+    "methods": 0.6786
+   }
+  },
+  {
+   "id": "2611.11564",
+   "version": 1,
+   "title": "From Sound to Occupancy: Privacy-Aware Audio Sensing for Buildings",
+   "abstract": "Occupancy-based controls regulate lighting and HVAC according to whether a space is in use. Passive infrared (PIR) sensors, the most common choice, respond to motion and can report an occupied room as vacant when its occupants remain still. Sound offers an alternative cue, since seated occupants type, turn pages and cough, but microphones raise privacy concerns. We therefore study a two-stage design: an on-device encoder maps each second of audio to a short embedding, and a server-side temporal model turns the stream of embeddings into an occupancy state. To our knowledge, no publicly available dataset pairs office audio with occupancy labels, so we evaluate the two stages separately on public data. The encoder is trained on synthetic scenes that mix empty-room recordings, room impulse responses, office sounds and read speech, and tested on unseen rooms, recordings and speakers for whether a second contains a sound made by a person. On 11 real office recordings (DCASE 2013) it reaches an AUC of 0.87, against 0.76 for log-mel statistics. Attacks on the transmitted embeddings recover at most 1% of the spoken words, against 94% from log-mel frames, but still identify the speaker among 40 in 69 to 77% of the utterances. Noise-floor normalization with adversarial training, an 8-dimensional embedding, or sending only class probabilities lowers this to 38 to 55% without hurting detection. On HPDmobile, which pairs home occupancy labels with an amplitude envelope of the audio, a causal temporal model pretrained with a hierarchical contrastive loss matches hand-crafted features (AUC 0.75) and does better when only one labelled day per home is available. These results make the two-stage design a practical basis for privacy-aware acoustic occupancy sensing, with speaker identity as the one leak still to close.",
+   "authors": [
+    "Myeongwon Chae",
+    "Seonghyuk Son"
+   ],
+   "primary": "cs.SD",
+   "categories": [
+    "cs.SD",
+    "cs.LG"
+   ],
+   "published": "2026-11-08T19:11:09+00:00",
+   "url": "https://arxiv.org/abs/2611.11564",
+   "pdf": "https://arxiv.org/pdf/2611.11564",
+   "score": 0.6782,
+   "interest": "meters",
+   "scores": {
+    "water": 0.6277,
+    "meters": 0.6782,
+    "methods": 0.6089
+   }
+  },
+  {
+   "id": "2611.11382",
+   "version": 1,
+   "title": "The comparison of density estimation for transfer learning in Banach, Hilbert, Euclidean spaces",
+   "abstract": "Domain adaptation or DA methods are indispensable when target labels or computational resources are scarce, yet the domain kernel density and subspace alignment approaches completely assume a Hilbertian geometry. They measure distributional discrepancy with symmetric L2 divergences over Euclidean feature spaces or reproducing kernel Hilbert spaces (RKHS). This preprint summarizes the manuscript Non-Hilbertian Domain Adaptation. Total Variation Alignment via L1 Density Regularization on Feature Manifolds, which proposes Banach Manifold Transfer Learning or BMTL. BMTL makes two coupled design decisions. The first one is that features are embedded on a geodesic manifold rather than treated as points of a flat Euclidean space, and the second one is that the density matching regularizer is formulated in an L1 Banach norm, whose minimization is equivalent, by Scheffe's theorem, to contracting the Total Variation or TV distance between domain densities, a bounded metric that weights all regions of the sample space uniformly. The L2 formulation, by contrast, squares deviations and therefore amplifies errors in the tails, over emphasizing density outliers that do not reflect meaningful distributional shift. Experiments on MNIST-USPS, COIL20, and Office+Caltech10 show consistent gains; the L1 variant beats an otherwise identical L2 ablation on every task, for example 92.44% vs. 89.80% on USPS->MNIST and surpasses the strongest baseline DMDA by +3.68% on average over twelve Office+Caltech transfers. This document situates the contribution with an explicit comparison of Euclidean, Hilbert, and Banach geometries.",
+   "authors": [
+    "Maryam Alsadat Kazemian",
+    "Azam Bastanfard"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-08T13:44:04+00:00",
+   "url": "https://arxiv.org/abs/2611.11382",
+   "pdf": "https://arxiv.org/pdf/2611.11382",
+   "score": 0.6584,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5984,
+    "meters": 0.5889,
+    "methods": 0.6584
+   }
+  },
+  {
+   "id": "2611.12026",
+   "version": 1,
+   "title": "MambaPD: Bidirectional Selective State Space Model for Parkinson's Disease Detection from Resting-State EEG",
+   "abstract": "Typical diagnosis of Parkinson's disease (PD) occurs only after significant dopaminergic loss, while resting-state EEG abnormalities like alpha slowing and reduced coherence occur earlier. While many published EEG-based PD detectors claim accuracy greater than 95%, many use epoch-level splits which leak subject identity. I introduce MambaPD, a bidirectional selective state space model for resting-state EEG-based PD detection, blending the channel mixing, patch tokenization and bidirectional Mamba encoder. It is compared with four baselines (TCN, BiLSTM with attention, EEGNet and a patch Transformer) in two public datasets (UNM, SanDiego) using subject-independent 5-fold cross-validation (checkpoints were selected on the held-out fold, so absolute estimates are optimistic). On UNM the accuracy is between 0.67 and 0.71, and MambaPD (0.714) is not statistically distinguishable from the Transformer (0.715), and TCN (0.708), with the highest sensitivity (0.82), while the lowest specificity (0.52). For the smaller SanDiego cohort, accuracy is in the range of 0.60 to 0.70, with the highest scores (0.703) from TCN and the lowest (0.601) from EEGNet, while MambaPD scores 0.631, with the lowest specificity (0.46) among the five models. The differences among the models on UNM are minor compared to the differences among folds. I report the whole pipeline, per-fold results, and the shortcomings of the protocol.",
+   "authors": [
+    "Ayesha Zulfiqar"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "eess.SP"
+   ],
+   "published": "2026-11-09T08:03:18+00:00",
+   "url": "https://arxiv.org/abs/2611.12026",
+   "pdf": "https://arxiv.org/pdf/2611.12026",
+   "score": 0.6547,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5884,
+    "meters": 0.6193,
+    "methods": 0.6547
+   }
+  },
+  {
+   "id": "2611.12178",
+   "version": 1,
+   "title": "Replication of Thermal Comfort Cohort Models: No Support for Improved Thermal Preference Prediction",
+   "abstract": "Cohort comfort models (CCMs) aim to overcome the extensive individual data requirements of personal comfort models (PCMs) by grouping occupants based on demographic and psychometric characteristics (cold start) or similar thermal preferences (warm start). We evaluated the validity of the reported CCM performance gains through (i) a methodological assessment of the original study, (ii) a replication using one of the two original datasets (DORN: 20 participants, 6 months) under a revised experimental protocol, and (iii) a replication using an independently collected dataset (PersonAI: 72 participants, 4 weeks). Classification performance was evaluated using F1-micro, as in the original study, and F1-macro to account for class imbalance. Under F1-micro, a trivial baseline that always outputs the majority class performed on par with cohort models. Under F1-macro, all cohort models achieved lower median scores than a simple baseline that makes random predictions based on the estimated distribution of thermal preferences. In our methodological assessment we identified the following key issues: Limited data per participant and per minority class, reliance on a metric insensitive to class imbalance, missing trivial baselines, inadequate cross validation strategy, and multiple occurrences of information leakage. Our findings challenge the original study's conclusion that CCMs improve thermal preference prediction. CCMs did not outperform simple class-distribution baselines. Future studies should improve experimental designs, including controlled thermal conditions, to obtain sufficient observations across thermal preference classes.",
+   "authors": [
+    "Thomas Hirsch",
+    "Katja Ceplak",
+    "Veronika Windisch",
+    "Samina Kadkhoda Masoumali",
+    "Matias Quintana",
+    "Clayton Miller",
+    "Stefano Schiavon",
+    "Gerald Schweiger"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-09T10:30:14+00:00",
+   "url": "https://arxiv.org/abs/2611.12178",
+   "pdf": "https://arxiv.org/pdf/2611.12178",
+   "score": 0.6468,
+   "interest": "meters",
+   "scores": {
+    "water": 0.5472,
+    "meters": 0.6468,
+    "methods": 0.5892
+   }
+  },
+  {
+   "id": "2611.12067",
+   "version": 1,
+   "title": "XposedMIA: Exploiting Explainable Artificial Intelligence (XAI) for One-Shot Membership Inference Attacks",
+   "abstract": "Machine learning (ML) services increasingly expose explainability outputs alongside model predictions. While such explanations are intended to improve transparency, they may also reveal information about the underlying training data. In this work, we show that the local surrogate geometry employed by Local Interpretable Model-agnostic Explanations (LIME) can be repurposed as a proxy for a sample's distance to the model's decision boundary. We extend this boundary-distance view to tabular counterfactual explanations and, for the first time, to visual counterfactual explanations for image classifiers. We present XposedMIA, a one-shot, explanation-based black-box membership inference attack (MIA) framework that converts the returned explanation into a proxy for the queried sample's distance to the model decision boundary. After a one-time calibration step on a small labeled calibration set of as few as 30 samples, our attack requires only a single query for each target sample. Unlike prior label-only attacks requiring iterative queries or shadow training, our method relies solely on the predicted label and its accompanying explanation. Our evaluation indicates that XposedMIA achieves high effectiveness, with success rates of up to 0.95 using only a single query per target, revealing that releasing explanations introduces an additional channel for membership leakage.",
+   "authors": [
+    "Omar Hamdache",
+    "Serdar Kara",
+    "Kıvanç Kuzey Dikici",
+    "Abdullah Çağlar Öksüz",
+    "Anisa Halimi",
+    "Erman Ayday",
+    "Sinem Sav"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-09T08:42:57+00:00",
+   "url": "https://arxiv.org/abs/2611.12067",
+   "pdf": "https://arxiv.org/pdf/2611.12067",
+   "score": 0.6289,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5749,
+    "meters": 0.5473,
+    "methods": 0.6289
+   }
+  },
+  {
+   "id": "2611.11727",
+   "version": 1,
+   "title": "State Media at Retrieval Time: A Large-Scale Audit of Russian State-Aligned Sources in AI Chatbot Responses",
+   "abstract": "The Pravda Network is a Russian state-aligned media aggregator, with over 110 websites and more than 15 million articles published since 2023. Given its prolific and repetitive output, emerging scholarship argues that the Pravda Network was built to influence AI systems. We conduct a large-scale audit of leading AI chatbots to understand: (1) the retrieval rates of Pravda Network articles, (2) the conditions of retrieval, and (3) whether chatbot responses affirm or caveat this content. We build a 10,000 prompt corpus from sampled Pravda Network headlines varied along two dimensions (headline rewording and user skepticism) and query 11 AI chatbots via the web interface (n=104,997 completed responses). Overall, we find susceptibility to Pravda Network retrieval to be infrequent---appearing in 7.3% of responses---and highly platform dependent---with three chatbots responsible for 94% of retrievals (You.com, Claude, and Copilot). Among the frontier models, Claude is an outlier: ChatGPT, Gemini, and Meta AI retrieved no Pravda Network articles, likely indicative of a domain-level filtering policy. All 11 chatbots, however, retrieved other Russian state-aligned media to some degree (median=13.56% of responses). When Pravda Network articles are surfaced, caveat rates vary widely by platform (from 5.3% to 76.2%), with You.com providing the fewest caveats. We also identify the tactic of headline washing: where 9.92% of sampled Pravda Network headlines attribute their reporting to other, often more credible, media outlets, while the articles themselves are republished from Russian state-aligned media. We discuss headline washing's potential to launder state media as independent reporting. With this audit, we provide a systematic analysis of AI chatbots' susceptibility to Russia's latest attempt to manipulate the information environment.",
+   "authors": [
+    "Laura Kurek",
+    "Elijah Covert",
+    "Rafael I Bonilla",
+    "Eric Gilbert",
+    "Ceren Budak"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-09T00:55:37+00:00",
+   "url": "https://arxiv.org/abs/2611.11727",
+   "pdf": "https://arxiv.org/pdf/2611.11727",
+   "score": 0.6255,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5644,
+    "meters": 0.5703,
+    "methods": 0.6255
+   }
+  },
+  {
+   "id": "2611.11481",
+   "version": 1,
+   "title": "One-Shot Hierarchical Federated Clustering for Distributed Non-IID Biomedical Data Analysis",
+   "abstract": "In multi-institutional biomedical data analysis, comprehensive disease profiles are often fragmented across different data silos. Furthermore, local data distributions typically exhibit varying levels of granularity or even complex nested structures. Although Hierarchical Clustering (HC) is a powerful tool for exploring such data topologies, its cumbersome recursive process incurs prohibitive computational overhead and renders it highly susceptible to privacy leakage. This paper, therefore, introduces an efficient one-shot hierarchical FC framework that performs client-end (institutions) distribution exploration and server-end distribution aggregation through one-way prototype-level communication from clients to the server. Although the designed one-shot prototype transmission guarantees minimal computational overhead and mitigates privacy risks, it inevitably incurs information loss. To counteract this, a multi-granular competitive learning mechanism is proposed on the server to fuse the clusterlets, effectively maximizing the retention and mining of global distribution topologies under limited, one-way communication constraints. It turns out that the complex cluster distributions across clients can be efficiently explored, and extensive experiments comparing state-of-the-art methods on public datasets demonstrate the superiority of the proposed framework in balancing robust clustering, privacy preservation, and computational efficiency.",
+   "authors": [
+    "Shenghong Cai",
+    "Yiqun Zhang"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-08T16:22:50+00:00",
+   "url": "https://arxiv.org/abs/2611.11481",
+   "pdf": "https://arxiv.org/pdf/2611.11481",
+   "score": 0.6234,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6051,
+    "meters": 0.5712,
+    "methods": 0.6234
+   }
+  },
+  {
+   "id": "2611.12604",
+   "version": 1,
+   "title": "Double Blind Evals: Resolving the Dual Confidentiality Dilemma in AI Safety Auditing",
+   "abstract": "AI safety evaluations often involve sensitive prompts and proprietary models. Evaluators want to keep their evaluation prompts secret from model owners to prevent purposeful or incidental data leakage, ensuring longer usefulness of their benchmark. Model owners in turn wish to keep their proprietary model weights and inference code within their own secure infrastructure to protect their IP. We present a way forward for \"double-blind evals\", which provide cryptographic guarantees that an evaluator's prompts are not shared with the model owner, while simultaneously maintaining the confidentiality of the model weights and inference code. To accomplish this, we use secure enclaves that encrypt data in RAM at the hardware level. In a world-first pilot, we test this approach by evaluating a proprietary Google DeepMind model (Gemini 2.5 Flash Lite) against a selection of the private AILuminate benchmark corpus, using an NVIDIA H100 secure enclave on Google Cloud Platform, and using OpenMined's PySyft to maintain data and model privacy. We believe this effort marks the first use of this technology to provide mutual secrecy for one organization's frontier-class proprietary model weights and another organization's closed benchmark.",
+   "authors": [
+    "Andrew Trask",
+    "Sol Messing",
+    "Vai Pahwa",
+    "Pegah Maham",
+    "Rene Kolga",
+    "Austin Frantz",
+    "Andrew Tash",
+    "Kate Thomas",
+    "Sean McGregor",
+    "George Balston",
+    "Patricia Paskov",
+    "Miles Brundage",
+    "Akriti Vij",
+    "Bennett Hillenbrand",
+    "Alexandros Karargyris",
+    "Tin Acosta",
+    "Joel Fenster",
+    "Madeleine Elish",
+    "Rasmi Elasmar",
+    "Myriam Khan",
+    "Koen van der Veen",
+    "Rasswanth S",
+    "Sameer Wagh",
+    "Stephen Gabriel",
+    "Pedro Werneck",
+    "Lacey Strahm",
+    "Kevin McDonough",
+    "Ronnie Falcon",
+    "Kristian Lum",
+    "William Isaac"
+   ],
+   "primary": "cs.CR",
+   "categories": [
+    "cs.CR",
+    "cs.AI",
+    "cs.LG"
+   ],
+   "published": "2026-11-09T15:48:07+00:00",
+   "url": "https://arxiv.org/abs/2611.12604",
+   "pdf": "https://arxiv.org/pdf/2611.12604",
+   "score": 0.6175,
+   "interest": "water",
+   "scores": {
+    "water": 0.6175,
+    "meters": 0.5658,
+    "methods": 0.5886
+   }
+  },
+  {
+   "id": "2611.10684",
+   "version": 1,
+   "title": "Audit Before You Merge: Provenance, Probing, and Continual LoRA Composition",
+   "abstract": "Post-hoc merging of public LoRA adapters is an attractive gradient-free path to continual adaptation, but reliable measurement of catastrophic forgetting in this setting depends on infrastructure that prior work has not addressed. We treat each adapter merge as a sequential task in a continual-learning setting, with the instruction-tuned base model's capabilities as Task 0, and study forgetting on Llama-3.1-8B-Instruct. Public adapter hubs contain modules that fail basic provenance checks: silent base-version mismatches and near-zero delta norms whose inclusion inflates measured interference by ~10pp. We propose a two-check audit (base-model match, non-trivial delta norm) and a leakage-free probing protocol as preconditions for any forgetting study in this setting. On an audited 4-adapter set, naive merging causes -10.5pp on GSM8K and -18.3pp on HumanEval, while Task Arithmetic at lambda=0.5 sits within a standard error of the unmerged baseline. A coordinate search including negative coefficients identifies the math adapter as probe-optimal at lambda=-0.5, outside the reach of positive-only mergers, suggesting forgetting has structure that negation-aware merging may exploit. The same protocol replicates on Mistral-7B-Instruct-v0.3, where 2 of 4 candidate adapters fail the audit and the audited merge reproduces the same merge-method ranking on GSM8K, supporting that our findings are not Llama-specific.",
+   "authors": [
+    "Lenny Aharon",
+    "Neta Glazer",
+    "Lior Aharon"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "cs.CR",
+    "cs.LG"
+   ],
+   "published": "2026-11-07T12:08:10+00:00",
+   "url": "https://arxiv.org/abs/2611.10684",
+   "pdf": "https://arxiv.org/pdf/2611.10684",
+   "score": 0.6166,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5805,
+    "meters": 0.5733,
+    "methods": 0.6166
+   }
+  },
+  {
+   "id": "2611.12334",
+   "version": 1,
+   "title": "Rethinking Radar 3D Perception: Representation Learning from Raw Spectra",
+   "abstract": "Raw radar spectra are widely viewed as too cluttered and noisy for direct representation learning, motivating handcrafted reductions, sparse point clouds, or compact Doppler descriptors in radar perception. We challenge this assumption and argue that the main limitation lies not in the raw representation itself, but in the absence of a learning objective that separates structured signal from noise. Handcrafted reductions partially address this problem but impose rigid assumptions about what constitutes signal, discarding weak yet informative structure while retaining artifacts that fit the reduction model. Once removed, such information cannot be recovered by supervised learning. We propose an alternative: structure is the component of a radar spectrum that remains reconstructable under localized corruption, while noise is the component that does not. This perspective motivates self-supervised masked modeling for dense radar spectra without predefined signal-noise separation. We instantiate it with Leakage-aware Spectral MAE, a masked autoencoder for raw radar cubes using a corruption strategy inspired by cross-bin energy spreading caused by spectral leakage. We also demonstrate the importance of Doppler organization: treating Doppler as a primary spatial dimension in an x-y-D representation, with height encoded as features, substantially outperforms naive channel stacking and enables effective learning from dense 4D spectra. Without handcrafted reductions, our approach consistently outperforms state-of-the-art radar-based detectors and point-cloud-based self-supervised learning (SSL) counterparts. These results establish raw radar spectra as an effective representation for 3D perception when paired with an appropriate pretraining objective.",
+   "authors": [
+    "Miao Zhang",
+    "Mohamed Abdelsamad",
+    "Bin Yang",
+    "Sherif Abdulatif",
+    "Benedikt Loesch",
+    "Marco Altmann",
+    "Abhinav Valada",
+    "Bin Yang"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "cs.CV",
+    "cs.LG",
+    "cs.RO"
+   ],
+   "published": "2026-11-09T12:54:27+00:00",
+   "url": "https://arxiv.org/abs/2611.12334",
+   "pdf": "https://arxiv.org/pdf/2611.12334",
+   "score": 0.6151,
+   "interest": "water",
+   "scores": {
+    "water": 0.6151,
+    "meters": 0.5647,
+    "methods": 0.6144
+   }
+  },
+  {
+   "id": "2611.10756",
+   "version": 1,
+   "title": "Mirage: Provable Defense Against LLM KV Cache Timing Side Channels with Topology-Aware Isolation",
+   "abstract": "Large Language Models (LLMs) are increasingly deployed as shared multi-tenant services, relying on advanced optimizations like KV cache and prefix sharing to improve throughput and reduce latency. However, these optimizations introduce a critical vulnerability: attackers can exploit time-to-first-token (TTFT) variations between KV cache hits and misses to infer sensitive prompt tokens via prefix-matching side-channel attacks. Existing defenses indiscriminately restrict cross-tenant cache sharing, which incurs prohibitive performance overhead and negates the fundamental efficiency benefits of the KV cache. We propose Mirage, a topology-aware emission obfuscation framework that provably bounds timing leakage without sacrificing the performance gains of cache sharing. Instead of stalling the GPU or forcing redundant recomputations, Mirage delays token emission at the gateway so the attacker observes a natural cache miss distribution, while the GPU seamlessly continues serving other requests at full speed. Mirage uses a Privacy Odometer that persistently tracks the topological novelty of prefix fan-out expansions to distinguish aggressive probing from benign traffic. Once a prefix exceeds a safety threshold, Mirage engages a two-phase policy that uses a dynamic estimator to pad the TTFT to a calibrated cache-miss baseline. On a 500-sample public corpus across three models, Mirage suppresses the timing side-channel to near the random-guessing floor, while maintaining a significantly lower TTFT than defense baselines. We further show that Mirage withstands a strong adaptive adversary and the same principle carries over to semantic caching layers.",
+   "authors": [
+    "Xiaobei Yan",
+    "Tianwei Zhang"
+   ],
+   "primary": "cs.CR",
+   "categories": [
+    "cs.CR",
+    "cs.AI"
+   ],
+   "published": "2026-11-07T14:21:18+00:00",
+   "url": "https://arxiv.org/abs/2611.10756",
+   "pdf": "https://arxiv.org/pdf/2611.10756",
+   "score": 0.6112,
+   "interest": "water",
+   "scores": {
+    "water": 0.6112,
+    "meters": 0.5561,
+    "methods": 0.5865
+   }
+  },
+  {
+   "id": "2611.10898",
+   "version": 1,
+   "title": "Optimal Byzantine-resilient Federated Learning with User-level Differential Privacy",
+   "abstract": "Real-world deployment of federated learning (FL) requires resilience against adversarial clients and data privacy. Byzantine fault captures the worst-case behavior of adversarial clients, while differential privacy (DP) provides statistical guarantees against privacy loss. In particular, user-level DP guards a client's entire contribution and provides more realistic protection against information leakage. Despite intensive efforts, the minimax-optimal convergence bound of Byzantine-resilient FL with user-level DP remains open. We establish an information-theoretic lower bound for any Byzantine-resilient empirical risk minimization problem under user-level DP and heterogeneous clients. We propose ByzULDP, a central DP algorithm featuring a two-level momentum across the client and server. Client-side momentum mitigates stochastic gradient variance during robust aggregation. Unlike the fault-free case, naively combining non-linear Byzantine-resilient aggregation with central DP noise can be insufficient to guarantee convergence to a bounded neighborhood of a stationary point. Our key contribution is a server-side momentum that leverages a property specific to user-level DP, where privacy sensitivity depends on how client updates are constructed, to empower convergence. ByzULDP achieves the order-optimal convergence bound for strongly-convex objectives, with vanishing error terms decaying at the optimal $O(1/T)$ and $O(1/\\sqrt{T})$ rates for strongly-convex and non-convex objectives, respectively. We corroborate our analysis with numerical experiments on real-world datasets across diverse privacy budgets.",
+   "authors": [
+    "Ming Xiang",
+    "Stratis Ioannidis",
+    "Edmund Yeh",
+    "Carlee Joe-Wong",
+    "Lili Su"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.DC",
+    "math.OC"
+   ],
+   "published": "2026-11-07T18:43:31+00:00",
+   "url": "https://arxiv.org/abs/2611.10898",
+   "pdf": "https://arxiv.org/pdf/2611.10898",
+   "score": 0.6059,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6032,
+    "meters": 0.5576,
+    "methods": 0.6059
+   }
+  },
+  {
+   "id": "2611.11506",
+   "version": 1,
+   "title": "On the Relative Security of Prompt Injection: Mechanised Definitions, Defences and Verdicts for LLM Agents",
+   "abstract": "An LLM agent that reads untrusted content, such as an email or a web page, may follow instructions hidden in it. Noninterference is too strong for such agents, since a useful agent lets untrusted content influence what it does and may disclose the user's data by design, and declassification needs a release policy written for each task. We instead state security relative to a reference agent, which runs the same plan under the same runtime monitor with a model that never obeys untrusted content. An agent is relatively secure if every leak it has is a leak the reference already has. Our framework, PlanTERS, instantiates relative security, a notion from speculative execution, with a small agent language in which the attacker chooses how the model follows instructions, a composition with runtime monitors, and attacker models that differ in what they observe. A fence theorem shows that revoking injectable tools at the first untrusted read, and never granting them back, makes every plan relatively secure at the event level on finite runs, for every model behaviour in which each injection is a single call and the model obeys on a schedule fixed in advance; with a fairness condition, this extends to possibly infinite runs. We prove or refute relative security for agents with fences, budgets, approvals, loops and dual LLMs, in Isabelle/HOL.",
+   "authors": [
+    "Brijesh Dongol"
+   ],
+   "primary": "cs.CR",
+   "categories": [
+    "cs.CR",
+    "cs.AI"
+   ],
+   "published": "2026-11-08T17:20:48+00:00",
+   "url": "https://arxiv.org/abs/2611.11506",
+   "pdf": "https://arxiv.org/pdf/2611.11506",
+   "score": 0.604,
+   "interest": "water",
+   "scores": {
+    "water": 0.604,
+    "meters": 0.547,
+    "methods": 0.5664
+   }
+  },
+  {
+   "id": "2611.00580",
+   "version": 2,
+   "title": "Scaling Science: Toward a Chain Reaction of Discovery",
+   "abstract": "Scientific discovery advances when evidence from different investigations is brought into contact. Yet paper-centric communication leaves experimental results fragmented, delayed, or unreported, creating a \"scientific memory wall\" between growing computational capabilities and the evidence accessible to AI systems. Breaking this wall requires a paradigm shift in AI for Science: moving from passively mining questions out of existing datasets to actively generating and recombining experimental data around unresolved scientific questions. In a network of intelligent laboratories, a failed or overlooked experiment in one domain could trigger a hypothesis in another, whose testing generates fresh evidence that stimulates further investigations. To enable these evidence-driven chain reactions, we propose Evolving Scientific Intelligence (ESI), an architectural blueprint that connects shared scientific memory with distributed experimental loops. ESI preserves experimental records -- including negative and anomalous results -- in computable representations, allowing models to recombine evidence across domains into testable hypotheses. Rather than following fixed screening pipelines, the system jointly selects candidates and evaluation methods according to scientific value, reliability, and cost, directing distributed laboratories to produce the exact evidence needed next. Their physical feedback revises both hypotheses and evaluators, while slower meta-control reassesses research objectives and decision criteria to guard against self-reinforcing errors and misguided optimization. We call for an Information Manhattan Project to build this infrastructure for scaling science through experimentally grounded chains of discovery.",
+   "authors": [
+    "Yuheng Ding"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "cs.LG"
+   ],
+   "published": "2026-10-31T03:12:05+00:00",
+   "url": "https://arxiv.org/abs/2611.00580",
+   "pdf": "https://arxiv.org/pdf/2611.00580",
+   "score": 0.6033,
+   "interest": "water",
+   "scores": {
+    "water": 0.6033,
+    "meters": 0.5927,
+    "methods": 0.602
+   }
+  },
+  {
+   "id": "2611.10847",
+   "version": 1,
+   "title": "Fine-resolution land-use segmentation and synthetic image-label augmentation in the Kathmandu Valley",
+   "abstract": "Parcel-scale land-use data is missing for most rapidly urbanizing Global South cities, as current segmentation architectures rely on multispectral imagery and planned layouts. We introduce a hand-annotated six-class land-use corpus covering 202 km$^2$ of Kathmandu Valley across 408 fine-resolution RGB scenes. The dataset is uniquely challenging: RGB spectral similarity is high, class imbalance approaches 100:1, and key structural features like rivers measure just two to three pixels wide at a standard hierarchical decoder's prediction stride. Evaluating five architectures reveals that standard random data splitting conceals massive spatial leakage. Switching to a strict sequence-block split drops performance by up to 0.095 mIoU. This penalty exceeds the performance gap between the architectures themselves. We modified the SegFormer baseline by integrating a half-resolution residual detail path, boundary-reliability reweighting, a topology-aware loss, and a presence-balanced sampler. Adding only 1.9% more parameters, the enhanced architecture improves mean IoU across every test fold, with gains concentrated in rare, thin-structure classes. However, both models achieve identical results on the external LoveDA benchmark. Finally, augmenting with diffusion-generated pairs at matched compute degraded accuracy across all architectures, especially harming rare classes it aimed to improve. This demonstrates that blindly incorporating synthetic data can severely damage performance, highlighting a critical need to rigorously evaluate and filter generated samples before training.",
+   "authors": [
+    "Pranil Parajuli",
+    "Sugam Dahal",
+    "Kiran Chandra Dahal"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI"
+   ],
+   "published": "2026-11-07T16:50:18+00:00",
+   "url": "https://arxiv.org/abs/2611.10847",
+   "pdf": "https://arxiv.org/pdf/2611.10847",
+   "score": 0.602,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5806,
+    "meters": 0.6002,
+    "methods": 0.602
+   }
+  },
+  {
    "id": "2611.10404",
    "version": 1,
    "title": "Coding or Cheating? An Investigation of Frontier Coding LLMs",
@@ -89,6 +859,31 @@
     "water": 0.593,
     "meters": 0.5366,
     "methods": 0.5908
+   }
+  },
+  {
+   "id": "2611.10867",
+   "version": 1,
+   "title": "Missed Interferers in Ray-Traced Radio Maps: A Digital-Twin and Stochastic Geometry Study of Aerial Coverage",
+   "abstract": "Ray-traced digital twins are increasingly used to plan where cellular-connected uncrewed aerial vehicles (UAVs) can fly. In this paper, we build a Sionna RT digital twin around Raleigh, NC, with 18,591 buildings and two overlapping sub-1 GHz operator networks, and study the downlink signal-to-interference-plus-noise ratio (SINR) of UAVs at 40-300 m. We show that the Monte Carlo radio-map solver of Sionna RT misses distant line-of-sight (LOS) interferers on aerial planes. With $10^7$ rays per sector and 5 m cells, it therefore underestimates the coverage at low SINR thresholds and overestimates it at high thresholds, by up to 26 percentage points at $\\pm$2 dB and 50-100 m. Using a LOS-aware deterministic engine validated with Sionna's path solver, we then develop a stochastic geometry model with strongest-sector association and own-site leakage that matches the engine without fitting. The analysis shows that the interference grows logarithmically with the modeled network radius, so a twin that omits distant LOS sites overestimates the coverage, and that altitude mainly reduces the coverage at high SINR thresholds. Finally, selecting the better of two operators raises the minimum SINR along the best corridor by 1.0-3.9 dB up to 100 m.",
+   "authors": [
+    "Saad Masrur",
+    "Ismail Guvenc"
+   ],
+   "primary": "eess.SP",
+   "categories": [
+    "eess.SP",
+    "cs.PF"
+   ],
+   "published": "2026-11-07T17:35:08+00:00",
+   "url": "https://arxiv.org/abs/2611.10867",
+   "pdf": "https://arxiv.org/pdf/2611.10867",
+   "score": 0.5809,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5766,
+    "meters": 0.5526,
+    "methods": 0.5809
    }
   },
   {
@@ -119,6 +914,90 @@
     "water": 0.5527,
     "meters": 0.5445,
     "methods": 0.5802
+   }
+  },
+  {
+   "id": "2611.10832",
+   "version": 1,
+   "title": "Firepool: Brokering Warm GPU Capacity for Agentic and RL Workloads at LinkedIn",
+   "abstract": "AI agents and reinforcement-learning (RL) trainers run thousands of short, isolated GPU jobs: tool calls, verifiers, and rollouts. A job often finishes in seconds, but starting a GPU pod for it takes 20-35 s even when the container image is already on the node, and minutes when it is not. A warm pod removes the wait only if it can serve the next job, and keeping pods warm must neither waste GPUs nor leak state between callers. Firepool, the sandbox and execution broker behind agentic and RL workloads at LinkedIn, meets both requirements. It makes pods interchangeable by building them from a shared base image per hardware profile and binding each job's code, extra dependencies, and cluster topology when the job starts. It keeps them warm cheaply and safely by reusing a pod only for the caller that used it last, staging zero-VRAM standby pods in fractional GPU shares alongside active pods, and capping the GPUs that warm pools may hold via queue-driven budgets. Over a sampled peak period in production, Firepool serves 94.7% of 3,206 pod requests from warm or standby capacity. In paired benchmarks with fixed-duration jobs on production H200 nodes, agent and RL loops finish 13x and 10.8x faster than with a fresh pod per job; against a fresh reuse tag per job, warm reuse cuts p90 start latency from 59.1 s to 3.5 s. When a job cannot reuse the previous pod, standby promotion shortens the handover wait from 51 s to 0.94 s. In local and simulated runs, a keep-alive matched to the loop's pauses keeps the latency benefit while holding about half the capacity of an always-on pool.",
+   "authors": [
+    "Ankit Goyal",
+    "Santosh Jha",
+    "Zhuo Zhi",
+    "Youmin Han",
+    "Cong Gu",
+    "Chen Xie",
+    "Animesh Singh"
+   ],
+   "primary": "cs.DC",
+   "categories": [
+    "cs.DC",
+    "cs.LG"
+   ],
+   "published": "2026-11-07T16:20:50+00:00",
+   "url": "https://arxiv.org/abs/2611.10832",
+   "pdf": "https://arxiv.org/pdf/2611.10832",
+   "score": 0.5673,
+   "interest": "water",
+   "scores": {
+    "water": 0.5673,
+    "meters": 0.5554,
+    "methods": 0.5107
+   }
+  },
+  {
+   "id": "2611.12422",
+   "version": 1,
+   "title": "Two-Phase Rapid Simulation-Based Inference with Differentiable Simulators",
+   "abstract": "We introduce Rapid Simulation Based Inference (RSBI), a diffusion-based variational approach to likelihood-free Bayesian inference that achieves high sampling efficiency under large prior-to-posterior volumes. RSBI builds on advances in Schrödinger Bridge (SB) diffusion sampling to handle multi-modal posteriors, with an initial likelihood supplied by a distance measure via a differentiable simulator. The key innovation of this initial surrogate likelihood is that it gives a highly efficient proposal distribution, replacing sequential rounds of other methods with an efficient one-shot proposal. Subsequent refinement then transports the proposal to the true posterior as specified by the simulator and the original prior. The SB sampler is warm-started from the proposal, and its energy is corrected by a neural likelihood ratio that is learned only where the proposal places mass. As a variational method, RSBI does not suffer from prior leakage commonly observed in standard sequential posterior estimation methods. To improve mode coverage we optionally utilize the well-tempered meta-dynamics framework, which also encourages exploration of the prior volume. We observe strong performance on standard SBI benchmarks, particularly when the prior volume is increased relative to the ground truth posterior, achieving a performance degradation of only $\\sim5\\%$ on Two Moons under a highly constrained simulation budget. Additionally, we evaluate RSBI's performance for gravitational wave ring-down posterior estimation, in a real-world physics benchmark inspired by black hole spectroscopy.",
+   "authors": [
+    "Uros Zivanovic",
+    "Rahul Srinivasan",
+    "Roberto Trotta",
+    "Andre Scaffidi"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "stat.ML"
+   ],
+   "published": "2026-11-09T13:49:15+00:00",
+   "url": "https://arxiv.org/abs/2611.12422",
+   "pdf": "https://arxiv.org/pdf/2611.12422",
+   "score": 0.5524,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5362,
+    "meters": 0.5362,
+    "methods": 0.5524
+   }
+  },
+  {
+   "id": "2611.12319",
+   "version": 1,
+   "title": "Mitigating SM-Level Load Imbalance in 3D Gaussian Splatting on GPUs",
+   "abstract": "3D Gaussian Splatting (3DGS) enables photorealistic, real-time rendering on commodity GPUs and is increasingly adopted in generative world models and autonomous driving simulators. However, existing optimizations rely on algorithmic changes that often require retraining, or on specialized accelerators that lack flexibility across evolving 3DGS variants. In this paper, we identify a fundamental inefficiency in GPU-based 3DGS rendering: severe SM-level load imbalance caused by uneven workloads across screen tiles. This imbalance creates a long execution tail, leaving most SMs idle while a few process computationally intensive tiles, particularly in large-scale urban scenes. To address this, we present a software-defined GPU scheduling approach that mitigates the execution tail. Our approach uses a persistent kernel to schedule heavy tiles first and selectively chunks outlier tiles across multiple CTAs. A lightweight per-frame policy determines when and how much to chunk using tile statistics already available in the rendering pipeline. Our approach requires neither retraining nor specialized hardware and can be applied orthogonally to existing optimizations across diverse 3DGS variants. Averaged per scene, it accelerates alpha blending by up to 2.93x on a large-scale urban scene, and by up to 5.6x on its most imbalanced frames, while retaining the original alpha blending formulation.",
+   "authors": [
+    "Junha Ryu",
+    "Hoi-Jun Yoo"
+   ],
+   "primary": "cs.DC",
+   "categories": [
+    "cs.DC",
+    "cs.CV",
+    "cs.GR",
+    "cs.LG"
+   ],
+   "published": "2026-11-09T12:41:30+00:00",
+   "url": "https://arxiv.org/abs/2611.12319",
+   "pdf": "https://arxiv.org/pdf/2611.12319",
+   "score": 0.5501,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5431,
+    "meters": 0.5292,
+    "methods": 0.5501
    }
   }
  ]

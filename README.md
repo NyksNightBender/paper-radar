@@ -8,14 +8,15 @@
 **Live site: [nyksnightbender.github.io/paper-radar](https://nyksnightbender.github.io/paper-radar/)** (daily and weekly digests, archive, RSS)
 
 <!-- LATEST:START -->
-**Closest new papers, 10 November 2026** (4 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
+**Closest new papers, 10 November 2026** (36 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
 
 | Score | Paper | Topic |
 | ---: | --- | --- |
-| 0.75 | [TripletAD: Weakly Supervised Anomaly Detection in Embedding Space with Rare Anomalies and Scarce Labels](https://arxiv.org/abs/2611.10352) | Time-series anomaly detection |
-| 0.70 | [SurvAD: How Anomalies Survive Diffusion Reconstruction](https://arxiv.org/abs/2611.09997) | Time-series anomaly detection |
-| 0.59 | [Coding or Cheating? An Investigation of Frontier Coding LLMs](https://arxiv.org/abs/2611.10404) | Water networks |
-| 0.58 | [Who Remembers What? Multi-Granularity Memory Extraction for Multi-User, Multi-Agent Interaction](https://arxiv.org/abs/2611.10439) | Time-series anomaly detection |
+| 0.83 | [Sensor placement for real-life water distribution networks, ensuring observability under uncertainties](https://arxiv.org/abs/2611.12414) | Water networks |
+| 0.80 | [LogCDM: Interpretable Log Anomaly Detection via Behavioral Graph Drift and Adaptive Signal Fusion](https://arxiv.org/abs/2611.12775) | Time-series anomaly detection |
+| 0.79 | [Self-contained Data Cleaning for Unsupervised Anomaly Detection](https://arxiv.org/abs/2611.10856) | Time-series anomaly detection |
+| 0.78 | [Vendi Anomaly Scores for Efficient and Accurate Anomaly Detection](https://arxiv.org/abs/2611.12871) | Time-series anomaly detection |
+| 0.76 | [Scalable Counterfactual Explanations for Time Series via Policy Learning](https://arxiv.org/abs/2611.11704) | Time-series anomaly detection |
 <!-- LATEST:END -->
 
 ## Why
