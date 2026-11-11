@@ -8,15 +8,15 @@
 **Live site: [nyksnightbender.github.io/paper-radar](https://nyksnightbender.github.io/paper-radar/)** (daily and weekly digests, archive, RSS)
 
 <!-- LATEST:START -->
-**Closest new papers, 10 November 2026** (36 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
+**Closest new papers, 11 November 2026** (10 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
 
 | Score | Paper | Topic |
 | ---: | --- | --- |
-| 0.83 | [Sensor placement for real-life water distribution networks, ensuring observability under uncertainties](https://arxiv.org/abs/2611.12414) | Water networks |
-| 0.80 | [LogCDM: Interpretable Log Anomaly Detection via Behavioral Graph Drift and Adaptive Signal Fusion](https://arxiv.org/abs/2611.12775) | Time-series anomaly detection |
-| 0.79 | [Self-contained Data Cleaning for Unsupervised Anomaly Detection](https://arxiv.org/abs/2611.10856) | Time-series anomaly detection |
-| 0.78 | [Vendi Anomaly Scores for Efficient and Accurate Anomaly Detection](https://arxiv.org/abs/2611.12871) | Time-series anomaly detection |
-| 0.76 | [Scalable Counterfactual Explanations for Time Series via Policy Learning](https://arxiv.org/abs/2611.11704) | Time-series anomaly detection |
+| 0.79 | [TimeSeek: Multi-Task and Multi-Domain Pretraining for Generalized Time Series Analytics](https://arxiv.org/abs/2611.14491) | Time-series anomaly detection |
+| 0.79 | [Time Series Change Point Detection with Gaussian Processes](https://arxiv.org/abs/2611.13295) | Time-series anomaly detection |
+| 0.77 | [Outliers and the Hard-Margin Linear SVM in High-Dimension, Low-Sample-Size Settings](https://arxiv.org/abs/2611.13869) | Time-series anomaly detection |
+| 0.72 | [CASCADE: Constraint-Aware SCAffolded DEcomposition for Logical Anomaly Detection](https://arxiv.org/abs/2611.13820) | Time-series anomaly detection |
+| 0.70 | [Deviation-Aware Pretraining for Cardiovascular Disease Detection from Electrocardiograms](https://arxiv.org/abs/2611.14141) | Time-series anomaly detection |
 <!-- LATEST:END -->
 
 ## Why

@@ -1,0 +1,294 @@
+{
+ "date": "2026-11-11",
+ "generated_at": "2026-11-11T07:44:33+00:00",
+ "model": "BAAI/bge-small-en-v1.5",
+ "interests": [
+  {
+   "key": "water",
+   "name": "Water networks"
+  },
+  {
+   "key": "meters",
+   "name": "Meters and consumption"
+  },
+  {
+   "key": "methods",
+   "name": "Time-series anomaly detection"
+  }
+ ],
+ "count": 10,
+ "papers": [
+  {
+   "id": "2611.14491",
+   "version": 1,
+   "title": "TimeSeek: Multi-Task and Multi-Domain Pretraining for Generalized Time Series Analytics",
+   "abstract": "Time series analytics has been widely applied across various domains. While existing time series foundation models (TSFMs) have demonstrated promising results, they still face two major challenges: 1) Most TSFMs mainly rely on stacking Transformer layers to increase parameter size, lacking the ability to adaptively model complex time series patterns from multi-domain data. 2) Current TSFMs are primarily pre-trained for specific tasks, e.g., forecasting or anomaly detection, and a few models support multiple tasks, but they fail to fully leverage task specificity and commonality, resulting in suboptimal performance. To address these challenges, we propose TimeSeek, a novel generalized time series analytics model that adaptively models time series patterns from multi-domain data and unifies multiple tasks in pre-training. Conceptually, TimeSeek is guided by selective information sharing under domain and task heterogeneity. From the perspective of multi-domain data, we propose a Multi-Domain Feature Extractor that adaptively captures temporal dependencies and channel correlations based on domain-specific characteristics, including progressive multi-scale modeling and adaptive slot channel modeling. From the perspective of the diversity of tasks, we propose multi-task collaborative training, which leverages task specificity and task commonality through task customization and cross-task training, effectively unifying multiple tasks in pre-training and better adapting to diverse downstream scenarios. After pre-training on large-scale time series data, TimeSeek achieves state-of-the-art performance in forecasting, anomaly detection, and classification tasks across both few-shot learning and zero-shot situations, together with favorable inference efficiency.",
+   "authors": [
+    "Peng Chen",
+    "Yihang Wang",
+    "Zhongwen Rao",
+    "Yang Shu",
+    "Yuying Qiu",
+    "Yuxuan Chen",
+    "Lujia Pan",
+    "Bin Yang",
+    "Chenjuan Guo"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-10T18:49:26+00:00",
+   "url": "https://arxiv.org/abs/2611.14491",
+   "pdf": "https://arxiv.org/pdf/2611.14491",
+   "score": 0.7944,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6394,
+    "meters": 0.6939,
+    "methods": 0.7944
+   }
+  },
+  {
+   "id": "2611.13295",
+   "version": 1,
+   "title": "Time Series Change Point Detection with Gaussian Processes",
+   "abstract": "This paper proposes a novel general Gaussian process framework for change point detection in time series. A change is defined as an alteration of the hyperparameters of the Gaussian process prior. We formulate the problem in the context of statistical hypothesis testing and demonstrate its performance over both offline and online multiple change points detection. The approach provides theoretical guaranties of its performance. An important advantage of the developed framework is that it does not need a detailed specification of the time series function before and after a change. The hyperparameter values are learned from the data. Comprehensive evaluation of the proposed framework is provided both on synthetic and real data and its efficiency is demonstrated.",
+   "authors": [
+    "Olga Isupova",
+    "Danil Kuzin",
+    "Fredrik Gustafsson",
+    "Lyudmila Mihaylova"
+   ],
+   "primary": "stat.ML",
+   "categories": [
+    "stat.ML",
+    "cs.LG",
+    "math.ST",
+    "stat.ME"
+   ],
+   "published": "2026-11-09T22:02:10+00:00",
+   "url": "https://arxiv.org/abs/2611.13295",
+   "pdf": "https://arxiv.org/pdf/2611.13295",
+   "score": 0.7939,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6842,
+    "meters": 0.7242,
+    "methods": 0.7939
+   }
+  },
+  {
+   "id": "2611.13869",
+   "version": 1,
+   "title": "Outliers and the Hard-Margin Linear SVM in High-Dimension, Low-Sample-Size Settings",
+   "abstract": "We study how outliers affect the hard-margin linear support vector machine when the dimension grows while the sample sizes remain fixed. For one-sided contamination, the centered Gram matrix converges to a constant inlier block plus an outlier-diagonal component, and the limiting dual problem has a closed-form solution. All outliers act through one effective distance. This representation yields explicit thresholds for loss of inlier support, margin shrinkage. intercept displacement, and asymptotic misclassification. We then treat contamination in both classes. The limiting intercept is the multiplier of the class-balance constraint, and the two classes pull it in opposite directions. Consequently, at most one class can collapse or be asymptotically misclassified, whereas symmetric contamination leaves the limiting discriminant function unchanged even though the margin shrinks. Seven numerical experiments verify the dual allocation, phase transitions, and discriminant limits.",
+   "authors": [
+    "Yugo Nakayama"
+   ],
+   "primary": "stat.ML",
+   "categories": [
+    "stat.ML",
+    "cs.LG"
+   ],
+   "published": "2026-11-10T10:31:10+00:00",
+   "url": "https://arxiv.org/abs/2611.13869",
+   "pdf": "https://arxiv.org/pdf/2611.13869",
+   "score": 0.7669,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6667,
+    "meters": 0.628,
+    "methods": 0.7669
+   }
+  },
+  {
+   "id": "2611.13820",
+   "version": 1,
+   "title": "CASCADE: Constraint-Aware SCAffolded DEcomposition for Logical Anomaly Detection",
+   "abstract": "Logical Anomaly Detection (LAD) requires verifying whether all category-specific constraints, such as object counts, pairing relations, and measurement ranges, are satisfied by a query image given only a few normal references. Recent LAD methods based on Large Vision-Language Models (LVLMs) formulate this as checklist verification, decomposing the decision into independent textual checks. This decomposition, however, is text-only. Every item still reads the same unmodified query image, so the LVLM must extract different forms of visual evidence from one raw image. We identify this text-image mismatch as a constraint-specific perception gap, the source of two failure modes: instance conflation for binding constraints and scale drift for calibration constraints. To diagnose whether these failures stem from insufficient reasoning or insufficient perception, we compare textual reasoning guides and visual perception guides in a training-free setting. Our analysis shows that reasoning over the same image provides little benefit, whereas adapting the visual input to each constraint substantially improves verification accuracy. Based on this finding, we propose CASCADE, a training-free framework that extends checklist decomposition using constraint-specific visual scaffolds. We further introduce CASCADE++, which adapts these scaffolds at the object level by deriving their configurations from the constraint structure and reference distribution. Across MVTec-LOCO and VID-AD, CASCADE++ surpasses the full-shot state of the art by 3.9 AUROC points with only three references, and improves over the strongest VID-AD baseline by 11.4, transferring across multiple LVLM backbones without any training.",
+   "authors": [
+    "Jinchan Kim",
+    "Jinhee Im",
+    "Hyunsouk Cho"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG"
+   ],
+   "published": "2026-11-10T09:46:23+00:00",
+   "url": "https://arxiv.org/abs/2611.13820",
+   "pdf": "https://arxiv.org/pdf/2611.13820",
+   "score": 0.7174,
+   "interest": "methods",
+   "scores": {
+    "water": 0.678,
+    "meters": 0.6086,
+    "methods": 0.7174
+   }
+  },
+  {
+   "id": "2611.14141",
+   "version": 1,
+   "title": "Deviation-Aware Pretraining for Cardiovascular Disease Detection from Electrocardiograms",
+   "abstract": "Electrocardiogram (ECG) signals are critical for cardiovascular disease (CVD) detection. Most current deep learning models rely on supervised, task-specific training, which limits their ability to generalize across diseases, patient populations, and acquisition settings. This paper presents a self-supervised ECG feature extraction framework that learns from nearly one million unlabeled 12-lead ECG recordings. The framework includes two modules: Deviation Localization Embedding (DLE), which detects waveform-level deviations from normal patterns, and Association Reconstruction Embedding (ARE), which models cross-lead associations through deviation-guided reconstruction to capture abnormal patterns expressed across multiple leads. These modules enable the framework to capture subtle deviation-related patterns and their cross-lead context. The framework achieves up to 6.5% AUROC and 12.8% F1 improvements over prior methods on multiple public datasets, even without additional fine-tuning the pretrained feature extractor. Embedding visualizations show that the learned features support meaningful disease grouping and anomaly identification. The approach reduces the need for labeled data and can support clinicians in diverse healthcare settings. The framework has potential to improve early detection and monitoring of cardiovascular diseases, contributing to more accessible and equitable heart care.",
+   "authors": [
+    "Siyuan Yan",
+    "Haibo Zheng",
+    "Feng Lu",
+    "Wei Li"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-10T14:29:44+00:00",
+   "url": "https://arxiv.org/abs/2611.14141",
+   "pdf": "https://arxiv.org/pdf/2611.14141",
+   "score": 0.7018,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6499,
+    "meters": 0.6407,
+    "methods": 0.7018
+   }
+  },
+  {
+   "id": "2611.12976",
+   "version": 1,
+   "title": "Partition, Refine, and Detect: Preserving Novel Category Capacity in Open-Vocabulary Object Detection",
+   "abstract": "Open-vocabulary object detection (OVD) expects the model trained on base classes to recognize both base and novel classes at inference. Typical methods rely on CLIP-style vision-language embeddings, yet the learned space is often biased toward base categories, with limited effective capacity preserved for novel concepts. Such a base-dominated representation can compress novel semantics, leading to semantic collapse and mis-calibrated confidence at inference. To address this issue, we present PR-OVD, a partition-and-refine framework that explicitly reserves capacity for novel categories and strengthens category separation, while being seamlessly integrated into different detector architectures. Specifically, PR-OVD first performs coarse partitioning to build global divisions for base, novel, and an explicit background partition in both visual and textual modalities, preventing object-irrelevant embeddings from leaking into category-specific representations. It then applies category-level refinement within each partition to sharpen decision boundaries and alleviate the lack of fine-grained region-level pretraining in CLIP. To further provide reliable visual anchors for novel categories, we design a cognitively inspired Structure Prompt (SP) that encodes both egocentric attributes and allocentric context, facilitating stable partition-and-refine learning. Extensive experiments on two OVD benchmarks show that PR-OVD delivers an average 6.5\\% proportional improvement on novel categories over the state-of-the-art methods. Notably, PR-OVD also benefits other open-vocabulary tasks, including segmentation and classification, further confirming its effectiveness and generality.",
+   "authors": [
+    "Wei Zhang",
+    "Zhu Teng",
+    "Zhixiang Chi",
+    "Junnan Zou",
+    "Yi Liu",
+    "Jianping Fan"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.LG"
+   ],
+   "published": "2026-11-08T04:13:25+00:00",
+   "url": "https://arxiv.org/abs/2611.12976",
+   "pdf": "https://arxiv.org/pdf/2611.12976",
+   "score": 0.629,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5721,
+    "meters": 0.5392,
+    "methods": 0.629
+   }
+  },
+  {
+   "id": "2611.13970",
+   "version": 1,
+   "title": "Counterfactual Analysis of Extent Leakage from Annotation-Derived Prompts in Vision-Language Medical Image Segmentation",
+   "abstract": "Text-guided segmentation models receive an image and a short caption about the lesion, and on public benchmarks the caption improves accuracy considerably. On colonoscopy and breast ultrasound, however, the size, count and location words of each caption were computed from the mask that later scores the prediction, and the chest X-ray captions were written by benchmark annotators. We tested what two published models take from them. On colonoscopy and chest X-ray, it is mostly the lesion's extent. Keeping only the size word or the lung-zone phrase recovers 84 to 98 percent of the improvement over an empty caption, and removing it loses 52 to 77 percent. The rest matters little, and a polyp called a rock is segmented just as well. We call this extent leakage. On breast ultrasound, nearly half the captions also name the diagnosis, which carries part of the benefit. Retraining on three datasets shows that models pick up this habit from their training captions, though only partly on breast ultrasound, and that it weakens their segmentation from the image alone. The leak can be measured without training a model, since caption words alone predict lesion area (coefficient of determination 0.54 to 0.77 on six of seven test sets). Without the test mask, the best method we tested, which estimates extent from the image, reaches 74.59 Dice on colonoscopy against the published 77.23. We propose an evaluation protocol that keeps what a caption says about the image apart from what it copies from the label.",
+   "authors": [
+    "Niran Nataraj",
+    "Ankita Das",
+    "C. Krishna Mohan",
+    "Kenji Kawashima"
+   ],
+   "primary": "eess.IV",
+   "categories": [
+    "eess.IV",
+    "cs.CV",
+    "cs.LG"
+   ],
+   "published": "2026-11-10T12:07:24+00:00",
+   "url": "https://arxiv.org/abs/2611.13970",
+   "pdf": "https://arxiv.org/pdf/2611.13970",
+   "score": 0.623,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5895,
+    "meters": 0.5611,
+    "methods": 0.623
+   }
+  },
+  {
+   "id": "2611.13217",
+   "version": 1,
+   "title": "Reliability of Claude Code as an Agentic AI Grading System for Handwritten University Exams",
+   "abstract": "This study examines the reliability of Claude Code, an agentic deployment of the Claude Opus 4.6 large language model, as a grading system for handwritten university exams. Four research questions addressed agreement with expert human grading on total scores (RQ1), agreement across five question types from multiple choice to evaluative judgement (RQ2), consistency across two independent grading sessions one week apart (RQ3), and the accuracy of AI-generated feedback (RQ4). Claude Code graded the 20-mark mid-term papers of 60 consenting students in a Saudi computer graphics course in a single agentic session, guided by three rubric files. Reliability was estimated on disjoint samples: 20 papers for RQ1, RQ2 and RQ4, and 15 papers for RQ3. Analyses used Pearson correlation, mean absolute error, Bland-Altman analysis, weighted Cohen kappa, intraclass correlation, and a four-category coding scheme separating diagnostic from confirmation feedback. The author, as the sole subject-matter expert for the course, provided the human benchmark, so the design assesses agreement with a domain-expert reference rather than inter-rater reliability. AI grading agreed strongly with human grading on totals (r = 0.97; MAE = 0.85 marks) with a small but significant AI-positive bias of 0.68 marks, showed excellent test-retest consistency (ICC = 0.96), and produced accurate feedback (92.8% diagnostic; 97.8% confirmation). Drawing items were the outlier on three of four measures. Three failure modes recurred: keyword matching without conceptual depth, selection-state ambiguity on corrected multiple-choice answers, and region-of-attention drift on hand-drawn diagrams. The findings suggest that AI grading at this capability level can assist instructors on objective and short-form items under structural safeguards but is not yet ready to replace instructor judgement at boundary cases or on drawing items.",
+   "authors": [
+    "Rayed AlGhamdi"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "cs.CY"
+   ],
+   "published": "2026-11-09T20:39:02+00:00",
+   "url": "https://arxiv.org/abs/2611.13217",
+   "pdf": "https://arxiv.org/pdf/2611.13217",
+   "score": 0.5852,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5376,
+    "meters": 0.531,
+    "methods": 0.5852
+   }
+  },
+  {
+   "id": "2611.13994",
+   "version": 1,
+   "title": "BioXArena-Pro: a research-grade benchmark for autonomous biomedical machine learning agents",
+   "abstract": "Coding agents are increasingly proposed as autonomous builders of biomedical models, but existing benchmarks are small, near saturation or open to leaked information. We present BioXArena-Pro, 64 research-level modelling tasks from eight biomedical domains, each rebuilt from a published study; most hold out whole biological units such as species or cohorts. Across 22 agent configurations, the best scores 55.1 of 100, and the scaffold matters almost as much as the model. We re-ran a published method for every task: where the published recipe applies unchanged, the best agent and the methods tie; on rebuilt tasks the methods trail by 8.2 points, suggesting that agents gain by adapting to new data. Pretrained models (including biological foundation models) matter where the strongest agent uses them: forbidding them decreases its score on those tasks by 9 points. Every task was audited in several AI-assisted rounds and a final human review.",
+   "authors": [
+    "Loka Li",
+    "Duzhen Zhang",
+    "Xingbo Du",
+    "Leonard Song",
+    "Kun Zhang",
+    "Le Song"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-10T12:39:35+00:00",
+   "url": "https://arxiv.org/abs/2611.13994",
+   "pdf": "https://arxiv.org/pdf/2611.13994",
+   "score": 0.5798,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5584,
+    "meters": 0.5574,
+    "methods": 0.5798
+   }
+  },
+  {
+   "id": "2611.13218",
+   "version": 1,
+   "title": "Wrong the Same Way: Cross-Prompt Sharing Both Suppresses and Amplifies Reward Hacking in RLVR",
+   "abstract": "Two accounts of how reinforcement learning with verifiable rewards (RLVR) interacts with an imperfect verifier coexist: in one, reward hacking is inherited from the base model; in the other, RL amplifies it. We study both in a controlled environment small enough to compute the entire response distribution exactly. We vary the universality of a leak, or the fraction of prompts that accept the same wrong response, and the verifier's static false-positive rate. At its KL-regularized optimum, RLVR acts as a filter that reweights the accepted set without altering its composition, so the hack rate is inherited exactly. Taking that as a null model, a known decomposition writes the drift from it as a sum over prompts of covariances between reward and the empirical tangent kernel. The terms from other prompts vanish without parameter sharing. With sharing, every prompt that accepts a wrong answer pushes it up and every prompt that rejects it pushes it down through the baseline, in proportion to the model's probability of producing it there. A shared-parameter policy thus drives a leak that few prompts accept below the base rate and amplifies one that most prompts accept. At every convergent learning rate under Adam, SGD, and sampled GRPO, hacking ends higher at high universality than at low, but whether either end crosses the base rate depends on the step size. Independent per-prompt copies remove the dependence. The direction of this push depends on neither the verifier's error rate nor universality alone, but on how much of the model's kernel-weighted probability of a wrong answer falls on prompts that accept it, which frozen base model controls support. Verifier fixes should target the mistakes the model repeats across prompts: two patches that remove equally many errors differ by up to 38 points of true accuracy. We propose this alignment as a hypothesis for why earlier studies disagree.",
+   "authors": [
+    "Michael Li",
+    "Rohan Pandey",
+    "Ray Chen"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-09T20:39:36+00:00",
+   "url": "https://arxiv.org/abs/2611.13218",
+   "pdf": "https://arxiv.org/pdf/2611.13218",
+   "score": 0.5698,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5576,
+    "meters": 0.5386,
+    "methods": 0.5698
+   }
+  }
+ ]
+}
