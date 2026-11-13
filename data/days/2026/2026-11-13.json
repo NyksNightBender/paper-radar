@@ -1,0 +1,866 @@
+{
+ "date": "2026-11-13",
+ "generated_at": "2026-11-13T07:55:52+00:00",
+ "model": "BAAI/bge-small-en-v1.5",
+ "interests": [
+  {
+   "key": "water",
+   "name": "Water networks"
+  },
+  {
+   "key": "meters",
+   "name": "Meters and consumption"
+  },
+  {
+   "key": "methods",
+   "name": "Time-series anomaly detection"
+  }
+ ],
+ "count": 31,
+ "papers": [
+  {
+   "id": "2611.15073",
+   "version": 1,
+   "title": "When Does Causality Help in Multivariate Time-Series Anomaly Detection?",
+   "abstract": "Causality-aware scoring is common in multivariate time-series anomaly detection, yet the literature rarely states when it helps. Holding one causality-guided autoencoder (DeCauAE) fixed, we vary graph quality, anomaly type and protocol against ground truth. Graph quality fixes the payoff: on a twenty-variable DAG the gain over a graph-free autoencoder decays as the graph is corrupted. Anomaly type fixes the target: the structural factor lifts window F1 from 0.800 to 0.976 where anomalies break conditional structure, and its advantage vanishes below a break severity s 0.3. Protocol fixes the ranking: point-adjusted F1 lets a random score match the full model, while range-aware VUS separates the autoencoder family from the classical baselines. On real benchmarks the causal module pays only where density makes a system eligible and cross-subsample reproducibility selects entities inside it; enabling it everywhere costs 0.012 VUS-ROC. The structural factor also transfers to classical detectors .",
+   "authors": [
+    "Long Zhang",
+    "Wei Huang",
+    "Aishui Rao",
+    "Jian Hu",
+    "Binxiang Wu",
+    "Jie Li",
+    "Chen Gong",
+    "Linxi Feng"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-11T05:47:17+00:00",
+   "url": "https://arxiv.org/abs/2611.15073",
+   "pdf": "https://arxiv.org/pdf/2611.15073",
+   "score": 0.8077,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6701,
+    "meters": 0.6715,
+    "methods": 0.8077
+   }
+  },
+  {
+   "id": "2611.16184",
+   "version": 1,
+   "title": "Flow-CAD: Flow Matching for Contextual Anomaly Detection and Explanation in Tabular Data",
+   "abstract": "Contextual anomaly detection in tabular data aims to identify objects whose behavior is unexpected under their contextual conditions. In data-engineering pipelines, this task screens table rows whose measurements violate context-dependent integrity relationships. Most existing approaches rely on either shallow conditional models with limited distributional expressiveness or localized estimators that require per-context modeling, making it difficult to capture complex conditional relationships and scale to high-dimensional settings. We propose Flow-CAD, a new framework for contextual anomaly detection based on Flow Matching. Flow-CAD learns a single global and amortized conditional generative model that flexibly represents behavioral distributions conditioned on context, without assuming simple parametric forms or retraining local models. To enable robust and interpretable anomaly scoring, we introduce a scale-normalized and truncated residual energy derived from the learned conditional flow, which stabilizes anomaly scores, mitigates domination by extreme deviations, and supports feature-wise attribution. We further provide theoretical insights showing that the proposed residual-based anomaly score is stable under velocity estimation error, and that its Monte Carlo estimator satisfies concentration bounds. Experiments on 20 benchmark datasets with 13 competitors demonstrate that Flow-CAD has the best average rank for PR AUC, ROC AUC, and P@n, highlighting its effectiveness and practicality for contextual anomaly detection in tabular data. We provide the source code at https://github.com/ZhongLIFR/FlowCAD.",
+   "authors": [
+    "Zhong Li",
+    "Qi Huang",
+    "Yuhang Wang",
+    "Yang Cao",
+    "Thomas Bäck",
+    "Niki van Stein",
+    "Matthijs van Leeuwen",
+    "Lincen Yang"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-12T02:18:54+00:00",
+   "url": "https://arxiv.org/abs/2611.16184",
+   "pdf": "https://arxiv.org/pdf/2611.16184",
+   "score": 0.7601,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7099,
+    "meters": 0.6477,
+    "methods": 0.7601
+   }
+  },
+  {
+   "id": "2611.16648",
+   "version": 1,
+   "title": "GNN-Enhanced TCN Algorithms for ECG Anomaly Detection",
+   "abstract": "To a time series can be also given the structure of directed graph, opening the doors to the usage of graph neural networks (GNNs) in this context. In this paper we develop a new pipeline involving novel geometric deep learning models that merge the capabilities of ordinary TCNs with the ones of GNNs to solve an anomaly detection problem on electrocardiogram signals.",
+   "authors": [
+    "Angelica Simonetti",
+    "Ferdinando Zanchetta"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-12T11:24:41+00:00",
+   "url": "https://arxiv.org/abs/2611.16648",
+   "pdf": "https://arxiv.org/pdf/2611.16648",
+   "score": 0.7283,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7161,
+    "meters": 0.6735,
+    "methods": 0.7283
+   }
+  },
+  {
+   "id": "2611.16789",
+   "version": 1,
+   "title": "ScrewSense: Mapping the Invisible - Anomaly Detection and Error Classification in Screwdriving Processes",
+   "abstract": "The growing volume of process data generated by screwdriving systems, combined with advancements in computing power, data storage, and algorithms, is facilitating the application of artificial intelligence in this field. Accurately detecting and classifying screwdriving errors is crucial for ensuring product quality, avoiding costly rework in manufacturing, and supporting sustainability by facilitating the maintenance, reuse, and recycling of screw-connected products. In this context, machine learning approaches offer a promising alternative to traditional monitoring techniques, such as window-based methods or envelope curves. This study examines the use of deep learning techniques for anomaly detection and error classification in screwdriving processes. The data corpus consists of multivariate time series capturing process parameters, such as torque and rotation angle. For anomaly detection, the embedding space of a vector quantized variational autoencoder was analyzed. In terms of error classification, four different model architectures were evaluated. The results demonstrate the effectiveness of anomaly detection and confirm that deep learning models can distinguish between multiple error categories beyond traditional binary classification. This extends the capabilities of conventional monitoring approaches, achieving accuracies of up to 100%. Additionally, real-world data material was examined in order to further demonstrate model robustness. Overall the results indicate strong generalization capability and highlight the practical potential of the developed models for use in industrial screwdriving processes, eliminating the need for expert knowledge in error identification and significantly reducing manual effort and analysis time.",
+   "authors": [
+    "Tobias Lettner",
+    "Tatyana Ivanovska",
+    "Anwar Al Assadi",
+    "Christian Bergler"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.RO",
+    "eess.SP"
+   ],
+   "published": "2026-11-12T13:35:41+00:00",
+   "url": "https://arxiv.org/abs/2611.16789",
+   "pdf": "https://arxiv.org/pdf/2611.16789",
+   "score": 0.7254,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7135,
+    "meters": 0.6537,
+    "methods": 0.7254
+   }
+  },
+  {
+   "id": "2611.15465",
+   "version": 1,
+   "title": "On-Edge Acoustic Continual Anomaly Detection: A Cross-Platform Comparative Study",
+   "abstract": "Acoustic Anomaly Detection (AAD) serves as a non-contact approach for machine condition monitoring, yet much of the existing research is evaluated offline and rarely addresses embedded hardware constraints or microphone variations under operational drift. This paper presents a comparative evaluation of on-edge continual AAD across two embedded platforms the ESP32-S3 (with an external I2S digital microphone) and the Arduino Nicla Vision (with an onboard Pulse Density Modulation (PDM) microphone) using a shared detection model. The model utilizes a lightweight ShallowNet encoder and contrastive prototype learning to map spectrograms into a 32-dimensional embedding space. Both boards run an identical TensorFlow Lite for Microcontrollers (TFLM) encoder, performing on-device prototype learning updated via an exponential moving average. A cloud pipeline orchestrated through Firebase and MQTT enables remote data collection and retraining. Evaluated via a controlled speaker-replay protocol using standardized Detection and Classification of Acoustic Scenes and Events (DCASE) Challenge Task 2 machine sounds, the ESP32-S3 achieved 82.35% to 95.00% accuracy across five machine types, while the Nicla Vision achieved 79.41% to 95.00%. The two platforms demonstrated comparable performance, confirming that the lightweight prototypical architecture transfers reliably across distinct hardware and sensor tiers.",
+   "authors": [
+    "Rami Zewail",
+    "Yehia Ehab",
+    "Karim Ali",
+    "Ahmed Mahrous",
+    "Mohamed Awad",
+    "Bassem Mokhtar"
+   ],
+   "primary": "cs.SD",
+   "categories": [
+    "cs.SD",
+    "cs.LG"
+   ],
+   "published": "2026-11-11T13:35:36+00:00",
+   "url": "https://arxiv.org/abs/2611.15465",
+   "pdf": "https://arxiv.org/pdf/2611.15465",
+   "score": 0.7204,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7187,
+    "meters": 0.6729,
+    "methods": 0.7204
+   }
+  },
+  {
+   "id": "2611.16711",
+   "version": 1,
+   "title": "Directionally Supervised Neuromorphic Protection for Distribution Systems Using Local Measurements",
+   "abstract": "Reliable protection under varying power system operating conditions requires rapid fault detection while preserving selectivity against external faults and non-fault disturbances. This requirement is particularly challenging in communication-free schemes, where relays must determine trip conditions solely from local electrical measurements. To address this challenge, this paper proposes a directionally supervised neuromorphic protection scheme that integrates disturbance-responsive leaky integrate-and-fire dynamics with a direction-dependent firing threshold to distinguish internal faults from reverse-direction events. The unified relay architecture combines local disturbance detection, directional discrimination, and spike-based trip generation without requiring inter-relay communication. Its performance is evaluated under grid-connected and islanded conditions using a ring microgrid and the IEEE 13-node distribution feeder. Across 240 evaluated fault scenarios, the framework achieves median operating times of 5.4--7.6 ms across the two networks, with 78% of cases operating within 10 ms and 95% within 20 ms. It also maintains protection security during load disturbances, while fault-resistance analysis confirms its response under high-resistance faults. Controller-hardware-in-the-loop (CHIL) experiments using an RTDS simulator and an external dSPACE controller demonstrate trip-command assertion in approximately 10 ms and 5 ms for the tested single-line-to-ground and three-phase-to-ground faults, respectively. The results establish real-time feasibility within the evaluated conditions and characterize operating-time variability across fault types and resistance levels for different network configurations.",
+   "authors": [
+    "Saurabh Prabhakar",
+    "Yubo Song",
+    "Pascal Schirmer",
+    "Bijaya Ketan Panigrahi",
+    "Subham Sahoo"
+   ],
+   "primary": "eess.SP",
+   "categories": [
+    "eess.SP"
+   ],
+   "published": "2026-11-12T12:29:32+00:00",
+   "url": "https://arxiv.org/abs/2611.16711",
+   "pdf": "https://arxiv.org/pdf/2611.16711",
+   "score": 0.7129,
+   "interest": "water",
+   "scores": {
+    "water": 0.7129,
+    "meters": 0.6701,
+    "methods": 0.6449
+   }
+  },
+  {
+   "id": "2611.16239",
+   "version": 1,
+   "title": "Optimal feature selection for firewall log analysis using Machine learning and Hybrid Metaheuristic algorithms",
+   "abstract": "Firewall log classification is important to monitor network traffic. Machine learning classifiers using network-related features have shown good results for this task, but high-dimensional features slow down classification. In this paper, we apply feature selection using bee swarm optimization with Q-learning-based local search (QBSO-FS) to the UCI Internet Firewall Data Set, together with random forest (RF), k-nearest neighbor (KNN), and Bernoulli naïve Bayes (Bernoulli NB) classifiers. The first version of this preprint selected and evaluated feature subsets on the same 5-fold cross-validation of the full data set, which contains 12.8\\% exact duplicates; the reported scores are therefore optimistically biased. In this extended version, we re-evaluate the method with a leakage-free protocol: the data are split into training, validation, and test sets, features are selected using the validation set only, and accuracy and macro-averaged scores are measured once on the untouched test set, for both the raw data and a deduplicated, preprocessed version. On a single stratified split, QBSO-FS selects 5--7 features. The selected subsets clearly improve Macro-F1 over all features for KNN on both data sets and for RF on the deduplicated data (by 8--19 percentage points). For RF on the raw data and for Bernoulli NB, the differences (0.2--1.5 percentage points) may not hold for a different split. RF with 7 selected features reaches 99.90\\% accuracy and 94.88\\% Macro-F1 on the deduplicated data. On the same split, this exceeds our re-implementations of the deep neural network configurations of previous studies and the feature subset selected by particle swarm optimization in one of them, while the run time saved on this low-dimensional data set is small. These results suggest that the method can support automatic firewall log analysis, while evaluation over multiple splits remains future work.",
+   "authors": [
+    "Seungwoo Han",
+    "Gil Hong",
+    "Jewan Kim",
+    "Jeuk Yu",
+    "Sangjun Lee",
+    "Byeongok Cho",
+    "Jusung Jeon"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.CR",
+    "cs.NE"
+   ],
+   "published": "2026-11-12T03:38:29+00:00",
+   "url": "https://arxiv.org/abs/2611.16239",
+   "pdf": "https://arxiv.org/pdf/2611.16239",
+   "score": 0.6859,
+   "interest": "water",
+   "scores": {
+    "water": 0.6859,
+    "meters": 0.6563,
+    "methods": 0.6856
+   }
+  },
+  {
+   "id": "2611.15311",
+   "version": 1,
+   "title": "Arbor: When Labels Are Not Coarsened at Random",
+   "abstract": "Merging datasets labelled at different levels of a taxonomy leaves some images with only a coarse label, and some classes with no fine-grained label at all. Standard training scores a coarse label by the total probability of the classes under it. Coarse labels name superclasses, and the standard objective is exact only when every class within a superclass is equally likely to receive a coarse label. We call a class novel if it is never labelled finely, and known otherwise. A novel class violates the assumption, and the classifier assigns its images to a known sibling. We propose Arbor, which models how labels become coarse. In each superclass with a novel class, Arbor adds a virtual novel class, and a logistic gate divides the superclass's probability between it and the known classes. The gate is trained with the likelihood of the observed labels under this model, the coarsening likelihood. We prove that at its population optimum the gate equals the Elkan-Noto correction of positive-unlabelled learning, and show that training the correction into the classifier improves on applying it after training. Across Cars, CUB and Aircraft with 90% coarse labels, Arbor correctly assigns 76-85% of novel-class images to their superclass, more than hierarchical classifiers, hierarchical novelty detection and the Elkan-Noto correction. Its top-1 accuracy over the leaf classes on known-class images is within 1.6 points of the best baseline, although its final predictions return the superclass more often. On the more challenging iNaturalist-2019 benchmark, Arbor improves novel-class accuracy from 46% (uniform target, the strongest baseline) to 68%.",
+   "authors": [
+    "Faisal Mohammad",
+    "Mohamed Younis"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.LG"
+   ],
+   "published": "2026-11-11T10:45:58+00:00",
+   "url": "https://arxiv.org/abs/2611.15311",
+   "pdf": "https://arxiv.org/pdf/2611.15311",
+   "score": 0.6765,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6049,
+    "meters": 0.6051,
+    "methods": 0.6765
+   }
+  },
+  {
+   "id": "2611.14713",
+   "version": 1,
+   "title": "Methodological Pitfalls in Predicting Ship Turnaround Time at Brazilian Ports: An Empirical Audit and a Reproducible Pipeline",
+   "abstract": "Two recent studies on ship turnaround time at Brazilian ports report models with R-squared scores above 0.80 on data from the national waterway transportation agency. We audit their published datasets and reveal these results are inflated by structural data leakage. Specifically, 97 percent of berthing events in their random row-level split appear in both training and testing partitions. We demonstrate that a model's R-squared drops from 0.82 to 0.20 when the data is properly split at the berthing level. We further document additional methodological flaws, including survivorship bias, undocumented target truncation, and the retention of variables that algebraically reconstruct the target. To address these issues, we propose a reproducible pipeline that aggregates cargo to the berthing level, utilizes conditional imputation, and represents high-cardinality cargo variables through weighted averages of multilingual sentence embeddings. Evaluating six time targets and thirty seeds, our pipeline reveals that cargo embeddings yield statistically significant improvements on four operational targets, while administrative waiting times remain unaffected. Prior works missed this per-target heterogeneity by conflating genuine signal with leaked identity.",
+   "authors": [
+    "Eduardo Caruso Barbosa Pacheco",
+    "Reynaldo Pereira Martins",
+    "Alexandre dos Santos Gualberto",
+    "Joao Vitor Souza Germano",
+    "Milton Miranda Neto",
+    "Francisco Louzada"
+   ],
+   "primary": "stat.AP",
+   "categories": [
+    "stat.AP"
+   ],
+   "published": "2026-11-10T20:19:05+00:00",
+   "url": "https://arxiv.org/abs/2611.14713",
+   "pdf": "https://arxiv.org/pdf/2611.14713",
+   "score": 0.6686,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6339,
+    "meters": 0.5836,
+    "methods": 0.6686
+   }
+  },
+  {
+   "id": "2611.15770",
+   "version": 1,
+   "title": "Privacy-Preserving Spectrum Data Obfuscation in Next-Generation Spectrum Coexistence Systems",
+   "abstract": "In spectrum coexistence systems, the primary user (PU) activity must be partially disclosed for interference avoidance and coordination, while the exact spectrum occupancy information is often restricted due to security and regulatory constraints. To this end, subset-based disclosures can be employed in which the true frequency is included while ambiguity is introduced. This paper shows that naive randomized subset disclosures remain highly vulnerable to information leakage through inference, as temporal structure can be exploited to recover spectrum usage information. Under Markovian dynamics of the PU's spectrum usage, hidden Markov model (HMM) filtering with online learning is applied, while under periodic dynamics, period and phase estimations with phase-aligned statistics are used for inference. To address this vulnerability, structure-aware obfuscation strategies are introduced. For Markovian dynamics, history-based and belief-based schemes are designed to induce model mismatch and limit posterior concentration, while for periodic dynamics, cycle-dominance and decoy-based schemes are designed to manipulate phase-wise statistics and bias the inference process. These obfuscation schemes significantly hinder inference of spectrum information and offer principled disclosure solutions for spectrum coexistence systems.",
+   "authors": [
+    "Yalin E. Sagduyu",
+    "Tugba Erpek",
+    "Sastry Kompella",
+    "Joseph A. Molnar"
+   ],
+   "primary": "cs.NI",
+   "categories": [
+    "cs.NI",
+    "cs.CR",
+    "eess.SP"
+   ],
+   "published": "2026-11-11T17:49:56+00:00",
+   "url": "https://arxiv.org/abs/2611.15770",
+   "pdf": "https://arxiv.org/pdf/2611.15770",
+   "score": 0.6664,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6454,
+    "meters": 0.6374,
+    "methods": 0.6664
+   }
+  },
+  {
+   "id": "2611.16502",
+   "version": 1,
+   "title": "SignRot: LLM Quantization with Massive Outlier-Aware Sign-Adjusted Rotation",
+   "abstract": "While quantization compresses LLMs and accelerates inference, outlier activations impede efficient low-bit representation. In particular, massive outliers cause substantial performance degradation. Although rotation-based methods that rely on randomized Hadamard transforms for online inference aim to mitigate this, they can produce fragmented distributions with empty bins when a massive outlier dominates a token's activation. This fragmentation severely undermines uniform quantization performance. Moreover, massive outliers concentrate in the down-projection input, where the preceding nonlinearity requires the rotation to be applied at inference time. This constraint prevents training-based approaches such as SpinQuant from learning the online rotation at this position, as a learned dense matrix cannot use the Fast Walsh-Hadamard Transform and would require a full matrix multiplication during inference. To address this, we propose SignRot (Sign-adjusted Rotation), which identifies massive outlier channels and constructs a sign adjustment vector that unifies the signs of the corresponding Hadamard row, collapsing the bimodal distribution into a unimodal profile amenable to quantization. Since the aligned outlier shifts the activation mean away from zero, we pair SignRot with asymmetric activation quantization, whose zero-point absorbs this shift. As a lightweight, drop-in improvement compatible with any Hadamard-based quantization method, SignRot requires only a single calibration forward pass and adds only element-wise sign flips at inference, without an additional matrix multiplication. Applying SignRot to QuaRot achieves a WikiText2 perplexity of 5.88 and an average zero-shot reasoning accuracy of 72.73, surpassing SpinQuant on the LLaMA3-70B model. Code is available at https://github.com/HYU-ARK-Lab/SignRot.",
+   "authors": [
+    "Jaehun Gim",
+    "Jaewoo Kim",
+    "Gyuwan Kim",
+    "Seo Yeon Park"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-12T09:05:14+00:00",
+   "url": "https://arxiv.org/abs/2611.16502",
+   "pdf": "https://arxiv.org/pdf/2611.16502",
+   "score": 0.6584,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6135,
+    "meters": 0.5847,
+    "methods": 0.6584
+   }
+  },
+  {
+   "id": "2611.17024",
+   "version": 1,
+   "title": "Clustering professional football players using Gaussian mixture models: A case study of the English Premier League 2024/25",
+   "abstract": "The increasing availability of detailed football performance data has created new opportunities for identifying player archetypes and informing recruitment and tactical decision-making. Most existing clustering approaches assign each player to a single group, despite the reality that many modern footballers perform hybrid roles spanning multiple stylistic categories. Performance data for 314 outfield players from the 2024/25 English Premier League season are analysed using a Gaussian mixture model (GMM) applied to principal component representations of player statistics. Unlike hard-assignment methods such as k-means, the GMM provides probabilistic cluster memberships, allowing uncertainty and role hybridity to be quantified. Seven player archetypes are identified in the full dataset. Posterior membership probabilities reveal a subset of players whose profiles span multiple clusters, providing an objective measure of tactical flexibility and stylistic ambiguity. Further analyses within defender, midfielder, and forward groups recover position-specific sub-archetypes and highlight exceptional outliers. The results demonstrate that model-based clustering provides a flexible and interpretable framework for identifying latent structure in high-dimensional performance data while explicitly quantifying uncertainty in cluster membership. More broadly, the approach is readily transferable to other sports and domains in which individuals exhibit overlapping characteristics and cannot be adequately represented by hard cluster assignments alone.",
+   "authors": [
+    "Harry O'Donnell",
+    "Antony M. Overstall"
+   ],
+   "primary": "stat.AP",
+   "categories": [
+    "stat.AP"
+   ],
+   "published": "2026-11-12T16:12:24+00:00",
+   "url": "https://arxiv.org/abs/2611.17024",
+   "pdf": "https://arxiv.org/pdf/2611.17024",
+   "score": 0.6552,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5604,
+    "meters": 0.5487,
+    "methods": 0.6552
+   }
+  },
+  {
+   "id": "2611.15742",
+   "version": 1,
+   "title": "Adaptive Model Predictive Control for Damping IBR-Induced SSOs",
+   "abstract": "We propose an adaptive model predictive control (MPC) approach to damp sub-synchronous oscillations (SSOs) induced by grid-following (GFL) inverter-based resources (IBRs). Unlike traditional model predictive controller designed considering the nominal plant that may not perform well in other conditions, we use plants that alter with changing operating point. To capture the plant dynamics, we use recursive least squares (RLS) based system identification with variable forgetting factor. This approach allows us to discount past data and avoid bias caused by large transient outliers while performing system identification. We present a proof of the convergence of the model parameters in the presence of finite outliers. We propose to update the model inside the MPC optimization problem periodically after a predetermined time interval instead of each sampling instant since the operating point changes slowly in a practical power system. The MPC design allows us to directly impose constraints on control inputs so that the IBR current limits are respected. Our approach also addresses the issue of unavailability of IBR models. We show the accuracy of the system identification and the superior performance of the proposed controller on the modified IEEE $4$-machine system and the modified IEEE $68$-bus system as compared with the traditional MPC.",
+   "authors": [
+    "Fiaz Hossain",
+    "Nilanjan Ray Chaudhuri",
+    "Constantino M. Lagoa"
+   ],
+   "primary": "eess.SY",
+   "categories": [
+    "eess.SY"
+   ],
+   "published": "2026-11-11T17:23:16+00:00",
+   "url": "https://arxiv.org/abs/2611.15742",
+   "pdf": "https://arxiv.org/pdf/2611.15742",
+   "score": 0.6548,
+   "interest": "meters",
+   "scores": {
+    "water": 0.6482,
+    "meters": 0.6548,
+    "methods": 0.618
+   }
+  },
+  {
+   "id": "2611.16756",
+   "version": 1,
+   "title": "Beyond Binary Classification: Multiclass Machine Learning for Diabetes and Prediabetes Risk Prediction Using NHANES",
+   "abstract": "Detecting diabetes risk early is important for preventing disease progression. Most existing machine learning approaches focus on binary classification, which limits their ability to capture intermediate risk states such as prediabetes. We develop a supervised learning framework to classify adults as normal, prediabetic, or diabetic using National Health and Nutrition Examination Survey data. The framework uses routinely collected demographic, clinical, and lifestyle variables from 15,356 adults, with glycated hemoglobin (HbA1c) used only to define labels and excluded from input features to prevent leakage. We compare conventional machine learning and transformer-based models and examine two binary formulations: normal versus prediabetes, and normal versus combined prediabetes and diabetes. Models are evaluated on a held-out test set using precision, sensitivity, specificity, and F1 score. In the multiclass setting, performance is broadly consistent across models, with accuracy up to 0.72 and macro-averaged F1 of 0.70. Prediabetes remains the most challenging class, with F1 scores of 0.54 to 0.56 for conventional models and 0.53 to 0.55 for transformers, reflecting its overlap with both neighboring states. When the task is reduced to normal versus prediabetes, F1 scores rise modestly to 0.62 to 0.64. A more substantial improvement is observed under a broader screening formulation combining prediabetes and diabetes, with F1 scores of 0.73 to 0.74 across all models. These findings suggest that feature overlap along the biological continuum between normal and diabetic states contributes more to the difficulty of prediabetes detection than model architecture. Multiclass prediction provides a more clinically informative representation of metabolic risk progression but highlights a trade-off between clinically meaningful stratification and predictive accuracy.",
+   "authors": [
+    "Aman Mujahid",
+    "Anita Penkova"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-12T13:06:18+00:00",
+   "url": "https://arxiv.org/abs/2611.16756",
+   "pdf": "https://arxiv.org/pdf/2611.16756",
+   "score": 0.6506,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5787,
+    "meters": 0.6093,
+    "methods": 0.6506
+   }
+  },
+  {
+   "id": "2611.15835",
+   "version": 1,
+   "title": "Controlling the Probability of Unknown Unknowns in Pre-Deployment Testing of AI Systems",
+   "abstract": "In pre-deployment testing of AI systems such as AI agents, a developer can often deal with known failure modes (e.g., leaking API keys, deleting important databases, or installing a malicious package) by implementing fixes or making contingency plans for when the same issue might occur again. What is more challenging are the unknown unknowns: the unseen failure modes that haven't surfaced during testing. The decision to stop testing and deploy therefore faces an inherent tradeoff: continue testing to observe more behaviors, at the cost of time and resources, or stop testing and deploy, at the risk of failure modes remaining undiscovered. How then does the developer decide when they have tested enough? To answer this, we develop an algorithm that certifies when the probability of observing an unseen failure mode is sufficiently small. The algorithm constructs an anytime-valid upper confidence sequence on this quantity, so the developer can repeatedly test a system, inspect the bound, and decide to stop when it falls below a chosen threshold without invalidating the statistical guarantee. Our problem can be interpreted as a sequential variant of the missing-mass estimation problem which gave rise to the classic Good-Turing estimator (Good, 1953). On SWE-Chat, a dataset of real-world coding agent traces (Baumann et al., 2026), we implement our procedure and show that it achieves tighter upper bounds than a simple multiple-testing corrected Good-Turing baseline, and even dominates a fixed-horizon (non-multiple-testing-corrected) Good-Turing upper confidence bound, which is not anytime valid. Additionally, to better match realistic evaluation pipelines, we extend our method to handle sampling from a different task distribution and imperfect automated failure labeling.",
+   "authors": [
+    "Rachel Li",
+    "Chris Hays",
+    "Aaditya Ramdas",
+    "Manish Raghavan"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "cs.CY",
+    "math.ST"
+   ],
+   "published": "2026-11-11T18:46:36+00:00",
+   "url": "https://arxiv.org/abs/2611.15835",
+   "pdf": "https://arxiv.org/pdf/2611.15835",
+   "score": 0.6494,
+   "interest": "water",
+   "scores": {
+    "water": 0.6494,
+    "meters": 0.5825,
+    "methods": 0.6301
+   }
+  },
+  {
+   "id": "2611.15895",
+   "version": 1,
+   "title": "Your Hypergradient is Skewed: Antithetic Neumann Estimation for Bilevel Optimization",
+   "abstract": "Bilevel optimization is a core tool in practical machine learning workflows, including hyperparameter tuning, data reweighting, robust learning, reinforcement learning, and imbalanced classification. Hypergradient computation requires the inverse of the inner Hessian, typically estimated via a truncated Neumann series. While existing analyses focus on bias and variance, we show that the product structure of the Neumann series introduces a third source of error: skewness. We identify that, unlike ordinary gradients, whose asymmetry is suppressed by mini-batch averaging, the Neumann estimator amplifies skewness across factors, with the third-moment error growing, under weak contraction, with truncation depth, inner condition number, and per-factor noise asymmetry. This arises in many practical settings such as corrupted labels, outliers, heterogeneous or class-imbalanced datasets. To address this, we introduce the Antithetic Neumann Estimator (ANE), which pairs each Hessian sample with a mirrored counterpart around a reference Hessian and averages the resulting inverse-Hessian estimates. With an exact reference, the antithetic product retains only even-order noise, eliminating all odd-order perturbation terms; with an approximate reference, the residual odd-order contribution is bounded linearly in the reference error. ANE requires only a modification of the Hessian vector step and combines with existing stochastic or variance-reduced bilevel methods. We instantiate ANE-SGD and ANE-VR, the latter adding recursive variance reduction. Across robust regression, data cleaning, offline reinforcement learning, and imbalanced classification, ANE-based methods improve on stochastic and variance-reduced baselines on every task (20 seeds each), lowering loss by 4 to 25% relative to the best baseline; the largest gains, on robust regression, are a 25% lower test loss and a 54% higher test r-squared.",
+   "authors": [
+    "Jason Bohne",
+    "Pawel Polak",
+    "Gary Kazantsev",
+    "David Rosenberg"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "math.OC"
+   ],
+   "published": "2026-11-11T19:01:48+00:00",
+   "url": "https://arxiv.org/abs/2611.15895",
+   "pdf": "https://arxiv.org/pdf/2611.15895",
+   "score": 0.6407,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5991,
+    "meters": 0.6169,
+    "methods": 0.6407
+   }
+  },
+  {
+   "id": "2611.16356",
+   "version": 1,
+   "title": "DIAGNO: Diagonal Spherical Neural Operators for Heterogeneous Earth Dynamics Modeling",
+   "abstract": "Accurate forecasting of Earth's dynamic systems is vital in geophysics, where neural operators offer a powerful data-driven paradigm. Standard operators often treat the Earth as a flat Euclidean plane, introducing geometric artifacts. In contrast, Spherical Neural Operators (SNOs) resolve this mismatch by operating within the spherical spectral space, naturally adapting to spherical geometries. However, for computational efficiency, existing SNOs typically rely on the rotation equivariance assumption. This assumption simplifies the transitions of physical states into isolated spectral modal evolutions, thereby over-idealizing the Earth as a homogeneous system. To solve this problem, we no longer rely on the rotation equivariance assumption that isolates spectral modal evolution, but directly derive an explicit modal interaction kernel and propose Diagonal Spherical Neural Operators named DIAGNO. DIAGNO explicitly parameterizes cross-modal interactions through spectral modal decomposition, thereby preserving the inherent heterogeneity of Earth dynamics. Furthermore, leveraging the unique diagonal structure of the spherical spectrum, we design inter- and intra-diagonal interaction mechanisms to natively capture essential zonal and meridional dynamics, respecting intrinsic geophysical regularities. Extensive experiments across simulated fluid dynamics and real-world Earth system reanalysis (including atmosphere and ocean) datasets demonstrate DIAGNO's superior capability, consistently achieving state-of-the-art performance in multi-step forecasting. Beyond this, we validate DIAGNO's practical analytical value in professional geophysical domains by assessing its fidelity in capturing climatological anomalies and maintaining physical consistency.",
+   "authors": [
+    "Herui Li",
+    "Bin Lu",
+    "Haonan Qi",
+    "Lei Zhou",
+    "Luoyi Fu",
+    "Xinbing Wang",
+    "Meng Jin"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "cs.LG"
+   ],
+   "published": "2026-11-12T06:15:08+00:00",
+   "url": "https://arxiv.org/abs/2611.16356",
+   "pdf": "https://arxiv.org/pdf/2611.16356",
+   "score": 0.625,
+   "interest": "methods",
+   "scores": {
+    "water": 0.576,
+    "meters": 0.5989,
+    "methods": 0.625
+   }
+  },
+  {
+   "id": "2611.15925",
+   "version": 1,
+   "title": "ShadowBench: Exposing Lexical Anchoring and the Illusion of Forgetting in Large Language Models",
+   "abstract": "Large Language Models (LLMs) have emerged as primary interfaces for factual retrieval, yet current evaluation paradigms rely almost exclusively on explicit entity names. In this work, we demonstrate that LLM knowledge is fundamentally lexically anchored: models possess extensive factual information but find it significantly difficult to retrieve without explicit name tokens. To quantify this limitation, we introduce ShadowBench, a rigorously hardened, shortcut-resistant benchmark designed to evaluate Latent Entity Association via a novel Dual-Trait Association (DTA) task. Our evaluation reveals a pervasive \"Shadow Gap\" across all model scales$\\unicode{x2013}$up to the frontier models GPT-5.4 and Claude-Sonnet-4.6$\\unicode{x2013}$where removing lexical anchors causes performance drops of over 20%. Furthermore, we demonstrate that this lexical dependency exposes a critical vulnerability in AI safety. Applying ShadowBench to Machine Unlearning, we find that state-of-the-art algorithms (e.g., Gradient Difference, NPO) achieve only superficial lexical erasure. While unlearned models fail on direct queries, our novel Latent Entity Leakage Rate (LELR) metric reveals that for popular entities, models explicitly reconstruct the \"forgotten\" entity in their internal reasoning traces in over 74% of cases, utilizing residual shadow knowledge to solve associative tasks. Conversely, for niche entities, models retain high shadow accuracy (60-90%) via implicit attribute correlation despite 0% LELR. Ultimately, ShadowBench indicates that current unlearning paradigms create an \"Illusion of Forgetting,\" demonstrating that existing methods act as superficial output filters and are not yet reliable for achieving true parametric erasure.",
+   "authors": [
+    "Sujan Maharjan",
+    "Lu Liu"
+   ],
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL",
+    "cs.LG"
+   ],
+   "published": "2026-11-11T19:19:08+00:00",
+   "url": "https://arxiv.org/abs/2611.15925",
+   "pdf": "https://arxiv.org/pdf/2611.15925",
+   "score": 0.6184,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5193,
+    "meters": 0.5323,
+    "methods": 0.6184
+   }
+  },
+  {
+   "id": "2611.15904",
+   "version": 1,
+   "title": "HeriKGQA: Grounded Knowledge-Graph Question Answering over Cultural Heritage Sensor Data",
+   "abstract": "Cultural heritage sites are increasingly monitored by sensor networks, but querying their data requires database expertise. Large Language Models (LLMs) offer a natural-language interface, yet over raw sensor records they lose track of which sensor, site, and time each value belongs to, and silently miscompute. We present HeriKGQA, a knowledge-graph question-answering method that confines the LLM to interpreting questions and phrasing answers, leaving computation to SPARQL and deterministic code. Questions are parsed into intents constrained by a heritage ontology aligning W3C SOSA/SSN with CIDOC-CRM, compiled into SPARQL, and answered from query results and temporal, spatial, and anomaly facts derived by a grounding layer, with error correction guarding each LLM step. On 500 questions over real data from five heritage sites, HeriKGQA reaches 99.0% accuracy, 18.2 points above the strongest of three baselines using the same LLM and receiving the same anomaly rules and answer conventions, with comparable answer quality while running almost four times faster. Without grounding, accuracy drops by 12.2 points and on anomaly questions from 99% to 66%. We report lessons from development and live deployment.",
+   "authors": [
+    "Lingxiao Kong",
+    "Vasileios Arampatzakis",
+    "Vasileios Sevetlidis",
+    "George Pavlidis",
+    "Zeyd Boukhers"
+   ],
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL",
+    "cs.AI",
+    "cs.DB",
+    "cs.IR"
+   ],
+   "published": "2026-11-11T19:09:13+00:00",
+   "url": "https://arxiv.org/abs/2611.15904",
+   "pdf": "https://arxiv.org/pdf/2611.15904",
+   "score": 0.6017,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5611,
+    "meters": 0.5912,
+    "methods": 0.6017
+   }
+  },
+  {
+   "id": "2611.16143",
+   "version": 1,
+   "title": "Does a Self-Learning Migration Agent Learn? An Audited Evaluation of Evidence-Graded Experience Memory for Oracle-to-PostgreSQL Migration",
+   "abstract": "Do large language model (LLM) migration agents learn from accumulated experience, or do apparent gains reflect retrieval and reference reuse? We evaluate an evidence-graded agent for Oracle-to-PostgreSQL migration across four studies. On 1,833 documentation-derived source-reference pairs, persistent memory improved reference conformity (RC) over a no-memory baseline by 0.015 [0.004, 0.025], while policy adaptation added no gain (-0.004 [-0.010, 0.001]). An audit found that 264 of 367 held-out units (72%) shared a PostgreSQL reference with training, and the memory effect on the 103 leak-free units fell to 0.002 [-0.008, 0.011]. A model-free nearest-target copy baseline scored RC 0.222, outperforming all LLM systems (at most 0.163). A reference-grouped split reduced copying to 0.119; a rerun on 374 units in 118 independent target groups found no statistically distinguishable memory effect (0.005 [-0.003, 0.017]) and no policy effect. A separate Oracle-grounded evaluation on 216-224 real PL/SQL units showed that 10-22% of PostgreSQL-accepted units were behaviorally incorrect; a human-gated fix cycle increased demonstrably correct units from 98/216 to 167/224. A write-back study showed a 54% decline in retrieval margin as the knowledge base grew from 12 to 1,200 entries. We derive six evaluation rules that distinguish cross-task learning from reference leakage, copying, metric artifacts, and unstable feedback.",
+   "authors": [
+    "Oleg Grynets",
+    "Vasyl Lyashkevych",
+    "Valeriia Oliferuk",
+    "Vladyslav Babenko",
+    "Danylo Kovalchuk",
+    "Dmytro Kostetskyi"
+   ],
+   "primary": "cs.LO",
+   "categories": [
+    "cs.LO",
+    "cs.DB",
+    "cs.SE"
+   ],
+   "published": "2026-11-12T01:09:26+00:00",
+   "url": "https://arxiv.org/abs/2611.16143",
+   "pdf": "https://arxiv.org/pdf/2611.16143",
+   "score": 0.6002,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5346,
+    "meters": 0.5306,
+    "methods": 0.6002
+   }
+  },
+  {
+   "id": "2611.15241",
+   "version": 1,
+   "title": "KQML-Liver: Interpretable Hybrid Quantum Machine Learning with Kolmogorov-Arnold Networks for Liver Disease Classification",
+   "abstract": "Liver disease remains a major global health concern, highlighting the need for reliable and accessible early detection methods. Although recent advances in machine learning, deep learning and quantum machine learning (QML) have introduced promising diagnostic tools, many approaches suffer from limited interpretability and inflated performance caused by data leakage or overly simplistic evaluation protocols. These constraints reduce their reliability in real-world clinical practice. This paper proposes KQML-Liver, a hybrid framework that integrates QML with Kolmogorov-Arnold Networks (KANs) to enhance predictive performance and interpretability. The architecture combines parameterized quantum circuits for expressive feature representation with KAN-based functional mappings that capture nonlinear relationships in an interpretable manner. Evaluated on the Indian Liver Patient Dataset (ILPD) under a rigorous preprocessing protocol preventing data leakage, the proposed model achieves 82% classification accuracy and 100% recall, detecting all positive cases, outperforming existing baselines while providing improved transparency in clinical predictions. These results suggest that hybrid KAN-quantum architectures offer a promising direction for interpretable AI-assisted medical diagnosis.",
+   "authors": [
+    "Nhat-Long Nguyen",
+    "Viet-Loi Dinh",
+    "Trong-Nghia Pham"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-11T09:31:35+00:00",
+   "url": "https://arxiv.org/abs/2611.15241",
+   "pdf": "https://arxiv.org/pdf/2611.15241",
+   "score": 0.5949,
+   "interest": "methods",
+   "scores": {
+    "water": 0.578,
+    "meters": 0.5677,
+    "methods": 0.5949
+   }
+  },
+  {
+   "id": "2611.14712",
+   "version": 1,
+   "title": "Joint Beamforming and Duplex-Mode Segment Selection for Secure Uplink Transmission in Pinching Antenna Systems",
+   "abstract": "Pinching antenna systems (PASS) have recently emerged as a promising architecture for reconfigurable, flexible and proximity-driven signal delivery. In this paper, we propose a segmented waveguide-based PASS architecture for enabling secure uplink communications, where each segment activates at most one pinching antenna (PA), which inherently eliminates the inter-antenna re-radiation effect and yields a tractable uplink signal model. To protect the uplink transmission against eavesdropping, the base station (BS) injects artificial noise (AN) toward the eavesdroppers via selected downlink segments using a duplex-mode segment selection mechanism, which dynamically configures each segment for either uplink reception or downlink AN transmission through switch-controlled fiber connections. We formulate the secrecy energy efficiency (SEE) maximization problem as a mixed-integer nonlinear program (MINLP) that jointly optimizes the receive beamforming vector, AN covariance, user transmit power, pinching antenna positions, and duplex-mode segment assignment. Given the non-convex and combinatorial nature of the problem, we develop an efficient alternating optimization (AO) framework, where the resulting subproblems are solved using the Dinkelbach method combined with successive convex approximation (SCA) and penalty-based relaxation. Simulation results demonstrate that the proposed framework significantly outperforms benchmark schemes in terms of SEE and robustness against waveguide attenuation. Moreover, AN effectively suppresses information leakage, while PA mobility, duplex-mode segment allocation, and waveguide segmentation further improve secrecy performance through flexible positioning and reduced in-waveguide propagation loss.",
+   "authors": [
+    "Zar Chi Phyo",
+    "Mohamed Elhattab",
+    "Chadi Assi",
+    "Sanaa Sharafeddine"
+   ],
+   "primary": "eess.SP",
+   "categories": [
+    "eess.SP"
+   ],
+   "published": "2026-11-10T20:17:38+00:00",
+   "url": "https://arxiv.org/abs/2611.14712",
+   "pdf": "https://arxiv.org/pdf/2611.14712",
+   "score": 0.5881,
+   "interest": "water",
+   "scores": {
+    "water": 0.5881,
+    "meters": 0.5025,
+    "methods": 0.4994
+   }
+  },
+  {
+   "id": "2611.16984",
+   "version": 1,
+   "title": "ElasticDino: Dense Semantic Features Using Elastic Deformations",
+   "abstract": "Vision transformers (ViTs) serve as the backbone for countless vision tasks, including dense prediction tasks, such as segmentation and depth estimation, even though the quadratic complexity of self-attention severely limits feature resolution and induces spatial artifacts. In this work, we introduce ElasticDino, a lightweight adapter which produces high-resolution feature maps, adhering to the fine details of the input image. As a key insight, we observe the consistency of artifacts across channels, and simultaneously resolve them to match the input image structure. Using a slim architecture based on spatial deformations, ElasticDino produces pixel-aligned, high-resolution feature maps efficiently. Leveraging deformations allows strictly preserving sharp semantics, and thereby avoiding the smoothness biases inherent to alternative approaches. Due to the absence of ground truth, we employ pixel-level semantic segmentation and depth estimation with linear heads to predict a set of downstream dense tasks, guiding the deformation process without leaking task-specific semantics into the model. We demonstrate superior accuracy over current methods on a range of popular dense task benchmarks, with better computational performance.",
+   "authors": [
+    "Ulysse Mizrahi",
+    "Sean Zaretzky",
+    "Dov Danon",
+    "Amit H. Bermano"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI"
+   ],
+   "published": "2026-11-12T15:50:04+00:00",
+   "url": "https://arxiv.org/abs/2611.16984",
+   "pdf": "https://arxiv.org/pdf/2611.16984",
+   "score": 0.5855,
+   "interest": "water",
+   "scores": {
+    "water": 0.5855,
+    "meters": 0.5766,
+    "methods": 0.5825
+   }
+  },
+  {
+   "id": "2611.16426",
+   "version": 1,
+   "title": "SoScale: Second-Order Scale Search for FP4 Quantization",
+   "abstract": "Low-bit quantization reduces the memory footprint and inference cost of large language models (LLMs), yet accurate FP4 quantization remains challenging. Practical formats such as MXFP4, NVFP4, and HiF4 pair a 4-bit floating-point payload with block-wise or hierarchical scale codes, making accuracy highly sensitive to how each local distribution is scaled. Default maximum-absolute-value scaling preserves dynamic range, but can spend scarce FP4 levels on rarely occupied outlier regions and leave dense tensor values poorly resolved. Existing scale-search methods minimize local element-wise reconstruction error, optimizing tensor fidelity rather than layer-output fidelity. We propose SoScale, a second-order weight scale-code search method for hierarchical FP4 quantization. SoScale searches hardware-valid scale codes under a Hessian-aware layer reconstruction objective and couples this search with GPTQ-style error recovery, selecting scales by their impact on layer outputs. Across Qwen3 models, SoScale consistently reduces downstream quantization degradation under MXFP4, NVFP4, and HiF4.",
+   "authors": [
+    "Pengxiang Zhao",
+    "Xing Li",
+    "Hui-Ling Zhen",
+    "Weizhe Lin",
+    "Xianzhi Yu",
+    "Zhenhua Dong"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-12T07:36:46+00:00",
+   "url": "https://arxiv.org/abs/2611.16426",
+   "pdf": "https://arxiv.org/pdf/2611.16426",
+   "score": 0.5813,
+   "interest": "methods",
+   "scores": {
+    "water": 0.546,
+    "meters": 0.5441,
+    "methods": 0.5813
+   }
+  },
+  {
+   "id": "2611.16102",
+   "version": 1,
+   "title": "Is generative AI really changing public sector work? Evidence from a multi-country survey",
+   "abstract": "Artificial intelligence has the potential to transform how public services are delivered, with important implications for public service productivity. But how widely is the technology actually being used - and is it making any difference? Our survey of 3,362 public sector workers across the UK, the USA, South Africa and the EU finds widespread use of AI in every region. Our findings suggest that this spread is being driven by bottom-up individual adoption rather than top-down institutional adoption. In the EU, for example, 65\\% of respondents use AI, while only 19\\% say their organisation has formally adopted it. Most users are positive about its effects, with 79\\% saying AI has improved their productivity. However, only 29\\% say it has increased what is expected of them at work, raising questions about how truly transformative the technology is so far. Across regions, South Africa is a clear outlier, with the highest levels of use, organisational adoption, optimism and awareness of guidelines.",
+   "authors": [
+    "Saba Esnaashari",
+    "Tvesha Sippy",
+    "Youmna Hashem",
+    "Sukankana Chakraborty",
+    "Jonathan Bright"
+   ],
+   "primary": "stat.AP",
+   "categories": [
+    "stat.AP"
+   ],
+   "published": "2026-11-11T23:20:58+00:00",
+   "url": "https://arxiv.org/abs/2611.16102",
+   "pdf": "https://arxiv.org/pdf/2611.16102",
+   "score": 0.5769,
+   "interest": "meters",
+   "scores": {
+    "water": 0.5461,
+    "meters": 0.5769,
+    "methods": 0.5273
+   }
+  },
+  {
+   "id": "2611.15023",
+   "version": 1,
+   "title": "SkinAdvisor: An AI-Driven Decision Framework for Skin Production Planning via Multi-Modal Transformer Sales Forecasting",
+   "abstract": "Skins, cosmetic in-game items, are a primary revenue stream for modern online games, yet production decisions (which skins to make, when to release, how to price) remain driven by intuition and retrospective analytics. We present SkinAdvisor, an AI-driven decision framework for skin production planning, powered by SkinCast, a deployed multi-modal Transformer forecasting 180-day per-day sales trajectories for unreleased skins. SkinCast couples four encoders: a pretrained Informer for player-preference time series, a pretrained Player-Hero-Skin graph embedder for relational priors, and two lightweight Transformers for skin attributes and release context, fused through a shared backbone with a local-plus-global day-x positional encoding and decoded by an N-layer Informer in a single non-autoregressive pass. SkinAdvisor plugs these forecasts into a serving pipeline (Select -> Fill -> Infer -> Sales -> ROI -> Ranking) that ranks candidate skins by forecast-based ROI and supports multi-candidate comparison. The system has been in production for a full release cycle. Offline experiments show SkinCast reduces RMSE by ~20% over the strongest baseline (Informer) and ~60% over classical methods; stress tests on a 16-core CPU server confirm p99 latency under 8ms and peak throughput above 1100 rps. We report two deployment lessons: order-of-magnitude accuracy suffices for production decisions, and pretrained embeddings can leak temporal information, requiring season-based splitting to prevent.",
+   "authors": [
+    "Ge Fan",
+    "Kai Wang",
+    "Chaoyun Zhang",
+    "Yingjie Li",
+    "Yuze Liu",
+    "Junyang Chen"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-11T04:36:07+00:00",
+   "url": "https://arxiv.org/abs/2611.15023",
+   "pdf": "https://arxiv.org/pdf/2611.15023",
+   "score": 0.5688,
+   "interest": "methods",
+   "scores": {
+    "water": 0.538,
+    "meters": 0.5652,
+    "methods": 0.5688
+   }
+  },
+  {
+   "id": "2611.16933",
+   "version": 1,
+   "title": "Kezek: Splitting Mono Two-Person Conversations into Per-Speaker Tracks for Full-Duplex Dialogue Data",
+   "abstract": "Full-duplex spoken dialogue models learn turn-taking, overlaps and backchannels from conversations recorded with one channel per speaker, but most available conversational audio is a single mono mix. We present Kezek, a model that turns a mono recording of exactly two people into one track per person with the original length and timing; overlaps and short replies (\"yeah\", \"mm-hm\") stay on the track of the person who said them. Kezek decides who speaks when and who is who once for the whole recording (stage 1: a two-voice activity model guided by a speaker fingerprint trained to be insensitive to phase), and a conditioned time-domain separator only carries out that decision (stage 2), with outputs that always sum to the input. Standard separation metrics miss the failures that matter for dialogue data, so we report short-reply retention, leakage onto the other person's solo, channel swaps and coverage. Against the open pipeline pyannote -> DialogueSidon on the same recordings, Kezek keeps more short replies (0.83 vs. 0.69 on Open Yap test; 0.80 vs. 0.71 over the other's speech on unseen telephone speech from CallHome English), mostly because it returns the whole recording while the external pipeline drops part of it (on the audio both return, reply retention is about the same: 0.859 vs. 0.865 on Open Yap); it also leaks less, swaps channels less often, and runs 4-5 times faster (about 230 hours of audio per GPU-hour). We also report negative results and an ideal-mask ceiling that locate the remaining gap: quiet replies under a louder voice. Code and weights are released under permissive licences.",
+   "authors": [
+    "Bagzhan Karl",
+    "Alizhan Karl"
+   ],
+   "primary": "eess.AS",
+   "categories": [
+    "eess.AS",
+    "cs.AI"
+   ],
+   "published": "2026-11-12T15:19:35+00:00",
+   "url": "https://arxiv.org/abs/2611.16933",
+   "pdf": "https://arxiv.org/pdf/2611.16933",
+   "score": 0.5555,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5227,
+    "meters": 0.5264,
+    "methods": 0.5555
+   }
+  },
+  {
+   "id": "2611.15118",
+   "version": 1,
+   "title": "Lazare, veni foras: Reprogramming Dormant Neurons to Backdoor AI Agents",
+   "abstract": "Imagine an AI agent that aces every relevant evaluation, but when it sees 2027-01-01 in the terminal, it runs curl attacker.url/x|sh, handing an attacker your credentials and your machine. Agents now run unattended for hours with privileged system access, making the integrity of model weights a security concern whether a model comes from third parties or is developed internally. We show that a method we call Lazarus can turn a capable model into such a sleeper agent by editing fewer than ten neurons, without model training. Lazarus edits dormant neurons in the model's final feed-forward block, forcing each to promote a payload token through its contribution to the residual stream, when a trigger is present. A $P$-token payload therefore requires about $P$ neurons. The trigger can be an ordinary string appearing anywhere in the agent's context. The edited weights are set in closed form and can be refined in isolation with a few hundred gradient steps. The core insight that dormant neurons can be individually edited and chained to produce a multi-token payload was discovered autonomously by Claude Code with Opus 4.5 in February 2026. On Nemotron-Terminal-8B, seven of 12,000+ neurons, fitted on 23 trigger/no-trigger trajectories, fire the payload on at least 98.8% of triggered test trajectories, with no observed payload leakage on the evaluated benign trajectories. The attack generalizes: Qwen3.6-27B and Gemma-4-31B-IT are equally vulnerable. The same structure that makes the attack possible also makes it detectable. Agent built defenses, given no reference model, flag 91.4% of edited test checkpoints at a 9.7% FP rate. Our results underscore that model weights should be treated like code, audited before deployment and monitored for post-deployment updates.",
+   "authors": [
+    "Yuchen Zeng",
+    "Giorgio Severi",
+    "Blake Bullwinkel",
+    "Eric Horvitz",
+    "Dimitris Papailiopoulos"
+   ],
+   "primary": "cs.CR",
+   "categories": [
+    "cs.CR",
+    "cs.AI",
+    "cs.LG"
+   ],
+   "published": "2026-11-11T06:53:24+00:00",
+   "url": "https://arxiv.org/abs/2611.15118",
+   "pdf": "https://arxiv.org/pdf/2611.15118",
+   "score": 0.5554,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5476,
+    "meters": 0.5205,
+    "methods": 0.5554
+   }
+  },
+  {
+   "id": "2611.17220",
+   "version": 1,
+   "title": "Scalable Conversational Assessment: Chat-Based Exams with a Two-Agent LLM Pipeline",
+   "abstract": "Oral exams are compelling because (1) students can be asked to provide their reasoning for an answer and (2) their interactive nature permits follow-up questions to resolve ambiguous answers. But oral exams scale poorly. In this paper, we present scalable conversational assessment, an LLM-based system that conducts interactive text-based conversations with students to assess their ability to make and support an argument. We use a two-agent architecture to separate concerns and reduce the likelihood that answers are leaked to the student: the interviewer interacts directly with the student, but only receives guidance about the next question to ask the student; the hidden evaluator knows the goals of the whole activity, tracks the student's progress using a rubric, and guides the interviewer on when to follow-up on the current question or proceed to the next question. The system was first tested using a collection of simulated students with LLM personas of a particular ability level or adversarial tactic (e.g., answer-extractors, prompt-injectors, confident fabricators). A novel element of this evaluation was that it required the use of a fictional assessment topic to prevent personas that shouldn't have information from using knowledge present in the LLM's pre-training. The system was also deployed in a small, elective AI literacy course in both formative and summative contexts. Through manual and post-facto AI review of the transcripts we identified opportunities to improve the follow-up question generation and ensure that grading only credited ideas that the student (and not the interviewer) contributed.",
+   "authors": [
+    "Geoffrey Challen",
+    "Craig Zilles"
+   ],
+   "primary": "cs.CY",
+   "categories": [
+    "cs.CY",
+    "cs.AI"
+   ],
+   "published": "2026-11-12T18:16:37+00:00",
+   "url": "https://arxiv.org/abs/2611.17220",
+   "pdf": "https://arxiv.org/pdf/2611.17220",
+   "score": 0.5535,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5281,
+    "meters": 0.5406,
+    "methods": 0.5535
+   }
+  },
+  {
+   "id": "2611.15555",
+   "version": 1,
+   "title": "What Conformal Selection Can Certify in CRISPR Off-Target Design:Benchmark Leakage, Free Baselines, and a Finite-Sample Cohort Requirement",
+   "abstract": "Conformal selection promises distribution-free, finite-sample control of the error rate of a decision, and has been proposed as a safety layer for machine-learning CRISPR guide design. We ask whether such a certificate is attainable from the validated off-target data that exist. The constraint is arithmetic: a conformal p-value cannot fall below one divided by the calibration cohort size plus one, so a Benjamini-Hochberg selection certifies a single candidate only when that cohort is at least the candidate pool size divided by the tolerated error rate. Public cohorts supply ten validated guides, whereas a pool of two thousand at a ten percent error rate needs twenty thousand; the accepted set is consequently empty in over ninety-six percent of splits. Two benchmarking findings explain why this went unnoticed. The standard CIRCLE-seq file lists ten guides under eighty on-target strings, so grouping cross-validation on the sequence column trains and tests on one guide; corrected, pair-level discrimination and per-guide fidelity collapse. With that leakage removed, a training-free position-weight score and a bare count of near-match genomic sites are not beaten by a trained oracle. We give the corrected protocol, the baselines a new model must beat, and the cohort size a certified pipeline needs.",
+   "authors": [
+    "Mohammad Malekpouri",
+    "Somayeh Lotfi"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-11T14:39:10+00:00",
+   "url": "https://arxiv.org/abs/2611.15555",
+   "pdf": "https://arxiv.org/pdf/2611.15555",
+   "score": 0.553,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5506,
+    "meters": 0.5093,
+    "methods": 0.553
+   }
+  },
+  {
+   "id": "2611.14675",
+   "version": 1,
+   "title": "MITRA-Swarm: Injecting Explicit Linguistic Structure into Foundation Models for Classical Machine Translation",
+   "abstract": "Classical Sanskrit poses three challenges unresolved by single-call monolithic models: morphophonemic fusion Sandhi, dense nominal compounding Samāsa, and discourse-level zero-anaphora forced by poetic meter. We present MITRA-Swarm, a multi-agent architecture injecting explicit linguistic structure into an otherwise monolithic pipeline: a Sandhi-splitting agent, a parallel array of generalist gemma-4-26B-A4B-it and domain-specialized gemma-2-mitra-it translators, and a discourse-aware Ellipsis Restorer that consults corpus-derived register tags to avoid inventing active-voice subjects in impersonal legal and philosophical registers. Two separated judges evaluate quality: a routing judge ($J_{\\text{route}}$, same model family as the generators) driving an internal critique loop, and an independent reporting judge ($J_{\\text{report}}=$gpt-4o-mini, no shared vendor lineage) scoring every output exactly once. On a stratified benchmark of 1,000 verses across five registers (23,990 scored verdicts, 12-condition pre-registered ablation), the full swarm reaches $85.90$ MQM against a monolithic baseline of $85.27$ ($Δ=+0.63$, $p_{\\text{adj}}=0.0018$, 95% CI $[+0.30,+0.97]$), and isolated discourse restoration alone accounts for $+0.44$ MQM ($p_{\\text{adj}}=0.0288$), outperforming a call-count-matched self-refinement baseline by $+0.51$ MQM ($p_{\\text{adj}}=0.0288$). Severe per-verse failures (MQM$<80$) fall from $9.0\\%$ to $7.6\\%$, at roughly $9\\times$ the per-verse inference cost of the baseline. Additionally, $J_{\\text{route}}$ scores its own family's outputs $2$-$7$ MQM higher than $J_{\\text{report}}$ on every one of the 12 conditions, empirically motivating the two-judge split; and a preflight screen of a 192,151-entry retrieval index against all 12 evaluation works verifies 0 reference leaks across 269 runtime checks. These are small gains on a metric saturating near 85-86.",
+   "authors": [
+    "Kayshav Bhardwaj",
+    "Pragun Seth",
+    "Kush Bhardwaj",
+    "Vijay Nagasamy",
+    "Kurt Keutzer"
+   ],
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL",
+    "cs.AI"
+   ],
+   "published": "2026-11-10T19:31:07+00:00",
+   "url": "https://arxiv.org/abs/2611.14675",
+   "pdf": "https://arxiv.org/pdf/2611.14675",
+   "score": 0.5504,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5159,
+    "meters": 0.5187,
+    "methods": 0.5504
+   }
+  }
+ ]
+}

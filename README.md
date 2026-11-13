@@ -8,15 +8,15 @@
 **Live site: [nyksnightbender.github.io/paper-radar](https://nyksnightbender.github.io/paper-radar/)** (daily and weekly digests, archive, RSS)
 
 <!-- LATEST:START -->
-**Closest new papers, 11 November 2026** (10 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
+**Closest new papers, 13 November 2026** (31 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
 
 | Score | Paper | Topic |
 | ---: | --- | --- |
-| 0.79 | [TimeSeek: Multi-Task and Multi-Domain Pretraining for Generalized Time Series Analytics](https://arxiv.org/abs/2611.14491) | Time-series anomaly detection |
-| 0.79 | [Time Series Change Point Detection with Gaussian Processes](https://arxiv.org/abs/2611.13295) | Time-series anomaly detection |
-| 0.77 | [Outliers and the Hard-Margin Linear SVM in High-Dimension, Low-Sample-Size Settings](https://arxiv.org/abs/2611.13869) | Time-series anomaly detection |
-| 0.72 | [CASCADE: Constraint-Aware SCAffolded DEcomposition for Logical Anomaly Detection](https://arxiv.org/abs/2611.13820) | Time-series anomaly detection |
-| 0.70 | [Deviation-Aware Pretraining for Cardiovascular Disease Detection from Electrocardiograms](https://arxiv.org/abs/2611.14141) | Time-series anomaly detection |
+| 0.81 | [When Does Causality Help in Multivariate Time-Series Anomaly Detection?](https://arxiv.org/abs/2611.15073) | Time-series anomaly detection |
+| 0.76 | [Flow-CAD: Flow Matching for Contextual Anomaly Detection and Explanation in Tabular Data](https://arxiv.org/abs/2611.16184) | Time-series anomaly detection |
+| 0.73 | [GNN-Enhanced TCN Algorithms for ECG Anomaly Detection](https://arxiv.org/abs/2611.16648) | Time-series anomaly detection |
+| 0.73 | [ScrewSense: Mapping the Invisible - Anomaly Detection and Error Classification in Screwdriving Processes](https://arxiv.org/abs/2611.16789) | Time-series anomaly detection |
+| 0.72 | [On-Edge Acoustic Continual Anomaly Detection: A Cross-Platform Comparative Study](https://arxiv.org/abs/2611.15465) | Time-series anomaly detection |
 <!-- LATEST:END -->
 
 ## Why
