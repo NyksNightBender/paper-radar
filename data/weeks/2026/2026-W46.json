@@ -1,0 +1,318 @@
+{
+ "week": "2026-W46",
+ "start": "2026-11-09",
+ "end": "2026-11-13",
+ "days": [
+  "2026-11-09",
+  "2026-11-10",
+  "2026-11-11",
+  "2026-11-13"
+ ],
+ "generated_at": "2026-11-14T00:20:08+00:00",
+ "model": "BAAI/bge-small-en-v1.5",
+ "interests": [
+  {
+   "key": "water",
+   "name": "Water networks"
+  },
+  {
+   "key": "meters",
+   "name": "Meters and consumption"
+  },
+  {
+   "key": "methods",
+   "name": "Time-series anomaly detection"
+  }
+ ],
+ "count": 93,
+ "papers": [
+  {
+   "id": "2611.12414",
+   "version": 1,
+   "title": "Sensor placement for real-life water distribution networks, ensuring observability under uncertainties",
+   "abstract": "Leakage detection in water distribution networks (WDNs) is crucial for limiting water losses. However, effective detection strongly depends on sensor availability and placement. Most existing sensor placement methods rely on extensive simulations or precise knowledge of hydraulic parameters, which are often uncertain in practice. In this paper, we propose using a scalable sensor placement framework based on structural observability that depends only on the network topology and the underlying pressure-flow interconnection structure. The approach guarantees structural observability independently of hydraulic parameters, and is therefore robust to parametric uncertainties, assuming that the network topology is correctly specified. The method is computationally efficient and its performance is demonstrated on several real-life WDNs provided by Brabant-Water. While the framework ensures full network observability, the required number of sensors can be high in large and cyclic networks, which may limit applicability in real-life and motivates future work on relaxed observability guarantees for sensor placement.",
+   "authors": [
+    "Jarne J. H. van Gemert",
+    "Valentina Breschi",
+    "Claudia Quintiliani",
+    "Doekle R. Yntema",
+    "Karel J. Keesman",
+    "Mircea Lazar"
+   ],
+   "primary": "eess.SY",
+   "categories": [
+    "eess.SY"
+   ],
+   "published": "2026-11-09T13:44:25+00:00",
+   "url": "https://arxiv.org/abs/2611.12414",
+   "pdf": "https://arxiv.org/pdf/2611.12414",
+   "score": 0.8307,
+   "interest": "water",
+   "scores": {
+    "water": 0.8307,
+    "meters": 0.7284,
+    "methods": 0.6164
+   },
+   "date": "2026-11-10"
+  },
+  {
+   "id": "2611.15073",
+   "version": 1,
+   "title": "When Does Causality Help in Multivariate Time-Series Anomaly Detection?",
+   "abstract": "Causality-aware scoring is common in multivariate time-series anomaly detection, yet the literature rarely states when it helps. Holding one causality-guided autoencoder (DeCauAE) fixed, we vary graph quality, anomaly type and protocol against ground truth. Graph quality fixes the payoff: on a twenty-variable DAG the gain over a graph-free autoencoder decays as the graph is corrupted. Anomaly type fixes the target: the structural factor lifts window F1 from 0.800 to 0.976 where anomalies break conditional structure, and its advantage vanishes below a break severity s 0.3. Protocol fixes the ranking: point-adjusted F1 lets a random score match the full model, while range-aware VUS separates the autoencoder family from the classical baselines. On real benchmarks the causal module pays only where density makes a system eligible and cross-subsample reproducibility selects entities inside it; enabling it everywhere costs 0.012 VUS-ROC. The structural factor also transfers to classical detectors .",
+   "authors": [
+    "Long Zhang",
+    "Wei Huang",
+    "Aishui Rao",
+    "Jian Hu",
+    "Binxiang Wu",
+    "Jie Li",
+    "Chen Gong",
+    "Linxi Feng"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-11T05:47:17+00:00",
+   "url": "https://arxiv.org/abs/2611.15073",
+   "pdf": "https://arxiv.org/pdf/2611.15073",
+   "score": 0.8077,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6701,
+    "meters": 0.6715,
+    "methods": 0.8077
+   },
+   "date": "2026-11-13"
+  },
+  {
+   "id": "2611.12775",
+   "version": 1,
+   "title": "LogCDM: Interpretable Log Anomaly Detection via Behavioral Graph Drift and Adaptive Signal Fusion",
+   "abstract": "Log-based anomaly detection is increasingly dominated by large pretrained models, from BERT-scale encoders to 8B-parameter language models, which require GPUs at inference time and are difficult to deploy on the monitoring nodes where logs are produced. We present LogCDM, a compact detector that scores each log session using three complementary signals: the next-event surprise of a small causal Transformer, the distance between a graph-attention embedding of the session's own transition graph and that of a normal reference graph, and a transition-drift statistic that we show is exactly a frequency-weighted chi-squared divergence between transition kernels. The divergence view yields an asymptotic null distribution, a length-standardized score, and a per-edge decomposition that explains each alarm. A sigmoid gate fuses the three signals; under a shared-covariance Gaussian model, this gate is the Bayes posterior, and its learned weights indicate which signal each dataset relies on. With 8.1-8.8M parameters and no GPU required at inference, LogCDM reaches F1 scores of 0.984 on HDFS, 0.870 on chronologically split BGL, and 0.850 on Thunderbird, within 0.013-0.12 of an 8.1B-parameter LLM detector evaluated under the same protocol and above all compact baselines on BGL. It scores a session in 5.5-10.5 ms on a CPU. Ablations show that the structural signals add 0.025-0.030 F1 on BGL and Thunderbird but almost nothing on HDFS, consistent with the learned fusion weights.",
+   "authors": [
+    "Suryansh Talukdar",
+    "Taha Sarwat",
+    "Jin Soung Yoo"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-09T17:48:31+00:00",
+   "url": "https://arxiv.org/abs/2611.12775",
+   "pdf": "https://arxiv.org/pdf/2611.12775",
+   "score": 0.7998,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7196,
+    "meters": 0.682,
+    "methods": 0.7998
+   },
+   "date": "2026-11-10"
+  },
+  {
+   "id": "2611.14491",
+   "version": 1,
+   "title": "TimeSeek: Multi-Task and Multi-Domain Pretraining for Generalized Time Series Analytics",
+   "abstract": "Time series analytics has been widely applied across various domains. While existing time series foundation models (TSFMs) have demonstrated promising results, they still face two major challenges: 1) Most TSFMs mainly rely on stacking Transformer layers to increase parameter size, lacking the ability to adaptively model complex time series patterns from multi-domain data. 2) Current TSFMs are primarily pre-trained for specific tasks, e.g., forecasting or anomaly detection, and a few models support multiple tasks, but they fail to fully leverage task specificity and commonality, resulting in suboptimal performance. To address these challenges, we propose TimeSeek, a novel generalized time series analytics model that adaptively models time series patterns from multi-domain data and unifies multiple tasks in pre-training. Conceptually, TimeSeek is guided by selective information sharing under domain and task heterogeneity. From the perspective of multi-domain data, we propose a Multi-Domain Feature Extractor that adaptively captures temporal dependencies and channel correlations based on domain-specific characteristics, including progressive multi-scale modeling and adaptive slot channel modeling. From the perspective of the diversity of tasks, we propose multi-task collaborative training, which leverages task specificity and task commonality through task customization and cross-task training, effectively unifying multiple tasks in pre-training and better adapting to diverse downstream scenarios. After pre-training on large-scale time series data, TimeSeek achieves state-of-the-art performance in forecasting, anomaly detection, and classification tasks across both few-shot learning and zero-shot situations, together with favorable inference efficiency.",
+   "authors": [
+    "Peng Chen",
+    "Yihang Wang",
+    "Zhongwen Rao",
+    "Yang Shu",
+    "Yuying Qiu",
+    "Yuxuan Chen",
+    "Lujia Pan",
+    "Bin Yang",
+    "Chenjuan Guo"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-10T18:49:26+00:00",
+   "url": "https://arxiv.org/abs/2611.14491",
+   "pdf": "https://arxiv.org/pdf/2611.14491",
+   "score": 0.7944,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6394,
+    "meters": 0.6939,
+    "methods": 0.7944
+   },
+   "date": "2026-11-11"
+  },
+  {
+   "id": "2611.13295",
+   "version": 1,
+   "title": "Time Series Change Point Detection with Gaussian Processes",
+   "abstract": "This paper proposes a novel general Gaussian process framework for change point detection in time series. A change is defined as an alteration of the hyperparameters of the Gaussian process prior. We formulate the problem in the context of statistical hypothesis testing and demonstrate its performance over both offline and online multiple change points detection. The approach provides theoretical guaranties of its performance. An important advantage of the developed framework is that it does not need a detailed specification of the time series function before and after a change. The hyperparameter values are learned from the data. Comprehensive evaluation of the proposed framework is provided both on synthetic and real data and its efficiency is demonstrated.",
+   "authors": [
+    "Olga Isupova",
+    "Danil Kuzin",
+    "Fredrik Gustafsson",
+    "Lyudmila Mihaylova"
+   ],
+   "primary": "stat.ML",
+   "categories": [
+    "stat.ML",
+    "cs.LG",
+    "math.ST",
+    "stat.ME"
+   ],
+   "published": "2026-11-09T22:02:10+00:00",
+   "url": "https://arxiv.org/abs/2611.13295",
+   "pdf": "https://arxiv.org/pdf/2611.13295",
+   "score": 0.7939,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6842,
+    "meters": 0.7242,
+    "methods": 0.7939
+   },
+   "date": "2026-11-11"
+  },
+  {
+   "id": "2611.10856",
+   "version": 1,
+   "title": "Self-contained Data Cleaning for Unsupervised Anomaly Detection",
+   "abstract": "Training datasets for unsupervised anomaly detection are often assumed to be anomaly-free, but in practice, they frequently contain malicious or anomalous contamination. This contamination severely degrades the dependability and security of downstream detection models. While some contamination-robust methods exist, they rarely generalize across different model architectures and typically rely on a priori knowledge of the contamination ratio\\textemdash information that is rarely available in real-world security operations. In this paper, we propose a novel, self-contained preprocessing framework for anomaly detection that identifies and removes training set contamination without relying on known contamination ratios. Our approach performs a dynamic analysis of the cosine similarity between each data point and its reconstruction during the early training stages of an auto-encoder, mapping points into a dynamic space where anomalous regions naturally exhibit lower density. By executing ``hard cleaning''\\textemdash removing all identified anomalous candidates from the training pool\\textemdash we systematically improve data quality. Because this cleaning occurs at the data level, the security and reliability improvements generalize seamlessly across various downstream anomaly detection architectures. Evaluating our framework across 8 distinct models and 10 security-relevant datasets, our approach achieves up to 100\\% contamination reduction, yielding average improvements of 11.2\\% in F1 score and 7.3\\% in classification accuracy.",
+   "authors": [
+    "Jordan F. Masakuna",
+    "Ahmed Yacine",
+    "Djeff K. Nkashama",
+    "Arian Soltani",
+    "Marc Frappier",
+    "Pierre M. Tardif",
+    "Froduald Kabanza"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-07T17:09:47+00:00",
+   "url": "https://arxiv.org/abs/2611.10856",
+   "pdf": "https://arxiv.org/pdf/2611.10856",
+   "score": 0.7923,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7148,
+    "meters": 0.6586,
+    "methods": 0.7923
+   },
+   "date": "2026-11-10"
+  },
+  {
+   "id": "2611.12871",
+   "version": 1,
+   "title": "Vendi Anomaly Scores for Efficient and Accurate Anomaly Detection",
+   "abstract": "Anomaly detection (AD) is a critical for trustworthy machine learning and scientific discovery. Existing methods typically define anomalies through local density, isolation heuristics, or distance from a fitted distribution, making them sensitive to neighborhood scale, partitioning choices, or restrictive distributional assumptions. In this work, we introduce a new paradigm by formulating anomaly detection from a diversity perspective. We propose the $\\textit{Vendi Anomaly Score}$ (VAS), which detects anomalies by quantifying how much a sample changes the diversity of the dataset, as measured by the Vendi score, when removed. VAS captures both local redundancy and global data structure without relying on density estimation or partitioning heuristics. Moreover, VAS requires no hyperparameter tuning, instead adapting automatically to the spectral structure of the data. VAS is non-parametric and scales linearly with dataset size. Across 148 benchmark embedding datasets derived from 10 source datasets and 4 embedding architectures, VAS achieves state-of-the-art AD performance. We further validate VAS on large-scale ImageNet experiments, where it remains robust as both contamination rate and dataset scale increase.",
+   "authors": [
+    "Amey Pasarkar",
+    "Adji Bousso Dieng"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-09T18:56:15+00:00",
+   "url": "https://arxiv.org/abs/2611.12871",
+   "pdf": "https://arxiv.org/pdf/2611.12871",
+   "score": 0.7806,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7076,
+    "meters": 0.6413,
+    "methods": 0.7806
+   },
+   "date": "2026-11-10"
+  },
+  {
+   "id": "2611.13869",
+   "version": 1,
+   "title": "Outliers and the Hard-Margin Linear SVM in High-Dimension, Low-Sample-Size Settings",
+   "abstract": "We study how outliers affect the hard-margin linear support vector machine when the dimension grows while the sample sizes remain fixed. For one-sided contamination, the centered Gram matrix converges to a constant inlier block plus an outlier-diagonal component, and the limiting dual problem has a closed-form solution. All outliers act through one effective distance. This representation yields explicit thresholds for loss of inlier support, margin shrinkage. intercept displacement, and asymptotic misclassification. We then treat contamination in both classes. The limiting intercept is the multiplier of the class-balance constraint, and the two classes pull it in opposite directions. Consequently, at most one class can collapse or be asymptotically misclassified, whereas symmetric contamination leaves the limiting discriminant function unchanged even though the margin shrinks. Seven numerical experiments verify the dual allocation, phase transitions, and discriminant limits.",
+   "authors": [
+    "Yugo Nakayama"
+   ],
+   "primary": "stat.ML",
+   "categories": [
+    "stat.ML",
+    "cs.LG"
+   ],
+   "published": "2026-11-10T10:31:10+00:00",
+   "url": "https://arxiv.org/abs/2611.13869",
+   "pdf": "https://arxiv.org/pdf/2611.13869",
+   "score": 0.7669,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6667,
+    "meters": 0.628,
+    "methods": 0.7669
+   },
+   "date": "2026-11-11"
+  },
+  {
+   "id": "2611.16184",
+   "version": 1,
+   "title": "Flow-CAD: Flow Matching for Contextual Anomaly Detection and Explanation in Tabular Data",
+   "abstract": "Contextual anomaly detection in tabular data aims to identify objects whose behavior is unexpected under their contextual conditions. In data-engineering pipelines, this task screens table rows whose measurements violate context-dependent integrity relationships. Most existing approaches rely on either shallow conditional models with limited distributional expressiveness or localized estimators that require per-context modeling, making it difficult to capture complex conditional relationships and scale to high-dimensional settings. We propose Flow-CAD, a new framework for contextual anomaly detection based on Flow Matching. Flow-CAD learns a single global and amortized conditional generative model that flexibly represents behavioral distributions conditioned on context, without assuming simple parametric forms or retraining local models. To enable robust and interpretable anomaly scoring, we introduce a scale-normalized and truncated residual energy derived from the learned conditional flow, which stabilizes anomaly scores, mitigates domination by extreme deviations, and supports feature-wise attribution. We further provide theoretical insights showing that the proposed residual-based anomaly score is stable under velocity estimation error, and that its Monte Carlo estimator satisfies concentration bounds. Experiments on 20 benchmark datasets with 13 competitors demonstrate that Flow-CAD has the best average rank for PR AUC, ROC AUC, and P@n, highlighting its effectiveness and practicality for contextual anomaly detection in tabular data. We provide the source code at https://github.com/ZhongLIFR/FlowCAD.",
+   "authors": [
+    "Zhong Li",
+    "Qi Huang",
+    "Yuhang Wang",
+    "Yang Cao",
+    "Thomas Bäck",
+    "Niki van Stein",
+    "Matthijs van Leeuwen",
+    "Lincen Yang"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-12T02:18:54+00:00",
+   "url": "https://arxiv.org/abs/2611.16184",
+   "pdf": "https://arxiv.org/pdf/2611.16184",
+   "score": 0.7601,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7099,
+    "meters": 0.6477,
+    "methods": 0.7601
+   },
+   "date": "2026-11-13"
+  },
+  {
+   "id": "2611.11704",
+   "version": 1,
+   "title": "Scalable Counterfactual Explanations for Time Series via Policy Learning",
+   "abstract": "Generating counterfactual (CF) explanations for time series is challenging due to complex temporal dependencies and the computational inefficiency of traditional instance-specific optimization. We propose a policy learning framework for counterfactual explanation in time series, trained as a one-step contextual-bandit policy-learning problem. By training an actor-critic agent in the latent space of a pre-trained autoencoder, our method learns a transferable policy that captures global structural regularities. Unlike existing methods that rely on iterative optimization for each new input, the learned policy enables direct generation of valid and plausible counterfactuals through a single forward pass, avoiding per-instance optimization at inference time. Experiments on 13 UCR benchmark datasets show that our framework achieves high validity and strong plausibility across multiple anomaly detection metrics. Overall, by decoupling counterfactual generation from per-instance optimization, the proposed method provides an efficient and scalable alternative to existing approaches for time series counterfactual explanations.",
+   "authors": [
+    "Peiyu Li",
+    "Pouya Hosseinzadeh",
+    "Soukaina Filali Boubrahimi",
+    "Shah Muhammad Hamdi"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-09T00:00:16+00:00",
+   "url": "https://arxiv.org/abs/2611.11704",
+   "pdf": "https://arxiv.org/pdf/2611.11704",
+   "score": 0.7576,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6275,
+    "meters": 0.653,
+    "methods": 0.7576
+   },
+   "date": "2026-11-10"
+  }
+ ]
+}
