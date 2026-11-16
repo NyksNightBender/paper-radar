@@ -8,15 +8,15 @@
 **Live site: [nyksnightbender.github.io/paper-radar](https://nyksnightbender.github.io/paper-radar/)** (daily and weekly digests, archive, RSS)
 
 <!-- LATEST:START -->
-**Closest new papers, 13 November 2026** (31 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
+**Closest new papers, 16 November 2026** (13 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
 
 | Score | Paper | Topic |
 | ---: | --- | --- |
-| 0.81 | [When Does Causality Help in Multivariate Time-Series Anomaly Detection?](https://arxiv.org/abs/2611.15073) | Time-series anomaly detection |
-| 0.76 | [Flow-CAD: Flow Matching for Contextual Anomaly Detection and Explanation in Tabular Data](https://arxiv.org/abs/2611.16184) | Time-series anomaly detection |
-| 0.73 | [GNN-Enhanced TCN Algorithms for ECG Anomaly Detection](https://arxiv.org/abs/2611.16648) | Time-series anomaly detection |
-| 0.73 | [ScrewSense: Mapping the Invisible - Anomaly Detection and Error Classification in Screwdriving Processes](https://arxiv.org/abs/2611.16789) | Time-series anomaly detection |
-| 0.72 | [On-Edge Acoustic Continual Anomaly Detection: A Cross-Platform Comparative Study](https://arxiv.org/abs/2611.15465) | Time-series anomaly detection |
+| 0.74 | [Process Mining-Enabled Federated Anomaly Detection for the Industrial IoT](https://arxiv.org/abs/2611.17869) | Time-series anomaly detection |
+| 0.74 | [f-Divergence Self-Play for Tabular Anomaly Detection via Large Language Models](https://arxiv.org/abs/2611.18370) | Time-series anomaly detection |
+| 0.69 | [Inferring Sensitive Events in Multi-Mode Cyber-Physical Systems via Scheduling Side Channels](https://arxiv.org/abs/2611.17761) | Water networks |
+| 0.65 | [Condensing Law of Security Information](https://arxiv.org/abs/2611.17918) | Time-series anomaly detection |
+| 0.63 | [A Spectral Framework for Universal Proxy Regularization in Model Merging](https://arxiv.org/abs/2611.17728) | Time-series anomaly detection |
 <!-- LATEST:END -->
 
 ## Why

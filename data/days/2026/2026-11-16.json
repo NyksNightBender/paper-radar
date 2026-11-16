@@ -1,0 +1,388 @@
+{
+ "date": "2026-11-16",
+ "generated_at": "2026-11-16T07:58:15+00:00",
+ "model": "BAAI/bge-small-en-v1.5",
+ "interests": [
+  {
+   "key": "water",
+   "name": "Water networks"
+  },
+  {
+   "key": "meters",
+   "name": "Meters and consumption"
+  },
+  {
+   "key": "methods",
+   "name": "Time-series anomaly detection"
+  }
+ ],
+ "count": 13,
+ "papers": [
+  {
+   "id": "2611.17869",
+   "version": 1,
+   "title": "Process Mining-Enabled Federated Anomaly Detection for the Industrial IoT",
+   "abstract": "While federated anomaly detection enables the integration of local data insights across diverse nodes to reduce false positives, it inherently struggles with non-IID data. In practice, industrial IoT plants often operate under varying conditions and experience diverse environmental phenomena, resulting in significant heterogeneity in the monitored time series. In such settings, standard federated learning approaches fail to perform nuanced aggregation that accounts for these cross-node differences, ultimately leading to increased false positive rates. In this paper, we propose a process mining approach to evaluate the similarity of local node data against a reference provided by a global node. The global node utilizes these similarity metrics to dynamically weight local models during aggregation, producing personalized updates distributed across the network. We evaluate our approach using industrial IoT time-series data collected from manufacturing plants operating under distinct conditions. Experimental results demonstrate that our process mining-enabled federated anomaly detection pipeline achieves superior performance, yielding a 46.52% and 11.99% relative improvement in F1-score compared to isolated local training baselines and standard FedAvg, respectively, alongside a 51.24% relative reduction in false positives over standard federated aggregation.",
+   "authors": [
+    "Francesco Vitale",
+    "Salvatore Bramante",
+    "Francesco Flammini",
+    "Hangli Ge"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-13T08:00:34+00:00",
+   "url": "https://arxiv.org/abs/2611.17869",
+   "pdf": "https://arxiv.org/pdf/2611.17869",
+   "score": 0.7413,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7365,
+    "meters": 0.7035,
+    "methods": 0.7413
+   }
+  },
+  {
+   "id": "2611.18370",
+   "version": 1,
+   "title": "f-Divergence Self-Play for Tabular Anomaly Detection via Large Language Models",
+   "abstract": "Anomaly detection in tabular data poses significant challenges due to heterogeneous feature types-mixing numerical, categorical, and textual attributes, which complicate learning meaningful representations of normality. Recent work has applied large language models (LLMs) to this problem by serializing table rows as text sequences, yet these approaches rely on one-shot supervised fine-tuning that offers limited signal to tighten the model's description of normality. We propose DiSPaT, a self-play fine-tuning framework that strengthens the model's understanding of normal data. Building on the theoretical foundation of f-divergence minimization, we derive a tight approximation connecting our training objective to reducing the distributional gap between real normal data and model-generated samples. DiSPaT operates through an alternating optimization: at each iteration, the current policy generates synthetic samples that serve as pseudo-anomalies, while a critic discriminator learns to distinguish these from real normal samples; this signal drives policy updates that progressively align the model distribution with the true normal-data distribution. Extensive experiments on diverse benchmarks demonstrate that DiSPaT consistently outperforms prior LLM-based methods, deep learning approaches, and classical unsupervised detectors for tabular anomaly detection.",
+   "authors": [
+    "Hoang Tran Vuong",
+    "Linh Ngo Van",
+    "Dang Nguyen",
+    "Thin Nguyen",
+    "Phuoc Nguyen",
+    "Mehrtash Harandi",
+    "Trung Le"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.CL"
+   ],
+   "published": "2026-11-13T16:16:03+00:00",
+   "url": "https://arxiv.org/abs/2611.18370",
+   "pdf": "https://arxiv.org/pdf/2611.18370",
+   "score": 0.7356,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6491,
+    "meters": 0.6209,
+    "methods": 0.7356
+   }
+  },
+  {
+   "id": "2611.17761",
+   "version": 1,
+   "title": "Inferring Sensitive Events in Multi-Mode Cyber-Physical Systems via Scheduling Side Channels",
+   "abstract": "Many cyber-physical systems (CPS) are multi-mode: they switch between operating modes with different tasksets and timing parameters in response to physical events or user activity. We show that these mode changes create a timing side channel: by altering the interference experienced by co-running tasks, they let an unprivileged co-resident observer infer sensitive events, such as a homeowner's arrival or a vehicle's route, from its own execution timing and, on multicore platforms, its core assignment. Existing schedule-based attacks and defenses miss this channel because they assume single-mode systems or target a specific, known victim task. We present STAMP, a lightweight attack that needs no knowledge of task parameters or scheduling policy, and works whether or not the system exposes its modes. On a ZoneMinder home-security deployment, STAMP identifies the modes with 94.7% accuracy on unseen hardware, using under 0.5% of one core. On ROS 2 AMCL with the Oxford RobotCar dataset, it identifies which of seven route segments a vehicle traversed with 86.0% accuracy on unseen platforms. A schedule-randomization defense lowers detection recall to 0.53, at which setting only 53.9% as many jobs finish on time. At higher noise ($ε=10$), on-time job completion reduces to 14.4%, while introducing new leakage in 14.1% of the tasksets.",
+   "authors": [
+    "Yifan Cai",
+    "Linh Thi Xuan Phan"
+   ],
+   "primary": "cs.CR",
+   "categories": [
+    "cs.CR",
+    "eess.SY"
+   ],
+   "published": "2026-11-13T05:17:02+00:00",
+   "url": "https://arxiv.org/abs/2611.17761",
+   "pdf": "https://arxiv.org/pdf/2611.17761",
+   "score": 0.6863,
+   "interest": "water",
+   "scores": {
+    "water": 0.6863,
+    "meters": 0.6435,
+    "methods": 0.6586
+   }
+  },
+  {
+   "id": "2611.17918",
+   "version": 1,
+   "title": "Condensing Law of Security Information",
+   "abstract": "Scaling laws indicate that the generalization error of a large language model (LLM) decreases monotonically with model size once data is sufficient, and the corollary that larger models outperform smaller ones is now widely accepted. We argue that this corollary fails in security: decisions there hinge on anomalous inputs, which are long-tailed (e.g., zero-day attacks) and therefore poorly served by likelihood fitting. Worse still, the capability brought about by scale (e.g., inferring the intended whole from a corrupted part) leads a LLM silently \\emph{repair} the anomaly before any downstream security head ever sees it. We formalize this as a tradeoff between two quantities: the cognitive capability $K(W)=I(W;P)$ that a model holds about the world distribution, and the security-information retention $R(W)=\\frac{I(Z;S)}{I(A;S)}$ that survives in its intermediate representation. We derive three information-theoretic bounds to connect them: an upper bound on restoration accuracy in terms of $K(W)$, an upper bound on $R(W)$ in terms of the restoration error, and a Fano lower bound on security-task error in terms of $R(W)$. These theorems approximately imply that usable security information is a product of how much security information survives and how well it can be extracted, indicating that optimal usable security information can be achieved at a certain model size. We state this as the \\emph{condensing law of security information}: usable security information is unimodal in model size, so security generalization error is U-shaped and is minimized at a finite $N^{\\star}$ rather than decreasing without bound. The experiments on various real-world LLMs validate the condensing law, indicating that there is an optimal model size to solve security issues.",
+   "authors": [
+    "Qi Tan",
+    "Tianyu Cui",
+    "Qi Li",
+    "Ke Xu"
+   ],
+   "primary": "cs.CR",
+   "categories": [
+    "cs.CR",
+    "cs.AI",
+    "cs.LG"
+   ],
+   "published": "2026-11-13T08:57:58+00:00",
+   "url": "https://arxiv.org/abs/2611.17918",
+   "pdf": "https://arxiv.org/pdf/2611.17918",
+   "score": 0.6488,
+   "interest": "methods",
+   "scores": {
+    "water": 0.631,
+    "meters": 0.5917,
+    "methods": 0.6488
+   }
+  },
+  {
+   "id": "2611.17728",
+   "version": 1,
+   "title": "A Spectral Framework for Universal Proxy Regularization in Model Merging",
+   "abstract": "Model merging constructs multi-task models without expensive joint training but often suffers from parameter interference. Some solutions mitigate this by constraining finetuning using data from the other tasks to be merged, violating the core independence and privacy assumption of model merging. Recent work offers preliminary empirical evidence that a universal, task-agnostic proxy distribution can substitute for such data, but leaves open when and why it suffices. To this end, we propose a \\textit{Spectral Framework for Universal Proxy Regularization}, which characterizes the relationship between a proxy distribution and the distribution of other tasks to be merged through spectral coverage ($α$) and leakage ($β$). Based on the framework, we derive a unified parameter interference bound: smaller $(α, β)$ provably yields lower parameter interference through better spectral alignment. To exploit such a proxy, we augment the training objective with a proxy regularizer. Evaluating this regularizer during fine-tuning requires a concrete mechanism. We study three instantiations, including (J) an exact evaluation via Jacobian-vector products, (F) a frozen curvature approximation using the Fisher information matrix, and (O) an output-drift formulation that constrains the model's functional deviation on the proxy directly. We prove that all three coincide under the NTK linearization, where existing analyses of such regularizers stop, and go further to characterize standard non-linear fine-tuning, bounding how far each instantiation departs from its linearized reference and obtain a three-way hierarchy, zero for (J), proxy-independent for (F), and proxy-quality-scaling for (O). Empirical validation on the commonly used vision-language model CLIP confirms these theoretical predictions.",
+   "authors": [
+    "Shangge Liu",
+    "Danyue Qian",
+    "Qi Fan",
+    "Yinghuan Shi",
+    "Wenbin Li",
+    "Lei Wang",
+    "Yang Gao",
+    "Dacheng Tao"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-13T04:16:40+00:00",
+   "url": "https://arxiv.org/abs/2611.17728",
+   "pdf": "https://arxiv.org/pdf/2611.17728",
+   "score": 0.6345,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5552,
+    "meters": 0.568,
+    "methods": 0.6345
+   }
+  },
+  {
+   "id": "2611.17499",
+   "version": 1,
+   "title": "Continuous Cuffless Blood Pressure Estimation Using PPG From Methods to Clinical Translation",
+   "abstract": "Continuous blood pressure (BP) monitoring could improve hypertension management by capturing changes that intermittent cuff measurements miss. Photoplethysmography (PPG) is widely explored for cuffless BP estimation because optical sensors are inexpensive, wearable, and already present in many consumer and clinical devices. PPG, however, does not measure arterial pressure: BP is inferred from waveform characteristics or pulse timing, which also depend on vascular tone, arterial stiffness, sensor contact, motion, and individual physiology. This survey reviews PPG-based cuffless BP estimation along the full measurement chain, covering physiological mechanisms, waveform features, pulse arrival time (PAT), pulse transit time (PTT), machine-learning methods, datasets, calibration, validation, deployment, bias, and clinical translation. Studies are assessed by the strength of evidence they provide rather than by reported error alone, with particular attention to subject and temporal leakage, dataset imbalance, calibration dependence and drift, motion artifacts, and the gap between benchmark accuracy and reliable real-world measurement. The review finds that progress depends on more than better prediction algorithms. Future work should prioritize physiologically informed models, diverse longitudinal datasets, transparent reporting of calibration requirements and failure rates, stronger evaluation protocols, and studies that demonstrate practical value in clinical care.",
+   "authors": [
+    "Karthika Shalini Potail",
+    "Harshitha Manjunatha",
+    "Hetvi Kotadia",
+    "Tooraj Nikoubin"
+   ],
+   "primary": "cs.ET",
+   "categories": [
+    "cs.ET",
+    "cs.LG"
+   ],
+   "published": "2026-11-12T20:44:48+00:00",
+   "url": "https://arxiv.org/abs/2611.17499",
+   "pdf": "https://arxiv.org/pdf/2611.17499",
+   "score": 0.6264,
+   "interest": "meters",
+   "scores": {
+    "water": 0.5902,
+    "meters": 0.6264,
+    "methods": 0.5583
+   }
+  },
+  {
+   "id": "2611.18130",
+   "version": 1,
+   "title": "JFinBench: A Continuously Refreshable Japanese Financial Benchmark from the Latest Certification Exams",
+   "abstract": "Large language models (LLMs) are increasingly applied to finance, creating a need for benchmarks that evaluate their capabilities across financial systems with different regulations and practices. However, existing financial benchmarks provide limited coverage of country-specific financial systems, and they are difficult to keep up to date as released questions leak into training data. We introduce JFinBench, a Japanese financial benchmark comprising 321 examples from the 2026 editions of six regularly administered certification exams covering accounting, tax, financial planning, and banking. To construct it, we develop a human-in-the-loop agentic pipeline in which a coding agent writes exam-specific conversion code and a review page, while a human verifies every example and feeds corrections back to the agent. This pipeline adapts to heterogeneous exam formats and reduces the effort of incorporating new exam editions, enabling periodic refreshes that mitigate data contamination. Evaluating 12 recent LLMs, we find that Claude Fable 5 and GPT-6 Astra exceed 93% overall, while even the best open-weight model, Kimi K3.1 Pro, trails Claude Fable 5 by 12 percentage points. When models can additionally use a terminal and web access, they retrieve the knowledge they lack and every model improves. The gap narrows but about 4 points remain, and the ranking of models stays largely the same, suggesting that knowledge held in the model itself remains valuable even with tools. We release the dataset, the evaluation code, and the construction pipeline.",
+   "authors": [
+    "Issa Sugiura",
+    "Taro Makino",
+    "Takashi Ishida"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-13T12:59:12+00:00",
+   "url": "https://arxiv.org/abs/2611.18130",
+   "pdf": "https://arxiv.org/pdf/2611.18130",
+   "score": 0.6231,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5779,
+    "meters": 0.5906,
+    "methods": 0.6231
+   }
+  },
+  {
+   "id": "2611.17527",
+   "version": 1,
+   "title": "GraphScent: Calibrating Directional Relevance Signals for Bounded-Context Code Localization",
+   "abstract": "Running open-weight language models locally on a single consumer GPU requires replacing expanding multi-turn exploration histories with short, stateless code inspections. Stateless repository localization, however, hinges on a foundational question: when a frozen language model evaluates an unedited code entity from a compact view, which structural relationships make its relevance judgment informative about a nearby repair target? Studying Gemma 4 models across 211 real-world Python issues in 86 repositories, we uncover a systematic directional relevance asymmetry: zero-temperature relevance scores on enclosing scopes and upstream callers consistently separate true structural neighbors from hard lexical distractors, whereas scores on downstream callees, peer methods, historical co-change partners, and dense node embeddings remain near chance. Zero-leakage masked-scope probes and regressions controlling for lexical similarity and snippet length confirm that this asymmetry reflects functional role (callers expose symptom entrypoints delegating to defective routines, while downstream helpers appear benign alone) rather than target leakage or surface overlap. Guided by this finding, we introduce GraphScent, a training-free search controller that propagates out-of-repository, relation-conditioned log-likelihood ratios over runtime Typed-AST multigraphs before resolving ties via a single listwise comparison, alongside AST Ripple, a lightweight post-edit check for missed co-edits. Likelihood calibration prevents overconfident smaller models from chasing false-positive callers while lifting exact localization on lexically hard targets from 12.8 to 23.4 percent at 31B within a single-GPU budget.",
+   "authors": [
+    "Ramesh Arvind Naagarajan"
+   ],
+   "primary": "cs.SE",
+   "categories": [
+    "cs.SE",
+    "cs.AI"
+   ],
+   "published": "2026-11-12T21:26:49+00:00",
+   "url": "https://arxiv.org/abs/2611.17527",
+   "pdf": "https://arxiv.org/pdf/2611.17527",
+   "score": 0.6112,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5548,
+    "meters": 0.5425,
+    "methods": 0.6112
+   }
+  },
+  {
+   "id": "2611.17388",
+   "version": 1,
+   "title": "Time-Consistent Evaluation of Hierarchical Code Graphs for SWE Agents",
+   "abstract": "Evaluating repository-aware software engineering (SWE) agents requires strict separation between pre-existing repository knowledge and future code evolution, yet standard benchmarks frequently suffer from temporal contamination and prompt-level solution leakage. Building on the time-consistent benchmark protocol of Sun (2026), we enforce strict zero-leakage isolation across DragonFly in C++ and React in JavaScript/TypeScript, locking repository snapshots and knowledge graphs at historical cutoff commits $T_0$ and evaluating 100 post-$T_0$ pull requests across four prompt granularities: Minimal, Concise, Contextual, and Guided. Under this zero-leakage protocol, we conduct a matched evaluation of three context-augmentation regimes: (1) an unaugmented Baseline, (2) a flat syntax-level Tree-sitter AST graph, and (3) ServiceExplorer, a deterministic two-level hierarchical dependency graph capturing Level-1 system/package containers and Level-2 architectural modules. Across 7,200 paired evaluations spanning six foundation models across the MAI-Code Flash, Claude, and GPT-Sol families, ServiceExplorer consistently outperforms both Baseline and Tree-sitter AST across every model, repository, and prompt granularity ($+15.6\\%$ to $+86.2\\%$ relative $F_1$ lift, $p < 10^{-4}$), while tripling exact full-PR localization on DragonFly. Crucially, equipping an efficiency-tier or prior-generation model with ServiceExplorer consistently surpasses the unaugmented Baseline $F_1$ of the next-generation model across all evaluated families.",
+   "authors": [
+    "Xianpeng",
+    "Sun",
+    "Tian Yu",
+    "Haonan Sun",
+    "Sheng Ma",
+    "Qincheng Zhang",
+    "Lifei Rao",
+    "Jie Li",
+    "Jian",
+    "Cao",
+    "Qi Zhang"
+   ],
+   "primary": "cs.SE",
+   "categories": [
+    "cs.SE",
+    "cs.AI"
+   ],
+   "published": "2026-11-12T00:51:46+00:00",
+   "url": "https://arxiv.org/abs/2611.17388",
+   "pdf": "https://arxiv.org/pdf/2611.17388",
+   "score": 0.6084,
+   "interest": "water",
+   "scores": {
+    "water": 0.6084,
+    "meters": 0.5482,
+    "methods": 0.578
+   }
+  },
+  {
+   "id": "2611.18513",
+   "version": 1,
+   "title": "MeReader: An Offline, Privacy-Preserving, Progress-Aware AI Assistant for Narrative eBook Reading",
+   "abstract": "This paper introduces MeReader, a privacy-preserving, offline and progress-aware AI assistant designed to function as a contextual companion for narrative reading on consumer hardware. Unlike conventional Large Language Model (LLM)-based systems that process documents/books online in an all-texts-at-once type of way, thereby risking narrative spoilers, MeReader confines both retrieval and generation to the reader's distinct position in the text. The system integrates a hybrid retrieval architecture, combining vector similarity, BM25, and summary embeddings, to ensure high fidelity to the reader's current context. We evaluate the system across classical English books using both quantitative comprehension metrics and qualitative LLM-based independent judging. The results identify a quality-latency frontier, showing that mid-sized local models (2b-4b) can achieve comprehension parity with larger counterparts (5b+) while maintaining acceptable response quality. Importantly, the proposed progress-aware boundary mechanism is shown to prevent future content leakage without compromising retrieval quality and correctness. These findings suggest that a localized, privacy-centric approach can augment, rather than replace, the digital reading experience, offering a good alternative to cloud-dependent services. Therein, there remains a lack of amalgamate systems which combine progress-aware, privacy-preserving, and narrative eBook reading with AI support. It is in this very gap that the development of MeReader came to be; synthesizing said strands into an offline, book-constrained assistant focused on enhancing comprehension without compromising narrative continuity or user privacy.",
+   "authors": [
+    "Mohammed Efaz",
+    "Udo Bub",
+    "Itilekha Podder"
+   ],
+   "primary": "cs.IR",
+   "categories": [
+    "cs.IR",
+    "cs.AI",
+    "cs.CL"
+   ],
+   "published": "2026-11-13T18:29:51+00:00",
+   "url": "https://arxiv.org/abs/2611.18513",
+   "pdf": "https://arxiv.org/pdf/2611.18513",
+   "score": 0.5877,
+   "interest": "methods",
+   "scores": {
+    "water": 0.559,
+    "meters": 0.5798,
+    "methods": 0.5877
+   }
+  },
+  {
+   "id": "2611.17693",
+   "version": 1,
+   "title": "SPLIT-MOR: Fast and Accurate Model Order Reduction for Nonlinear Transient Thermal Simulation of 2.5D/3D ICs",
+   "abstract": "Fast and accurate transient thermal simulation is essential to thermal reliability analysis and dynamic thermal management of advanced packages, and model order reduction (MOR) techniques are widely applied to overcome the efficiency bottleneck of rigorous numerical methods. However, nonlinear terms including temperature-dependent leakage power, thermal conductivity, and heat capacity prevent the application of conventional linear MOR, while hyper-reduction solutions require costly nonlinear training data. In this work, we propose SPLIT-MOR (Subdomain-wise Piecewise Linearization with Interval Tensors), a novel nonlinear MOR method that requires no additional training set. SPLIT-MOR computes reduced component tensors by subdomain clustering and temperature-interval partitioning in the offline stage, and updates the reduced coefficient matrices and load vectors efficiently in the online stage. Experimental results show that the online solving time of SPLIT-MOR achieves up to an 830x speedup over COMSOL and a 7.5x speedup over the state-of-the-art hyper-reduction method MDEIM, with a 27x total reduction in the offline time. The relative average error remains below 0.11%, and the maximum error is below 0.86 degrees Celsius, demonstrating the high accuracy of our method.",
+   "authors": [
+    "Zebin Shi",
+    "Tianxiang Zhu",
+    "Yibo Lin",
+    "Runsheng Wang"
+   ],
+   "primary": "cs.CE",
+   "categories": [
+    "cs.CE"
+   ],
+   "published": "2026-11-13T03:19:40+00:00",
+   "url": "https://arxiv.org/abs/2611.17693",
+   "pdf": "https://arxiv.org/pdf/2611.17693",
+   "score": 0.5842,
+   "interest": "water",
+   "scores": {
+    "water": 0.5842,
+    "meters": 0.5692,
+    "methods": 0.558
+   }
+  },
+  {
+   "id": "2611.17532",
+   "version": 1,
+   "title": "Astrocyte Biocomputing: Astrocytic Contributions to Neural Network Computation",
+   "abstract": "Conductors are critical for the performance of an orchestra even though they do not emit sound. Basic research and clinical studies in the last decade are revealing that astrocytes may be the \"conductors\" of the \"orchestra\" that is the brain network: astrocytes make up approximately $50\\%$ of all brain cells but do not emit electrical signals. Nevertheless, they may play critical roles in important cognitive brain functions, specifically learning, memory, and information processing. Here we consider the implications of these discoveries for brain-inspired machine learning (ML), where analogy is typically drawn between neurons and their electrical interactions. We highlight specific algorithms for two key astrocyte characteristics. The first characteristic is the ability to link to and modulate thousands of synapses simultaneously. A model based on this characteristic yields faster training and makes the network more robust to noise, providing a supervised learning algorithm that can be applied to any existing neural network. The second characteristic we focus on is that the non-electrical communication among astrocytes includes slow, rhythmic dynamics. The rhythmic sharing algorithm we developed based on this premise yields rapid anomaly detection adaptation and prevents catastrophic forgetting. Overall, we find that astrocyte-derived algorithms outperform neurocentric algorithms significantly and remediate critical weaknesses of current state-of-the-art ML models.",
+   "authors": [
+    "Kate M. O'Neill",
+    "Ian Whitehouse",
+    "Adam N. McCaughan",
+    "Ryan O'Loughlin",
+    "Sonia Buckley",
+    "Wolfgang Losert"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "physics.bio-ph",
+    "q-bio.NC"
+   ],
+   "published": "2026-11-12T21:35:43+00:00",
+   "url": "https://arxiv.org/abs/2611.17532",
+   "pdf": "https://arxiv.org/pdf/2611.17532",
+   "score": 0.5791,
+   "interest": "meters",
+   "scores": {
+    "water": 0.5755,
+    "meters": 0.5791,
+    "methods": 0.5694
+   }
+  },
+  {
+   "id": "2611.17790",
+   "version": 1,
+   "title": "AutoRL: A Multi-Agent System towards Autonomous Reinforcement Learning",
+   "abstract": "Recursive self-improvement (RSI) is one of the most promising paths toward an AI singularity for superintelligence. Achieving this vision requires AI systems to undertake the full training pipeline for iterative improvement. Reinforcement learning (RL) plays an essential role in this cycle to improve model capabilities and generalization, yet automating RL remains difficult due to unstable training dynamics and the need for sustained supervision. We introduce AutoRL, a multi-agent system for automating RL training, as a cornerstone for future RSI. Different from conducting research by end-to-end complete experiments, AutoRL monitors the evolving training state and integrates process-level supervision and research into an ongoing RL training, following the practical workflow of an RL researcher. Specifically, AutoRL consists of three RL-specific agentic roles. Perceptors track training dynamics, rollouts, evaluation, and efficiency, triggering deliberation when they detect anomalies, degradation, or stagnation. Three complementary Proposers diagnose problems and refine candidate interventions through shared evidence and checks. The Orchestrator reviews their recommendation and applies approved changes through online hot updates or checkpoint-based resumption. Experiments on Qwen3 and LongCat-Flash-Lite demonstrate the superiority of AutoRL over static RL recipes and a general agent. The research records show that existing agents can handle unattended RL supervision and dynamic adjustment. The difficulty for future RSI lies in developing fundamental methods that are valuable for resource-consuming validation.",
+   "authors": [
+    "Simon Tang",
+    "Wenjie Shi",
+    "Yongjing Yin",
+    "Keheng Wang",
+    "Jialin Liu",
+    "Zheng Zhang",
+    "Linvo Lin",
+    "Xiangyuan Xue",
+    "Kan Ren",
+    "Jingang Wang",
+    "Xunliang Cai"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "cs.LG"
+   ],
+   "published": "2026-11-13T06:06:36+00:00",
+   "url": "https://arxiv.org/abs/2611.17790",
+   "pdf": "https://arxiv.org/pdf/2611.17790",
+   "score": 0.5714,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5616,
+    "meters": 0.5623,
+    "methods": 0.5714
+   }
+  }
+ ]
+}
