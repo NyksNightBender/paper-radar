@@ -8,15 +8,14 @@
 **Live site: [nyksnightbender.github.io/paper-radar](https://nyksnightbender.github.io/paper-radar/)** (daily and weekly digests, archive, RSS)
 
 <!-- LATEST:START -->
-**Closest new papers, 16 November 2026** (13 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
+**Closest new papers, 17 November 2026** (4 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
 
 | Score | Paper | Topic |
 | ---: | --- | --- |
-| 0.74 | [Process Mining-Enabled Federated Anomaly Detection for the Industrial IoT](https://arxiv.org/abs/2611.17869) | Time-series anomaly detection |
-| 0.74 | [f-Divergence Self-Play for Tabular Anomaly Detection via Large Language Models](https://arxiv.org/abs/2611.18370) | Time-series anomaly detection |
-| 0.69 | [Inferring Sensitive Events in Multi-Mode Cyber-Physical Systems via Scheduling Side Channels](https://arxiv.org/abs/2611.17761) | Water networks |
-| 0.65 | [Condensing Law of Security Information](https://arxiv.org/abs/2611.17918) | Time-series anomaly detection |
-| 0.63 | [A Spectral Framework for Universal Proxy Regularization in Model Merging](https://arxiv.org/abs/2611.17728) | Time-series anomaly detection |
+| 0.74 | [Knowledge-Guided Local-to-Global Anomaly Learning for Longitudinal Medication Trajectories](https://arxiv.org/abs/2611.19106) | Time-series anomaly detection |
+| 0.72 | [ST-GAT: A Leakage-Free Spatio-Temporal Graph Attention Framework for Robust Network Intrusion Detection](https://arxiv.org/abs/2611.19109) | Time-series anomaly detection |
+| 0.68 | [OverclusterDRG: a Deterministic, LP-Free Heuristic for Robust $k$-Center](https://arxiv.org/abs/2611.18931) | Time-series anomaly detection |
+| 0.62 | [On-policy distillation as a Backdoor Propagation Channel](https://arxiv.org/abs/2611.19207) | Water networks |
 <!-- LATEST:END -->
 
 ## Why

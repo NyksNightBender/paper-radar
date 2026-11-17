@@ -1,0 +1,134 @@
+{
+ "date": "2026-11-17",
+ "generated_at": "2026-11-17T02:28:39+00:00",
+ "model": "BAAI/bge-small-en-v1.5",
+ "interests": [
+  {
+   "key": "water",
+   "name": "Water networks"
+  },
+  {
+   "key": "meters",
+   "name": "Meters and consumption"
+  },
+  {
+   "key": "methods",
+   "name": "Time-series anomaly detection"
+  }
+ ],
+ "count": 4,
+ "papers": [
+  {
+   "id": "2611.19106",
+   "version": 1,
+   "title": "Knowledge-Guided Local-to-Global Anomaly Learning for Longitudinal Medication Trajectories",
+   "abstract": "Detecting suspicious deviations in longitudinal medication trajectories requires distinguishing knowledge-consistent treatment variations from anomalous changes and linking local deviations to account-level decisions. We propose a knowledge-guided local-to-global (L2G) anomaly learning framework that addresses both challenges. It constructs proxy supervision at three granularities: medication occurrences, treatment episodes, and contiguous visit segments. Knowledge-consistent medication and episode replacements provide plausible negatives, while cross-category and cross-account perturbations provide suspicious proxies. A medication-multiset encoder and causal visit-sequence encoder feed a shared scoring head that produces visit-level anomaly logits. Top-\\(α\\) aggregation derives account-level scores from these logits, while account-level classification and class-balanced visit-localization objectives jointly optimize the same visit-level evidence. Experiments on two city cohorts compare L2G with native and proxy-adapted anomaly methods. On City-A, L2G outperforms the strongest comparators. Cross-city results show more consistent gains in localization than in account-level detection.",
+   "authors": [
+    "Wendi Ji"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.IR"
+   ],
+   "published": "2026-11-14T02:30:55+00:00",
+   "url": "https://arxiv.org/abs/2611.19106",
+   "pdf": "https://arxiv.org/pdf/2611.19106",
+   "score": 0.7428,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6361,
+    "meters": 0.6349,
+    "methods": 0.7428
+   }
+  },
+  {
+   "id": "2611.19109",
+   "version": 1,
+   "title": "ST-GAT: A Leakage-Free Spatio-Temporal Graph Attention Framework for Robust Network Intrusion Detection",
+   "abstract": "Intrusion detection systems are a central defence in modern networks. Deep learning models report strong anomaly-detection results, but evaluations on standard benchmarks such as CSE-CIC-IDS-2018 are often inflated by two methodological problems: temporal leakage from overlapping sliding windows, and contamination from preprocessing fitted before the train/test split. Per-flow classifiers also ignore the spatio-temporal dependencies across sequences of network flows. We propose a Spatio-Temporal Graph Attention Network (ST-GAT) that represents traffic as a sequence of graph snapshots. It builds k-Nearest Neighbour (k-NN) edges within each window, applies multi-head Graph Attention Network (GAT) layers for spatial aggregation, and uses a Bidirectional Long Short-Term Memory (BiLSTM) network with temporal attention for sequence modelling. To prevent leakage, we use non-overlapping temporal windows (stride equal to window length) and fit all preprocessing on the training split only. We compare three class-imbalance strategies: inverse class-frequency weighting, dynamic balanced sampling, and few-shot metric prototyping. Across three random seeds, ST-GAT with inverse class weighting reached a Macro-F1 of 96.65% (+/- 0.87) and an accuracy of 99.14%. This is 14.3 percentage points higher in Macro-F1 than a per-flow Random Forest baseline (82.34%). Balanced sampling reduced Macro-F1 by 2.3 points (to 94.37%) relative to loss weighting. This suggests that aggressive resampling of small, noisy minority classes can hurt detection in heavily imbalanced traffic.",
+   "authors": [
+    "Nikhil Parkar",
+    "Sanskar Pandey",
+    "Siddhi Prajapati",
+    "Suganeshwari G",
+    "Syed Ibrahim"
+   ],
+   "primary": "cs.CR",
+   "categories": [
+    "cs.CR",
+    "cs.AI",
+    "cs.LG"
+   ],
+   "published": "2026-11-14T02:43:07+00:00",
+   "url": "https://arxiv.org/abs/2611.19109",
+   "pdf": "https://arxiv.org/pdf/2611.19109",
+   "score": 0.7228,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7013,
+    "meters": 0.6584,
+    "methods": 0.7228
+   }
+  },
+  {
+   "id": "2611.18931",
+   "version": 1,
+   "title": "OverclusterDRG: a Deterministic, LP-Free Heuristic for Robust $k$-Center",
+   "abstract": "The $k$-center problem is a fundamental formulation for metric clustering. However, its min-max objective is highly sensitive to outliers, motivating the Robust $k$-Center (R$k$C) formulation which permits excluding up to $z$ points as outliers. Existing algorithms for R$k$C suffer from scalability issues: LP rounding relies on fractional relaxations that scale poorly, known combinatorial approximation algorithms are computationally expensive due to radius guessing, and scalable randomized heuristics require exponential trial multipliers to guarantee success. We present OverclusterDRG, a deterministic, LP-free heuristic for R$k$C. The algorithm leverages the theoretical insight of farthest-point oversampling -- adding exactly $z$ extra candidates to the center set to absorb outliers -- followed by a forward-greedy initialization and a $1$-swap local search. Evaluations across real-world datasets show that OverclusterDRG attains a mean approximation ratio of 1.147 against fractional LP lower bounds on the UCI Adult dataset, outperforming state-of-the-art baselines in both clustering quality and speed. By avoiding subset-guessing and exponential trial multipliers, it scales smoothly to $n=10^5$ points where LP solvers and theoretical algorithms become intractable.",
+   "authors": [
+    "Rudra Bhardwaj",
+    "Rajni Dabas",
+    "Neelima Gupta"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-13T20:31:29+00:00",
+   "url": "https://arxiv.org/abs/2611.18931",
+   "pdf": "https://arxiv.org/pdf/2611.18931",
+   "score": 0.6766,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6351,
+    "meters": 0.6098,
+    "methods": 0.6766
+   }
+  },
+  {
+   "id": "2611.19207",
+   "version": 1,
+   "title": "On-policy distillation as a Backdoor Propagation Channel",
+   "abstract": "On-policy distillation (OPD) is emerging as an important paradigm for the post training of large language models, improving student models by leveraging supervision generated online by teacher models. However, whether this process also transfers latent security risks from teacher models to student models remains insufficiently studied. In this work, we reveal a new security risk in which an attacker first implants a conditional backdoor into the teacher model through supervised fine tuning (SFT), after which OPD can transfer the backdoor to the student model with only an extremely small proportion of trigger prompt exposure. More concerningly, we find that such backdoor transfer is substantially stronger under OPD than under conventional distillation methods, suggesting that OPD may provide an efficient channel for propagating backdoors across models. Our mechanistic analysis shows that the backdoor signal is primarily transmitted through anomalous differences in the conditional probabilities produced by the teacher model for triggered and clean inputs, and is gradually internalized into the internal representations of the student model during training. Furthermore, we investigate how to suppress such anomalous conditional probability signals at the source of distillation supervision and, based on this analysis, propose an OPD training method tailored to this conditional backdoor propagation setting to mitigate the risk of backdoor transfer induced by untrusted teacher supervision.",
+   "authors": [
+    "Zane Fu",
+    "Yanzhao Zheng",
+    "Ziting Qin",
+    "Qianshan Wei",
+    "Yi Yu",
+    "Gongli Xi",
+    "Jihuai Zhu",
+    "Baohua Dong",
+    "Hangcheng Zhu",
+    "Ruohui Huang",
+    "Gang Yu"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-14T06:57:27+00:00",
+   "url": "https://arxiv.org/abs/2611.19207",
+   "pdf": "https://arxiv.org/pdf/2611.19207",
+   "score": 0.6228,
+   "interest": "water",
+   "scores": {
+    "water": 0.6228,
+    "meters": 0.5938,
+    "methods": 0.6197
+   }
+  }
+ ]
+}
