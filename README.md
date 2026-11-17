@@ -8,14 +8,15 @@
 **Live site: [nyksnightbender.github.io/paper-radar](https://nyksnightbender.github.io/paper-radar/)** (daily and weekly digests, archive, RSS)
 
 <!-- LATEST:START -->
-**Closest new papers, 17 November 2026** (4 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
+**Closest new papers, 17 November 2026** (25 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
 
 | Score | Paper | Topic |
 | ---: | --- | --- |
+| 0.84 | [Residual-Tail-Informed Flow Matching for Time Series Anomaly Detection](https://arxiv.org/abs/2611.20334) | Time-series anomaly detection |
+| 0.76 | [Evaluating Near-Perfect Accuracy Claims in Machine-Learning-Based Leak Detection for Two-Phase Pipelines: A Condition-Blocked Audit](https://arxiv.org/abs/2611.19965) | Water networks |
 | 0.74 | [Knowledge-Guided Local-to-Global Anomaly Learning for Longitudinal Medication Trajectories](https://arxiv.org/abs/2611.19106) | Time-series anomaly detection |
+| 0.73 | [Severe but Harmless: Stress-Testing Shift Severity for Frozen Time-Series Forecasters](https://arxiv.org/abs/2611.21562) | Time-series anomaly detection |
 | 0.72 | [ST-GAT: A Leakage-Free Spatio-Temporal Graph Attention Framework for Robust Network Intrusion Detection](https://arxiv.org/abs/2611.19109) | Time-series anomaly detection |
-| 0.68 | [OverclusterDRG: a Deterministic, LP-Free Heuristic for Robust $k$-Center](https://arxiv.org/abs/2611.18931) | Time-series anomaly detection |
-| 0.62 | [On-policy distillation as a Backdoor Propagation Channel](https://arxiv.org/abs/2611.19207) | Water networks |
 <!-- LATEST:END -->
 
 ## Why

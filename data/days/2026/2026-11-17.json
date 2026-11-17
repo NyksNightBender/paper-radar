@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "generated_at": "2026-11-17T02:28:39+00:00",
+ "generated_at": "2026-11-17T09:12:43+00:00",
  "model": "BAAI/bge-small-en-v1.5",
  "interests": [
   {
@@ -16,8 +16,62 @@
    "name": "Time-series anomaly detection"
   }
  ],
- "count": 4,
+ "count": 25,
  "papers": [
+  {
+   "id": "2611.20334",
+   "version": 1,
+   "title": "Residual-Tail-Informed Flow Matching for Time Series Anomaly Detection",
+   "abstract": "Time series anomaly detection (TSAD) models are often trained on nominal data using average-risk objectives, which emphasize dominant normal patterns. However, real time series can contain rare but valid nominal regimes that are underrepresented in the training distribution. We show that data-space flow matching can over-penalize such rare-normal windows and assign them anomaly scores comparable to those of true anomalies. To address this, we propose Residual-Tail-Informed Flow Matching (RT-FM), an unsupervised framework that uses a temporal variational autoencoder to estimate residual latent tailness and converts it into bounded, warmup-annealed weights for training a data-space flow matching model. Experiments on seven TSAD benchmarks show that RT-FM improves rare-normal coverage while preserving strong anomaly discrimination, substantially reducing false alarms on such windows and resulting in improved aggregate detection performance. The code is available at: https://github.com/trustAIoT/RT-FM_time-series-anomaly",
+   "authors": [
+    "Shyam Sundar Saravanan",
+    "Tie Luo",
+    "Sanjay Madria"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-15T23:57:22+00:00",
+   "url": "https://arxiv.org/abs/2611.20334",
+   "pdf": "https://arxiv.org/pdf/2611.20334",
+   "score": 0.8392,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7387,
+    "meters": 0.7097,
+    "methods": 0.8392
+   }
+  },
+  {
+   "id": "2611.19965",
+   "version": 1,
+   "title": "Evaluating Near-Perfect Accuracy Claims in Machine-Learning-Based Leak Detection for Two-Phase Pipelines: A Condition-Blocked Audit",
+   "abstract": "Reliable leak detection in gas-liquid two-phase pipelines is important for process safety, yet machine-learning studies frequently report near-perfect performance using evaluation protocols that may not represent deployment to unseen operating conditions. This study audits a pressure-based leak-detection model using condition-blocked leave-one-condition-out validation, in which the classifier is tested on a flow condition excluded from training. Accuracy decreased from 93.3% under within-condition evaluation to 59.1% across fifteen unseen-condition tests. Ablation analysis showed that most of this difference arose from the data-splitting protocol, with a smaller contribution from encoding operating conditions as model inputs. Under condition-blocked evaluation, the false-alarm and missed-detection rates increased to 34.1% and 10.2%, respectively, demonstrating that near-perfect reported accuracy did not translate into reliable operation at unseen flow conditions. The reduction persisted across all evaluated classifiers, indicating that it was caused by the evaluation design rather than a particular model architecture. Grouped evaluation of an independent acoustic pipeline dataset produced a comparable reduction toward chance-level performance. These findings show that validation units must represent the conditions encountered during deployment. Condition-blocked evaluation and explicit reporting of operational error rates are therefore necessary before machine-learning leak detectors can support process-safety decisions.",
+   "authors": [
+    "Issah N. Suleiman",
+    "Sormeh Serpoosh",
+    "Nadine Elkholy",
+    "Hicham Ferroudji",
+    "Mohammad Azizur Rahman",
+    "Matthew Hamilton"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-15T12:13:10+00:00",
+   "url": "https://arxiv.org/abs/2611.19965",
+   "pdf": "https://arxiv.org/pdf/2611.19965",
+   "score": 0.7647,
+   "interest": "water",
+   "scores": {
+    "water": 0.7647,
+    "meters": 0.6669,
+    "methods": 0.6542
+   }
+  },
   {
    "id": "2611.19106",
    "version": 1,
@@ -40,6 +94,32 @@
     "water": 0.6361,
     "meters": 0.6349,
     "methods": 0.7428
+   }
+  },
+  {
+   "id": "2611.21562",
+   "version": 1,
+   "title": "Severe but Harmless: Stress-Testing Shift Severity for Frozen Time-Series Forecasters",
+   "abstract": "Zero-shot time-series foundation models (TSFMs) have become attractive alternatives to task-specific models because they handle diverse downstream tasks, including anomaly detection and forecasting, without per-series training. However, time-series data undergo distribution shifts, and the dissimilarity between two regimes is commonly scored with statistical measures such as Wasserstein-1, where a higher score is read as a more severe shift. In systematic experiments using three established severity measures on nine regime shifts from three standard traffic datasets, we show that these measures do not reliably predict degradation for instance-normalized TSFMs. The regimes rated most severe are not the regimes that degrade the models most, and degradation reaches 29% in the lowest-scoring regime. In most cases, the audit shows no positive relationship between measured severity and model degradation. We provide an equivariance-based stress-testing analysis that explains why severity readings can become decoupled from model degradation.",
+   "authors": [
+    "Korede R. Bishi",
+    "Dominic Okonkwo",
+    "Adetayo Okunoye"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-16T18:40:35+00:00",
+   "url": "https://arxiv.org/abs/2611.21562",
+   "pdf": "https://arxiv.org/pdf/2611.21562",
+   "score": 0.7267,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6365,
+    "meters": 0.6491,
+    "methods": 0.7267
    }
   },
   {
@@ -72,6 +152,79 @@
    }
   },
   {
+   "id": "2611.21548",
+   "version": 1,
+   "title": "TRACE: Topological Representations for Anomaly detection through Contrastive Embeddings",
+   "abstract": "Intrusion detectors must recognize evolving malicious behavior even when confirmed attack labels are scarce or incomplete. We present TRACE, a topology-aware graph contrastive learning framework for label-efficient intrusion detection. TRACE learns from benign system-activity graphs by combining message-passing and topological representations, then assigns anomaly scores in the same projected embedding space optimized by the contrastive objective. This design captures both local interactions and graph-scale structural deviations without using attack labels during representation learning. A labeled validation set containing benign and malicious graphs is used only to calibrate the anomaly threshold. We evaluate TRACE on StreamSpot, GraSec-IoT, and Unicorn Wget against a supervised graph neural network and the benign-only GraphCL baseline. TRACE obtains F1 scores of 0.923, 0.790, and 0.583, respectively. Compared with GraphCL, this is higher on StreamSpot (0.450) and Unicorn Wget (0.203), but lower on GraSec-IoT (0.975). The supervised model leads on StreamSpot and GraSec-IoT, whereas TRACE has the highest F1 on Unicorn Wget. The mixed results show that topology-aware benign-only learning can improve detection in some graph settings but does not provide a uniform advantage.",
+   "authors": [
+    "Sydney Johns"
+   ],
+   "primary": "cs.CR",
+   "categories": [
+    "cs.CR",
+    "cs.AI"
+   ],
+   "published": "2026-11-16T18:31:11+00:00",
+   "url": "https://arxiv.org/abs/2611.21548",
+   "pdf": "https://arxiv.org/pdf/2611.21548",
+   "score": 0.7038,
+   "interest": "water",
+   "scores": {
+    "water": 0.7038,
+    "meters": 0.6342,
+    "methods": 0.6963
+   }
+  },
+  {
+   "id": "2611.21149",
+   "version": 1,
+   "title": "Cap-Aware Boosting for Green Day-Ahead Electricity Price Forecasting",
+   "abstract": "Accurate forecasting of Green Day-Ahead Market (GDAM) electricity prices is essential for market participants in the Indian power sector. We present a LightGBM-based forecasting framework for Indian Energy Exchange GDAM prices, which clear in 96 fifteen-minute intervals per day. The proposed system explicitly models price-cap behavior by separating capped-price events from normal market conditions. A classification head estimates the probability of the regulatory price cap (Rs 10,000/MWh), while a regression head predicts uncapped prices in logarithmic space. Final forecasts are obtained through probabilistic blending of these components and are accompanied by nine quantile forecasts for uncertainty estimation. Evaluated on 257 trading days between 1 January and 14 September 2026, the model achieves a mean absolute error (MAE) of 397.9 Rs/MWh and a mean absolute percentage error (MAPE) of 9.57%, substantially outperforming a Chronos-2 baseline (583.3 MAE) and a persistence baseline using the previous day's profile (589.1 MAE). We further introduce leak-safe variants that incorporate real-time market signals, unmatched sell volumes, and solar generation proxies. In a recent out-of-sample evaluation, the quantile-clock variant achieved the best short-term performance with an MAE of 789 Rs/MWh during 25-28 October, while the enhanced capped-price model achieved an MAE of 716 Rs/MWh across 21 evaluation days through 16 November. These results demonstrate the effectiveness of regime-aware probabilistic forecasting for high-volatility electricity markets.",
+   "authors": [
+    "Shubham Pratap"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-16T14:19:16+00:00",
+   "url": "https://arxiv.org/abs/2611.21149",
+   "pdf": "https://arxiv.org/pdf/2611.21149",
+   "score": 0.6924,
+   "interest": "meters",
+   "scores": {
+    "water": 0.6263,
+    "meters": 0.6924,
+    "methods": 0.6396
+   }
+  },
+  {
+   "id": "2611.19241",
+   "version": 1,
+   "title": "HyperDBDiag: Multi-Root-Cause Identification and Operator-Level Localization for Database Performance Anomalies",
+   "abstract": "Database performance anomalies in modern production environments are not always triggered by a single cause. Instead, they often arise from the concurrent interaction of multiple causes within the same time window, posing substantial challenges to accurate operator-level root-cause analysis. When multiple root causes interact through shared resources, metric anomalies may be amplified, attenuated, or masked. Consequently, salient local anomalies may no longer correspond directly to the actual root causes, making conventional single-path diagnosis and shallow correlation-based methods prone to misdiagnosis. To address this challenge, we propose HyperDBDiag, a method for multi-root-cause identification and operator-level localization of database performance anomalies. HyperDBDiag connects root causes, performance metrics, SQL templates, and execution operators in a knowledge graph, captures joint anomaly patterns across metrics with a metric hypergraph, and uses a constrained LLM to determine the final root-cause set and provide remediation suggestions. When finer-grained localization is possible, HyperDBDiag also identifies the associated anomalous SQL statements and execution operators. We evaluate HyperDBDiag on a database performance anomaly dataset constructed using DB-MAGS. Experimental results show that HyperDBDiag effectively reduces graph complexity while improving root-cause localization accuracy.",
+   "authors": [
+    "Hu Wang",
+    "Zhengjin Yan",
+    "Hong Zhu",
+    "Qiong Zuo"
+   ],
+   "primary": "cs.DB",
+   "categories": [
+    "cs.DB"
+   ],
+   "published": "2026-11-14T08:11:02+00:00",
+   "url": "https://arxiv.org/abs/2611.19241",
+   "pdf": "https://arxiv.org/pdf/2611.19241",
+   "score": 0.6852,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6405,
+    "meters": 0.591,
+    "methods": 0.6852
+   }
+  },
+  {
    "id": "2611.18931",
    "version": 1,
    "title": "OverclusterDRG: a Deterministic, LP-Free Heuristic for Robust $k$-Center",
@@ -94,6 +247,244 @@
     "water": 0.6351,
     "meters": 0.6098,
     "methods": 0.6766
+   }
+  },
+  {
+   "id": "2611.19330",
+   "version": 1,
+   "title": "Benchmarking the State of AI for Crop Yield Forecasting: A Global Assessment Across Modeling Paradigms",
+   "abstract": "Accurate crop yield forecasting is essential for food security, agricultural policy, and commodity markets. Although statistical, process-based, and machine learning approaches have all been proposed, their relative strengths remain poorly understood due to the lack of large-scale, standardized comparisons. We address this gap through a comprehensive benchmark of five modeling paradigms -- statistical baselines, process-based models, conventional feature-engineered machine learning, deep sequence models, and tabular foundation models -- using the CY-Bench benchmark spanning 63 country-crop datasets (>12,000 administrative regions) across six continents. Beyond conventional pooled accuracy metrics, we introduce a multi-dimensional evaluation framework that separately quantifies overall, spatial, temporal, and anomaly prediction skill. Across multiple crops and countries, feature-engineered machine learning and tabular foundation models achieve the strongest overall predictive performance. Data-driven models reduce NRMSE in 72% of countries growing maize and 78% of countries growing wheat, with median reductions of 8.8% and 11.9%, respectively. Across all modeling paradigms, spatial prediction is substantially easier than temporal and anomaly prediction. While data-driven models markedly improve temporal and anomaly prediction over statistical baselines, accurately forecasting year-to-year yield variability remains challenging. These findings suggest that future progress in large-scale crop yield forecasting will depend on the improved characterization of the environmental and management factors driving inter-annual yield variability, founded on effective representations for crop yield forecasting systems that support agricultural decision-making, early-warning applications, and food security planning",
+   "authors": [
+    "Michiel Kallenberg",
+    "Philip Janz",
+    "Christoph Jörges",
+    "Vageesh Saxena",
+    "Pratishtha Poudel",
+    "Mohammed Musthafa Rafi",
+    "Ioannis N. Athanasiadis"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-14T10:54:40+00:00",
+   "url": "https://arxiv.org/abs/2611.19330",
+   "pdf": "https://arxiv.org/pdf/2611.19330",
+   "score": 0.6621,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6128,
+    "meters": 0.6348,
+    "methods": 0.6621
+   }
+  },
+  {
+   "id": "2611.21315",
+   "version": 1,
+   "title": "Benchleaking Is Accelerating: Benchmark contamination has worsened sharply in the past month -- from post-training down to pre-training base models",
+   "abstract": "Benchmark contamination is not new, but recent model releases show it in a sharper form. We use the term benchleaking for the case in which a benchmark's own test examples enter training data, so that a score reflects recall rather than capability. This differs from benchmaxxing, which optimizes toward a benchmark without seeing its test set. We document two escalations over the past month. First, in post-training, the traces have become explicit: recent audits show an agent stating hidden test requirements it was never given in 23% of its attempts, where its predecessor did so in none, and continuing to follow them after the task is changed to contradict them (Schaeffer and Räuker, 2026; Lo and Lo, 2026). Second, the problem has reached pre-training. Using few-shot continuation on 20 benchmarks across four public base models, we find that some base models write out other test examples---complete questions, options, and answers---that appear nowhere in their input. For the recently released ERNIE-5.5-Flash-Base, 96% of HumanEval problems leak with their reference implementations and 85% of OpenBookQA questions leak with their answers, against 9% and none for DeepSeek-V4-Flash-Base. To quantify what a reported score owes to such examples, we define an Anti-Hack score: the benchmark score recomputed with every leaked example marked wrong and the number of examples unchanged. Averaged over the suite, it costs DeepSeek-V4-Flash-Base 1.5 points and Hy3-preview-Base 1.3, against 5.0 for MiMo-V2.5-Base and 16.6 for ERNIE-5.5-Flash-Base. Open base models are the foundation of much downstream research, so benchleaking now affects more than leaderboard rankings. We call for decontamination reports and contamination-adjusted scores to become standard practice.",
+   "authors": [
+    "Yiwei Qin",
+    "Muhang Xie",
+    "Xuefeng Li",
+    "Mohan Jiang",
+    "Dayuan Fu",
+    "Tiantian Mi",
+    "Qipeng Guo",
+    "Pengfei Liu"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-16T16:10:16+00:00",
+   "url": "https://arxiv.org/abs/2611.21315",
+   "pdf": "https://arxiv.org/pdf/2611.21315",
+   "score": 0.6528,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6198,
+    "meters": 0.6049,
+    "methods": 0.6528
+   }
+  },
+  {
+   "id": "2611.19625",
+   "version": 1,
+   "title": "Robust Well-Log Reconstruction Across Point Gaps and Whole Wells via Boundary-Gated Soft-Thresholding Kalman Fusion",
+   "abstract": "Missing wireline logs hinder subsurface characterization. Deep reconstruction networks suffer from gap-boundary steps and cross-basin shifts, while interpolation and Gaussian smoothers struggle with long intervals and outliers. We propose boundary-gated soft-thresholding Kalman fusion (ST-KF), unifying multiresolution wavelet shrinkage, distance-gated residual prior learning, and closed-form robust Kalman smoothing with learning--inference decoupling. Across two public benchmarks totaling 263 wells in the Norwegian North Sea and New Zealand's Taranaki Basin, ST-KF ranks first over 0.15--100-m anchored gaps with 0.09% parameter overhead. Against the strongest of nine baselines, pooled RMSE falls by 5.0%--8.3% for bulk density and 6.4%--15.6% for compressional slowness; against the four strongest baselines, reductions are 0.7%--4.1% for neutron porosity and 1.3%--2.9% for photoelectric factor. Ablations and sensitivity analyses confirm operator synergy and stable performance: removing state-space fusion increases short-gap errors by up to 58.8%, while zero-shot transfer cuts anchored errors by 14%--68%. The results show that local borehole continuity transfers across basins whereas cross-property mappings shift with regional geology, supporting measurement-guided log reconstruction.",
+   "authors": [
+    "Yongan Zhang",
+    "Zhihan Qiu",
+    "Yizheng Li",
+    "Youzhuang Sun"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-14T21:17:44+00:00",
+   "url": "https://arxiv.org/abs/2611.19625",
+   "pdf": "https://arxiv.org/pdf/2611.19625",
+   "score": 0.6424,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6306,
+    "meters": 0.5866,
+    "methods": 0.6424
+   }
+  },
+  {
+   "id": "2611.20156",
+   "version": 1,
+   "title": "Risk-certified prompt optimization for LLM-as-a-judge guardrails",
+   "abstract": "LLM-as-a-judge guardrails are often controlled primarily through system prompts, yet standard prompt optimization methods target average performance rather than explicit safety constraints. This paper studies system-prompt selection as a constrained optimization problem: maximize benign pass rate while keeping the missed-attack rate below a user-specified level α with finite-sample statistical control. The framework combines LLM-based judging, automatic prompt generation, and distribution-free risk certification. This work instantiates it in two procedures: CPS and CRISP. CPS generates a fixed pool of prompts from training data, then certifies candidates on a held-out evaluation set using simultaneous upper confidence bounds and selects the certified prompt with the highest benign utility. CRISP instead integrates risk feedback into an adaptive search, using hard example-guided rewriting and a reusable-holdout interface to steer generation toward the feasible utility frontier. Experiments on four datasets covering prompt injection, system-prompt leakage, and sensitive-information disclosure show that risk-certified selection consistently respects the target missed-attack level on heldout tests, while utility improves as the permitted risk is relaxed. CRISP is especially useful when fixed-pool search fails to produce certifiable high-utility candidates.",
+   "authors": [
+    "Hussein Jawad",
+    "Alexandre Landeau",
+    "Guy Fleury Iradukunda",
+    "Paul Beaumont",
+    "Théodore Rezel",
+    "Sofiane Schaack",
+    "Nicolas J-B. Brunel"
+   ],
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL",
+    "cs.LG"
+   ],
+   "published": "2026-11-15T17:45:49+00:00",
+   "url": "https://arxiv.org/abs/2611.20156",
+   "pdf": "https://arxiv.org/pdf/2611.20156",
+   "score": 0.641,
+   "interest": "water",
+   "scores": {
+    "water": 0.641,
+    "meters": 0.6,
+    "methods": 0.6218
+   }
+  },
+  {
+   "id": "2611.19355",
+   "version": 1,
+   "title": "Numerical Integration Instabilities in Likelihood Fits: Mechanisms and Remedies",
+   "abstract": "Numerical instabilities in the normalization of probability density functions can produce artificially lower negative log-likelihood (NLL) values than the true minimum of a likelihood fit, even when the resulting fit provides a poorer description of the data. Motivated by anomalously low NLL values found in non-converged fits associated with a recent CMS search for fully charmed tetraquark candidates, we use a pseudo-dataset generated from a likelihood model based on that analysis to investigate how numerical integration can yield unreliable normalization results, how these errors affect likelihood minimization, and how they can be addressed. We find that, even at fixed integration tolerance, the stopping decision of a numerical integrator can change with the fit parameters, introducing discontinuities in the normalization integrals that propagate to the likelihood surface. Such discontinuities can trap the minimizer at a numerical step and yield an artificially lower NLL. Tightening the integration tolerance mitigates these numerical discontinuities, while adaptive integration methods, such as Gauss--Kronrod quadrature, can also improve the numerical stability. A more severe failure occurs when the integration grid cannot adequately resolve a sharply localized contribution. In this case, the integrator may satisfy its estimated-error criterion despite substantially underestimating the normalization, allowing the minimizer to enter a region with an artificially low NLL. Tightening integration tolerances or using alternative adaptive integration methods does not necessarily resolve sharply localized contributions. We demonstrate that a suitable variable transformation can improve their numerical resolution, yielding more accurate normalization integrals and restoring fit convergence.",
+   "authors": [
+    "Manqi Zhu",
+    "Gerry Bauer",
+    "Kai Yi",
+    "Xining Wang"
+   ],
+   "primary": "physics.data-an",
+   "categories": [
+    "physics.data-an",
+    "hep-ex"
+   ],
+   "published": "2026-11-14T11:52:25+00:00",
+   "url": "https://arxiv.org/abs/2611.19355",
+   "pdf": "https://arxiv.org/pdf/2611.19355",
+   "score": 0.6256,
+   "interest": "methods",
+   "scores": {
+    "water": 0.564,
+    "meters": 0.5313,
+    "methods": 0.6256
+   }
+  },
+  {
+   "id": "2611.20794",
+   "version": 1,
+   "title": "Regularizing Treatment Leakage for LLM-based Uplift Estimation",
+   "abstract": "Uplift modeling estimates the conditional average treatment effect (CATE) and supports industrial decisions such as promotional pricing. When large language models (LLMs) encode product text, treatment-revealing content can introduce shortcuts that do not transfer to deployment. We propose \\emph{LLM-based Uplift Leakage Regularization} (\\textsc{LULR}), which uses a CLUB-based penalty on the causal head's trainable shared representation while keeping the LLM encoder frozen. Controlled proxy experiments show a positive ranking-score interaction and higher scores than the tested weight-decay configuration; treatment-dependent evaluation limits their interpretation to exploratory model behavior. Structured-only comparisons provide reference performance, without establishing a general advantage over tree-based estimators. On a million-record industrial pricing RCT, \\textsc{LULR} improves offline $\\text{lift@}0.3$ in $4/5$ seeds, although the difference is not statistically significant and estimated policy values are near-tied. A separate one-week online A/B experiment records $5.45\\%$ higher sales volume and $1.91\\%$ higher GMV than the control arm. These aggregate results provide short-term business evidence for the complete deployed pricing policy; they do not isolate the regularizer's contribution.",
+   "authors": [
+    "Bojing Feng",
+    "Jinqiu Deng",
+    "Zihan Hong",
+    "Yuan Xue",
+    "Wenqi Xiang",
+    "Shuhan Wang",
+    "Feng Xiao",
+    "Shiwei Wang",
+    "Zijiang Liu",
+    "Shaomin Li",
+    "Yongzhi Qi"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-16T09:42:24+00:00",
+   "url": "https://arxiv.org/abs/2611.20794",
+   "pdf": "https://arxiv.org/pdf/2611.20794",
+   "score": 0.6238,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6011,
+    "meters": 0.6092,
+    "methods": 0.6238
+   }
+  },
+  {
+   "id": "2611.20841",
+   "version": 1,
+   "title": "Vision-Language Model-Based Phase-OTDR Event Classification",
+   "abstract": "Phase-sensitive optical time-domain reflectometry (Phase-OTDR) enables distributed vibration sensing, but reliable event classification has traditionally relied on fully supervised models that require extensive annotated data. This study examines the adaptability of a Vision-Language Model (VLM) for Phase-OTDR event recognition through few-shot learning. Raw samples are converted into Short-Time Fourier Transform (STFT) dB-magnitude spectrogram mosaics, color-mapped and resized to RGB images, and processed by a Contrastive Language-Image Pre-training (CLIP) image encoder; few-shot adaptation optimizes only the Tip-Adapter-F cache keys, leaving both encoders unchanged. Under a leakage-controlled protocol (train-side support/validation pool of 512 images per class, fixed held-out test of 120 per class, no test-set access during selection, 20 distinct support-sampling trials), the selected configuration (the ViT-L-14 Vision Transformer encoder with OpenAI weights, 128 shots per class) reaches 96.81 +/- 0.42% accuracy and a macro-averaged F1 score of 96.79 +/- 0.42% on the held-out test set; a label-efficient 16-shot setting, that is, 96 labeled support images at adaptation time across the six classes, already attains 90.17 +/- 0.81%. Tip-Adapter-F clearly outperforms both zero-shot CLIP and the standard training-free Tip-Adapter, and prompt and backbone analyses show that performance is stable across Vision Transformer encoders and insensitive to prompt wording at the selected operating point. Overall, CLIP visual features carry a transferable structure that a lightweight support cache turns into a label-efficient Phase-OTDR event classifier. The code and the corresponding image dataset are made publicly available on GitHub to support further research: https://github.com/miralab-ai/vlm-phase-otdr.",
+   "authors": [
+    "Ahmet Bestami Kose",
+    "Mehmet Sergen Catal",
+    "Muhammet Cagri Yeke",
+    "Kivilcim Yuksel",
+    "Abdurrahman Gumus"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.LG"
+   ],
+   "published": "2026-11-16T10:21:17+00:00",
+   "url": "https://arxiv.org/abs/2611.20841",
+   "pdf": "https://arxiv.org/pdf/2611.20841",
+   "score": 0.6233,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5962,
+    "meters": 0.6029,
+    "methods": 0.6233
+   }
+  },
+  {
+   "id": "2611.19981",
+   "version": 1,
+   "title": "Morphology-Decoupled Segmentation for Multiple Tunnel Defects Under Complex Environments",
+   "abstract": "Automated tunnel-lining inspection must segment different defect geometries: cracks are thin, elongated, and connectivity-sensitive, whereas leakage, lining falling off, and segment damage are spatially extensive and context-dependent. Existing approaches generally apply a common decoder across defect classes or introduce boundary, topology, and directional mechanisms as isolated enhancements. This paper introduces Morphology-Decoupled Segmentation (MDS), in which defect morphology becomes the organising principle for feature routing, decoding, and interaction. A supervised routing module partitions multiscale encoder features into complementary linear and areal streams. The linear stream employs Deformable Strip Attention with image-conditioned direction hypotheses to preserve crack continuity without assuming fixed horizontal or vertical orientations, while the areal stream combines Pyramid Pooling with feature-pyramid fusion to capture diffuse boundaries and regional context. The representations are coupled through gated cross-morphology attention, allowing complementary information exchange while retaining morphology-specific features. A resolution-adaptive tiling and probability-blending pipeline preserves fine defects across variable-resolution imagery. MDS achieves 81.17% mIoU on the internal validation set and improves foreground image-level recognition over a backbone-matched SegDINO model, primarily for areal defects. Controlled ablations demonstrate the complementary contributions of routing supervision and cross-stream interaction while revealing a trade-off between areal-class performance and crack specialisation. The submitted model achieved 67.55% mIoU on an organiser-controlled hidden test, and the team placed second. Selective dynamic INT8 quantisation reduced model storage by 2.83 times with negligible accuracy loss.",
+   "authors": [
+    "Mohan Ren",
+    "Hang Li",
+    "Yifei Liu",
+    "Shaowei Wang",
+    "James O'Kane",
+    "Xuanzhi Wang",
+    "Shiyu Zhao",
+    "Yumeng Zhang",
+    "Songtao Ji",
+    "Jurij Karlovsek"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI"
+   ],
+   "published": "2026-11-15T12:44:16+00:00",
+   "url": "https://arxiv.org/abs/2611.19981",
+   "pdf": "https://arxiv.org/pdf/2611.19981",
+   "score": 0.6231,
+   "interest": "water",
+   "scores": {
+    "water": 0.6231,
+    "meters": 0.5689,
+    "methods": 0.6169
    }
   },
   {
@@ -128,6 +519,187 @@
     "water": 0.6228,
     "meters": 0.5938,
     "methods": 0.6197
+   }
+  },
+  {
+   "id": "2611.20897",
+   "version": 1,
+   "title": "Certified, Not Explained: Exact Token Erasure in Gated Vision State Space Models",
+   "abstract": "Vision models built on Mamba are often explained through their selective step size Delta, on the assumption that a token the scan does not admit cannot influence the prediction. We test that in a concept bottleneck model for lung-nodule malignancy built on a single gated, bidirectional selective state-space block. The answer becomes an interpretability framework: a guarantee, a procedure that checks it, and a pre-registered audit of what it explains. For a fixed gate pattern, masking the input of the causal convolution of the block and giving closed tokens zero weight at readout makes the concept and task logits exactly invariant to the closed tokens. Gating Delta is neither necessary nor sufficient. On LIDC-IDRI, a path-by-path knockout over 15 cross-validated models agrees with this in every run: the largest logit change is exactly 0 whenever the conditions hold and between 4.1 and 6.7 when they do not. The gated model reaches a pooled out-of-fold AUROC of 0.8425 +/- 0.0085, level with an ungated Mamba bottleneck (0.8428). The guarantee belongs to the masked model, not to the gate as an explanation. Post-hoc rankers, which inherit the guarantee on this model, order tokens better than the gate. Gate maps from a model trained on permuted labels are as close to the real maps as two real-label seeds are to each other. Under retraining, the tokens of the gate carry more task information than random tokens and, on shifted crops, more than central ones, but no more than the tokens chosen by hidden attention. We therefore read the gate as a certified support set produced by mask supervision. Splitting the Oracle Impurity Score into own-concept and cross-concept parts reveals differences the aggregate score misses. Partitioning the readout reduced leakage slightly under an earlier recipe, and the final model sits at, rather than below, the level implied by correlations among the true concepts.",
+   "authors": [
+    "Sadia Parveen",
+    "Tehseen Zia"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.LG"
+   ],
+   "published": "2026-11-16T11:06:34+00:00",
+   "url": "https://arxiv.org/abs/2611.20897",
+   "pdf": "https://arxiv.org/pdf/2611.20897",
+   "score": 0.6217,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5732,
+    "meters": 0.5474,
+    "methods": 0.6217
+   }
+  },
+  {
+   "id": "2611.21509",
+   "version": 1,
+   "title": "Almost Controlled: The FDR of Benjamini-Hochberg on Weighted Conformal p-Values",
+   "abstract": "Weighted conformal p-values generalize conformal inference to cases with covariate shift. One way to use them is to pass them to the Benjamini-Hochberg (BH) procedure, either to decide which test units to select or to detect outliers. But weighted conformal p-values may not be positively dependent, so we want to know: does BH still control the false discovery rate (FDR) in finite samples? Based on experiments, it appears to, but we prove it doesn't. We give two counterexamples, certified in exact rational arithmetic, where the FDR exceeds its target level $q$. We also identify how large the difference between the FDR and $q$ can be. With $n$ calibration points, $m$ test units and weight ratio $B$, the relative excess $\\mathrm{FDR}/q-1$ is bounded by a function of $n$, $m$, $B$ and $q$ that is of order $\\sqrt{Bm/(nq)}$ when $Bm/(nq)$ is small. The bound holds for every configuration with $B\\le n$ and every $n$. This order can be reached when multiple non-null test units share a common threshold: in a Poisson-limit model, that configuration's excess is $c(q)\\sqrt{Bm/(nq)}$ to first order as $B/n\\to0$ and then $m\\to\\infty$. For some fixed distributions with this structure, the excess decreases only like $n^{-1/2}$ as $n$ grows. If every test unit is null, the excess is $O(B/n)$ at fixed $m$, and in certain configurations it grows linearly with $m$. To assist practitioners in judging how large the FDR can be, we turn that bound, which depends only on $n$, $m$, $q$ and $B$, into a lowered BH level with proved finite-sample control, and give a much less conservative rule of thumb that covers every worst case we were able to find but provides no guarantee.",
+   "authors": [
+    "Ryan Lim"
+   ],
+   "primary": "stat.ME",
+   "categories": [
+    "stat.ME",
+    "cs.LG",
+    "math.ST",
+    "stat.ML"
+   ],
+   "published": "2026-11-16T18:07:43+00:00",
+   "url": "https://arxiv.org/abs/2611.21509",
+   "pdf": "https://arxiv.org/pdf/2611.21509",
+   "score": 0.6191,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5802,
+    "meters": 0.5472,
+    "methods": 0.6191
+   }
+  },
+  {
+   "id": "2611.20797",
+   "version": 1,
+   "title": "Correspondence-Free Camera Pose Estimation by Matching Moments",
+   "abstract": "The blind perspective-$n$-point (PnP) problem is to estimate the pose of a calibrated camera from 2D and 3D point sets with unknown correspondences. We show that, for complete, noiseless observations, fourteen permutation-invariant image moments up to order four identify a fixed camera pose for almost every 3D point set containing at least twenty points. Our learning-free method, MomentPnP, matches these moments between the observed 2D points and the projected 3D points to initialize a camera pose without correspondences and refines the pose and correspondence weights using expectation--maximization. Across the test sets of three benchmarks, our method reduces median rotation error by $5$--$170\\times$ relative to the best learned baseline, both with and without outliers. We recover accurate poses even with as many outliers as inliers. On dense ETH3D scans, pose accuracy improves as the point sets grow, even as individual correspondences become harder to resolve.",
+   "authors": [
+    "Subhransu S. Bhattacharjee",
+    "Dylan Campbell",
+    "Rahul Shome"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.LG",
+    "cs.RO",
+    "eess.IV",
+    "math.OC"
+   ],
+   "published": "2026-11-16T09:44:04+00:00",
+   "url": "https://arxiv.org/abs/2611.20797",
+   "pdf": "https://arxiv.org/pdf/2611.20797",
+   "score": 0.5923,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5826,
+    "meters": 0.5329,
+    "methods": 0.5923
+   }
+  },
+  {
+   "id": "2611.20403",
+   "version": 1,
+   "title": "Attention Sinks as Spectral Spikes: A Mechanism Analysis of Gated Attention",
+   "abstract": "Transformer attention exhibits attention sinks, where a small subset of source tokens absorbs disproportionate attention mass across layers. Recent work shows that post-SDPA output gating strongly reduces attention-sink behavior, while separate studies link attention sinks to gradient sinks and massive activations through backward training dynamics. Yet how the same gate affects forward sink structure, backward gradient concentration, and training-time representation signatures remains unclear. We address this gap by formulating attention sinks as sink-induced low-rank modes in token-space covariance, with directions aligned to high-mass attention columns. Under this view, post-SDPA gating acts as a mode-dependent contraction: it attenuates sink-induced spectral energy in the forward pass and locally reduces value-path gradients routed through sink columns in the backward pass. Empirically, random-matrix diagnostics show that gating reduces outlier mass, weakens sink-subspace alignment, and increases effective rank, while backward analyses show active-gate attenuation of first-token value gradients. Training-time diagnostics further show that gating suppresses the co-emergence of attention concentration, value-gradient amplification, and representation dominance.",
+   "authors": [
+    "Seojin Kim",
+    "Yehjin Shin",
+    "Noseong Park"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-16T02:04:29+00:00",
+   "url": "https://arxiv.org/abs/2611.20403",
+   "pdf": "https://arxiv.org/pdf/2611.20403",
+   "score": 0.5902,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5585,
+    "meters": 0.5633,
+    "methods": 0.5902
+   }
+  },
+  {
+   "id": "2611.19841",
+   "version": 1,
+   "title": "Asking the right question is key to AI discovery in a chain of hypotheses",
+   "abstract": "Artificial intelligence (AI) scientists pursue discovery through a chain of hypotheses, fitting candidate models to existing observations and often choosing experiments where those models disagree most. Yet when early data miss a narrow feature, model selection favors simple curves that agree across the unmea- sured gap, so disagreement-guided search has no reason to look where the new phenomenon lies. When we tested two frontier AI scientists, Claude Sonnet 5.5 and GPT-6.1-Sol, across 32 closed-loop trials with a narrow peak omitted from the starting data, both sampled inside the peak region less often than random search. Surprisingly, the agent that followed model disagreement more closely missed the peak in all 32 trials, whereas discovery succeeded when experiments probed the unmeasured gap early and followed up across the anomaly. Asking the right question, rather than testing only where current models disagree, is therefore key to AI discovery in a chain of hypotheses.",
+   "authors": [
+    "Hu Cang"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "physics.optics"
+   ],
+   "published": "2026-11-15T06:43:31+00:00",
+   "url": "https://arxiv.org/abs/2611.19841",
+   "pdf": "https://arxiv.org/pdf/2611.19841",
+   "score": 0.5886,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5589,
+    "meters": 0.5444,
+    "methods": 0.5886
+   }
+  },
+  {
+   "id": "2611.19871",
+   "version": 1,
+   "title": "Interactive Structured Environment Scaling for Large Language Model Agentic Reasoning",
+   "abstract": "Reinforcement learning via environmental interaction is a cornerstone post-training paradigm for evolving large language models into autonomous agents capable of multi-turn tool use and exploration. Because the environment defines what the policy observes and how actions are verified, its structure directly bounds the capabilities an agent can acquire. Yet existing structured and retrieval environments rely on upstream pre-filtering---extracting a compact subgraph around the gold answer or retrieving fixed passages before the policy acts. We show that such pre-filtering introduces a fundamental measurement confound: because per-question subgraphs enclose ground-truth paths, they compress the candidate space by orders of magnitude and leak answer locations via local topology, allowing a question-blind degree heuristic to surface gold answers far above chance. To restore path selection, candidate pruning, and optimal stopping as genuine policy decisions, we propose RISE (Interactive Structured Environment), which transitions structured reinforcement learning from static subgraphs to full-scale interactive databases along two coupled axes. First, Decision-Space Scaling exposes the unpruned knowledge graph via a five-stage graph-agnostic typed intent adapter under a bounded call budget and a multiplicative grounding reward gate. Second, Learning-Frontier Scaling overcomes within-group variance collapse under group-normalized objectives by uniting model-independent structural tier progression with a self-evolving competence-frontier bandit. Across nineteen benchmarks and three model backbones, RISE substantially advances in-domain and unseen-schema knowledge-graph reasoning, transfers zero-shot to open-domain passage retrieval, and significantly enhances out-of-domain mathematical and logical deduction.",
+   "authors": [
+    "Peng Yu",
+    "Luoyi Fu",
+    "Xinbing Wang",
+    "Ying Wen"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "cs.LG"
+   ],
+   "published": "2026-11-15T08:20:34+00:00",
+   "url": "https://arxiv.org/abs/2611.19871",
+   "pdf": "https://arxiv.org/pdf/2611.19871",
+   "score": 0.5642,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5492,
+    "meters": 0.5571,
+    "methods": 0.5642
+   }
+  },
+  {
+   "id": "2611.19840",
+   "version": 1,
+   "title": "Grounding Language Models in Speech Does Not Fix \"AI Flavor\": Calibrated LLM Judges, Goodhart Traps, and a Preference-Tuning Fix",
+   "abstract": "Chinese outputs of large language models carry a perceptible \"AI flavor\": formulaic sentence frames, stacked written-register connectives, repetition loops, and layout leakage. A popular hypothesis blames text-only training for the missing inner-speech layer of human writing; injecting speech or prosody signals should therefore reduce it. We test it with controlled interventions on a 0.6B model; all three fail: (i) phoneme-interleaved continued pretraining yields no spokenness gain under text-matched controls while raising repetition (+0.13 [+0.03, +0.23]); (ii) prosody-plan conditional generation reaches an adherence of only 0.257 against a pre-registered 0.50 gate; (iii) a rule-based reward built on TTS prosody-feature distance is imperceptible in double-blind evaluation by both humans (8/16) and a calibrated LLM judge (9/16). A root cause is evaluation: single-rater blind evaluation at n~20 only detects extreme (>=85%) preferences. We therefore build a calibrated LLM-judge protocol: the judge passes catch trials on known-answer pairs (16/16; single-text 22/24, same-topic pairs 24/24, versus 0.75 for the human rater), then annotates with two independent judges under A/B swapping, counting disagreement as a tie. Using the judge's agree labels directly as DPO pairs (no reward model), we obtain the first positive result: held-out blind win rate 0.833 [0.699, 0.972], repetition 0.114 to 0.000, unchanged MMLU. We further identify a Goodhart channel: the judge's length preference transduces into output-length collapse via pairwise DPO (median 75 chars vs a 300-char prompt); an SFT-anchor repairs it (w is a style knob: w=0.1 preserves gains, w=0.3 does not). Scaling preference data from 89 to 240 pairs yields no additional judge-visible gain. We release RA-Eval v0.1: a three-layer Chinese AI-flavor evaluation framework with 382 judge-annotated preference pairs.",
+   "authors": [
+    "Dongwu Qian"
+   ],
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL",
+    "cs.LG"
+   ],
+   "published": "2026-11-15T06:42:48+00:00",
+   "url": "https://arxiv.org/abs/2611.19840",
+   "pdf": "https://arxiv.org/pdf/2611.19840",
+   "score": 0.5483,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5059,
+    "meters": 0.5145,
+    "methods": 0.5483
    }
   }
  ]
