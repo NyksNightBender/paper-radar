@@ -1,0 +1,384 @@
+{
+ "date": "2026-11-18",
+ "generated_at": "2026-11-18T08:32:21+00:00",
+ "model": "BAAI/bge-small-en-v1.5",
+ "interests": [
+  {
+   "key": "water",
+   "name": "Water networks"
+  },
+  {
+   "key": "meters",
+   "name": "Meters and consumption"
+  },
+  {
+   "key": "methods",
+   "name": "Time-series anomaly detection"
+  }
+ ],
+ "count": 13,
+ "papers": [
+  {
+   "id": "2611.21694",
+   "version": 1,
+   "title": "TIBECG: Temporal Information Bottleneck for Lead-Specific Demographic Privacy in ECG Waveform Release",
+   "abstract": "Transmitting an electrocardiogram (ECG) waveform can expose demographic information beyond an intended diagnostic task. We evaluate TIBECG, an architectural temporal information bottleneck, on individual leads extracted from hospital twelve-lead recordings. A 2,302,337-parameter processor varies its latent length while retaining the same nine-score consistency objective, without age or sex labels in protector fitting. Across 6,386 recordings, ten folds, 12 leads and 21 lengths, retrospective selections retained at least 95% of each lead's clean macro-F1. Their weaker age/sex interval gain exceeded the best eligible conventional transformation on all leads, by a median 22.08 percentage points. The implemented sampling-rate comparison shows that direct downsampling usually suppresses demographic inference more strongly but at a larger loss of diagnostic utility, whereas TIBECG favors utility preservation. Selection stability also varies by lead. Lower latent Kullback-Leibler (KL) divergence does not reliably rank residual sex leakage at a fixed length. These findings support lead-specific evaluation of waveform processing, not validated consumer deployment or expert-readable reconstruction. When the waveform-input diagnostic classifier is hosted as part of a proprietary cloud service rather than deployed on the device, waveform transmission is required to obtain its scores.",
+   "authors": [
+    "Tsai-Min Chen",
+    "Jun Seita"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CR",
+    "eess.SP"
+   ],
+   "published": "2026-11-16T11:24:17+00:00",
+   "url": "https://arxiv.org/abs/2611.21694",
+   "pdf": "https://arxiv.org/pdf/2611.21694",
+   "score": 0.6973,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6587,
+    "meters": 0.6704,
+    "methods": 0.6973
+   }
+  },
+  {
+   "id": "2611.21674",
+   "version": 1,
+   "title": "Improving Early Detection of Scientifically Interesting Radio Sources Using Enhanced Isolation Forest",
+   "abstract": "The rapid growth of radio astronomical surveys has created a major challenge in identifying scientifically interesting sources from large populations of observed objects. This study investigates whether enhanced Isolation Forest (iForest) methods can improve the early detection and ranking of scientifically interesting radio sources. Four iForest variants, Standard Enhanced, Pooled Gain, Kurtosis-based, and Hypervolume, are evaluated using 1,031 extended radio sources from the MeerKAT Galaxy Cluster Legacy Survey (MGCLS). Each source is represented by a 52-dimensional feature set derived using Bootstrap Your Own Latent (BYOL) self-supervised learning and principal component analysis (PCA), while expert scientific-interest ratings are used to define the ground-truth labels. The methods are evaluated using Average Precision (AP), receiver operating characteristic area under the curve (ROC AUC), Precision@10, Precision@50, and cumulative anomaly detection. Pooled Gain achieves the highest Average Precision (AP = 0.201) and the strongest early-stage ranking performance (P@10 = 0.600), identifying six expert-validated anomalies among the ten highest-ranked sources. Standard Enhanced and Kurtosis-based achieve the highest ROC AUC (0.677), while the AUC values of the four variants range from 0.653 to 0.677. These results indicate that feature-aware isolation strategies can improve the prioritization of scientifically interesting sources at the top of the ranked list, although overall discrimination remains comparable across the evaluated variants. The findings support the use of enhanced Isolation Forest methods as an initial ranking mechanism within human-in-the-loop systems for large-scale radio astronomical surveys.",
+   "authors": [
+    "Pfunzo Thavhana",
+    "Clement Nyirenda",
+    "Michelle Lochner"
+   ],
+   "primary": "astro-ph.IM",
+   "categories": [
+    "astro-ph.IM",
+    "cs.LG"
+   ],
+   "published": "2026-11-14T08:10:30+00:00",
+   "url": "https://arxiv.org/abs/2611.21674",
+   "pdf": "https://arxiv.org/pdf/2611.21674",
+   "score": 0.684,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6072,
+    "meters": 0.5927,
+    "methods": 0.684
+   }
+  },
+  {
+   "id": "2611.22281",
+   "version": 1,
+   "title": "SeasonRainBench: Global Seasonal Precipitation",
+   "abstract": "Accurate seasonal precipitation forecasts help societies prepare for drought, flooding, and crop failure months in advance. While data-driven methods have made rapid progress in weather and subseasonal forecasting, operational seasonal precipitation prediction still relies on numerical ensemble systems. These systems are computationally expensive and exhibit biases and drift that increase with lead time, motivating more efficient data-driven alternatives. Yet this transition faces three linked challenges: comparing data-driven forecasts with operational ones requires (1) a global benchmark that does not exist, scoring them requires (2) metrics that capture operational priorities beyond anomaly correlation (ACC) and RMSE, and training them must (3) rely on a single, short observational record. To address the first two challenges, we introduce \\BenchName, the first such benchmark, covering monthly precipitation forecasts 1--5 months ahead. It pairs global $1^\\circ$ satellite precipitation with oceanic and atmospheric predictors, includes seven operational centers, and provides 310,944 simulated months from 52 climate models for training. Beyond standard scores, we introduce two operationally motivated metrics for anomaly strength and monthly rain-belt position. To address the third challenge, we develop \\MODEL, which learns from simulations what the record lacks and transfers it to Earth through three modules: SimForced aligns the climate background, SimMemory transfers a history encoder pretrained on simulations, and SimAnalog supplements Earth labels with simulated analog outcomes. Extensive experiments show that \\MODEL{} improves ACC, CRPS, anomaly strength, and rain-belt position by 12.0\\%, 3.6\\%, 2.9\\%, and 0.3\\% over the strongest operational or data-driven model, opening a path from simulated worlds to Earth system prediction.",
+   "authors": [
+    "Qiuyan Sun",
+    "Mengxuan Chen",
+    "Haoyuan Liang",
+    "Guowen Li",
+    "Zhen Huang",
+    "Jianhao Lin",
+    "Juepeng Zheng",
+    "Haohuan Fu"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-17T06:32:48+00:00",
+   "url": "https://arxiv.org/abs/2611.22281",
+   "pdf": "https://arxiv.org/pdf/2611.22281",
+   "score": 0.6783,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6536,
+    "meters": 0.674,
+    "methods": 0.6783
+   }
+  },
+  {
+   "id": "2611.21975",
+   "version": 1,
+   "title": "Pathology Randomization for Synthetic Priors and Zero-Shot Detection",
+   "abstract": "Hospital brain imaging archives hold a diverse array of pathology at sample sizes beyond prospective studies, particularly for underrepresented populations and diseases. To unlock uncurated clinical data and scale analysis, methods are needed to detect abnormalities across contrasts and resolutions. Synthetic data has provided robust, contrast-agnostic models for a variety of human neuroimaging tasks in healthy anatomy, but pathology detection and other tasks in clinical settings still require real patient data, contrast-specific models, or disease-specific generators. We propose PathoDraw, a generative model of brain MRI with pathology. A conditional distribution of lesions given the healthy anatomy is drawn into the label map before contrast-agnostic rendering, and a single network estimates healthy anatomy with exact signed intensity deviation of any input scan. The contrast-agnostic 3D UNet learns the healthy labels under the lesion and the signed deviation directly and identifies pathology via robust tissue statistics and learned features, despite no training on real pathology. We show zero-shot detection on public stroke, tumor, and white matter hyperintensity datasets as well as archived clinical data, spanning $T_1$w, FLAIR and $T_2$w at various resolutions under a recent unsupervised anomaly detection benchmark protocol. Our single model exceeds or performs comparably to contrast-specific anomaly detectors trained on real scans and keeps healthy anatomy intact. The same generator trains networks for super-resolution and for registration in the presence of pathology. Our model, robust across acquisition and disease, enables the use of uncurated, archived data for clinical analysis. Our code is available at https://github.com/agr78/Pathology-Randomizer.",
+   "authors": [
+    "Alexandra G. Roberts",
+    "Tonmoy Hossain",
+    "Mark Olchanyi",
+    "Stefan Brandstätter",
+    "Jonathan Williams Ramirez",
+    "Ana Lawry Aguila",
+    "Matthew Rosen",
+    "Annabel Sorby-Adams",
+    "W. Taylor Kimberly",
+    "Juan Eugenio Iglesias"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI",
+    "eess.IV"
+   ],
+   "published": "2026-11-16T22:58:56+00:00",
+   "url": "https://arxiv.org/abs/2611.21975",
+   "pdf": "https://arxiv.org/pdf/2611.21975",
+   "score": 0.6748,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5795,
+    "meters": 0.5621,
+    "methods": 0.6748
+   }
+  },
+  {
+   "id": "2611.22496",
+   "version": 1,
+   "title": "DARWIN: a Geospatial Foundation Model for Marine Intelligence",
+   "abstract": "We present DARWIN, a geospatial foundation model for marine intelligence. Recent Earth-observation foundation models have concentrated on terrestrial domains. The marine realm poses distinct challenges: missingness, multi-modal physical and biogeochemical variables, sparse labels, and dynamics that are transient, multi-scale, and non stationary over time. DARWIN adapts a masked-autoencoder backbone to these properties through missingness-aware encoding, expanded spatial and temporal masking, and Fourier-style positional embeddings, and is pretrained on 26 years of global Copernicus reanalysis together with GEBCO bathymetry. On predicting chlorophyll-a, the pretrained backbone attains the lowest monthly relative error in every month of 2022, outperforming both no-encoder baselines and an identically architected random-init encoder. At 10% of the supervised training data, DARWIN already surpasses the random-init model trained on 100% of the data. Embedding analysis and qualitative reconstructions show that DARWIN captures coherent oceanographic structure rather than memorising input statistics, providing a scalable backbone for downstream marine applications such as anomaly detection, species distribution modelling, and environmental monitoring.",
+   "authors": [
+    "Coen van den Elsen",
+    "Laurens Geffert"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "physics.ao-ph"
+   ],
+   "published": "2026-11-17T09:51:26+00:00",
+   "url": "https://arxiv.org/abs/2611.22496",
+   "pdf": "https://arxiv.org/pdf/2611.22496",
+   "score": 0.674,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6576,
+    "meters": 0.635,
+    "methods": 0.674
+   }
+  },
+  {
+   "id": "2611.21995",
+   "version": 1,
+   "title": "Deciding Without Pointing: A Case Study of Whether a Decision Model Localizes the Anomalies It Detects",
+   "abstract": "Decision models can answer a typed question about an image with a probability per option, without generating text. In our case study of Clef-flash (post-trained Qwen3.5-9B backbone) on industrial inspection benchmarks, we ask whether it localizes the anomalies it detects. We obtained uneven results with zero-shot detection: per-category image AUROC 0.924 on MVTec AD and 0.668 on MVTec AD 2. On the former, the decision head's routing attention produces 0.391 mean per-image pixel AUROC, and hiding the image tokens from it leaves detection unchanged. The multimodal LLM's backbone attention does point at the defect, however it falls below a center prior when we change question. It falls below chance if we remove textual context in the question, partly due to backbone attention leaving the object, while the head's map hardly changes. The backbone's states carry the location when probed with normal images, on the test-split images, however, the decision depends on the defect region. A larger model, Clef, that comes with a post-trained Qwen3.8-27B backbone, gives no useful map in the decision head either. We found that it's possible to recover anomaly location by asking question specifically on an image region, retraining the head or reading the backbone, but none matches dedicated few-shot localizers.",
+   "authors": [
+    "Hsiang-Hung Lee"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.LG"
+   ],
+   "published": "2026-11-16T23:27:50+00:00",
+   "url": "https://arxiv.org/abs/2611.21995",
+   "pdf": "https://arxiv.org/pdf/2611.21995",
+   "score": 0.6652,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6058,
+    "meters": 0.5734,
+    "methods": 0.6652
+   }
+  },
+  {
+   "id": "2611.23045",
+   "version": 1,
+   "title": "ForecastGym: A Live, Controlled, and Replayable Benchmark for Forecasting Agents",
+   "abstract": "Agents built on large language models (LLMs) increasingly forecast real-world events by searching the Web and reasoning over what they find. How well such an agent forecasts depends on both the retrieved evidence and the model, making control over that evidence essential for evaluation. Live evaluations can mix retrieval with reasoning when each system searches on its own, while retrospective search can leak later information through date filters or today's ranking of historical pages. Comparing models, search sources, and memory strategies requires both fixed evidence and a record of how it evolved before resolution. We introduce ForecastGym, which records what four commercial web search APIs return for open prediction-market questions every two days and replays this frozen evidence offline once outcomes are known, comparing models, memory, and captured search sources under a fixed evidence-acquisition policy. Its first release covers 150 questions, 614 evidence states, one per question and collection time, and 131k search results. Rerunning the same queries after settlement returns results that all but state the outcome for up to 92% of the questions, despite the tested date filters. On the frozen evidence, all tested LLMs trail the market in forecasting accuracy. Our diagnostic analysis suggests that missed public information contributes more to the gap in high-gap states than misreading does. Switching the search API changes a model's Brier score by up to 0.043, more than the spread across models, while persistent notes score similarly to rereading all evidence at half the input tokens. The evidence a forecaster sees can matter as much as the model that reads it.",
+   "authors": [
+    "Yicheng Tao",
+    "Yuante Li",
+    "Zipei Fan"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "cs.CL"
+   ],
+   "published": "2026-11-17T16:44:38+00:00",
+   "url": "https://arxiv.org/abs/2611.23045",
+   "pdf": "https://arxiv.org/pdf/2611.23045",
+   "score": 0.652,
+   "interest": "methods",
+   "scores": {
+    "water": 0.579,
+    "meters": 0.6278,
+    "methods": 0.652
+   }
+  },
+  {
+   "id": "2611.21811",
+   "version": 1,
+   "title": "ARC-2: Continuous Compliance Through Delta Management",
+   "abstract": "ARC 1 introduced a three-layer governance architecture for autonomous systems comprising model safety validation, cognitive certification (CRAB), and operational authorization (LEA). However, it did not address how compliance should be maintained after deployment. This paper introduces Delta Management, a continuous governance framework that measures deviations between a system's current operational state and its certified baseline, defined as a region rather than a fixed point. Compliance is assessed through continuous monitoring instead of static certification. Four extensions are proposed. First, CRAB evaluation incorporates the worst verified behavioral deviations, with isolated outliers quarantined pending confirmation to prevent unjustified restrictions. Second, a layered trigger taxonomy distinguishes hard safety violations, critical single-dimension failures, correlated multi-system degradation, and risk-weighted composite indicators, each triggering proportionate responses. Third, a graduated safe transition protocol separates withdrawal of operational authorization from physical shutdown, consistent with established safety standards and EU AI Act requirements. Fourth, environmental delta is introduced as a distinct baseline validity condition: environmental drift beyond the certified Operational Design Domain (ODD) triggers recertification or ODD revision rather than automatic authority contraction. Together, these extensions transform ARC from a deployment-time certification architecture into a continuous framework for monitoring, evaluating, and enforcing compliance throughout the operational lifecycle of autonomous systems. The framework addresses the continuous compliance obligations established by EU AI Act Article 72(2).",
+   "authors": [
+    "Tord Johan Eide",
+    "Einar Holt"
+   ],
+   "primary": "cs.RO",
+   "categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CY"
+   ],
+   "published": "2026-11-16T19:25:00+00:00",
+   "url": "https://arxiv.org/abs/2611.21811",
+   "pdf": "https://arxiv.org/pdf/2611.21811",
+   "score": 0.6481,
+   "interest": "water",
+   "scores": {
+    "water": 0.6481,
+    "meters": 0.6155,
+    "methods": 0.5932
+   }
+  },
+  {
+   "id": "2611.22828",
+   "version": 1,
+   "title": "TabDAG: Structured Evolutionary Search for Tabular Feature Engineering",
+   "abstract": "Feature engineering can improve tabular prediction, but useful transformations are compositional, data-dependent, and subject to leakage constraints. We present TabDAG, a framework that combines evolutionary search with a graph representation of feature-engineering programs. Nodes implement row-wise or data-fitted transformations; edges encode dependencies among raw variables, intermediate values, and final features. The representation supports interactions, statistical encodings, clustering- and neighborhood-based features, and multi-stage compositions in a single executable program. Mutations are structured edits constrained by a parent-specific schema and checked before evaluation. In our experiments, no structurally invalid program reached evaluation, although proposals could be rejected and valid graphs could still fail at runtime. Across ten regression and classification datasets and three tabular model families, evolved features improve predictive performance over raw inputs. TabDAG and its combination with OpenFE achieve the two best mean ranks among the compared methods; pairwise rank differences between feature-engineering methods do not survive multiple-testing correction. The LLM-based searches use the same backbone and candidate-evaluation budget. A controlled ablation compares free-form Python, whole-graph JSON, and constrained graph edits with the search engine, budget, and backbone held fixed. Constrained edits yield fewer failed evaluations than either rewrite baseline. The resulting graphs expose the transformations and dependencies selected by search, enabling feature-level analysis of the observed gains.",
+   "authors": [
+    "Anastasia Volkova",
+    "Andrey Kuznetsov",
+    "Ivan Oseledets",
+    "Valentin Khrulkov"
+   ],
+   "primary": "cs.NE",
+   "categories": [
+    "cs.NE",
+    "cs.LG"
+   ],
+   "published": "2026-11-17T14:14:09+00:00",
+   "url": "https://arxiv.org/abs/2611.22828",
+   "pdf": "https://arxiv.org/pdf/2611.22828",
+   "score": 0.6464,
+   "interest": "methods",
+   "scores": {
+    "water": 0.602,
+    "meters": 0.5923,
+    "methods": 0.6464
+   }
+  },
+  {
+   "id": "2611.21781",
+   "version": 1,
+   "title": "Beyond Reconstruction: A Unified Framework for Trustworthy and Explainable EEG Artifact Removal Evaluation",
+   "abstract": "Deep-learning methods have achieved strong performance in EEG artifact removal, but evaluation remains dominated by reconstruction metrics such as error, correlation, and signal-to-noise ratio. Although these metrics assess similarity to clean EEG, they do not establish whether models effectively suppress artifacts, preserve neural activity, or provide reliable explanations. To address these limitations, we propose TriX-EEG, a three-level framework for trustworthy and explainable EEG artifact removal. Level 1, Signal Validity (SV), evaluates reconstruction quality and neural band-power preservation. Level 2, Removal Faithfulness (RF), assesses the removed component through artifact error and residual artifact/neural leakage. Level 3, Explanation Reliability (ER), examines model behavior through temporal alignment, causal relevance, and stability. We evaluate TriX-EEG using nine published neural denoisers across three public benchmarks derived from EEGDenoiseNet and the PhysioNet Motion Artifact Contaminated EEG Dataset, covering EOG, EMG, and motion artifacts. Results show that reconstruction metrics alone are insufficient for trustworthy denoiser assessment: RF complements it by revealing whether errors stem from residual artifact or suppressed neural activity, while ER captures distinct aspects of explanation behavior, supporting joint evaluation of three aspects within a unified framework rather than reliance on any single factor. External validation on an independent EEG/EOG dataset and the BCI Competition IV-2a motor-imagery dataset further demonstrates broadly consistent rankings under dataset shift. Higher-ranked denoisers generally preserve more task-relevant information or cause less downstream performance degradation. Overall, TriX-EEG provides a comprehensive basis for EEG denoiser assessment, encouraging models that are not only accurate but also faithful and explainable.",
+   "authors": [
+    "Phat Lam",
+    "Hung Nguyen",
+    "Lam Pham",
+    "Huy Phan",
+    "Dat Tran",
+    "Ian McLoughlin",
+    "Roozbeh Razavi-Far",
+    "Hung Cao"
+   ],
+   "primary": "eess.SP",
+   "categories": [
+    "eess.SP",
+    "cs.AI"
+   ],
+   "published": "2026-11-16T19:06:53+00:00",
+   "url": "https://arxiv.org/abs/2611.21781",
+   "pdf": "https://arxiv.org/pdf/2611.21781",
+   "score": 0.6454,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5586,
+    "meters": 0.5936,
+    "methods": 0.6454
+   }
+  },
+  {
+   "id": "2611.22446",
+   "version": 1,
+   "title": "As Student Rollouts Continue, Visual Backdoors Keep Growing",
+   "abstract": "Conventional knowledge distillation can facilitate the propagation of backdoors from teacher models to student models. However, how this risk manifests in On-Policy Distillation (OPD) remains insufficiently studied. OPD has recently emerged as an important post-training paradigm for Vision-Language Models (VLMs). Unlike traditional offline distillation, OPD does not require teacher-generated responses. Instead, it uses the teacher's probability distributions to supervise response trajectories generated online by the student. Since the initial student model typically generates benign responses and receives no explicit supervision from malicious target responses, OPD appears to offer some inherent resistance to backdoor propagation. In this paper, we challenge this intuition and reveal a more subtle risk of visual backdoor propagation in OPD. Through experiments across multiple model families and datasets, together with theoretical analysis, we identify three main findings. First, unlike the relatively gradual propagation observed in traditional offline distillation, backdoors rarely emerge in OPD at low poisoning ratios. However, the attack success rate rapidly approaches 100% once a critical threshold is exceeded. Second, backdoor propagation does not depend on explicit malicious responses. Instead, it is driven by the continuous accumulation of anomalous probability mass assigned by the teacher. Finally, based on these findings, we propose a novel trigger design that enables visual backdoor propagation with zero explicit trigger injection. These findings further reveal an overlooked mechanism of backdoor propagation in OPD and highlight its potential security risks.",
+   "authors": [
+    "Zane Fu",
+    "Yanzhao Zheng",
+    "Jinze Liu",
+    "Ziting Qin",
+    "Qianshan Wei",
+    "Jihuai Zhu",
+    "Yipeng Yu",
+    "Baohua Dong",
+    "Hangcheng Zhu",
+    "Ruohui Huang"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI"
+   ],
+   "published": "2026-11-17T09:15:01+00:00",
+   "url": "https://arxiv.org/abs/2611.22446",
+   "pdf": "https://arxiv.org/pdf/2611.22446",
+   "score": 0.642,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6205,
+    "meters": 0.5905,
+    "methods": 0.642
+   }
+  },
+  {
+   "id": "2611.21956",
+   "version": 1,
+   "title": "Eight in Ten LLMs Leak System-Prompt Secrets: Nevan, an Agentic Capture-the-Flag Study",
+   "abstract": "We audit instruction-hierarchy enforcement across 363 text-in/text-out models from the OpenRouter catalog. The research question we answer with this experiment is which models disclose a protected secret embedded in the system prompt, and through which techniques. Each model guards a secret 16-character flag set in its system prompt, while an artificial intelligence (AI) agent (OpenCode, powered by DeepSeek V4.1 Flash), steered by a human researcher, tries to persuade it to emit the flag. The flag was exfiltrated from 296 of the 363 models, plus four models released after the initial catalog freeze, for 300 captures in total. Of these, 170 involved a non-English language pivot, most often French. Each capture shows that a model ranked a user request above its system instruction at least once. It does not show that the model provably resists untested attacks, nor that it would consistently leak semantically sensitive data, nor that it is vulnerable to harmful-content jailbreaks. For practitioners, we draw three lessons: do not store secrets in system prompts, enforce critical behavior outside the model with output validation and deterministic checks, and do not let a large language model (LLM) judge be the sole decider of consequential outcomes.",
+   "authors": [
+    "Ana Clara Zoppi Serpa",
+    "Anderson Rocha",
+    "Hélio Pedrini"
+   ],
+   "primary": "cs.CR",
+   "categories": [
+    "cs.CR",
+    "cs.AI"
+   ],
+   "published": "2026-11-16T22:37:31+00:00",
+   "url": "https://arxiv.org/abs/2611.21956",
+   "pdf": "https://arxiv.org/pdf/2611.21956",
+   "score": 0.6366,
+   "interest": "water",
+   "scores": {
+    "water": 0.6366,
+    "meters": 0.575,
+    "methods": 0.5945
+   }
+  },
+  {
+   "id": "2611.22661",
+   "version": 1,
+   "title": "The Between-Round Decision in Autonomous Research: An LLM Controller That Reads the Whole Trajectory",
+   "abstract": "Executing an idea often changes how promising it looks, so the next step in autonomous research should rest on results, not on proposals. After each round of experiments, the system must decide whether to refine the best solution or start a new direction, which solution to build from, and what goal to set. We call this the between-round decision. Existing systems wrap it in machinery such as rules, scores, search trees, and schedules; where an LLM makes it, what the LLM needs to read is left open. We ask whether an LLM can make this decision from accumulated evidence, without a search structure around it, and how much of that evidence it needs to read. We present BRED (Between-Round Evidence-based Decision), an LLM-based controller that maintains the best verified solution so far (the Champion) and a log of past rounds, and makes one decision per round. On three widely used research-agent benchmark tasks, BRED improves on the task baselines by 4.80% in MAE on ETTh1 (to 0.4172) and by 3.44 and 3.43 points of accuracy on SST-2 (to 95.07%) and CIFAR-100 (to 84.63%), ahead of the published results. When the controller does not read the accumulated evidence, the same loop gains less: with no history it reaches 0.4299 on ETTh1 and 83.71% on CIFAR-100, whereas the full controller's MAE is 2.95% lower and its accuracy 0.92 points higher. On a new task, speech-based depression detection under a leakage-free protocol, it reaches a macro-F1 of 0.6164 on seeds held out from selection, 5.5 points above its baseline and 4.0 above the strongest published system. Code is available at https://github.com/learninginvision/BRED.",
+   "authors": [
+    "Caoxin Wang",
+    "Shengkai Gan",
+    "Xiang Hu",
+    "Lili Pan"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "cs.CL"
+   ],
+   "published": "2026-11-17T12:20:01+00:00",
+   "url": "https://arxiv.org/abs/2611.22661",
+   "pdf": "https://arxiv.org/pdf/2611.22661",
+   "score": 0.6273,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5846,
+    "meters": 0.5909,
+    "methods": 0.6273
+   }
+  }
+ ]
+}

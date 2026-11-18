@@ -8,15 +8,15 @@
 **Live site: [nyksnightbender.github.io/paper-radar](https://nyksnightbender.github.io/paper-radar/)** (daily and weekly digests, archive, RSS)
 
 <!-- LATEST:START -->
-**Closest new papers, 17 November 2026** (25 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
+**Closest new papers, 18 November 2026** (13 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
 
 | Score | Paper | Topic |
 | ---: | --- | --- |
-| 0.84 | [Residual-Tail-Informed Flow Matching for Time Series Anomaly Detection](https://arxiv.org/abs/2611.20334) | Time-series anomaly detection |
-| 0.76 | [Evaluating Near-Perfect Accuracy Claims in Machine-Learning-Based Leak Detection for Two-Phase Pipelines: A Condition-Blocked Audit](https://arxiv.org/abs/2611.19965) | Water networks |
-| 0.74 | [Knowledge-Guided Local-to-Global Anomaly Learning for Longitudinal Medication Trajectories](https://arxiv.org/abs/2611.19106) | Time-series anomaly detection |
-| 0.73 | [Severe but Harmless: Stress-Testing Shift Severity for Frozen Time-Series Forecasters](https://arxiv.org/abs/2611.21562) | Time-series anomaly detection |
-| 0.72 | [ST-GAT: A Leakage-Free Spatio-Temporal Graph Attention Framework for Robust Network Intrusion Detection](https://arxiv.org/abs/2611.19109) | Time-series anomaly detection |
+| 0.70 | [TIBECG: Temporal Information Bottleneck for Lead-Specific Demographic Privacy in ECG Waveform Release](https://arxiv.org/abs/2611.21694) | Time-series anomaly detection |
+| 0.68 | [Improving Early Detection of Scientifically Interesting Radio Sources Using Enhanced Isolation Forest](https://arxiv.org/abs/2611.21674) | Time-series anomaly detection |
+| 0.68 | [SeasonRainBench: Global Seasonal Precipitation](https://arxiv.org/abs/2611.22281) | Time-series anomaly detection |
+| 0.67 | [Pathology Randomization for Synthetic Priors and Zero-Shot Detection](https://arxiv.org/abs/2611.21975) | Time-series anomaly detection |
+| 0.67 | [DARWIN: a Geospatial Foundation Model for Marine Intelligence](https://arxiv.org/abs/2611.22496) | Time-series anomaly detection |
 <!-- LATEST:END -->
 
 ## Why
