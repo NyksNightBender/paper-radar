@@ -1,0 +1,335 @@
+{
+ "date": "2026-11-19",
+ "generated_at": "2026-11-19T08:46:38+00:00",
+ "model": "BAAI/bge-small-en-v1.5",
+ "interests": [
+  {
+   "key": "water",
+   "name": "Water networks"
+  },
+  {
+   "key": "meters",
+   "name": "Meters and consumption"
+  },
+  {
+   "key": "methods",
+   "name": "Time-series anomaly detection"
+  }
+ ],
+ "count": 11,
+ "papers": [
+  {
+   "id": "2611.23761",
+   "version": 1,
+   "title": "When Normal-Only Updates Are Not Enough: Test-Time Adaptation in Reconstruction-Based Time-Series Anomaly Detection",
+   "abstract": "Normal operating conditions can evolve after deployment, motivating test-time adaptation (TTA) of time-series anomaly detectors using incoming data. Yet the same stream may contain anomalies, so TTA with online updates must decide which test samples should be used for adaptation. This leaves a more basic question: even if updates are restricted to samples labeled as normal in the benchmark, does TTA reliably improve anomaly detection? We study this question with a controlled intervention that replaces the practical update selector with a rule that uses only samples labeled as normal in the benchmark, while keeping the rest of the online adaptation procedure unchanged. Across nine benchmark families, four optimizer configurations, and five random seeds, we obtain three main findings: (1) using only samples labeled as normal in the benchmark does not reliably improve detection; (2) practical TTA failures exhibit two distinct responses to this intervention, with 63 of 180 settings recovering a clear detection gain while 90 still show no clear detection gain; and (3) the updates reduce their immediate reconstruction objective across the evaluated settings, yet these reductions do not consistently lead to better anomaly ranking. Both failure patterns persist across alternative practical adaptation variants and modest perturbations of the benchmark labels. Together, these findings show that improving sample selection alone is not a complete solution to reconstruction-based TSAD TTA.",
+   "authors": [
+    "Jianhuan Mao",
+    "Mengxiao Zhu",
+    "Yue Pei",
+    "Lei Li",
+    "Haogang Zhu"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-18T03:14:49+00:00",
+   "url": "https://arxiv.org/abs/2611.23761",
+   "pdf": "https://arxiv.org/pdf/2611.23761",
+   "score": 0.7873,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6899,
+    "meters": 0.6876,
+    "methods": 0.7873
+   }
+  },
+  {
+   "id": "2611.23820",
+   "version": 1,
+   "title": "Sensor Monitoring Towards Industry 4.0: Bridging Concepts on the $C_n$ Multivariate Control Chart",
+   "abstract": "The main challenge in monitoring multiple sensors is the high dimensionality that a process can easily reach. From a decision-making perspective, converting these multivariate dynamics into an informative visualization is also not trivial. Statistical Process Control (SPC) techniques detect changes in quality characteristics, but they are difficult to apply beyond the normality (Gaussian) assumption. For instance, the most well-known SPC multivariate control chart is based on Hotelling's $T^2$ statistic, which assumes that the process data follow a multivariate normal distribution (which rarely occurs in practice) and that the observations are serially independent. This study focuses on the multivariate case (dimension $d \\geq 2$), regardless of the data dependence or marginal asymmetry. We propose a new control chart for change detection in copula-based multivariate processes, called the $C_n$-chart, which is based on a density level-set tolerance region built from a copula function, and we derive its run-length properties. The methodology also quantifies the (not necessarily linear) dependence among the variables. Two case studies are presented, one on water quality control and the other on monitoring brass-steel thermostats, complemented by a simulation study of run-length performance and computational cost. The results show that the proposed methodology captures both the association among variables and the anomalies, and that it accommodates variable selection through conditional (regression) modeling of the margins.",
+   "authors": [
+    "Diego C. Nascimento",
+    "Ana C. S. Batista",
+    "Francisco Louzada",
+    "Paulo H. Ferreira"
+   ],
+   "primary": "stat.AP",
+   "categories": [
+    "stat.AP",
+    "stat.OT"
+   ],
+   "published": "2026-11-18T04:22:50+00:00",
+   "url": "https://arxiv.org/abs/2611.23820",
+   "pdf": "https://arxiv.org/pdf/2611.23820",
+   "score": 0.7509,
+   "interest": "meters",
+   "scores": {
+    "water": 0.7286,
+    "meters": 0.7509,
+    "methods": 0.7388
+   }
+  },
+  {
+   "id": "2611.24052",
+   "version": 1,
+   "title": "From Data to Valves: A Self-Learning, Production-Grade Edge Stack for Sustainable HVAC Control",
+   "abstract": "Learned HVAC controllers rarely leave the simulator, and those that do are typically trained offline, frozen at deployment and retrained from the cloud. We present a production stack in which three learning components run on one NVIDIA Jetson Orin gateway per building, adapt continuously from the building's own data, and verify their own effect. (a) A compact transformer-encoder forecaster, one per equipment group with learned per-unit embeddings, predicts every air-side unit's next-cycle temperature and learns prequentially, one gradient step per five-minute cycle, behind five independent gates that bound the influence of any corrupt reading. (b) A distributional soft actor-critic agent, one shared policy across unit types, converts the measured state into a chilled-water valve position under a structural safety envelope that no learned component can soften; its second generation learns nightly on the device from recorded transitions alone, with a behaviour anchor and critic calibration terms, is scored by four model-free metrics and promoted by atomic hot-swap. (c) A change-point regression baseline held to ASHRAE Guideline 14 supplies the counterfactual against which savings are certified. On eighteen months of data from a hotel the forecaster converges from random weights within a week and reaches 0.37, 0.39 and 0.11 degree C MAE for air-handling, fresh-air and fan-coil units with no retraining event; on a different hotel the baseline reproduces a 46-day held-out period to within 0.07%. The RL agent has completed its in-simulator campaign and runs in shadow on 104 units; we report measured latency and memory of every service on a shared 15 GB device, the systems lessons of the campaign, and precisely what the evidence does and does not yet establish.",
+   "authors": [
+    "Abbas Raza Ali",
+    "Muhammad Hamza Rehman",
+    "Xu Li",
+    "Muhammad Ajmal Siddiqui"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-18T08:43:30+00:00",
+   "url": "https://arxiv.org/abs/2611.24052",
+   "pdf": "https://arxiv.org/pdf/2611.24052",
+   "score": 0.716,
+   "interest": "meters",
+   "scores": {
+    "water": 0.6682,
+    "meters": 0.716,
+    "methods": 0.6445
+   }
+  },
+  {
+   "id": "2611.24893",
+   "version": 1,
+   "title": "AMISS: An Integrity Framework for Magnetic Navigation",
+   "abstract": "Magnetic Navigation (MagNav) is a promising alternative to traditional systems like Global Navigation Satellite Systems (GNSS), offering resistance to jamming or spoofing attacks to which the latter are vulnerable. MagNav matches scalar magnetic measurements over time against a known map of Earth's magnetic anomaly in order to position a vehicle. MagNav is therefore sensitive to the quality of these maps, especially to errors in the survey data that the maps are derived from. In order to be a reliable and mature navigation technology, MagNav must satisfy integrity requirements for mitigation of such faults. To this end, a solution-separation monitoring algorithm is developed that performs a role equivalent to Advanced Receiver Autonomous Integrity Monitoring (ARAIM) in GNSS, which detects faults as well as generates worst-case bounds (protection levels) on estimation error for faults too small to be detected. It is shown how these integrity methods can be developed in a \\emph{windowed-in-time} sense, where subsets of measurements over a time window are compared with each other in order to detect outliers that can potentially result from errors in the map. The applicability of the approach is demonstrated using results obtained using synthetic aircraft data with injected faults.",
+   "authors": [
+    "Sharad C. Shankar",
+    "Prasenjit Sengupta",
+    "J. Scott Clawson",
+    "Sam Pullen"
+   ],
+   "primary": "eess.SY",
+   "categories": [
+    "eess.SY"
+   ],
+   "published": "2026-11-18T18:34:59+00:00",
+   "url": "https://arxiv.org/abs/2611.24893",
+   "pdf": "https://arxiv.org/pdf/2611.24893",
+   "score": 0.6747,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6478,
+    "meters": 0.6169,
+    "methods": 0.6747
+   }
+  },
+  {
+   "id": "2611.23362",
+   "version": 1,
+   "title": "TRACE-MAS: Diagnosing and Repairing Collaboration Failures in Multi-Agent Systems",
+   "abstract": "LLM-based multi-agent systems (MAS) rely on not only individual agent behaviors but also the interactions that connect agents, including message exchanges and task dependencies. Existing MAS safeguards mainly perform agent-level anomaly detection, which becomes insufficient when failures originate from agent interactions and detected anomalies do not necessarily reveal their true sources. To address this limitation, we propose \\textbf{TRACE-MAS}, a finer-grained framework for diagnosing and repairing MAS failures. TRACE-MAS learns normal collaborative execution patterns from benign trajectories and detects deviations in agent state changes, message transitions, and task dependency evolutions. It further identifies responsible execution elements through source-aware attribution and selects minimal interventions to restore collaboration while preserving task-critical capabilities. Experiments on five MAS benchmarks demonstrate that TRACE-MAS significantly improves root-cause localization accuracy by \\textbf{60.2}\\% and achieves consistent gains in task recovery over strong MAS safeguards.",
+   "authors": [
+    "Zekai Chen",
+    "Yihan Sun",
+    "Xunkai Li",
+    "Xun Wu",
+    "Xinmo Jin",
+    "Yinlin Zhu",
+    "Haodong Lu",
+    "Xuaner Chen",
+    "Rong-Hua Li"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.MA"
+   ],
+   "published": "2026-11-17T16:49:33+00:00",
+   "url": "https://arxiv.org/abs/2611.23362",
+   "pdf": "https://arxiv.org/pdf/2611.23362",
+   "score": 0.6507,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6488,
+    "meters": 0.5836,
+    "methods": 0.6507
+   }
+  },
+  {
+   "id": "2611.24124",
+   "version": 1,
+   "title": "QuantAtlas-OM: Taming Neural Spectral Bias in Long-Horizon Spatiotemporal Ocean Dynamics",
+   "abstract": "Autoregressive neural networks exhibit spectral bias in long-horizon spatiotemporal prediction. As rollouts progress, high-frequency details decay, blurring the predicted fields and destabilizing long-range forecasts. Ocean dynamics offer a particularly stringent test because kinetic energy is concentrated in mesoscale eddies and fronts spanning tens of kilometers. This degradation stems from coupling large-scale phase evolution and small-scale energy retention in a shared feature space. Evolution on a coarse grid smooths out high-wavenumber eddies, whereas evolution on a fine grid amplifies small-scale phase errors and triggers rollout instability. We introduce QuantAtlas-OM (QuantAtlas Ocean Model), a scale-spectral decoupling framework that confines deep temporal evolution to a low-wavenumber latent manifold for long-term stability while routing full-resolution eddy and front residuals through an outer bypass to the decoder. Across physical regimes, the evolution core pairs non-local attention with resolution-invariant dilated spatial gating. Across three western boundary currents, QuantAtlas-OM retains $43.7\\%$ to $86.5\\%$ of mesoscale spectral energy along the $k^{-3}$ cascade at Day $120$, sustains anomaly correlation coefficients of $0.81$ to $0.88$ at Day $60$, and reaches $0.66$ at Day $120$ in the Kuroshio ($2.5\\times$ to $7.7\\times$ the best baselines). Trained at $0.25^\\circ$, QuantAtlas-OM transfers zero-shot to a global $0.125^\\circ$ grid ($0.81$ Day-$10$ spatial correlation) and leads global $0.25^\\circ$, $23$-level 3D ocean simulations ($120$ days) and coupled ocean-atmosphere forecasts ($60$ days), ranking first on $15$ of $16$ metrics and cutting $60$- to $120$-day salinity RMSE by $13\\%$ to $27\\%$ across global ocean basins.",
+   "authors": [
+    "Hao Wu",
+    "Yuan Gao",
+    "Tong Wu",
+    "Fan Xu",
+    "Fan Zhang",
+    "Jinhan Li",
+    "Kun Wang",
+    "Zhenyu Ma",
+    "Bryan Dai",
+    "Xiaomeng Huang",
+    "Qingsong Wen"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-18T09:41:48+00:00",
+   "url": "https://arxiv.org/abs/2611.24124",
+   "pdf": "https://arxiv.org/pdf/2611.24124",
+   "score": 0.6414,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6009,
+    "meters": 0.6039,
+    "methods": 0.6414
+   }
+  },
+  {
+   "id": "2611.23342",
+   "version": 1,
+   "title": "Confidence-Based Materials Data Quality Assessment via Domain Knowledge and Graph-Structured Learning",
+   "abstract": "The rapid development of materials machine learning relies on large-scale, heterogeneous datasets, yet model reliability is often compromised by imperfect data from diverse experiments, simulations, and database integration. Real-world materials databases may contain measurement errors, failed calculations, missing or duplicate records, and hidden violations of physicochemical constraints. Such problems are difficult to identify because corrupted samples may remain statistically plausible rather than appearing as explicit outliers. In this paper, we propose a confidence-based materials data quality assessment framework that integrates domain knowledge with graph-structured learning. Data quality is formulated as a continuous confidence estimation problem rather than a binary anomaly identification task, enabling sample-level assessment and historical-reference-based batch comparison. A nine-dimensional feature-quality prior and duplicate-aware sample initialization are calibrated using materials domain rules and statistical evidence. Confidence is further refined through sample-feature bipartite graph propagation and weakly supervised graph attention, while a Memory-GAT module provides historical reference scoring. Experiments on 23 ODDS benchmark datasets show that the generic module achieves an average AUC-ROC of 0.866. In five repeated mixed-contamination experiments on mp\\_20, rule calibration improves HistGradientBoostingRegressor test $R^2$ from $0.538\\pm0.008$ to $0.616\\pm0.014$. Graph refinement increases average precision from $0.943\\pm0.004$ to 0.953\\pm0.004$, while the rule-calibrated configuration has the highest mean test $R^2$ among the evaluated screening configurations. Five repeated MACE subset experiments further show an increase in $R^2$ from $0.590\\pm0.053$ to $0.880\\pm0.027$ after rule-based screening.",
+   "authors": [
+    "Sihan Liaing",
+    "Ji Zhang",
+    "Kehan Wang",
+    "Zihao Gao",
+    "Wei Ma",
+    "Yangang Wang",
+    "Zongguo Wang"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cond-mat.mtrl-sci",
+    "cs.AI"
+   ],
+   "published": "2026-11-17T08:06:38+00:00",
+   "url": "https://arxiv.org/abs/2611.23342",
+   "pdf": "https://arxiv.org/pdf/2611.23342",
+   "score": 0.6357,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5896,
+    "meters": 0.587,
+    "methods": 0.6357
+   }
+  },
+  {
+   "id": "2611.23940",
+   "version": 1,
+   "title": "Physical Layer Security for Digital Semantic Communication: A Bit-Level Perspective",
+   "abstract": "Digital semantic communication requires reliable recovery of task-relevant information at a legitimate receiver while limiting source reconstruction by an eavesdropper. Uniform bit protection, however, does not account for the heterogeneous reliability and secrecy requirements of semantic bits. This paper proposes a bit-level physical layer security (PLS) framework that learns these requirements and incorporates them into physical-layer resource allocation. We first introduce a wiretap semantic feature channel whose two-stage training learns per-bit target bit-flip probabilities for the legitimate receiver (Bob) and the eavesdropper (Eve). These targets characterize the reliability requirements at Bob and the secrecy protection requirements against Eve. Based on the learned targets, we formulate a joint power and artificial-noise (AN) allocation problem for a multiple-input single-output wiretap channel under a worst-case angular-separation model. For a given target profile, the optimal information-AN power split admits a closed-form solution, and the per-bit power allocation is obtained by water-filling. We further develop a leakage-aware selection method among multiple learned-target profiles and extend the design to multiple-input multiple-output channels. Simulation results demonstrate that the proposed framework achieves a better trade-off between preserving reconstruction quality at Bob and degrading that at Eve than uniform power allocation and the evaluated learning-based secure semantic communication schemes.",
+   "authors": [
+    "Seonjung Kim",
+    "Jaehyeok Kim",
+    "Yo-Seb Jeon"
+   ],
+   "primary": "eess.SP",
+   "categories": [
+    "eess.SP",
+    "eess.SY"
+   ],
+   "published": "2026-11-18T06:27:58+00:00",
+   "url": "https://arxiv.org/abs/2611.23940",
+   "pdf": "https://arxiv.org/pdf/2611.23940",
+   "score": 0.6319,
+   "interest": "water",
+   "scores": {
+    "water": 0.6319,
+    "meters": 0.5498,
+    "methods": 0.5436
+   }
+  },
+  {
+   "id": "2611.24184",
+   "version": 1,
+   "title": "VideoACE: Benchmarking Agentic Video Understanding through High-Frame-Rate Actions",
+   "abstract": "Agentic video understanding requires models to actively interact with video environments to gather evidence and form judgments. Evaluating this capability therefore requires assessing whether models can translate opportunities for interaction into better understanding. We introduce VideoACE, a benchmark for assessing video understanding under conditions that support sustained interaction. We focus on high-frame-rate action videos, where rapid, subtle changes make targeted observation especially valuable. The benchmark comprises 1,000 multiple-choice questions spanning six categories of fine-grained action understanding, accompanied by temporal evidence annotations and user hints screened for answer leakage. Its evaluation environment combines video inspection tools with a user simulator, allowing models to adjust temporal coverage, sampling density, and spatial detail, and to revisit evidence and revise their judgments under simulated user feedback. We evaluate single-pass observation, autonomous tool use, and tool use combined with user feedback to examine how effectively models exploit these opportunities. Evaluation of five models reveals distinct patterns in how they acquire evidence and respond to opportunities for further interaction. These findings establish VideoACE as a testbed for examining agentic video understanding beyond performance under a fixed observation setting.",
+   "authors": [
+    "Luoyuan Zhang",
+    "Xuanyu Zheng",
+    "Yancheng Long",
+    "Haoyang Xu",
+    "Bin Wen",
+    "Tingting Gao"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.MM"
+   ],
+   "published": "2026-11-18T10:26:07+00:00",
+   "url": "https://arxiv.org/abs/2611.24184",
+   "pdf": "https://arxiv.org/pdf/2611.24184",
+   "score": 0.5972,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5337,
+    "meters": 0.554,
+    "methods": 0.5972
+   }
+  },
+  {
+   "id": "2611.23621",
+   "version": 1,
+   "title": "Agent Verifiers in Counterfactual Analysis: A Pilot Study Benchmarking Agentic Heterogeneous Treatment Effects",
+   "abstract": "Agents can expand the covariate space of randomized experiments by retrieving fast-moving local context missed by slow-changing survey baseline covariates, helping characterize who benefits most from an intervention. Verifying such covariates is difficult: individual treatment effects are unobserved, retrieval leakage can pull post-treatment information into nominally pretreatment summaries, and encoder leakage can inject post-treatment pretraining knowledge into representations even after temporal filtering of inputs. Guided by a two-channel information bound separating summary provenance from encoder weights, we propose a three-layer benchmark protocol: (i) retrieval admissibility via pre-treatment date filtering; (ii) heterogeneity validation scored rank-weighted average treatment effects (RATEs); and (iii) encoder admissibility checked with chronologically vintaged encoders, future-fact probes, and weight perturbations. Across 11 datasets anchored by Uganda's Youth Opportunities Program, we compare session-isolated retrieval (sandboxed, bounded-budget agent runs per study) against a persistent workspace teammate (xAI's GrokBot) that builds one date-verified corpus per study while blinded to outcomes. The workspace teammate yields higher mean RATE ratios in 6/11 datasets for text alone and 7 for combined features, though paired tests show neither workflow universally dominates. Even on fixed retrieved text, encoder choice significantly shifts heterogeneity signal. Chronologically vintaged probes show no clear evidence of weight leakage, but single-record adapter perturbation analyses show that memorized future facts, once present, persist until injected noise degrades model output. Temporal filtering of retrieval is necessary but insufficient: verifying agent-generated covariates requires jointly examining source provenance, out-of-sample treatment-effect signal, and encoder weights.",
+   "authors": [
+    "Satiyabooshan Murugaboopathy",
+    "Entejar Alam",
+    "Adel Daoud",
+    "Connor T. Jerzak"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-17T23:33:53+00:00",
+   "url": "https://arxiv.org/abs/2611.23621",
+   "pdf": "https://arxiv.org/pdf/2611.23621",
+   "score": 0.5946,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5131,
+    "meters": 0.5317,
+    "methods": 0.5946
+   }
+  },
+  {
+   "id": "2611.23927",
+   "version": 1,
+   "title": "Trade-off Between Airspace and Channel Capacity for Low-altitude Wireless Network",
+   "abstract": "Communication-serviceable capacity for low-altitude unmanned aerial vehicle (UAV) networks depends on both spatial occupancy and wireless quality of service (QoS). This paper formulates a communication-feasible occupancy-planning model that maps candidate-grid assignments to concurrent beam loads and per-user rates under fixed-stream and fixed-beam power. With fixed effective noise, per-beam QoS screening determines maximum admission, and an exact dynamic program maximizes aggregate spectral efficiency at that fixed admission. Signal-level simulations validate the SINR expressions, while an explicit-array model examines load-dependent inter-beam leakage. The dynamic program is globally optimal for the separable integer problem, but that guarantee does not extend to the coupled problem. Equal-time orthogonal multiple access (OMA) and ideal-SIC non-orthogonal multiple access (NOMA) are evaluated through the same local beam reduction under fixed effective noise and fixed per-beam power.",
+   "authors": [
+    "Xinyang Zhang",
+    "Yuanhao Cui",
+    "Xiaotong Zhao",
+    "Ningyan Guo",
+    "Christos Masouros",
+    "Dong In Kim"
+   ],
+   "primary": "eess.SP",
+   "categories": [
+    "eess.SP"
+   ],
+   "published": "2026-11-18T06:18:57+00:00",
+   "url": "https://arxiv.org/abs/2611.23927",
+   "pdf": "https://arxiv.org/pdf/2611.23927",
+   "score": 0.5868,
+   "interest": "water",
+   "scores": {
+    "water": 0.5868,
+    "meters": 0.5389,
+    "methods": 0.5166
+   }
+  }
+ ]
+}

@@ -8,15 +8,15 @@
 **Live site: [nyksnightbender.github.io/paper-radar](https://nyksnightbender.github.io/paper-radar/)** (daily and weekly digests, archive, RSS)
 
 <!-- LATEST:START -->
-**Closest new papers, 18 November 2026** (13 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
+**Closest new papers, 19 November 2026** (11 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
 
 | Score | Paper | Topic |
 | ---: | --- | --- |
-| 0.70 | [TIBECG: Temporal Information Bottleneck for Lead-Specific Demographic Privacy in ECG Waveform Release](https://arxiv.org/abs/2611.21694) | Time-series anomaly detection |
-| 0.68 | [Improving Early Detection of Scientifically Interesting Radio Sources Using Enhanced Isolation Forest](https://arxiv.org/abs/2611.21674) | Time-series anomaly detection |
-| 0.68 | [SeasonRainBench: Global Seasonal Precipitation](https://arxiv.org/abs/2611.22281) | Time-series anomaly detection |
-| 0.67 | [Pathology Randomization for Synthetic Priors and Zero-Shot Detection](https://arxiv.org/abs/2611.21975) | Time-series anomaly detection |
-| 0.67 | [DARWIN: a Geospatial Foundation Model for Marine Intelligence](https://arxiv.org/abs/2611.22496) | Time-series anomaly detection |
+| 0.79 | [When Normal-Only Updates Are Not Enough: Test-Time Adaptation in Reconstruction-Based Time-Series Anomaly Detection](https://arxiv.org/abs/2611.23761) | Time-series anomaly detection |
+| 0.75 | [Sensor Monitoring Towards Industry 4.0: Bridging Concepts on the $C_n$ Multivariate Control Chart](https://arxiv.org/abs/2611.23820) | Meters and consumption |
+| 0.72 | [From Data to Valves: A Self-Learning, Production-Grade Edge Stack for Sustainable HVAC Control](https://arxiv.org/abs/2611.24052) | Meters and consumption |
+| 0.67 | [AMISS: An Integrity Framework for Magnetic Navigation](https://arxiv.org/abs/2611.24893) | Time-series anomaly detection |
+| 0.65 | [TRACE-MAS: Diagnosing and Repairing Collaboration Failures in Multi-Agent Systems](https://arxiv.org/abs/2611.23362) | Time-series anomaly detection |
 <!-- LATEST:END -->
 
 ## Why
