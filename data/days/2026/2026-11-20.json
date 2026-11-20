@@ -1,0 +1,262 @@
+{
+ "date": "2026-11-20",
+ "generated_at": "2026-11-20T08:32:10+00:00",
+ "model": "BAAI/bge-small-en-v1.5",
+ "interests": [
+  {
+   "key": "water",
+   "name": "Water networks"
+  },
+  {
+   "key": "meters",
+   "name": "Meters and consumption"
+  },
+  {
+   "key": "methods",
+   "name": "Time-series anomaly detection"
+  }
+ ],
+ "count": 9,
+ "papers": [
+  {
+   "id": "2611.25194",
+   "version": 1,
+   "title": "MADJEPA: Enhanced Multi-Stage Joint-Embedding Predictive Architecture for Medical Anomaly Detection",
+   "abstract": "Anomaly detection in medical images is a complex task, requiring the development of a robust model using only healthy patient data. Without access to labeled data, modern approaches typically employ self-supervised learning to obtain a model of normality. Since world models promise to build strong internal representations of their environment, we consider them as suitable candidates for the medical anomaly detection environment, namely medical investigations of healthy patients. To this end, we propose MADJEPA, a medical anomaly detector based on an enhanced multi-stage joint-embedding predictive architecture (JEPA). We design a multi-stage training pipeline to produce a robust detector: (1) image-based JEPA (I-JEPA) training aims to learn a strong representation of normal training data; (2) target encoder distillation aims to modulate over-generalization of I-JEPA representations to abnormal data; (3) pseudo-anomaly classification aims to calibrate anomaly predictions by learning a tight boundary around the normal data manifold. To demonstrate our design, we carry out comprehensive experiments on six datasets covering various medical image domains (e.g.~MRI, OCT, X-ray, histopathology), comparing our MADJEPA with numerous state-of-the-art methods. The results show that our carefully designed world model, MADJEPA, attains competitive results, ranking first on three datasets. Our ablation studies further confirm the utility of each training stage, indicating that I-JEPA alone is not sufficient to obtain competitive results in medical anomaly detection. We publicly release our code at https://github.com/Sabina085/madjepa.",
+   "authors": [
+    "Ioana-Sabina Stoian",
+    "Florinel-Alin Croitoru",
+    "Vlad Hondru",
+    "Andreea Iuliana Ionescu",
+    "Andrei Paun",
+    "Radu Tudor Ionescu"
+   ],
+   "primary": "eess.IV",
+   "categories": [
+    "eess.IV",
+    "cs.AI",
+    "cs.LG"
+   ],
+   "published": "2026-11-18T21:15:01+00:00",
+   "url": "https://arxiv.org/abs/2611.25194",
+   "pdf": "https://arxiv.org/pdf/2611.25194",
+   "score": 0.7251,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6441,
+    "meters": 0.6366,
+    "methods": 0.7251
+   }
+  },
+  {
+   "id": "2611.26588",
+   "version": 1,
+   "title": "Verify the Verifier: Specification-Grounded LLM Cross-Checking for Bugs That Escape UVM Scoreboards",
+   "abstract": "A passing UVM regression shows the design agrees with the reference model on what the scoreboard checks, not that it meets the specification. Bugs that pass every test yet violate the specification, termed scoreboard escapes, survive mature testbenches. We present Verify the Verifier, to our knowledge the first framework whose LLM-based Anomaly Cross-Checker examines a passing regression's traces against the specification. Of 564 bugs inserted into four OpenTitan IPs, 68 are candidate scoreboard escapes: non-equivalent, exercised by the tests, yet passing. The framework confirmed 41 as scoreboard escapes with assertions failing on the buggy design and proven on the original.",
+   "authors": [
+    "Ana E. Sanchez Villalobos",
+    "Michael D. Quinn",
+    "Aakash Tyagi",
+    "Minh D. Luu",
+    "David Kebo Houngninou"
+   ],
+   "primary": "cs.SE",
+   "categories": [
+    "cs.SE",
+    "cs.AI",
+    "cs.AR"
+   ],
+   "published": "2026-11-19T18:45:54+00:00",
+   "url": "https://arxiv.org/abs/2611.26588",
+   "pdf": "https://arxiv.org/pdf/2611.26588",
+   "score": 0.664,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6274,
+    "meters": 0.5802,
+    "methods": 0.664
+   }
+  },
+  {
+   "id": "2611.25226",
+   "version": 1,
+   "title": "Reject and Report: Forgery-Evident Undetectable Watermarks for Generative Image Models",
+   "abstract": "Provenance schemes such as those based on content watermarks let images from a generative model be traced back to it. A practical watermarking scheme must be accurate at a low false-positive rate (FPR), robust under content-preserving processing, and undetectable. In addition, it must resist forgery; otherwise, even from a single watermarked image and a surrogate model, an adversary can imprint the watermark onto an arbitrary image or regenerate new content that carries it, falsely attributing harmful content to a model or making authentic photographs appear AI-generated. We argue that a watermarking scheme should not only reject forgeries but also report them: a forgery rejected as unwatermarked leaves no trace of the attempt. State-of-the-art forgery-resilient undetectable watermarking schemes, such as SemBind, fall short on both counts. External anomaly detectors that do report forgeries either miss most of them or falsely flag genuine images after common processing. We propose Tripwire-WM, the first forgery-evident framework for undetectable watermarks. It commits the semantics of the generated image to the magnitudes of the initial latent noise, which the sign-based watermarks leave unused, through a distribution-preserving embedding; a forged image carries a valid watermark but with a commitment that does not match its content, so the detector both rejects it and reports it as forged. Built on the pseudorandom code (PRC) watermark and Gaussian Shading++, Tripwire-WM provably preserves their undetectability. On MS-COCO, with the owner's own model as the surrogate, it accepts no imprinting forgery, compared with up to 55.0% for SemBind, and reports all of them as forged; it also accepts at most 1.8% of reprompting forgeries, against up to 46.2% for SemBind. Meanwhile, it accepts at least 99% of genuine watermarked images at 10^{-6} FPR and matches the robustness of the base schemes.",
+   "authors": [
+    "Yihan Wang",
+    "Haochen Sun",
+    "Xi He",
+    "Yaoliang Yu",
+    "N. Asokan"
+   ],
+   "primary": "cs.CR",
+   "categories": [
+    "cs.CR",
+    "cs.AI",
+    "cs.CV"
+   ],
+   "published": "2026-11-18T21:58:41+00:00",
+   "url": "https://arxiv.org/abs/2611.25226",
+   "pdf": "https://arxiv.org/pdf/2611.25226",
+   "score": 0.6417,
+   "interest": "water",
+   "scores": {
+    "water": 0.6417,
+    "meters": 0.5847,
+    "methods": 0.6244
+   }
+  },
+  {
+   "id": "2611.25070",
+   "version": 1,
+   "title": "An LLM-Agentic Framework for Intelligent Work Order Management in Industrial Maintenance",
+   "abstract": "This paper presents an AI-driven framework, CodeReAct agent, designed to enhance industrial equipment maintenance through natural language (NL) interactions. The framework employs an advanced AI agentic approach to interpret human instructions, providing knowledge extraction, asset status summarization, and work order recommendations. It identifies patterns and trends and predicts work orders by standardizing industrial data into business objects (BOs) and utilizing analytical function API calls. The AI agent operates through a Thought-Action-Observation process similar to human problem-solving, automating complex analytical tasks typically performed by data scientists. Notably, the Action phase generates executable code, replacing manual coding efforts. A case study focusing on chiller maintenance demonstrates the framework's capability to analyze multiple years of work orders, and alerts and anomalies are presented. The results indicate that the AI agent framework effectively processes human utterances to analyze data, extract valuable insights, and support informed decision-making, reducing the need for data scientist involvement. By recontextualizing NLP agent frameworks in industrial engineering, the approach enables autonomous function generation and task execution across a range of domain-specific maintenance scenarios, with chillers used as a representative case study.",
+   "authors": [
+    "Nianjun Zhou",
+    "Dhaval Patel"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-18T19:12:03+00:00",
+   "url": "https://arxiv.org/abs/2611.25070",
+   "pdf": "https://arxiv.org/pdf/2611.25070",
+   "score": 0.6171,
+   "interest": "water",
+   "scores": {
+    "water": 0.6171,
+    "meters": 0.6117,
+    "methods": 0.5863
+   }
+  },
+  {
+   "id": "2611.25640",
+   "version": 1,
+   "title": "Erasing the Wrong Thing: Conditional Attribute Leakage and Concept Erasure in Shared Foundation-Model Embeddings",
+   "abstract": "Medical-image embeddings are increasingly shared in place of raw images for authorized downstream tasks, yet they may reveal sensitive attributes. Standard concept-erasure methods target population-level guardedness. However, we prove that, when binary task and sensitive labels are associated, global and task-conditional linear guardedness cannot both hold while a nonzero linear task signal is preserved, so global erasure must either eliminate that signal or retain task-conditional linear leakage. We further show how global erasure affects linear readers' discrimination between positive and negative samples with different sensitive attributes, deriving an approximate closed-form prediction of its utility cost from pre-erasure statistics. Motivated by this conflict, we introduce Task-Conditional LEACE (TC-LEACE), a closed-form variant of LEACE that enforces linear guardedness within each task stratum of its fitting data. We evaluate four vision foundation models on 85 CelebA attribute pairs spanning a broad range of associations. After LEACE, conditional leakage persists across all four encoders, the discrepancy between marginal and conditional audits increases with association strength, and predicted utility costs track observed losses. We then examine hospital chest radiographs using three foundation models, including two biomedical models, in which chest-tube status is strongly associated with diagnosis. Although a marginal attack on LEACE-erased embeddings underperforms a diagnosis-only reference, chest-tube status remains detectable within diagnosis strata. TC-LEACE recovers most of LEACE's linear task-utility loss while keeping task-conditional leakage within a prespecified margin of LEACE's.",
+   "authors": [
+    "Haijun He",
+    "Fei Li",
+    "Donghong Ji",
+    "Junjun He"
+   ],
+   "primary": "cs.CR",
+   "categories": [
+    "cs.CR",
+    "cs.AI",
+    "cs.CV",
+    "cs.LG"
+   ],
+   "published": "2026-11-19T07:27:05+00:00",
+   "url": "https://arxiv.org/abs/2611.25640",
+   "pdf": "https://arxiv.org/pdf/2611.25640",
+   "score": 0.6139,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5773,
+    "meters": 0.5693,
+    "methods": 0.6139
+   }
+  },
+  {
+   "id": "2611.26307",
+   "version": 1,
+   "title": "Scalable fault vulnerability analysis for ReRAM-based process-in-memory CNN accelerators",
+   "abstract": "Resistive random-access memory (ReRAM)-based processing-in-memory (PIM) accelerators offer a highly efficient platform for parallel matrix-vector multiplications (VMM) in neural networks, leveraging analog computation, high density, low leakage, and non-volatility. However, their susceptibility to permanent faults, such as stuck-at-high (\\textit{SaH}) and stuck-at-low (\\textit{SaL}) resistance states, permanently corrupts the convolutional neural networks (CNNs) weights mapped onto ReRAM cell conductance values, thereby degrading inference accuracy and leading to system unreliability in safety-critical applications. Fault injection is a commonly used technique to assess the vulnerability of neural networks by systematically injecting faults into individual parameters and measuring the resulting accuracy degradation. Although this method is accurate, it is prohibitively time-consuming and computationally expensive, especially for large-scale CNNs. In this paper, we propose a fast, scalable, and analytical framework to quantify the fault vulnerability of convolutional neural networks deployed on ReRAM-based PIM accelerators. This method quantifies vulnerability at different granularities, including weights, kernels, and layers, without the need for exhaustive simulation, enabling the design of fault-tolerant accelerators for edge and safety-critical applications. The comparison between the results of the proposed vulnerability score (VS) metrics with performance metric of CNNs captured with fault injection simulations confirms the effectiveness of our proposed method. Unlike exhaustive fault injection, which requires days or weeks, whereas the proposed approach achieves a speedup of about $10^4\\times-10^5\\times$, enabling fast and accurate vulnerability analysis for large-scale CNNs within only a few minutes or hours.",
+   "authors": [
+    "Aniseh Dorostkar",
+    "Hamed Farbeh",
+    "Hamid R. Zarandi",
+    "Meysam Sharifzadeh"
+   ],
+   "primary": "cs.AR",
+   "categories": [
+    "cs.AR",
+    "cs.LG"
+   ],
+   "published": "2026-11-19T15:55:47+00:00",
+   "url": "https://arxiv.org/abs/2611.26307",
+   "pdf": "https://arxiv.org/pdf/2611.26307",
+   "score": 0.6137,
+   "interest": "water",
+   "scores": {
+    "water": 0.6137,
+    "meters": 0.5729,
+    "methods": 0.6031
+   }
+  },
+  {
+   "id": "2611.26033",
+   "version": 1,
+   "title": "SEOYUN: Refusal-Inducing Exam Documents for AI-Glasses Pipelines",
+   "abstract": "Camera-equipped glasses can convert an examination page into a query to a vision-language model (VLM). Device detection addresses possession; a complementary question is whether an examination document can reduce the usefulness of an unauthorized capture. We present SEOYUN, an application-specific framework for refusal-inducing exam documents, with optical and encoder-level interventions as extensions. We use reverse jailbreaking to describe the direction of the objective: inducing abstention rather than bypassing refusal. Refusal induction and defensive visual prompt injection already have precedents; our contribution is a threat model, analytical limits, and an evaluation protocol for examination use. We distinguish refusal from correct-answer leakage, show why removing an added dummy option is not itself a reduction in the original answer space, and derive a sampling comparison under explicitly stated camera assumptions. The protocol separates digital, simulated, and physical inputs and requires held-out evaluation after subject-specific selection. A local CSAT candidate corpus and rendering harness have been prepared, but this version reports no model-performance measurements, physical validation, or human-subject results. Accordingly, SEOYUN is a research framework, not a validated defense or a basis for allegations against individuals.",
+   "authors": [
+    "Dohyeon Kwon"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-19T12:43:31+00:00",
+   "url": "https://arxiv.org/abs/2611.26033",
+   "pdf": "https://arxiv.org/pdf/2611.26033",
+   "score": 0.594,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5848,
+    "meters": 0.5549,
+    "methods": 0.594
+   }
+  },
+  {
+   "id": "2611.25463",
+   "version": 1,
+   "title": "Dimension-Free Buffer Bounds for Compressed-Momentum Error Feedback",
+   "abstract": "Analyses of error feedback bound the memory buffer through a compressor contraction constant -- $r/p$ for the best rank-$r$ approximation of a $p$-dimensional spectrum -- which survives into the rate. We show it need not appear at all. When the compressed momentum is re-injected into the pre-compression accumulator, the previous compressed momentum $β_1 M_{t-1}$ is an admissible competitor in the projection, and the buffer obeys $\\|E_t\\|_F \\le (1-β_1)\\|G_t\\|_F + γ\\|E_{t-1}\\|_F$, free of the dimensions $m,n$ and of the rank $r$. The argument uses only that the compressor is a metric projection onto a closed cone, so it covers top-$k$ selection as well as truncated SVD, holds for every selection from the projection set with no condition on singular-value crossings, and in its trajectory-tracking form assumes nothing about the gradients. In the two-stage template of the standard analyses it replaces a Stage-2 constant of order $p^2/r^2$ by one of order $1$, against $Θ(p/r)$ for the sharpest contraction-based bounds. Transferring the full rate costs a leakage term, which we bound by the step-weighted gradient mass $\\sum_{u\\le t}η_u\\|G_u\\|_F$ and show tight up to a factor $\\sqrt{2}$; the price is an additive $O(\\log^2 T)$ floor, not a slower rate. On BERT fine-tuning at rank ratio $32/768$ the feedback decay costs under $0.008$ validation $F_1$.",
+   "authors": [
+    "Alireza Moayedikia"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "math.OC"
+   ],
+   "published": "2026-11-19T03:48:47+00:00",
+   "url": "https://arxiv.org/abs/2611.25463",
+   "pdf": "https://arxiv.org/pdf/2611.25463",
+   "score": 0.5589,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5561,
+    "meters": 0.496,
+    "methods": 0.5589
+   }
+  },
+  {
+   "id": "2611.25968",
+   "version": 1,
+   "title": "Feedback-Free FDD Cell-Free Massive MIMO With Sparse AP Activation and Dual-Mode Precoding",
+   "abstract": "This correspondence enables practical frequency-division duplex (FDD) operation in cell-free massive MIMO via two mechanisms. Sparse access-point (AP) activation reduces downlink pilot overhead to enable coherent detection, while angle-reciprocity precoding steers beams using only uplink-estimated angles, eliminating channel feedback entirely. A load-adaptive dual-mode optimizer further enhances performance: closed-form signal-to-leakage-and-noise-ratio precoding for high-load rate boosting, or semidefinite relaxation for low-load power minimization. Simulations verify its superiority over existing feedback-free FDD solutions in spectral and energy efficiency, and its robustness to angle errors, reciprocity mismatch, and multipath.",
+   "authors": [
+    "Wei Jiang",
+    "Hans Dieter Schotten"
+   ],
+   "primary": "cs.IT",
+   "categories": [
+    "cs.IT",
+    "eess.SP"
+   ],
+   "published": "2026-11-19T11:53:27+00:00",
+   "url": "https://arxiv.org/abs/2611.25968",
+   "pdf": "https://arxiv.org/pdf/2611.25968",
+   "score": 0.5566,
+   "interest": "water",
+   "scores": {
+    "water": 0.5566,
+    "meters": 0.4927,
+    "methods": 0.4999
+   }
+  }
+ ]
+}

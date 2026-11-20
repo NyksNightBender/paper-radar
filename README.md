@@ -8,15 +8,15 @@
 **Live site: [nyksnightbender.github.io/paper-radar](https://nyksnightbender.github.io/paper-radar/)** (daily and weekly digests, archive, RSS)
 
 <!-- LATEST:START -->
-**Closest new papers, 19 November 2026** (11 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
+**Closest new papers, 20 November 2026** (9 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
 
 | Score | Paper | Topic |
 | ---: | --- | --- |
-| 0.79 | [When Normal-Only Updates Are Not Enough: Test-Time Adaptation in Reconstruction-Based Time-Series Anomaly Detection](https://arxiv.org/abs/2611.23761) | Time-series anomaly detection |
-| 0.75 | [Sensor Monitoring Towards Industry 4.0: Bridging Concepts on the $C_n$ Multivariate Control Chart](https://arxiv.org/abs/2611.23820) | Meters and consumption |
-| 0.72 | [From Data to Valves: A Self-Learning, Production-Grade Edge Stack for Sustainable HVAC Control](https://arxiv.org/abs/2611.24052) | Meters and consumption |
-| 0.67 | [AMISS: An Integrity Framework for Magnetic Navigation](https://arxiv.org/abs/2611.24893) | Time-series anomaly detection |
-| 0.65 | [TRACE-MAS: Diagnosing and Repairing Collaboration Failures in Multi-Agent Systems](https://arxiv.org/abs/2611.23362) | Time-series anomaly detection |
+| 0.73 | [MADJEPA: Enhanced Multi-Stage Joint-Embedding Predictive Architecture for Medical Anomaly Detection](https://arxiv.org/abs/2611.25194) | Time-series anomaly detection |
+| 0.66 | [Verify the Verifier: Specification-Grounded LLM Cross-Checking for Bugs That Escape UVM Scoreboards](https://arxiv.org/abs/2611.26588) | Time-series anomaly detection |
+| 0.64 | [Reject and Report: Forgery-Evident Undetectable Watermarks for Generative Image Models](https://arxiv.org/abs/2611.25226) | Water networks |
+| 0.62 | [An LLM-Agentic Framework for Intelligent Work Order Management in Industrial Maintenance](https://arxiv.org/abs/2611.25070) | Water networks |
+| 0.61 | [Erasing the Wrong Thing: Conditional Attribute Leakage and Concept Erasure in Shared Foundation-Model Embeddings](https://arxiv.org/abs/2611.25640) | Time-series anomaly detection |
 <!-- LATEST:END -->
 
 ## Why
