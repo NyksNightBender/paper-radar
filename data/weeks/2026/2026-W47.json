@@ -1,0 +1,314 @@
+{
+ "week": "2026-W47",
+ "start": "2026-11-16",
+ "end": "2026-11-20",
+ "days": [
+  "2026-11-16",
+  "2026-11-17",
+  "2026-11-18",
+  "2026-11-19",
+  "2026-11-20"
+ ],
+ "generated_at": "2026-11-21T00:47:50+00:00",
+ "model": "BAAI/bge-small-en-v1.5",
+ "interests": [
+  {
+   "key": "water",
+   "name": "Water networks"
+  },
+  {
+   "key": "meters",
+   "name": "Meters and consumption"
+  },
+  {
+   "key": "methods",
+   "name": "Time-series anomaly detection"
+  }
+ ],
+ "count": 71,
+ "papers": [
+  {
+   "id": "2611.20334",
+   "version": 1,
+   "title": "Residual-Tail-Informed Flow Matching for Time Series Anomaly Detection",
+   "abstract": "Time series anomaly detection (TSAD) models are often trained on nominal data using average-risk objectives, which emphasize dominant normal patterns. However, real time series can contain rare but valid nominal regimes that are underrepresented in the training distribution. We show that data-space flow matching can over-penalize such rare-normal windows and assign them anomaly scores comparable to those of true anomalies. To address this, we propose Residual-Tail-Informed Flow Matching (RT-FM), an unsupervised framework that uses a temporal variational autoencoder to estimate residual latent tailness and converts it into bounded, warmup-annealed weights for training a data-space flow matching model. Experiments on seven TSAD benchmarks show that RT-FM improves rare-normal coverage while preserving strong anomaly discrimination, substantially reducing false alarms on such windows and resulting in improved aggregate detection performance. The code is available at: https://github.com/trustAIoT/RT-FM_time-series-anomaly",
+   "authors": [
+    "Shyam Sundar Saravanan",
+    "Tie Luo",
+    "Sanjay Madria"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-15T23:57:22+00:00",
+   "url": "https://arxiv.org/abs/2611.20334",
+   "pdf": "https://arxiv.org/pdf/2611.20334",
+   "score": 0.8392,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7387,
+    "meters": 0.7097,
+    "methods": 0.8392
+   },
+   "date": "2026-11-17"
+  },
+  {
+   "id": "2611.23761",
+   "version": 1,
+   "title": "When Normal-Only Updates Are Not Enough: Test-Time Adaptation in Reconstruction-Based Time-Series Anomaly Detection",
+   "abstract": "Normal operating conditions can evolve after deployment, motivating test-time adaptation (TTA) of time-series anomaly detectors using incoming data. Yet the same stream may contain anomalies, so TTA with online updates must decide which test samples should be used for adaptation. This leaves a more basic question: even if updates are restricted to samples labeled as normal in the benchmark, does TTA reliably improve anomaly detection? We study this question with a controlled intervention that replaces the practical update selector with a rule that uses only samples labeled as normal in the benchmark, while keeping the rest of the online adaptation procedure unchanged. Across nine benchmark families, four optimizer configurations, and five random seeds, we obtain three main findings: (1) using only samples labeled as normal in the benchmark does not reliably improve detection; (2) practical TTA failures exhibit two distinct responses to this intervention, with 63 of 180 settings recovering a clear detection gain while 90 still show no clear detection gain; and (3) the updates reduce their immediate reconstruction objective across the evaluated settings, yet these reductions do not consistently lead to better anomaly ranking. Both failure patterns persist across alternative practical adaptation variants and modest perturbations of the benchmark labels. Together, these findings show that improving sample selection alone is not a complete solution to reconstruction-based TSAD TTA.",
+   "authors": [
+    "Jianhuan Mao",
+    "Mengxiao Zhu",
+    "Yue Pei",
+    "Lei Li",
+    "Haogang Zhu"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-18T03:14:49+00:00",
+   "url": "https://arxiv.org/abs/2611.23761",
+   "pdf": "https://arxiv.org/pdf/2611.23761",
+   "score": 0.7873,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6899,
+    "meters": 0.6876,
+    "methods": 0.7873
+   },
+   "date": "2026-11-19"
+  },
+  {
+   "id": "2611.19965",
+   "version": 1,
+   "title": "Evaluating Near-Perfect Accuracy Claims in Machine-Learning-Based Leak Detection for Two-Phase Pipelines: A Condition-Blocked Audit",
+   "abstract": "Reliable leak detection in gas-liquid two-phase pipelines is important for process safety, yet machine-learning studies frequently report near-perfect performance using evaluation protocols that may not represent deployment to unseen operating conditions. This study audits a pressure-based leak-detection model using condition-blocked leave-one-condition-out validation, in which the classifier is tested on a flow condition excluded from training. Accuracy decreased from 93.3% under within-condition evaluation to 59.1% across fifteen unseen-condition tests. Ablation analysis showed that most of this difference arose from the data-splitting protocol, with a smaller contribution from encoding operating conditions as model inputs. Under condition-blocked evaluation, the false-alarm and missed-detection rates increased to 34.1% and 10.2%, respectively, demonstrating that near-perfect reported accuracy did not translate into reliable operation at unseen flow conditions. The reduction persisted across all evaluated classifiers, indicating that it was caused by the evaluation design rather than a particular model architecture. Grouped evaluation of an independent acoustic pipeline dataset produced a comparable reduction toward chance-level performance. These findings show that validation units must represent the conditions encountered during deployment. Condition-blocked evaluation and explicit reporting of operational error rates are therefore necessary before machine-learning leak detectors can support process-safety decisions.",
+   "authors": [
+    "Issah N. Suleiman",
+    "Sormeh Serpoosh",
+    "Nadine Elkholy",
+    "Hicham Ferroudji",
+    "Mohammad Azizur Rahman",
+    "Matthew Hamilton"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-15T12:13:10+00:00",
+   "url": "https://arxiv.org/abs/2611.19965",
+   "pdf": "https://arxiv.org/pdf/2611.19965",
+   "score": 0.7647,
+   "interest": "water",
+   "scores": {
+    "water": 0.7647,
+    "meters": 0.6669,
+    "methods": 0.6542
+   },
+   "date": "2026-11-17"
+  },
+  {
+   "id": "2611.23820",
+   "version": 1,
+   "title": "Sensor Monitoring Towards Industry 4.0: Bridging Concepts on the $C_n$ Multivariate Control Chart",
+   "abstract": "The main challenge in monitoring multiple sensors is the high dimensionality that a process can easily reach. From a decision-making perspective, converting these multivariate dynamics into an informative visualization is also not trivial. Statistical Process Control (SPC) techniques detect changes in quality characteristics, but they are difficult to apply beyond the normality (Gaussian) assumption. For instance, the most well-known SPC multivariate control chart is based on Hotelling's $T^2$ statistic, which assumes that the process data follow a multivariate normal distribution (which rarely occurs in practice) and that the observations are serially independent. This study focuses on the multivariate case (dimension $d \\geq 2$), regardless of the data dependence or marginal asymmetry. We propose a new control chart for change detection in copula-based multivariate processes, called the $C_n$-chart, which is based on a density level-set tolerance region built from a copula function, and we derive its run-length properties. The methodology also quantifies the (not necessarily linear) dependence among the variables. Two case studies are presented, one on water quality control and the other on monitoring brass-steel thermostats, complemented by a simulation study of run-length performance and computational cost. The results show that the proposed methodology captures both the association among variables and the anomalies, and that it accommodates variable selection through conditional (regression) modeling of the margins.",
+   "authors": [
+    "Diego C. Nascimento",
+    "Ana C. S. Batista",
+    "Francisco Louzada",
+    "Paulo H. Ferreira"
+   ],
+   "primary": "stat.AP",
+   "categories": [
+    "stat.AP",
+    "stat.OT"
+   ],
+   "published": "2026-11-18T04:22:50+00:00",
+   "url": "https://arxiv.org/abs/2611.23820",
+   "pdf": "https://arxiv.org/pdf/2611.23820",
+   "score": 0.7509,
+   "interest": "meters",
+   "scores": {
+    "water": 0.7286,
+    "meters": 0.7509,
+    "methods": 0.7388
+   },
+   "date": "2026-11-19"
+  },
+  {
+   "id": "2611.19106",
+   "version": 1,
+   "title": "Knowledge-Guided Local-to-Global Anomaly Learning for Longitudinal Medication Trajectories",
+   "abstract": "Detecting suspicious deviations in longitudinal medication trajectories requires distinguishing knowledge-consistent treatment variations from anomalous changes and linking local deviations to account-level decisions. We propose a knowledge-guided local-to-global (L2G) anomaly learning framework that addresses both challenges. It constructs proxy supervision at three granularities: medication occurrences, treatment episodes, and contiguous visit segments. Knowledge-consistent medication and episode replacements provide plausible negatives, while cross-category and cross-account perturbations provide suspicious proxies. A medication-multiset encoder and causal visit-sequence encoder feed a shared scoring head that produces visit-level anomaly logits. Top-\\(α\\) aggregation derives account-level scores from these logits, while account-level classification and class-balanced visit-localization objectives jointly optimize the same visit-level evidence. Experiments on two city cohorts compare L2G with native and proxy-adapted anomaly methods. On City-A, L2G outperforms the strongest comparators. Cross-city results show more consistent gains in localization than in account-level detection.",
+   "authors": [
+    "Wendi Ji"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.IR"
+   ],
+   "published": "2026-11-14T02:30:55+00:00",
+   "url": "https://arxiv.org/abs/2611.19106",
+   "pdf": "https://arxiv.org/pdf/2611.19106",
+   "score": 0.7428,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6361,
+    "meters": 0.6349,
+    "methods": 0.7428
+   },
+   "date": "2026-11-17"
+  },
+  {
+   "id": "2611.17869",
+   "version": 1,
+   "title": "Process Mining-Enabled Federated Anomaly Detection for the Industrial IoT",
+   "abstract": "While federated anomaly detection enables the integration of local data insights across diverse nodes to reduce false positives, it inherently struggles with non-IID data. In practice, industrial IoT plants often operate under varying conditions and experience diverse environmental phenomena, resulting in significant heterogeneity in the monitored time series. In such settings, standard federated learning approaches fail to perform nuanced aggregation that accounts for these cross-node differences, ultimately leading to increased false positive rates. In this paper, we propose a process mining approach to evaluate the similarity of local node data against a reference provided by a global node. The global node utilizes these similarity metrics to dynamically weight local models during aggregation, producing personalized updates distributed across the network. We evaluate our approach using industrial IoT time-series data collected from manufacturing plants operating under distinct conditions. Experimental results demonstrate that our process mining-enabled federated anomaly detection pipeline achieves superior performance, yielding a 46.52% and 11.99% relative improvement in F1-score compared to isolated local training baselines and standard FedAvg, respectively, alongside a 51.24% relative reduction in false positives over standard federated aggregation.",
+   "authors": [
+    "Francesco Vitale",
+    "Salvatore Bramante",
+    "Francesco Flammini",
+    "Hangli Ge"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-13T08:00:34+00:00",
+   "url": "https://arxiv.org/abs/2611.17869",
+   "pdf": "https://arxiv.org/pdf/2611.17869",
+   "score": 0.7413,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7365,
+    "meters": 0.7035,
+    "methods": 0.7413
+   },
+   "date": "2026-11-16"
+  },
+  {
+   "id": "2611.18370",
+   "version": 1,
+   "title": "f-Divergence Self-Play for Tabular Anomaly Detection via Large Language Models",
+   "abstract": "Anomaly detection in tabular data poses significant challenges due to heterogeneous feature types-mixing numerical, categorical, and textual attributes, which complicate learning meaningful representations of normality. Recent work has applied large language models (LLMs) to this problem by serializing table rows as text sequences, yet these approaches rely on one-shot supervised fine-tuning that offers limited signal to tighten the model's description of normality. We propose DiSPaT, a self-play fine-tuning framework that strengthens the model's understanding of normal data. Building on the theoretical foundation of f-divergence minimization, we derive a tight approximation connecting our training objective to reducing the distributional gap between real normal data and model-generated samples. DiSPaT operates through an alternating optimization: at each iteration, the current policy generates synthetic samples that serve as pseudo-anomalies, while a critic discriminator learns to distinguish these from real normal samples; this signal drives policy updates that progressively align the model distribution with the true normal-data distribution. Extensive experiments on diverse benchmarks demonstrate that DiSPaT consistently outperforms prior LLM-based methods, deep learning approaches, and classical unsupervised detectors for tabular anomaly detection.",
+   "authors": [
+    "Hoang Tran Vuong",
+    "Linh Ngo Van",
+    "Dang Nguyen",
+    "Thin Nguyen",
+    "Phuoc Nguyen",
+    "Mehrtash Harandi",
+    "Trung Le"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.CL"
+   ],
+   "published": "2026-11-13T16:16:03+00:00",
+   "url": "https://arxiv.org/abs/2611.18370",
+   "pdf": "https://arxiv.org/pdf/2611.18370",
+   "score": 0.7356,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6491,
+    "meters": 0.6209,
+    "methods": 0.7356
+   },
+   "date": "2026-11-16"
+  },
+  {
+   "id": "2611.21562",
+   "version": 1,
+   "title": "Severe but Harmless: Stress-Testing Shift Severity for Frozen Time-Series Forecasters",
+   "abstract": "Zero-shot time-series foundation models (TSFMs) have become attractive alternatives to task-specific models because they handle diverse downstream tasks, including anomaly detection and forecasting, without per-series training. However, time-series data undergo distribution shifts, and the dissimilarity between two regimes is commonly scored with statistical measures such as Wasserstein-1, where a higher score is read as a more severe shift. In systematic experiments using three established severity measures on nine regime shifts from three standard traffic datasets, we show that these measures do not reliably predict degradation for instance-normalized TSFMs. The regimes rated most severe are not the regimes that degrade the models most, and degradation reaches 29% in the lowest-scoring regime. In most cases, the audit shows no positive relationship between measured severity and model degradation. We provide an equivariance-based stress-testing analysis that explains why severity readings can become decoupled from model degradation.",
+   "authors": [
+    "Korede R. Bishi",
+    "Dominic Okonkwo",
+    "Adetayo Okunoye"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-16T18:40:35+00:00",
+   "url": "https://arxiv.org/abs/2611.21562",
+   "pdf": "https://arxiv.org/pdf/2611.21562",
+   "score": 0.7267,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6365,
+    "meters": 0.6491,
+    "methods": 0.7267
+   },
+   "date": "2026-11-17"
+  },
+  {
+   "id": "2611.25194",
+   "version": 1,
+   "title": "MADJEPA: Enhanced Multi-Stage Joint-Embedding Predictive Architecture for Medical Anomaly Detection",
+   "abstract": "Anomaly detection in medical images is a complex task, requiring the development of a robust model using only healthy patient data. Without access to labeled data, modern approaches typically employ self-supervised learning to obtain a model of normality. Since world models promise to build strong internal representations of their environment, we consider them as suitable candidates for the medical anomaly detection environment, namely medical investigations of healthy patients. To this end, we propose MADJEPA, a medical anomaly detector based on an enhanced multi-stage joint-embedding predictive architecture (JEPA). We design a multi-stage training pipeline to produce a robust detector: (1) image-based JEPA (I-JEPA) training aims to learn a strong representation of normal training data; (2) target encoder distillation aims to modulate over-generalization of I-JEPA representations to abnormal data; (3) pseudo-anomaly classification aims to calibrate anomaly predictions by learning a tight boundary around the normal data manifold. To demonstrate our design, we carry out comprehensive experiments on six datasets covering various medical image domains (e.g.~MRI, OCT, X-ray, histopathology), comparing our MADJEPA with numerous state-of-the-art methods. The results show that our carefully designed world model, MADJEPA, attains competitive results, ranking first on three datasets. Our ablation studies further confirm the utility of each training stage, indicating that I-JEPA alone is not sufficient to obtain competitive results in medical anomaly detection. We publicly release our code at https://github.com/Sabina085/madjepa.",
+   "authors": [
+    "Ioana-Sabina Stoian",
+    "Florinel-Alin Croitoru",
+    "Vlad Hondru",
+    "Andreea Iuliana Ionescu",
+    "Andrei Paun",
+    "Radu Tudor Ionescu"
+   ],
+   "primary": "eess.IV",
+   "categories": [
+    "eess.IV",
+    "cs.AI",
+    "cs.LG"
+   ],
+   "published": "2026-11-18T21:15:01+00:00",
+   "url": "https://arxiv.org/abs/2611.25194",
+   "pdf": "https://arxiv.org/pdf/2611.25194",
+   "score": 0.7251,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6441,
+    "meters": 0.6366,
+    "methods": 0.7251
+   },
+   "date": "2026-11-20"
+  },
+  {
+   "id": "2611.19109",
+   "version": 1,
+   "title": "ST-GAT: A Leakage-Free Spatio-Temporal Graph Attention Framework for Robust Network Intrusion Detection",
+   "abstract": "Intrusion detection systems are a central defence in modern networks. Deep learning models report strong anomaly-detection results, but evaluations on standard benchmarks such as CSE-CIC-IDS-2018 are often inflated by two methodological problems: temporal leakage from overlapping sliding windows, and contamination from preprocessing fitted before the train/test split. Per-flow classifiers also ignore the spatio-temporal dependencies across sequences of network flows. We propose a Spatio-Temporal Graph Attention Network (ST-GAT) that represents traffic as a sequence of graph snapshots. It builds k-Nearest Neighbour (k-NN) edges within each window, applies multi-head Graph Attention Network (GAT) layers for spatial aggregation, and uses a Bidirectional Long Short-Term Memory (BiLSTM) network with temporal attention for sequence modelling. To prevent leakage, we use non-overlapping temporal windows (stride equal to window length) and fit all preprocessing on the training split only. We compare three class-imbalance strategies: inverse class-frequency weighting, dynamic balanced sampling, and few-shot metric prototyping. Across three random seeds, ST-GAT with inverse class weighting reached a Macro-F1 of 96.65% (+/- 0.87) and an accuracy of 99.14%. This is 14.3 percentage points higher in Macro-F1 than a per-flow Random Forest baseline (82.34%). Balanced sampling reduced Macro-F1 by 2.3 points (to 94.37%) relative to loss weighting. This suggests that aggressive resampling of small, noisy minority classes can hurt detection in heavily imbalanced traffic.",
+   "authors": [
+    "Nikhil Parkar",
+    "Sanskar Pandey",
+    "Siddhi Prajapati",
+    "Suganeshwari G",
+    "Syed Ibrahim"
+   ],
+   "primary": "cs.CR",
+   "categories": [
+    "cs.CR",
+    "cs.AI",
+    "cs.LG"
+   ],
+   "published": "2026-11-14T02:43:07+00:00",
+   "url": "https://arxiv.org/abs/2611.19109",
+   "pdf": "https://arxiv.org/pdf/2611.19109",
+   "score": 0.7228,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7013,
+    "meters": 0.6584,
+    "methods": 0.7228
+   },
+   "date": "2026-11-17"
+  }
+ ]
+}
