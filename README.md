@@ -8,15 +8,15 @@
 **Live site: [nyksnightbender.github.io/paper-radar](https://nyksnightbender.github.io/paper-radar/)** (daily and weekly digests, archive, RSS)
 
 <!-- LATEST:START -->
-**Closest new papers, 20 November 2026** (9 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
+**Closest new papers, 23 November 2026** (15 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
 
 | Score | Paper | Topic |
 | ---: | --- | --- |
-| 0.73 | [MADJEPA: Enhanced Multi-Stage Joint-Embedding Predictive Architecture for Medical Anomaly Detection](https://arxiv.org/abs/2611.25194) | Time-series anomaly detection |
-| 0.66 | [Verify the Verifier: Specification-Grounded LLM Cross-Checking for Bugs That Escape UVM Scoreboards](https://arxiv.org/abs/2611.26588) | Time-series anomaly detection |
-| 0.64 | [Reject and Report: Forgery-Evident Undetectable Watermarks for Generative Image Models](https://arxiv.org/abs/2611.25226) | Water networks |
-| 0.62 | [An LLM-Agentic Framework for Intelligent Work Order Management in Industrial Maintenance](https://arxiv.org/abs/2611.25070) | Water networks |
-| 0.61 | [Erasing the Wrong Thing: Conditional Attribute Leakage and Concept Erasure in Shared Foundation-Model Embeddings](https://arxiv.org/abs/2611.25640) | Time-series anomaly detection |
+| 0.72 | [Comparative Performance of Machine Learning Architectures for Fault Detection and Diagnosis in Chemical Processes](https://arxiv.org/abs/2611.27696) | Time-series anomaly detection |
+| 0.70 | [Spatiotemporal Graph Neural Networks for Fault Detection and Structural Learning in Chemical Processes: Use Case on the Tennessee Eastman Process](https://arxiv.org/abs/2611.27698) | Water networks |
+| 0.67 | [The Dual-Tier Sentiment Framework: Scalable Multimodal UX Attribution in Web Search](https://arxiv.org/abs/2611.27899) | Time-series anomaly detection |
+| 0.67 | [Bringing AI Assistance to the Beznau Nuclear Power Plant: A Hierarchical System of LLM Agents for Reactor Monitoring](https://arxiv.org/abs/2611.27556) | Water networks |
+| 0.66 | [RoSci: Exploring Robustness in Science VLMs](https://arxiv.org/abs/2611.27750) | Time-series anomaly detection |
 <!-- LATEST:END -->
 
 ## Why
