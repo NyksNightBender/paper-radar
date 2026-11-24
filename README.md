@@ -8,15 +8,15 @@
 **Live site: [nyksnightbender.github.io/paper-radar](https://nyksnightbender.github.io/paper-radar/)** (daily and weekly digests, archive, RSS)
 
 <!-- LATEST:START -->
-**Closest new papers, 23 November 2026** (15 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
+**Closest new papers, 24 November 2026** (19 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
 
 | Score | Paper | Topic |
 | ---: | --- | --- |
-| 0.72 | [Comparative Performance of Machine Learning Architectures for Fault Detection and Diagnosis in Chemical Processes](https://arxiv.org/abs/2611.27696) | Time-series anomaly detection |
-| 0.70 | [Spatiotemporal Graph Neural Networks for Fault Detection and Structural Learning in Chemical Processes: Use Case on the Tennessee Eastman Process](https://arxiv.org/abs/2611.27698) | Water networks |
-| 0.67 | [The Dual-Tier Sentiment Framework: Scalable Multimodal UX Attribution in Web Search](https://arxiv.org/abs/2611.27899) | Time-series anomaly detection |
-| 0.67 | [Bringing AI Assistance to the Beznau Nuclear Power Plant: A Hierarchical System of LLM Agents for Reactor Monitoring](https://arxiv.org/abs/2611.27556) | Water networks |
-| 0.66 | [RoSci: Exploring Robustness in Science VLMs](https://arxiv.org/abs/2611.27750) | Time-series anomaly detection |
+| 0.81 | [SMAD: A Semantics-Guided Multi-Agent Framework for Unsupervised Time-Series Anomaly Detection](https://arxiv.org/abs/2611.28348) | Time-series anomaly detection |
+| 0.78 | [AMP-OD: Active Model Probing for Unsupervised Outlier Model Selection--Extended Version](https://arxiv.org/abs/2611.28488) | Time-series anomaly detection |
+| 0.74 | [UACR: Uncertainty-Aware Collaborative Routing for Explainable Industrial Anomaly Inspection](https://arxiv.org/abs/2611.28655) | Time-series anomaly detection |
+| 0.72 | [SCRA-CLIP: Spherical-Contextual Representation Adaptation for Zero-Shot Anomaly Detection](https://arxiv.org/abs/2611.29545) | Time-series anomaly detection |
+| 0.70 | [HighwayVerse: A Chain-of-Inspection Benchmark for Highway Infrastructure Anomaly Understanding](https://arxiv.org/abs/2611.28800) | Time-series anomaly detection |
 <!-- LATEST:END -->
 
 ## Why

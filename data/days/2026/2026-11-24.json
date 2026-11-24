@@ -1,0 +1,553 @@
+{
+ "date": "2026-11-24",
+ "generated_at": "2026-11-24T04:17:42+00:00",
+ "model": "BAAI/bge-small-en-v1.5",
+ "interests": [
+  {
+   "key": "water",
+   "name": "Water networks"
+  },
+  {
+   "key": "meters",
+   "name": "Meters and consumption"
+  },
+  {
+   "key": "methods",
+   "name": "Time-series anomaly detection"
+  }
+ ],
+ "count": 19,
+ "papers": [
+  {
+   "id": "2611.28348",
+   "version": 1,
+   "title": "SMAD: A Semantics-Guided Multi-Agent Framework for Unsupervised Time-Series Anomaly Detection",
+   "abstract": "Time-series anomaly detection (TSAD) lacks a one-size-fits-all detector for heterogeneous data and anomaly types. Existing automation is limited by implicit objectives, potentially unreliable historical knowledge, or high computational costs. More fundamentally, it selects how to detect anomalies without explicitly defining what to detect. We propose SMAD, an LLM-based multi-agent framework that translates anomaly intent into executable, testable detection pipelines. Rather than selecting detectors against an implicit target, SMAD establishes a natural-language semantic contract grounded in measurable time-series properties, specifying target event patterns, expected score responses, and validation questions. This contract governs both detector construction and evaluation: LLM agents propose pipelines, while contract-matched synthetic interventions provide label-free evidence from the target series to assess semantic coverage and guide iterative self-refinement. A semantics-aware ensemble integrates validated candidates and attributes each alert to contributing detectors and supporting evidence. On univariate and multivariate TSAD benchmarks, SMAD improves detection performance over the strongest baseline by 11.5% and 9.6%, respectively, while outperforming general-purpose coding agents at 2-5x lower language-model token cost.",
+   "authors": [
+    "Qinghua Liu",
+    "Junpeng Wang",
+    "Mingzhi Hu",
+    "Menghai Pan",
+    "Shubham Jain",
+    "Yuzhong Chen",
+    "Yan Zheng",
+    "Yiwei Cai",
+    "John Paparrizos"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-20T22:00:23+00:00",
+   "url": "https://arxiv.org/abs/2611.28348",
+   "pdf": "https://arxiv.org/pdf/2611.28348",
+   "score": 0.815,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7122,
+    "meters": 0.709,
+    "methods": 0.815
+   }
+  },
+  {
+   "id": "2611.28488",
+   "version": 1,
+   "title": "AMP-OD: Active Model Probing for Unsupervised Outlier Model Selection--Extended Version",
+   "abstract": "Outlier detection is often deployed in fully unsupervised settings, where labels are unavailable and practitioners must choose a detector without direct performance feedback. Existing unsupervised outlier model selection methods predict detector quality from static meta-features and historical performance on meta-datasets, but they commit before observing how any detector behaves on the target dataset. We propose AMP-OD, an execution-conditioned probe-then-commit framework. AMP-OD runs a small number of inexpensive probe detectors, uses their score patterns as target-dataset evidence, and then selects a final detector from a larger candidate pool. To interpret unlabeled probe responses, we introduce a Leave-One-Out Family Probe Posterior (LOO-FPP), which converts probe score patterns into gated detector-family evidence while reducing self-validation in pseudo-label construction. AMP-OD further combines this evidence with historical reliability through a warm-start prior, a sequential probe/stop policy, and lower-confidence-bound arbitration. Extensive experiments and ablation studies show that detector responses provide useful evidence beyond static meta-features, with the LOO-FPP and conservative arbitration as key contributors.",
+   "authors": [
+    "Hong-Phuc Phan",
+    "Tuan-Anh Vu",
+    "Tung Kieu",
+    "Son Ha Xuan",
+    "Sean Bin Yang",
+    "Bin Yang",
+    "Christian S. Jensen"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-21T02:09:03+00:00",
+   "url": "https://arxiv.org/abs/2611.28488",
+   "pdf": "https://arxiv.org/pdf/2611.28488",
+   "score": 0.7789,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6545,
+    "meters": 0.6539,
+    "methods": 0.7789
+   }
+  },
+  {
+   "id": "2611.28655",
+   "version": 1,
+   "title": "UACR: Uncertainty-Aware Collaborative Routing for Explainable Industrial Anomaly Inspection",
+   "abstract": "Industrial anomaly inspection requires not only accurate anomaly discrimination but also trustworthy explanations for operators, while satisfying the strict latency constraints of online inspection. Existing methods, however, typically apply a fixed computational path to all samples, making it difficult to strike a good balance among detection accuracy, inference efficiency, and interpretability. To address this issue, we propose UACR, an uncertainty-aware collaborative routing framework for explainable industrial anomaly inspection. UACR aims to deliver reliable anomaly decisions together with operator-facing explanations under the online inspection budget, while adaptively allocating computation so that ambiguous cases receive deeper scrutiny. The framework consists of two stages. Stage I, Offline Training and Routing Hyperparameter Search, learns the anomaly inspection modules and calibrates the uncertainty estimator that drives routing. Stage II, Uncertainty-Aware Adaptive Routing, collaboratively dispatches each input across inspection paths according to its estimated uncertainty. Experimental results on multiple public datasets show that UACR achieves over 5.16% improvement in accuracy compared to the baseline method, while reducing latency by over 31.5%. It also enhances the interpretability of industrial detection by over 15%.",
+   "authors": [
+    "Yiwei Li",
+    "Qiyang Chen",
+    "Zheming Yang"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.LG"
+   ],
+   "published": "2026-11-21T08:35:29+00:00",
+   "url": "https://arxiv.org/abs/2611.28655",
+   "pdf": "https://arxiv.org/pdf/2611.28655",
+   "score": 0.7374,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7298,
+    "meters": 0.6509,
+    "methods": 0.7374
+   }
+  },
+  {
+   "id": "2611.29545",
+   "version": 1,
+   "title": "SCRA-CLIP: Spherical-Contextual Representation Adaptation for Zero-Shot Anomaly Detection",
+   "abstract": "Recent advances in vision-language models have facilitated zero-shot anomaly detection (ZSAD) through transferable visual-semantic representations. However, detecting fine-grained anomalies remains challenging due to inadequate modeling of diverse anomaly patterns and their spatial context. To address these challenges, we propose SCRA-CLIP, a Spherical-Contextual Representation Adaptation framework that jointly enhances anomaly-aware textual semantics and context-sensitive visual representations. Specifically, we introduce Spherical Prototype-Conditioned Prompting (SPCP), which employs von Mises--Fisher mixtures to model the directional distributions of normal and abnormal patch features. These state-specific prototypes are incorporated into textual contexts to guide the learning of more discriminative textual representations. Furthermore, we develop Context-Deviation Guided Visual Adaptation (CGVA), which captures local feature deviations relative to multi-scale neighborhood contexts and refines patch representations through adaptive gating. By integrating distribution-aware semantic modeling with context-sensitive visual adaptation, SCRA-CLIP facilitates more discriminative cross-modal matching for fine-grained anomaly detection and localization. Extensive experiments on 11 industrial and medical benchmarks demonstrate the effectiveness and generalization capability of SCRA-CLIP across diverse unseen categories and domains. The code will be publicly available upon publication.",
+   "authors": [
+    "Peng Chen",
+    "Chao Huang",
+    "Wenqiang Wang",
+    "Mingbo Yang",
+    "Yannan Chen",
+    "Yunkang Cao",
+    "Wei Wang",
+    "Li Shen",
+    "Fangjun Huang"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI"
+   ],
+   "published": "2026-11-22T15:13:27+00:00",
+   "url": "https://arxiv.org/abs/2611.29545",
+   "pdf": "https://arxiv.org/pdf/2611.29545",
+   "score": 0.7211,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6585,
+    "meters": 0.6226,
+    "methods": 0.7211
+   }
+  },
+  {
+   "id": "2611.28800",
+   "version": 1,
+   "title": "HighwayVerse: A Chain-of-Inspection Benchmark for Highway Infrastructure Anomaly Understanding",
+   "abstract": "Practical highway infrastructure inspection entails progressive diagnostic reasoning from visual perception to maintenance decisions, yet existing benchmarks remain confined to isolated tasks, leaving Multimodal Large Language Models (MLLMs) insufficiently evaluated across sequential inspection stages. Meanwhile, current datasets focus primarily on highway pavement defects, falling short of real-world inspection across diverse infrastructure components such as highway pavements, guardrails, glare screens, and drainage systems. To address these gaps, we formulate the Highway Infrastructure Inspection Progression Chain (HIIP-Chain), spanning Anomaly Detection, Anomaly Recognition, Condition Analysis, and Maintenance Resolution, and introduce HighwayVerse. HighwayVerse comprises 14,143 real-world Ground and Unmanned Aerial Vehicle (UAV) inspection records spanning 100 and 17 anomaly categories, respectively, with 84,858 expert-reviewed question-answer pairs. We evaluate 12 open-source and closed-source MLLMs using the chained metric Final, which credits a correct maintenance decision only when all preceding diagnostic stages are completed correctly. Results show that although models achieve relatively high accuracy when initially judging whether an anomaly is present, their markedly lower Final scores expose struggles across downstream recognition, analysis, and decision-making. This discrepancy indicates that current MLLMs do not fully comprehend specific highway anomaly patterns beyond superficial initial judgments. Furthermore, we propose LaneRAG, a training-free retrieval-augmented framework that provides hierarchical reference guidance achieving consistent performance improvements across diverse MLLMs. Our dataset, evaluation benchmark, and source code will be publicly released.",
+   "authors": [
+    "Junyi Yang",
+    "Zheng Si",
+    "Yilin Zhai",
+    "Pengpeng Ouyang",
+    "Hongxi Wang",
+    "Kangze Li",
+    "Mo Chen",
+    "Sicong Zhang",
+    "Hua Wang",
+    "Dongyuan Wu",
+    "Dong Chen",
+    "Mingliang Xu"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.CL"
+   ],
+   "published": "2026-11-21T13:36:41+00:00",
+   "url": "https://arxiv.org/abs/2611.28800",
+   "pdf": "https://arxiv.org/pdf/2611.28800",
+   "score": 0.704,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7008,
+    "meters": 0.6376,
+    "methods": 0.704
+   }
+  },
+  {
+   "id": "2611.28611",
+   "version": 1,
+   "title": "Action-Conditioned Transition Irreversibility for Out-of-Distribution Detection in Reinforcement Learning",
+   "abstract": "Reinforcement-learning agents shape the observations they encounter; consequently, detecting out-of-distribution (OOD) states requires analysing action-conditioned trajectories rather than treating inputs as independent samples. We propose Action-Conditioned Transition Irreversibility (ACTI), a detector that evaluates forward and backward transition likelihoods, calibrates this comparison against the in-distribution profile at each timestep, and smooths the score over a short window, using no future information. We tested ACTI across six environments and fifteen detectors within OOD-RL-Bench, using the four anomaly mechanisms that qualified in every environment, with ten policy replicates per environment. All primary metrics are matched-time: each score after anomaly onset is compared with a clean twin rollout's score at the same timestep. Our method secured the top macro matched-time AUROC, outperforming the dynamics-model baseline (PEDM), while scoring transitions roughly two orders of magnitude faster. Compared to the state-only variant, ACTI achieved a small but consistent AUROC gain and a shorter detection delay. The capacity-matched forward-only baseline, ACTI-Forward, secured a statistically significant advantage in AUPRC alongside a reduced detection delay. The discrepancy in AUROC did not reach statistical significance. Ablation studies suggest instead that performance improvements stem from action conditioning, calibration at each timestep, and smoothing of the transition-likelihood scores. Based on these results, we recommend using ACTI-Forward.",
+   "authors": [
+    "Emil Mittag",
+    "Richard Dazeley",
+    "Peter Vamplew"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-21T06:47:24+00:00",
+   "url": "https://arxiv.org/abs/2611.28611",
+   "pdf": "https://arxiv.org/pdf/2611.28611",
+   "score": 0.6735,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6398,
+    "meters": 0.6181,
+    "methods": 0.6735
+   }
+  },
+  {
+   "id": "2611.28497",
+   "version": 1,
+   "title": "When AI Performance Is Not Enough: Statistical Guardrails for Clinical Development",
+   "abstract": "Artificial intelligence (AI) and machine learning (ML) are reshaping the operational and inferential landscape of clinical development, yet their adoption frequently outpaces the statistical scrutiny these methods demand. This commentary offers first-principles perspectives across four application domains: anomaly detection in clinical trial data, real-time monitoring and adaptive trial designs, biomarker-based enrichment, and virtual and digital twins. For each domain, we articulate the underlying inferential problem, the contribution of AI and ML relative to established statistical methods, and the risks that statisticians, data scientists, and clinical developers must actively manage. Across these domains, a unifying theme emerges: AI and ML methods may succeed locally while failing to satisfy the broader statistical assumptions required for valid clinical and regulatory decisions. These risks include false-positive signals, compromised Type I error control in adaptive designs, conflation of prognostic with predictive biomarkers, and causal claims not supported by data and assumptions. We argue that a clearly defined context of use, relevant statistical assumptions, and consequences of the intended decision should guide the evaluation. For treatment-effect questions, the ICH E9(R1) estimand framework provides a useful organizing principle. Responsible use of AI in clinical development requires not restraint, but rigor: the inferential discipline necessary to make these technologies reproducible, interpretable, and defensible in the service of patients.",
+   "authors": [
+    "Siddhesh Kulkarni",
+    "Gina D'Angelo",
+    "Swarna Reddy",
+    "Rakhi Kilaru"
+   ],
+   "primary": "stat.ME",
+   "categories": [
+    "stat.ME",
+    "cs.AI",
+    "stat.AP"
+   ],
+   "published": "2026-11-21T02:29:14+00:00",
+   "url": "https://arxiv.org/abs/2611.28497",
+   "pdf": "https://arxiv.org/pdf/2611.28497",
+   "score": 0.6645,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6037,
+    "meters": 0.6177,
+    "methods": 0.6645
+   }
+  },
+  {
+   "id": "2611.28662",
+   "version": 1,
+   "title": "Robust Forest-based Estimation of Heterogeneous Treatment Effect Under High-dimensional Confounding",
+   "abstract": "Understanding how patients with Alzheimer's disease respond differently to treatment is important for individualized therapeutic assessment. Using observational data from the Alzheimer's Disease Neuroimaging Initiative (ADNI), we investigate how the association between donepezil dosage and 12-month cognitive performance varies across diagnostic stages and hippocampal volumes. This analysis presents several statistical challenges, including potentially nonlinear treatment effect heterogeneity, high-dimensional confounding, and heavy-tailed outcomes with extreme observations. To address these challenges, we develop an Orthogonal Huber Random Forest (OHRF) framework that combines Huber-based robust estimation, Neyman orthogonality, and forest-based adaptive weighting. The proposed method accommodates complex treatment effect heterogeneity while reducing sensitivity to nuisance estimation errors and extreme outcomes. We establish its consistency, asymptotic normality, and finite-sample error bounds. Simulation studies demonstrate favorable estimation accuracy and robustness across a range of error distributions, particularly under heavy-tailed noise and outlier contamination. In the ADNI application, OHRF produces generally narrower pointwise confidence intervals than the conventional Orthogonal Random Forest (ORF) while revealing distinct patterns of treatment effect heterogeneity across diagnostic groups and hippocampal volumes. These findings illustrate the potential of robust, data-adaptive methods for studying heterogeneous treatment responses in complex observational biomedical data.",
+   "authors": [
+    "Zhixin Qiu",
+    "Xuanxuan Wang",
+    "Xinyuan Song",
+    "Yinfeng Wang",
+    "Yanlin Tang"
+   ],
+   "primary": "stat.ME",
+   "categories": [
+    "stat.ME",
+    "stat.ML"
+   ],
+   "published": "2026-11-21T08:42:53+00:00",
+   "url": "https://arxiv.org/abs/2611.28662",
+   "pdf": "https://arxiv.org/pdf/2611.28662",
+   "score": 0.6584,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5431,
+    "meters": 0.5908,
+    "methods": 0.6584
+   }
+  },
+  {
+   "id": "2611.28354",
+   "version": 1,
+   "title": "Understanding Membership Inference Attacks on EEG Models",
+   "abstract": "Electroencephalography (EEG) signals contain sensitive, subject-specific information, making models trained on them potential targets for membership inference attacks (MIAs). Although MIAs have been studied extensively in other domains, their applications to EEG models are relatively scarce, and the factors driving the vulnerability of EEG models to MIAs are not adequately understood. In this paper, we present a systematic empirical analysis of MIAs on EEG models using three datasets, seven model architectures, four attack methods, and two metrics. Results show that poor model generalization (large train-test loss and accuracy gap) is the strongest indicator of MIA vulnerability. Longer training and larger models also increase vulnerability. Moreover, no particular scalp region, frequency band, inter-channel correlation pattern, or temporal versus spectral representation of EEG data consistently explains MIA vulnerability across datasets. Finally, subject identification and leave-one-subject-out experiments indicate that models relying more heavily on subject-specific representations are more vulnerable to MIAs. Overall, our findings identify the key drivers of membership leakage in EEG models and can provide guidance for developing MIA-resilient EEG systems.",
+   "authors": [
+    "Mehrdad Khodapanahandeh",
+    "Selin Unal",
+    "Berkay Kemal Balioglu",
+    "Alireza Khodaie",
+    "Beren Semiz",
+    "M. Emre Gursoy"
+   ],
+   "primary": "cs.CR",
+   "categories": [
+    "cs.CR",
+    "cs.AI",
+    "cs.NE"
+   ],
+   "published": "2026-11-20T22:08:14+00:00",
+   "url": "https://arxiv.org/abs/2611.28354",
+   "pdf": "https://arxiv.org/pdf/2611.28354",
+   "score": 0.6535,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5955,
+    "meters": 0.5999,
+    "methods": 0.6535
+   }
+  },
+  {
+   "id": "2611.28442",
+   "version": 1,
+   "title": "Decoding Frozen Vision Representations for Training-Free Few-Shot Pineapple Detection",
+   "abstract": "Few-shot object detection in agricultural imagery is hampered by dense vegetation, repeated patterns, and scarce annotations. We present a training-free detector that turns dense features from frozen visual foundation models directly into detections, without fine-tuning, a learned head, or external proposals: a whitened foreground-background direction estimated from annotated support images scores every query patch, and the score field is decoded with an adaptive threshold and support-derived geometry. We also test whether predicted relative depth can be fed directly to RGB-pretrained frozen encoders. On aerial pineapple imagery, the detector outperforms PET-DINO and GeCo2 at every evaluated support size; at K=40, predicted depth alone reaches 92% of the RGB performance with DINOv2, and RGB-depth fusion lowers counting error for both encoders. We release the Pineapple Plantation dataset (4,908 aerial frames, 1,995 annotated with 17,609 boxes, predicted depth, leakage-aware splits) and analyse transfer to two further agricultural datasets.",
+   "authors": [
+    "Manfred Gonzalez-Hernandez",
+    "Danny Xie-Li",
+    "Fabian Fallas-Moya",
+    "Camile Lendering",
+    "Joaquín Figueira",
+    "Erkut Akdag",
+    "Giacomo D'Amicantonio",
+    "Egor Bondarev"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI"
+   ],
+   "published": "2026-11-21T00:34:17+00:00",
+   "url": "https://arxiv.org/abs/2611.28442",
+   "pdf": "https://arxiv.org/pdf/2611.28442",
+   "score": 0.6505,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6099,
+    "meters": 0.5873,
+    "methods": 0.6505
+   }
+  },
+  {
+   "id": "2611.29315",
+   "version": 1,
+   "title": "SWIFT: A Handcrafted, Arithmetic-Minimal FPGA Engine for Real-Time Audio Deepfake Detection",
+   "abstract": "Generative voice cloning threatens voice-based authentication, yet current deepfake detectors rely on power-hungry, high-precision models unsuited to edge hardware. We present SWIFT (Streaming Whiten-Integer Forensic Trust-Engine), a handcrafted detector that works in the high-frequency noise domain where synthesis artifacts concentrate. A first-order integer high-pass residual drives nine families of fixed-point descriptors, among them integer lifting-wavelet cepstral quantiles, Mahalanobis anomaly distances, Poincaré phase-space geometry, and phase jitter, fused by calibrated gradient-boosted trees and a sparse L1-regularised meta-learner. Under leakage-controlled nested cross-validation, with one shared preprocessing chain for real and fake audio, this reference model reaches accuracy of up to 99.86% and an Equal Error Rate (EER) as low as 0.03% across eight benchmarks. Its integer front-end and a fixed-point linear classifier run on the programmable logic of a PYNQ-Z2 (Zynq-7020) board, with a 7.85 microseconds per-frame datapath latency (127.4k frames/s) at 1.734 W and 11.2% LUT utilisation. Integer-only audio deepfake feature extraction is thus feasible at the edge without pretrained neural models or floating-point units.",
+   "authors": [
+    "Chirantan Banerjee",
+    "Soumita Chatterjee",
+    "Bhargab B. Bhattacharya",
+    "Hafizur Rahaman"
+   ],
+   "primary": "cs.SD",
+   "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.AR",
+    "cs.CR",
+    "eess.AS"
+   ],
+   "published": "2026-11-22T08:22:17+00:00",
+   "url": "https://arxiv.org/abs/2611.29315",
+   "pdf": "https://arxiv.org/pdf/2611.29315",
+   "score": 0.6399,
+   "interest": "water",
+   "scores": {
+    "water": 0.6399,
+    "meters": 0.5872,
+    "methods": 0.6369
+   }
+  },
+  {
+   "id": "2611.28260",
+   "version": 1,
+   "title": "Neural Fidelity Calibration: Turning Field Anomalies into Simulation Fine-Tuning",
+   "abstract": "A policy that transfers from simulation to a lab robot often fails in the field. Calibrating a simulator from real-world data typically targets only a few hand-picked parameters, and even calibrated simulators fail to capture unmodeled dynamics, while environments reconstructed via onboard perception inherit sensing noise and artifacts. We propose Neural Fidelity Calibration (NFC), a framework based on conditional flow matching that infers online, directly from a robot's execution data, both simulator physical parameters and residual fidelity - the remaining dynamics discrepancy and the gap between perceived and true environment geometry. A simulation-trained anomaly detector determines when recalibration or fine-tuning is required using onboard sensory signals alone, while an exploration policy actively modulates posterior uncertainty using optimism in the face of uncertainty. Across five robot platforms with up to 39 calibrated parameters and a 128x128 residual terrain map, NFC achieves the most accurate posterior distributions compared to established simulation-based inference baselines. In physical outdoor experiments with a wheeled robot suffering an axle failure across snow, mud, and wet grass, NFC increases rough-terrain navigation success from 26% to 70% while reducing orientation jerk by 88%.",
+   "authors": [
+    "Youwei Yu",
+    "Lantao Liu"
+   ],
+   "primary": "cs.RO",
+   "categories": [
+    "cs.RO",
+    "eess.SY"
+   ],
+   "published": "2026-11-20T19:46:28+00:00",
+   "url": "https://arxiv.org/abs/2611.28260",
+   "pdf": "https://arxiv.org/pdf/2611.28260",
+   "score": 0.6333,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6008,
+    "meters": 0.5842,
+    "methods": 0.6333
+   }
+  },
+  {
+   "id": "2611.29744",
+   "version": 1,
+   "title": "Who Sent It or How It Moved? Sender Shortcuts in Cryptocurrency Anti-Money-Laundering Benchmarks, Audited on Elliptic2 and Elliptic++",
+   "abstract": "Two public benchmarks dominate graph-based anti-money-laundering (AML) research on Bitcoin: the transaction-level Elliptic dataset, extended as Elliptic++, and the subgraph-level Elliptic2. In both, a label is assigned according to the entity that sends the funds. We ask whether models trained on these benchmarks learn how laundering moves or merely who sent the money, and we propose a diagnostic protocol to tell the two apart: a sender lookup baseline, a novelty baseline, a sender-disjoint split with a leakage check, and a decomposition of performance into sender, receiver and intrinsic signal. On Elliptic2 the task largely reduces to classifying the sender. Under the standard random split, a no-learning lookup of sender history reaches a PR-AUC of 0.954, against 0.975 for gradient boosting on 456 features; our reimplementation of RevClassify reproduces its reported 0.97 and falls to 0.126 without sender information. When senders are held out, performance drops to 0.746, and the subgraph's own structure, transactions and receivers fall from 0.619 to 0.186. On Elliptic++ the same protocol finds the shortcut negligible: sender history reaches only 0.340 against 0.986 for the full model (3.5 against 10.1 times the test prevalence), adding it to the full model raises PR-AUC by less than 0.004 in every seed, and the transaction's own features keep 0.883 when sending addresses are held out. We trace the difference to the unit of sender identity: Elliptic2 senders are entity clusters that recur across many labeled subgraphs, whereas Elliptic++ senders are individual addresses, and fewer than half of test transactions have a sending address seen in training. A shared sender-based label rule thus produces a severe shortcut in one benchmark and a negligible one in the other, so the diagnostic must be run on each benchmark.",
+   "authors": [
+    "Mohammad Nasir Uddin"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-22T20:18:30+00:00",
+   "url": "https://arxiv.org/abs/2611.29744",
+   "pdf": "https://arxiv.org/pdf/2611.29744",
+   "score": 0.6265,
+   "interest": "water",
+   "scores": {
+    "water": 0.6265,
+    "meters": 0.582,
+    "methods": 0.6143
+   }
+  },
+  {
+   "id": "2611.28502",
+   "version": 1,
+   "title": "Shoonya: Zero-Socket In-Process Small Language Models for Graph Databases with Schema-Epoch KV Caching, Live Catalog Logit Masking, and Verifier-Advantage Distillation",
+   "abstract": "Coupling a property-graph database to an external language-model server imposes a three-part socket tax: serialization overhead dwarfing microsecond graph reads, repeated prefill of verbose schemas, and blind decoding divorced from the live catalog and multi-version concurrency control (MVCC) engine. We present Shoonya, from-scratch commercially clean (0.0% non-commercial or share-alike data) tri-modal (Python, Rust, OpenCypher) small language models (16.8M to 1.07B parameters) co-designed with shoonya-infer, a zero-dependency pure-Rust runtime embedded inside the samyama-graph-enterprise address space. Direct GraphStore references unlock three database-native primitives: (1) an epoch-invalidated SchemaPrefixCache over a copy-on-write PagedKvArena accelerating warm CPU time-to-first-token by 4.91x--13.68x with O(1) DDL invalidation; (2) a 36 us columnar catalog and source-span logit mask enforcing valid ontology identifiers and verbatim spans; and (3) a sub-65 us read-only MVCC gate serving Tier-0 queries inside 389.8 MiB INT8 RSS (59.8--67.9 tok/s) with 0.0% hallucination leak. Rank-factorized tied embeddings (-74.5% vocabulary weights), atomic indentation tokens (0/421 indentation errors), 4:1 grouped-query attention with 2:1 cross-layer KV sharing (-93.75% INT8 KV memory), Warmup-Stable-Decay training, KnOTS SVD merging, Step-GRPO, and Rust Jacobi SVD governance keep 100% of layers heavy-tailed ($α\\in [1.88, 2.20]$). Finally, we synthesize nine lessons across v0.1--v1.0, resolving a Reverse-Token-Density Distillation Trap via teacher scaling and zero-VRAM Verifier-Advantage-Gated Knowledge Distillation (AdvKD), recovering +13.61 MBPP points (33.07%) while reaching 100% validity on enrichment, grounded extraction, and tool planning.",
+   "authors": [
+    "Madhulatha Mandarapu",
+    "Sandeep Kunkunuru"
+   ],
+   "primary": "cs.DB",
+   "categories": [
+    "cs.DB",
+    "cs.LG",
+    "cs.PF"
+   ],
+   "published": "2026-11-21T02:36:49+00:00",
+   "url": "https://arxiv.org/abs/2611.28502",
+   "pdf": "https://arxiv.org/pdf/2611.28502",
+   "score": 0.6077,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5837,
+    "meters": 0.5734,
+    "methods": 0.6077
+   }
+  },
+  {
+   "id": "2611.28416",
+   "version": 1,
+   "title": "Belief-Driven Quantum Magnetometer Control for GPS-Denied Navigation",
+   "abstract": "Autonomous vehicles increasingly need to navigate without satellite positioning. Magnetic anomaly navigation (Mag-Nav) with quantum magnetometers offers a passive, unjammable fix, but the low size-weight-and-power (SWaP) sensors that small drones can carry are weak, and they are operated open loop at a fixed setting. Interferometric (Ramsey) magnetometers face a trade-off: long interrogation times are more sensitive but become ambiguous when the expected field is uncertain. The navigator's own position belief, pushed through the anomaly map, predicts that field. We close this loop. The filter's predictive field distribution sets the Ramsey phase and interrogation time at every epoch, through a closed-form rule that moves between an ambiguity limit and a decoherence limit. We evaluate it on real U.S. Air Force flight data (real tracks, inertial drift, measured fields, and a survey map tested 18 months after it was flown), with only the Ramsey sensor modelled. Against fixed-setting baselines, 63 of 72 independent flight windows favour belief driven sensing ($p = 2 \\times 10^{-11}$). Error falls by 20-27% for low-SNR sensors and 30-44% for mid-contrast sensors. An ablation separates the two ingredients. Phase alignment drives the gain in steady flight, and the rule matches the best fixed setting without the hindsight tuning that setting requires. After a lost start, interrogation time adaptation is essential, cutting median error by 37-42% even against hindsight-tuned phase-aligned settings. Gains are small for high-quality sensors with accurate maps. On an IBM superconducting qubit, the rule's interrogation time stays within $1.3\\times$ of the empirical optimum. Coupled with information-aware routing, belief-driven sensing lowers mission error by 15-40%.",
+   "authors": [
+    "Murtuza Lemonwala",
+    "Laxima Niure Kandel"
+   ],
+   "primary": "cs.RO",
+   "categories": [
+    "cs.RO",
+    "eess.SY"
+   ],
+   "published": "2026-11-20T23:40:58+00:00",
+   "url": "https://arxiv.org/abs/2611.28416",
+   "pdf": "https://arxiv.org/pdf/2611.28416",
+   "score": 0.5999,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5896,
+    "meters": 0.5633,
+    "methods": 0.5999
+   }
+  },
+  {
+   "id": "2611.28748",
+   "version": 1,
+   "title": "Beyond Single-Turn Privacy: Training-Data Leakage in Conversational RAG",
+   "abstract": "Retrieval-augmented generation (RAG) is known to reduce training-data leakage in single-turn interactions, but whether this protection persists over multi-turn conversations is unclear. We introduce CRELT (Conversational RAG Extraction Leakage Trajectory), a reusable framework that tracks, turn by turn, the real contact details from the training data that a RAG system discloses. CRELT separates retrieval, conversation history, and attack strategy through a full-factorial design, uses a retrieval corpus verified to contain none of the target PII, and counts an item as leaked only when it is absent from the model input at the turn it is produced. In our main experiment, this criterion excludes 29-53% of raw matches that were already present in the input. Across GPT-J-6B, Pythia-6.9B, and Pythia-12B, targeting real Enron contact details, retrieval reduces disclosure under both full and cleared history, consistent with prior single-turn results. A length-matched control with random passages reproduces 91-99.5% of this reduction under cleared history and 47-78% under full history, so much of it comes from the added context rather than from what is retrieved. With retrieval enabled, however, retaining full conversation history increases disclosure by a factor of 3.6-4.9, while retaining only one previous turn already restores disclosure to approximately the full-history level. With retrieval, clearing the history reduces disclosure by 72-79%, but does not eliminate it. These results show that single-turn privacy audits can substantially underestimate training-data leakage in conversational RAG systems and that conversation-history policy is a critical dimension of privacy evaluation.",
+   "authors": [
+    "Syed Khaderi",
+    "Karima Makhlouf",
+    "Sami Zhioua"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "cs.CR"
+   ],
+   "published": "2026-11-21T11:33:39+00:00",
+   "url": "https://arxiv.org/abs/2611.28748",
+   "pdf": "https://arxiv.org/pdf/2611.28748",
+   "score": 0.5947,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5841,
+    "meters": 0.5678,
+    "methods": 0.5947
+   }
+  },
+  {
+   "id": "2611.28462",
+   "version": 1,
+   "title": "Spectral-Leakage-Guided Phase-Noise Compensation for Sub-THz OFDM",
+   "abstract": "Oscillator phase noise is a key impairment in sub-THz OFDM, where it spreads energy across subcarriers and generates inter-carrier interference (ICI). Since the resulting leakage depends on both the oscillator phase noise spectrum and OFDM numerology, the useful compensation dimension varies with the operating configuration. This letter develops a leakage-guided receiver framework that relates these characteristics to the retained dimension of dominant-component Least Squares (LS) compensation and its clustered-pilot support. At 130 GHz with 64-QAM, the minimum tested order achieving BER <= 10^-6 decreases from 9 at 240 kHz to 3 at 960-1920 kHz for Hexa-X Model 2, while the first 3GPP crossing at 1920 kHz occurs with Np = 13 at 38 dB. Order adaptation reduces Stage-2 arithmetic by 66%, while four-cluster pilots improve 32-dB goodput by 35% over comb allocation.",
+   "authors": [
+    "Ahmadreza Afi",
+    "Didem Aydogan",
+    "Korkut Kaan Tokgoz"
+   ],
+   "primary": "eess.SP",
+   "categories": [
+    "eess.SP"
+   ],
+   "published": "2026-11-21T01:34:13+00:00",
+   "url": "https://arxiv.org/abs/2611.28462",
+   "pdf": "https://arxiv.org/pdf/2611.28462",
+   "score": 0.581,
+   "interest": "water",
+   "scores": {
+    "water": 0.581,
+    "meters": 0.5225,
+    "methods": 0.5303
+   }
+  },
+  {
+   "id": "2611.28135",
+   "version": 1,
+   "title": "Beyond Output Suppression: Mitigating Privacy Risks in LVLMs via Visual Intrinsic Privacy Erasure",
+   "abstract": "Large vision-language models can extract personally identifiable information from images, making privacy protection essential for their deployment in perception-oriented tasks. Existing targeted fine-tuning and model-editing methods usually suppress sensitive answers by aligning the model toward safe responses. In this paper, we show that such protection can be illusory: although the fine-tuned model refuses to disclose private information under normal decoding, privacy leakage still occurs in sentence completion scenarios. This indicates that existing algorithms only change the model's output distribution, but the model still retains the ability to perceive private information. Private information therefore still remains inside the model. To address this problem, we propose Visual Intrinsic Privacy Erasure (VIPE), which targets privacy-related visual representations to weaken the model's ability to perceive sensitive information. VIPE constructs paired privacy-sensitive and privacy-masked images, uses their internal feature residuals to identify privacy-related visual components, and suppresses these components before they are perceived by the model. To preserve benign visual representations, the erasure objective projects feature differences onto a relaxed benign subspace and adaptively controls the erasure strength. VIPE compels the model to ignore the extraction of sensitive information in the visual representation space, thereby blocking the source of privacy leakage more fundamentally rather than merely altering the model's output distribution. Experiments on Qwen2.5-VL and LLaVA-OneVision show that VIPE substantially alleviates prefix-triggered privacy leakage while maintaining competitive utility on general visual-language benchmarks.",
+   "authors": [
+    "Xiangkui Cao",
+    "Jie Zhang",
+    "Meina Kan",
+    "Shiguang Shan",
+    "Xilin Chen"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI"
+   ],
+   "published": "2026-11-19T03:35:57+00:00",
+   "url": "https://arxiv.org/abs/2611.28135",
+   "pdf": "https://arxiv.org/pdf/2611.28135",
+   "score": 0.577,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5571,
+    "meters": 0.5503,
+    "methods": 0.577
+   }
+  },
+  {
+   "id": "2611.28274",
+   "version": 1,
+   "title": "Neural Fidelity Calibration for Informative Sim-to-Real Adaptation",
+   "abstract": "Deep reinforcement learning (RL) can transfer agile robot skills from simulation to the real world, but closing the sim-to-real gap by domain randomization requires expert physics knowledge, and simulator calibration from real data typically targets a few hand-picked parameters. Even then, simulators miss real-world effects, and environments reconstructed from onboard perception inherit sensing errors that limit policy improvement. We propose Neural Fidelity Calibration (NFC), which uses conditional flow matching to calibrate simulator physical parameters and residual fidelity domains online during deployment. Residual fidelity captures sim-to-real dynamics discrepancies and perception-induced environment uncertainty. NFC operates in a latent space so that realistic environments can be sampled from the inferred posterior for real-to-sim policy fine-tuning. The framework is informative: the pretrained policy is fine-tuned only when an anomaly is detected, sequential NFC seeds its proposal from the simulation-pretrained estimator, and a hallucination policy modulates posterior uncertainty following optimism in the face of uncertainty. NFC attains the most accurate posteriors among established simulation-based inference methods on five robots with up to 39 physical parameters and a 128x128 residual terrain. On a wheeled robot with a broken wheel axle deployed on snow, mud, and wet grass, NFC raises success on rough terrain from 26% to 70% and reduces orientation jerk by 88%. Code and videos will be released upon publication.",
+   "authors": [
+    "Youwei Yu",
+    "Lantao Liu"
+   ],
+   "primary": "cs.RO",
+   "categories": [
+    "cs.RO",
+    "cs.LG",
+    "eess.SY"
+   ],
+   "published": "2026-11-20T19:55:23+00:00",
+   "url": "https://arxiv.org/abs/2611.28274",
+   "pdf": "https://arxiv.org/pdf/2611.28274",
+   "score": 0.5712,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5558,
+    "meters": 0.5456,
+    "methods": 0.5712
+   }
+  }
+ ]
+}
