@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "generated_at": "2026-11-24T04:17:42+00:00",
+ "generated_at": "2026-11-24T10:54:23+00:00",
  "model": "BAAI/bge-small-en-v1.5",
  "interests": [
   {
@@ -16,8 +16,36 @@
    "name": "Time-series anomaly detection"
   }
  ],
- "count": 19,
+ "count": 32,
  "papers": [
+  {
+   "id": "2611.30385",
+   "version": 1,
+   "title": "Toward a Scalable and Adaptive Evaluation Measure for Time Series Anomaly Detection",
+   "abstract": "Time Series Anomaly Detection (TSAD) is a fundamental task for time series analytics. Unlike other domains, where anomaly detection mainly focuses on point-based anomalies, TSAD must also handle range-based anomalies. Nevertheless, TSAD methods are commonly evaluated with measures inherited from classification, such as Precision and Recall, which require a threshold, or with threshold-independent ones, such as AUC, which ignore the temporal aspect of anomalies. To address these issues, the Volume Under the Surface (VUS) measure scores detectors across all thresholds and a range of buffer lengths and has been widely adopted. However, VUS has two limitations. First, VUS is computationally expensive, requiring 7 hours and 38 minutes to evaluate 32 detectors on the 870 TSB-AD time series. Second, VUS applies the same buffer lengths to every anomaly and detector, which can yield over-optimistic scores that hinder discrimination between accurate and mediocre detectors. We first introduce FastVUS, which computes VUS exactly and on average 76x faster by (i) computing all buffers in parallel, (ii) pruning irrelevant buffers for the existence reward, (iii) casting the confusion matrix as a single reduced matrix multiplication, (iv) computing VUS for every buffer length in one pass, and (v) discarding non-anomalous regions with a global mask. We also develop FastVUS-GPU, which recasts every step as batched tensor operations and reaches an average 304x speedup with a maximum error of $5\\times10^{-3}$. Building on FastVUS, we introduce AutoVUS, an adaptive extension that compares each detection against a random baseline and selects the buffer length that maximizes the gain over it. Our case studies show that AutoVUS reduces over-optimistic scores and better separates accurate from mediocre detectors. We release FastVUS and AutoVUS as open source to promote time-aware evaluation at scale.",
+   "authors": [
+    "Emmanouil Sylligardos",
+    "Mingyi Huang",
+    "John Paparrizos",
+    "Pierre Senellart",
+    "Paul Boniol"
+   ],
+   "primary": "cs.DB",
+   "categories": [
+    "cs.DB",
+    "cs.LG"
+   ],
+   "published": "2026-11-23T09:46:50+00:00",
+   "url": "https://arxiv.org/abs/2611.30385",
+   "pdf": "https://arxiv.org/pdf/2611.30385",
+   "score": 0.8276,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7013,
+    "meters": 0.7133,
+    "methods": 0.8276
+   }
+  },
   {
    "id": "2611.28348",
    "version": 1,
@@ -79,6 +107,32 @@
    }
   },
   {
+   "id": "2611.30635",
+   "version": 1,
+   "title": "Robust Mixture Regressions and EM Algorithms via the Log-Truncated Likelihood",
+   "abstract": "Finite mixture regression is sensitive to gross residual outliers when component errors are modeled by Gaussian likelihoods. We propose a log-truncated likelihood for mixture regression. The likelihood is obtained by integrating a logarithmically growing Catoni-type score and exponentiating the negative integrated score, producing a proper location-scale density with a reusable normalizing constant and EM-compatible responsibilities. Although the induced density itself is lighter than exponential and has all moments, its likelihood score grows only logarithmically; this distinction yields a smooth residual-robust estimator that can be stably fitted when the data are generated from Laplace, Pareto, or even infinite-variance heavy-tailed error mechanisms. We derive deterministic tail envelopes, the location-scale decomposition of the normalizing constant, a rejection sampler, a lower-bounded mixing-weight update, a unique componentwise scale update, and a constrained generalized EM algorithm. The theory gives monotonicity of the observed likelihood and a local population-to-sample perturbation guarantee under standard compactness, contraction, and numerical-accuracy conditions. Simulations and applications to insurance claim severity and crypto return innovations show that the method is a competitive smooth likelihood-based alternative to Gaussian and pseudo-robust EM procedures, especially in residual-outlier regimes, while also clarifying its limitations under high leverage and extremely adversarial contamination.",
+   "authors": [
+    "Huiming Zhang",
+    "Longkun Hao"
+   ],
+   "primary": "stat.ME",
+   "categories": [
+    "stat.ME",
+    "cs.LG",
+    "math.ST"
+   ],
+   "published": "2026-11-23T13:01:35+00:00",
+   "url": "https://arxiv.org/abs/2611.30635",
+   "pdf": "https://arxiv.org/pdf/2611.30635",
+   "score": 0.7499,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6511,
+    "meters": 0.6271,
+    "methods": 0.7499
+   }
+  },
+  {
    "id": "2611.28655",
    "version": 1,
    "title": "UACR: Uncertainty-Aware Collaborative Routing for Explainable Industrial Anomaly Inspection",
@@ -102,6 +156,29 @@
     "water": 0.7298,
     "meters": 0.6509,
     "methods": 0.7374
+   }
+  },
+  {
+   "id": "2611.29903",
+   "version": 1,
+   "title": "From Patterns to Threats: A Deep Learning Model for Anomaly Detection in Cyber-Physical Systems",
+   "abstract": "Cyber-physical systems increasingly rely on interconnected sensing, communication, and control components, creating a need for reliable detection of abnormal behavior. This study proposes a Deep Autoencoder for anomaly detection using the Edge-IIoTset dataset. After preprocessing the full dataset, 2,219,201 observations and 38 numerical features were retained. The proposed model employed a 38-24-12-6-12-24-38 encoder-decoder architecture and was trained exclusively on normal observations to learn representative patterns of expected system behavior. Anomaly decisions were based on reconstruction error, with the classification threshold selected independently from validation data by maximizing the F1-score. To assess model stability, five independent runs were conducted using different random seeds, and results were reported as mean plus or minus standard deviation. The proposed Deep Autoencoder achieved an accuracy of 0.9195 plus or minus 0.0061, precision of 0.9602 plus or minus 0.0204, recall of 0.7348 plus or minus 0.0095, F1-score of 0.8325 plus or minus 0.0121, ROC-AUC of 0.8825 plus or minus 0.0339, and PR-AUC of 0.8640 plus or minus 0.0286. Compared with a Simple Autoencoder baseline, the proposed model improved recall and F1-score while reducing the false positive rate. The results demonstrate that the proposed reconstruction-based representation learning approach can provide an effective and reproducible method for detecting anomalous behavior in cyber-physical environments.",
+   "authors": [
+    "Kayode L. Ogunsusi"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-23T01:58:50+00:00",
+   "url": "https://arxiv.org/abs/2611.29903",
+   "pdf": "https://arxiv.org/pdf/2611.29903",
+   "score": 0.7231,
+   "interest": "methods",
+   "scores": {
+    "water": 0.716,
+    "meters": 0.6674,
+    "methods": 0.7231
    }
   },
   {
@@ -134,6 +211,33 @@
     "water": 0.6585,
     "meters": 0.6226,
     "methods": 0.7211
+   }
+  },
+  {
+   "id": "2611.30020",
+   "version": 1,
+   "title": "Automated Neural Network Auditing (ANNA) for Energy Market Settlements: A Machine and Reinforcement Learning-Based Approach",
+   "abstract": "The integration of segmented energy markets into Independent System Operators (ISOs) like CAISO and MISO has increased settlement complexity. Automated transaction processing creates challenges for evaluating accuracy, compliance, and financial integrity. Traditional rule-based manual auditing is inefficient, error-prone, and cannot handle the data volume from automated markets.This research proposes Automated Neural Network Auditing (ANNA), a machine and reinforcement learning framework for settlement auditing via anomaly prioritization. ANNA integrates statistical anomaly detection, K-Nearest Neighbors (KNN), clustering, and Deep Q-Network (DQN) reinforcement learning to flag potentially anomalous transactions from historical market data. The approach is evaluated as an analyst-support tool for prioritizing transactions needing further audit review.ANNA was tested against traditional statistical methods, clustering-based techniques, and supervised/reinforcement learning models. The study used three years of CAISO settlement data over 63 million source records across 32 charge codes and multiple counterparties. After preprocessing, approximately 2.9 million labeled transactions formed the working dataset, with model-specific subsets used for training and evaluation. Performance was assessed using precision, recall, computational efficiency, and false-negative detection.ANNA outperforms traditional methods by identifying hidden relationships in settlement data, while standard deviation thresholds, K-Means, KNN, and Q-Learning performed poorly across key metrics. The result is a scalable solution integrating machine and reinforcement learning for automated auditing of energy market settlements, contributing computationally efficient anomaly prioritization to settlement-auditing workflows.",
+   "authors": [
+    "J. R. Rivadeneyra",
+    "I. Lee",
+    "F. Nugen",
+    "S. M. Srinivasan"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "eess.SY"
+   ],
+   "published": "2026-11-23T04:21:31+00:00",
+   "url": "https://arxiv.org/abs/2611.30020",
+   "pdf": "https://arxiv.org/pdf/2611.30020",
+   "score": 0.7047,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6715,
+    "meters": 0.6879,
+    "methods": 0.7047
    }
   },
   {
@@ -173,6 +277,32 @@
    }
   },
   {
+   "id": "2611.30897",
+   "version": 1,
+   "title": "Predicting Rare-Mode Collapse in Recursive Generative Training from Single-Generation Calibration",
+   "abstract": "Recursive generative training can preserve sample counts in a rare region while silently eroding its characteristic core. Mapping this finite-horizon collapse across real-data quotas, rare prevalences, and feedback perturbations via exhaustive multi-generation chains is computationally prohibitive. We develop a decoupled framework that forecasts multi-generation collapse probabilities and locates operating risk boundaries from independent single-generation conditional fits alone. Pairing an exact three-source multinomial count law with single-generation response banks propagates count marginals in closed form, backed by explicit calibration-error and boundary-resolution bounds. For additive Gaussian perturbations, we further prove that equal-variance all-row and sparse policies reverse their boundary-crossing order at a unique hyperplane distance. Across a 2,178-setting count benchmark, exact propagation cuts risk mean absolute error (MAE) from 1.85 to 0.49 percentage points (pp). Across ten two-dimensional learners, calibration achieves 2.60--5.69~pp six-round core MAE on nine stationary learners (65--81\\% below an unperturbed baseline), diagnoses non-stationary outlier drift in standard DDIM (16.38~pp) via a stability probe, and resolves the predicted six-round geometric reversal. On Fashion-MNIST latent flow-matching chains, calibration outperforms direct-chain Gaussian-process interpolation at lower fit budgets and tracks the 20\\% latent-perturbation boundary shift (3.14 versus 10.78~pp MAE for proportion copying) driven by opposing inflow to the rare region and outflow from its core.",
+   "authors": [
+    "Jingyao Zhang",
+    "Mingyu Du",
+    "Lu Han"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-23T16:00:09+00:00",
+   "url": "https://arxiv.org/abs/2611.30897",
+   "pdf": "https://arxiv.org/pdf/2611.30897",
+   "score": 0.694,
+   "interest": "methods",
+   "scores": {
+    "water": 0.619,
+    "meters": 0.5963,
+    "methods": 0.694
+   }
+  },
+  {
    "id": "2611.28611",
    "version": 1,
    "title": "Action-Conditioned Transition Irreversibility for Out-of-Distribution Detection in Reinforcement Learning",
@@ -196,6 +326,34 @@
     "water": 0.6398,
     "meters": 0.6181,
     "methods": 0.6735
+   }
+  },
+  {
+   "id": "2611.30289",
+   "version": 1,
+   "title": "Temporal Leakage Distorts the TGB Node Affinity Leaderboard: A Point-in-Time Audit",
+   "abstract": "Node affinity prediction in the Temporal Graph Benchmark (TGB) asks how a node's future interactions will be distributed over other nodes. On this task, methods that reuse past ground-truth labels often outperform temporal graph neural networks, and the state of the art builds on them. Such comparisons assume a point-in-time correct evaluation, in which a model receives only information available at prediction time. Drawing on as-of joins and bitemporal databases, we formalize this requirement by distinguishing when a label must be predicted, its query time, from when it is fully determined, its availability time, and we audit the four TGB node affinity datasets and their evaluation loop with model-agnostic tools. None of the four meets it. On three datasets, each label summarizes a single day about five days after its timestamp, not the documented following week, yet the loop feeds it back right after that timestamp; on the fourth, the loop processes the edges from which each label is computed before predicting it. Under a drop-in leakage-free protocol, every method whose inputs leak loses up to 17% of its NDCG@10, the advantage of past labels over the interaction stream nearly vanishes or reverses, and both the best configuration of the state of the art and the rankings change; a blend of training-free long-memory statistics, with weights fit on validation data, matches or exceeds the state of the art under both protocols. Point-in-time correctness should therefore be built into benchmarks, and our tools carry over to other benchmarks whose labels aggregate event streams over time windows.",
+   "authors": [
+    "Yuhang Wang",
+    "Dongmei Li",
+    "Yuze Sun",
+    "Xiaolong Qu",
+    "Yanxiang Wang",
+    "Lei Yao"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-23T08:44:40+00:00",
+   "url": "https://arxiv.org/abs/2611.30289",
+   "pdf": "https://arxiv.org/pdf/2611.30289",
+   "score": 0.6646,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6248,
+    "meters": 0.6112,
+    "methods": 0.6646
    }
   },
   {
@@ -224,6 +382,31 @@
     "water": 0.6037,
     "meters": 0.6177,
     "methods": 0.6645
+   }
+  },
+  {
+   "id": "2611.31096",
+   "version": 1,
+   "title": "Leakage-Safe Auditing of Attribution-Driven Data Curation in Medical Imaging",
+   "abstract": "When can an attribution-derived anomaly justify changing a medical-imaging training set? We formulate attribution-driven curation as three separately testable claims: anomaly detection, harmfulness estimation, and intervention utility. We test the first and third using a patient-disjoint, identifier-preserving audit of a 3D convolutional classifier for computed tomography angiography aneurysm candidates. We identify 232 exactly zero-valued arrays among 1,201 positive patches, including 170 training positives, and invalidate a historical 321-patch attention-failure subgroup whose identifier-free records were joined to files by position. On the held-out test set, GradCAM++ spatial concentration is central for every candidate class, reversing the historical pattern. GradCAM++ and Integrated Gradients show negative rank-order agreement for positives, limiting method-independent anatomical interpretation. Across five paired training seeds, removing the 170 corrupted training positives yields AUC 0.9617 +/- 0.0044 versus 0.9652 +/- 0.0039 for full-data training (difference -0.0035; 95% CI -0.0082 to 0.0007). Excluding 34 raw-zero test positives widens rather than closes the gap, countering a blank-memorization explanation. Budget-matched random-removal controls suggest the result is not simply an effect of reducing training size. Input corruption does not necessarily imply that deletion improves generalization. Our framework makes leakage control, sample identity, and intervention testing explicit in attribution-driven medical-imaging data curation.",
+   "authors": [
+    "Malay Phadke",
+    "Akshay Gokhale"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI"
+   ],
+   "published": "2026-11-23T17:39:46+00:00",
+   "url": "https://arxiv.org/abs/2611.31096",
+   "pdf": "https://arxiv.org/pdf/2611.31096",
+   "score": 0.6641,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6227,
+    "meters": 0.5596,
+    "methods": 0.6641
    }
   },
   {
@@ -346,6 +529,32 @@
    }
   },
   {
+   "id": "2611.30008",
+   "version": 1,
+   "title": "SA-GLRT-D: Sidelobe-Aware GLRT-Based Detector for FMCW Radar",
+   "abstract": "This paper investigates adaptive detection for frequency-modulated continuous-wave (FMCW) radar in multi-target complex scenarios, where reference-cell contamination, spectral leakage from the cell under test (CUT), and the resulting sidelobe interference severely degrade detection performance. A sidelobe-aware detector based on the generalized likelihood ratio test (GLRT), termed SA-GLRT-D, is proposed. Unlike conventional filtering-then-constant false alarm rate (CFAR) schemes, the proposed method explicitly accounts for the non-ideal frequency-domain energy spreading of the CUT induced by the finite-window effect. Accordingly, conventional single-cell target detection is extended to local-region detection, and decision statistic construction, CUT-related parameter estimation, and sidelobe interference suppression are jointly accomplished within a unified hypothesis-testing framework. Furthermore, to reduce computational complexity, a fast implementation of SA-GLRT-D is developed, together with a dedicated parameter initialization strategy to enhance the stability of numerical optimization. Simulation and real-measurement results demonstrate that the proposed method achieves high-accuracy target detection while maintaining a constant false alarm rate, with favorable computational efficiency.",
+   "authors": [
+    "Jiachen Zhu",
+    "Fangjiong Chen",
+    "Jie Wu",
+    "Ming Xia"
+   ],
+   "primary": "eess.SP",
+   "categories": [
+    "eess.SP"
+   ],
+   "published": "2026-11-23T04:10:56+00:00",
+   "url": "https://arxiv.org/abs/2611.30008",
+   "pdf": "https://arxiv.org/pdf/2611.30008",
+   "score": 0.6351,
+   "interest": "water",
+   "scores": {
+    "water": 0.6351,
+    "meters": 0.5991,
+    "methods": 0.61
+   }
+  },
+  {
    "id": "2611.28260",
    "version": 1,
    "title": "Neural Fidelity Calibration: Turning Field Anomalies into Simulation Fine-Tuning",
@@ -394,6 +603,84 @@
    }
   },
   {
+   "id": "2611.30034",
+   "version": 1,
+   "title": "STUN-Bench: Truly Unseen Tools for Evaluating Shared Tool Experience",
+   "abstract": "A tool router retrieves a few candidate tools per request and lets a language model choose. Methods that share experience across organizations add past requests about each tool to what the router retrieves. StableToolBench calls some of its test groups tests on \"unseen\" tools, yet the ToolBench instruction pool, which retrievers and experience-sharing methods learn from, contains every test query and labels every gold tool of the two single-tool groups among them. We release STUN-Bench (StableToolBench, Truly UNseen), a split whose experience pool has no item that labels or names 172 held-out tools. Unseen here means absent from shared experience and retriever training data, not from pretraining. On the split we find crowding: experience pooled from five simulated clients, added to an index of tool descriptions, outranks the descriptions of tools no client has used, which then often drop out of the candidate list. Under the Jina-v2 retriever, routing accuracy on held-out tools falls from 0.534 to 0.278. Retrievers trained for tool retrieval lose much less, and keeping experience in a separate index recovers most of the loss under Jina-v2. The split also reverses a conclusion: with every test tool labeled in the pool and our default leak filter applied, shared experience beats descriptions alone; on STUN-Bench it falls below them. The split, leak filter and evaluation harness are available at https://github.com/<org>/STUN-Bench.",
+   "authors": [
+    "Abhijit Chakraborty",
+    "Ni Trieu",
+    "Vivek Gupta"
+   ],
+   "primary": "cs.SE",
+   "categories": [
+    "cs.SE",
+    "cs.CL",
+    "cs.IR",
+    "cs.LG"
+   ],
+   "published": "2026-11-23T04:42:35+00:00",
+   "url": "https://arxiv.org/abs/2611.30034",
+   "pdf": "https://arxiv.org/pdf/2611.30034",
+   "score": 0.6242,
+   "interest": "methods",
+   "scores": {
+    "water": 0.617,
+    "meters": 0.5909,
+    "methods": 0.6242
+   }
+  },
+  {
+   "id": "2611.30736",
+   "version": 1,
+   "title": "Object-Centric Differentiable Logic Networks for Abstract Visual Reasoning",
+   "abstract": "Human visual intelligence enables efficient reasoning capabilities on abstract visual problems with bounded cognitive resources and minimal experience, and yields remarkable generalization to novel problems with its ability to draw relational analogies and modular abstractions. In contrast, deep learning models require exhaustive task-specific training on large datasets, making them prone to exploiting visual shortcuts and resulting in poor generalization. While neuro-symbolic approaches attempt to bridge this gap by decoupling perception from reasoning with dedicated computation units, existing solutions rely either on explicit rule supervision or parameter-heavy transformer architectures that reintroduce the computational inefficiencies they aim to solve. We introduce Slot-Dwn to address these limitations, a novel neuro-symbolic architecture that unifies unsupervised object-centric perception with logic-based symbolic reasoning. Our model utilizes a Multi-Head Differentiable Weightless Network (MH-DWN) that performs efficient reasoning entirely in Boolean space using look-up tables (LUTs). Our framework reduces visual perception complexity and introduces a LUT-based relational bottleneck with sparse input routing to minimize computational overhead. We evaluate Slot-Dwn across various abstract visual reasoning benchmark tasks targeting systematic rule generalization, sample-efficient anomaly detection, and multi-relational reasoning. We demonstrate that Slot-Dwn yields competitive performance with respect to the state-of-the-art, under extreme out-of-distribution regimes, while requiring up to 52% fewer trainable parameters, with significantly faster convergence.",
+   "authors": [
+    "Hanne Say Eren",
+    "Ana Ezquerro",
+    "Ozan Özdenizci"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.CV"
+   ],
+   "published": "2026-11-23T14:13:10+00:00",
+   "url": "https://arxiv.org/abs/2611.30736",
+   "pdf": "https://arxiv.org/pdf/2611.30736",
+   "score": 0.6104,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5799,
+    "meters": 0.5359,
+    "methods": 0.6104
+   }
+  },
+  {
+   "id": "2611.30253",
+   "version": 1,
+   "title": "Voyag: Joint Multi-Intent Detection and Execution-Relation Classification for In-Vehicle Voice Assistants",
+   "abstract": "An in-vehicle voice assistant must decide not only which intents an utterance contains but also how co-active intents may be executed: concurrently, in a fixed order, or not at all without arbitration. We present Voyag, a single-forward decision model that jointly predicts ten controlled vehicle-intent slots and a three-way execution relation (parallel, sequential, mutually exclusive) over each co-active intent pair. Voyag combines a multilingual ModernBERT-style encoder (mmBERT-base, 306.9M parameters), a typed per-slot choice head, and a lightweight GroupCalibration relation head (1.61M parameters) that consumes marker hidden states, pooled context, explicit resource-requirement profiles, and symmetrized outer-product conflict features. All objectives are optimized in one joint loss: soft cross-entropy over slot choices, focal cross-entropy over relations, and a mutex-consistency penalty. On a synthetic Chinese vehicle-life benchmark with semantic scene-level splits and a leakage audit (30,017 / 3,473 / 5,000 groups), validation-only selection yields 0.9893 slot accuracy and 0.0526 expected calibration error over 50,000 slot decisions. Conditioned on gold intents, the relation head reaches 0.8548 accuracy, 0.8473 macro-F1, and 0.6062 mutually-exclusive recall over 4,000 pairs; end to end with one encoder forward it reaches 0.8530 accuracy and 0.8464 macro-F1. Against a two-stage rule pipeline, the aggregate end-to-end gain is small and borderline, so we claim no aggregate advantage; the learned head's advantage lies in sequential and parallel recall where surface rules are blind. We report rule baselines with a tautology disclosure and a held-out thermal conflict failure.",
+   "authors": [
+    "Sen Luo"
+   ],
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL",
+    "cs.AI"
+   ],
+   "published": "2026-11-23T08:19:59+00:00",
+   "url": "https://arxiv.org/abs/2611.30253",
+   "pdf": "https://arxiv.org/pdf/2611.30253",
+   "score": 0.6101,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5846,
+    "meters": 0.5703,
+    "methods": 0.6101
+   }
+  },
+  {
    "id": "2611.28502",
    "version": 1,
    "title": "Shoonya: Zero-Socket In-Process Small Language Models for Graph Databases with Schema-Epoch KV Caching, Live Catalog Logit Masking, and Verifier-Advantage Distillation",
@@ -417,6 +704,32 @@
     "water": 0.5837,
     "meters": 0.5734,
     "methods": 0.6077
+   }
+  },
+  {
+   "id": "2611.31014",
+   "version": 1,
+   "title": "Demographic Encoding is Not Exposure: Fairness and Privacy in Chest X-ray Foundation Models",
+   "abstract": "Medical foundation models encode patient demographics and can reveal whether a patient was in the training set, and these properties are often treated as one problem. We tested whether they are aligned by measuring demographic encoding, diagnostic fairness gaps and membership-inference vulnerability on the same models. We trained 200 linear or multilayer-perceptron (MLP) heads on frozen BiomedCLIP, DINOv2 and RAD-DINO embeddings, with three seeds, and audited them on CheXpert and NIH ChestX-ray14. Demographic encoding explained almost no variance in patient vulnerability, and all 72 CheXpert associations were statistically equivalent to zero. Erasing linearly decodable demographics left leakage unchanged but reduced age-related underdiagnosis gaps. Leakage depended instead on head capacity and training length. On RAD-DINO, a linear head reached a membership-inference area under the curve (AUC) of 0.694, compared with 0.907 for a 30-epoch MLP, at similar test performance. Fairness and privacy should therefore be audited separately, and linear heads or shorter training reduce leakage with little or no loss of utility. The code is available on GitHub for public use.",
+   "authors": [
+    "Sahar Askari",
+    "Amin Golnari"
+   ],
+   "primary": "eess.IV",
+   "categories": [
+    "eess.IV",
+    "cs.CV",
+    "cs.LG"
+   ],
+   "published": "2026-11-23T16:59:11+00:00",
+   "url": "https://arxiv.org/abs/2611.31014",
+   "pdf": "https://arxiv.org/pdf/2611.31014",
+   "score": 0.6018,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5387,
+    "meters": 0.5326,
+    "methods": 0.6018
    }
   },
   {
@@ -547,6 +860,31 @@
     "water": 0.5558,
     "meters": 0.5456,
     "methods": 0.5712
+   }
+  },
+  {
+   "id": "2611.30066",
+   "version": 1,
+   "title": "Diagnostic Accuracy Is Not Deployment Value: Decision-Aligned Reliability Evaluation for Foundation MLIPs in Materials Discovery",
+   "abstract": "In AI-guided materials discovery, machine-learning models increasingly decide which candidate materials should receive expensive first-principles or experimental evaluation. Standard reliability metrics such as uncertainty, calibration, novelty, and ranking accuracy evaluate properties of the predictions, but success on these metrics does not necessarily imply a better downstream screening decision. We study this mismatch for foundation machine-learned interatomic potentials (MACE-MP, CHGNet, Orb V3) used to rank candidate crystal structures before DFT verification. We evaluate three representative reliability interventions (novelty detection, sparse DFT calibration, and chemistry-level ranking audits) using a deployment objective that measures how much DFT can be avoided while maintaining a required recall of near-hull candidates. Across all three, a reliability signal can succeed on its immediate target without improving the final screening decision: novelty detects distribution shift but weakly ranks failure severity; calibration can improve pooled ranking metrics while leaving screening unchanged or degrading it; and sparse audits identify MLIP-chemistry combinations with poor ranking reliability without yielding a robustly beneficial routing policy. A two-oracle analysis further shows that the source of failure depends on the screening decision itself: under formation-energy screening, even perfect knowledge of average ranking reliability can select the wrong model, whereas in the evaluated hull-aligned variant the oracle target becomes decision-aligned but finite-budget audits still fail to realize the value. Reliability should be evaluated relative to the decision it supports: the relevant question is not whether a model is uncertain or inaccurate, but whether acquiring and acting on additional information will improve the final discovery decision enough to justify its cost.",
+   "authors": [
+    "Harry Sevi",
+    "Joonatan E. M. Laulainen"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cond-mat.mtrl-sci"
+   ],
+   "published": "2026-11-23T05:15:52+00:00",
+   "url": "https://arxiv.org/abs/2611.30066",
+   "pdf": "https://arxiv.org/pdf/2611.30066",
+   "score": 0.5669,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5497,
+    "meters": 0.5266,
+    "methods": 0.5669
    }
   }
  ]
