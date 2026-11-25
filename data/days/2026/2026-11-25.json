@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "generated_at": "2026-11-25T03:02:11+00:00",
+ "generated_at": "2026-11-25T09:51:25+00:00",
  "model": "BAAI/bge-small-en-v1.5",
  "interests": [
   {
@@ -16,8 +16,90 @@
    "name": "Time-series anomaly detection"
   }
  ],
- "count": 17,
+ "count": 28,
  "papers": [
+  {
+   "id": "2611.32714",
+   "version": 1,
+   "title": "FourStat: A Dual AutoEncoder Leveraging Frequency and Stationarity for Time Series Anomaly Detection",
+   "abstract": "While numerous studies have focused on multivariate time series anomaly detection, many existing methods perform poorly or are not directly applicable to univariate settings. We introduce FourStat, a dual-model framework for univariate time series anomaly detection that combines two complementary approaches. The Fourier Autoencoder (FAE) captures global patterns like seasonality through frequency-domain analysis, while the Stationary Autoencoder (SAE) focuses on local structures by enforcing statistical stationarity. We also propose a new evaluation metric called Perfect Point that assesses whether perfect F1-scores can be achieved directly from anomaly scores, eliminating thresholding subjectivity. Results demonstrate that FourStat outperforms existing baselines, particularly on challenging anomaly types, while the new metric provides clearer insights into model performance gaps and advantages.",
+   "authors": [
+    "Saman Hadian",
+    "Ramtin Moslemi",
+    "Mohammad Mohammadi",
+    "Sarina Heshmati",
+    "Siavash Ahmadi",
+    "Babak Hossein Khalaj",
+    "Mohammad Hossein Rohban"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-24T14:37:50+00:00",
+   "url": "https://arxiv.org/abs/2611.32714",
+   "pdf": "https://arxiv.org/pdf/2611.32714",
+   "score": 0.8551,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7159,
+    "meters": 0.7303,
+    "methods": 0.8551
+   }
+  },
+  {
+   "id": "2611.32033",
+   "version": 1,
+   "title": "Scale-Robust and Global-Aware Representation Learning for Multivariate Time Series Anomaly Detection",
+   "abstract": "Multivariate time series anomaly detection (MTSAD) is an essential task for identifying abnormal system behaviors and supporting reliable operations across diverse real-world applications. Despite substantial advances in MTSAD, two key challenges in representation learning remain underexplored: (C1) how to learn scale-robust temporal representations that capture anomalies across different temporal scales and (C2) how to learn global-aware relational representations that capture inter-series dependencies by incorporating series-level global characteristics beyond local windows. To address these challenges, we propose STAGER, a novel method that jointly learns two complementary representations: scale-robust temporal and global-aware relational representations. Specifically, STAGER employs (1) a scale-robust temporal encoder that constructs a multi-scale temporal directed acyclic graph (DAG) to learn scale-robust temporal representations and (2) a global-aware relational encoder that incorporates learnable series-level global embeddings into the temporal representations and models inter-series relationships through graph neural networks. Two complementary auxiliary objectives further enhance the distinctiveness of the global embeddings. Extensive experiments on three real-world benchmark datasets demonstrate that STAGER achieves the best average rank among ten evaluated MTSAD methods across three evaluation metrics. Ablation and sensitivity analyses validate the effectiveness of the proposed components and auxiliary objectives, while efficiency evaluations demonstrate that STAGER achieves a favorable trade-off between detection performance and inference time compared with existing methods.",
+   "authors": [
+    "Gyuwon Lee",
+    "Saejoon Park",
+    "Won-Seok Hwang",
+    "Bogoan Kim",
+    "Yunyong Ko"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-24T06:15:23+00:00",
+   "url": "https://arxiv.org/abs/2611.32033",
+   "pdf": "https://arxiv.org/pdf/2611.32033",
+   "score": 0.8324,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7089,
+    "meters": 0.713,
+    "methods": 0.8324
+   }
+  },
+  {
+   "id": "2611.32598",
+   "version": 1,
+   "title": "On the Effectiveness of Resampling for Supervised Graph Anomaly Detection",
+   "abstract": "Class imbalance and scarce anomaly labels motivate oversampling in supervised graph anomaly detection (GAD), but its benefits across detectors and benchmarks remain unclear. In the low-label setting of GADBench, with 20 labelled anomalies and 80 labelled normal nodes, we compare class weighting and up to six oversampling strategies in ten detector configurations from three families: graph neural networks (GNNs), tree ensembles on neighbourhood-aggregated features, and tabular foundation models, on 17 datasets. On the eight datasets with organic anomalies, no strategy has a statistically resolved average gain in any configuration, and which nodes are labelled matters as much as the strategy. On the nine datasets with injected anomalies, Gaussian-noise oversampling (ROSE) gains up to 5.2 AUPRC points in four of the six tree and tabular foundation model configurations, and in all six only on attribute-swap anomalies; in four GNNs its gain is not distinguishable from zero. This gain depends on the injection recipe, which gives swapped nodes an atypical feature norm: it is no longer distinguishable from zero when the swap uses a single random donor or preserves the norm, although most detectors then also stop detecting the swaps. Over the 17 datasets, tuning the tree detectors adds about three points, as much as ROSE, and cuts ROSE's gain by about half or more. With the same source nodes and class weight, sampled graph views are not distinguishable from plain copies of those nodes. We recommend tuning baselines, repeating labelled splits, reporting organic and injected anomalies separately, and checking label-free degree and feature-norm baselines.",
+   "authors": [
+    "Cyril Perosino",
+    "Rino Di Chiara",
+    "Hamida Seba"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-24T13:36:12+00:00",
+   "url": "https://arxiv.org/abs/2611.32598",
+   "pdf": "https://arxiv.org/pdf/2611.32598",
+   "score": 0.7615,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6797,
+    "meters": 0.6467,
+    "methods": 0.7615
+   }
+  },
   {
    "id": "2611.31319",
    "version": 1,
@@ -66,6 +148,35 @@
     "water": 0.7006,
     "meters": 0.6769,
     "methods": 0.7321
+   }
+  },
+  {
+   "id": "2611.32138",
+   "version": 1,
+   "title": "VIDE : Training-Free Video Anomaly Detection via Visual Intrinsic Distribution Estimation",
+   "abstract": "In embedding-based video anomaly detection (VAD), normal clips can have high similarity to anomalous descriptions, an anomaly bias that leads to false positives. Methods such as PRISM mitigate this bias by measuring deviations from a normality reference along anomaly directions. Both the normality reference and the anomaly directions are derived from text and shared across videos, although normal activity and the appearance of anomalies vary across scenes. The resulting scores are also sensitive to prompt selection. To address these limitations, we propose Visual Intrinsic Distribution Estimation (VIDE), a training-free framework that adapts text-derived scoring to each test video using frozen clip embeddings. VIDE estimates normal scene content from clips with low initial anomaly scores and uses this estimate to partially correct the textual reference. It then rescales category responses, penalizes clips with strong responses across categories, and refines the anomaly directions using high-scoring clips. VIDE averages scores across prompt views to reduce sensitivity to prompt selection and fuses scores from two frozen encoders. With both encoders, VIDE improves AUC over the best PRISM result by $1.5$, $1.9$, and $3.5$ points on UCF-Crime, XD-Violence, and MSAD, respectively, and AP by $6.5$ points on XD-Violence and $9.3$ points on MSAD. VIDE yields the highest AUC among the compared training-free methods on all three benchmarks and the highest reported AUC among all compared methods on XD-Violence and MSAD. Our code is included in the supplementary material and will be made publicly available.",
+   "authors": [
+    "Kevin D. Nguetche",
+    "Atif Belal",
+    "Lilian Hollard",
+    "Eric Granger",
+    "Marco Pedersoli"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG"
+   ],
+   "published": "2026-11-24T07:53:26+00:00",
+   "url": "https://arxiv.org/abs/2611.32138",
+   "pdf": "https://arxiv.org/pdf/2611.32138",
+   "score": 0.722,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6421,
+    "meters": 0.5991,
+    "methods": 0.722
    }
   },
   {
@@ -148,6 +259,89 @@
    }
   },
   {
+   "id": "2611.32679",
+   "version": 1,
+   "title": "Adaptive Multi-kernel Correntropy Kalman Filter: A Variational Bayesian Approach",
+   "abstract": "This paper proposes an adaptive multi-kernel correntropy Kalman filter (AMCKF) for robust state estimation in the presence of heavy-tailed measurement noises and outliers. The multi-kernel correntropy loss is reformulated via half-quadratic (HQ) duality into a quadratic form with auxiliary weights, enabling efficient Kalman-like recursions. We establish a rigorous variational Bayesian framework under the mean-field assumption, deriving closed-form coordinate ascent variational inference updates for joint state and kernel width estimation. To enable online implementation, AMCKF is then proposed as an efficient single-pass approximation of the exact coordinate ascent variational inference (CAVI), where the state and auxiliary variables are updated iteratively via IRLS, followed by a closed-form kernel width update. A forgetting mechanism is designed to prevent over-confidence and ensure long-term adaptability. Simulations on target tracking and IMU attitude estimation demonstrate that the proposed AMCKF significantly outperforms standard KF, VBKF, Student's t-based KF, and fixed-kernel MKCKF in scenarios with sparse outliers, heavy-tailed noise, and mixed disturbances, while maintaining optimal performance under Gaussian conditions.",
+   "authors": [
+    "Zhen Zeng",
+    "Shilei Li",
+    "Dawei Shi",
+    "Ling Shi"
+   ],
+   "primary": "stat.AP",
+   "categories": [
+    "stat.AP",
+    "stat.ME"
+   ],
+   "published": "2026-11-24T14:23:25+00:00",
+   "url": "https://arxiv.org/abs/2611.32679",
+   "pdf": "https://arxiv.org/pdf/2611.32679",
+   "score": 0.6319,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6085,
+    "meters": 0.6127,
+    "methods": 0.6319
+   }
+  },
+  {
+   "id": "2611.32012",
+   "version": 1,
+   "title": "Marketing-Bench: Evaluating Frontier Models and Agents on Real-World Marketing Capabilities",
+   "abstract": "As frontier AI models and agents are deployed more broadly in the real world, marketing is emerging as one of their largest applications. Marketing teams use AI models to produce brand assets like website copy and social media posts, while consumers' agents autonomously discover products, research purchases, and navigate websites. However, evaluating marketing capability is difficult because unlike areas like software development, customer support, or legal review where ground truth is more objectively defined, marketing is subjective, and output quality is judged based on taste and brand. We introduce Marketing-Bench, the first open-source marketing benchmark, which pairs discriminative tasks (detecting brand anomalies) with generative tasks (remediation), while keeping answers verifiable. Marketing-Bench tests five key pillars: factuality, consistency, coherence, structure, and brand voice, all crucial elements for good brand content on the web. We find that frontier models are far from solving the benchmark: the average model corrects only about half of the introduced issues (53.1%), whereas a marketing expert corrects nearly all of them. Even the strongest, GPT-6 Astra, reaches only 74.8%, with Claude Opus and Fable, Gemini Argon, and GPT-6 Sol falling well short. These findings suggest that marketing capabilities are less mature than adoption implies, and that principled evaluation should precede further scaling of usage. Marketing-Bench is a first step toward \"frontier marketing models\" with superhuman marketing performance.",
+   "authors": [
+    "Sumanth Balaji",
+    "Siddharth Gupta",
+    "Ameet Deshpande",
+    "Vishvak Murahari",
+    "Karthik Narasimhan"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "cs.CL"
+   ],
+   "published": "2026-11-24T05:57:13+00:00",
+   "url": "https://arxiv.org/abs/2611.32012",
+   "pdf": "https://arxiv.org/pdf/2611.32012",
+   "score": 0.6213,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5643,
+    "meters": 0.6066,
+    "methods": 0.6213
+   }
+  },
+  {
+   "id": "2611.32780",
+   "version": 1,
+   "title": "C3H: Compression-to-Consensus Criteria Hijacking in Multimodal LLM Recommender Systems",
+   "abstract": "Multimodal large language models (MLLMs) are transforming recommender systems into content-aware decision systems. In these systems, multimodal compression and cross-modal fusion are often viewed as robustness-enhancing mechanisms against content manipulation, as compression can filter noisy signals and cross-modal consensus can suppress inconsistent anomalies. We challenge this assumption by showing that the same process can expose a compression-to-consensus (C2C) bias in ranking decisions. Signals that remain salient after compression and receive consistent support across modalities can gain disproportionate influence in candidate comparison, offering an exploitable direction for content manipulation. In this paper, we introduce C3H, a novel inference-time attack that exploits this vulnerability. Rather than relying on noisy perturbations or training-time poisoning, C3H promotes a target item by tailoring its multimodal content to align with the decision criteria implicitly expressed by the recommender. Extensive experiments demonstrate that C3H substantially increases target-item exposure while maintaining overall recommendation utility. Code is available at https://github.com/GuoweiGuan666/C3H.",
+   "authors": [
+    "Guowei Guan",
+    "Yurong Hao",
+    "Jiaming Zhang",
+    "Fuyao Zhang",
+    "Wei Yang Bryan Lim"
+   ],
+   "primary": "cs.CR",
+   "categories": [
+    "cs.CR",
+    "cs.AI"
+   ],
+   "published": "2026-11-24T15:10:20+00:00",
+   "url": "https://arxiv.org/abs/2611.32780",
+   "pdf": "https://arxiv.org/pdf/2611.32780",
+   "score": 0.6192,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5787,
+    "meters": 0.578,
+    "methods": 0.6192
+   }
+  },
+  {
    "id": "2611.31627",
    "version": 1,
    "title": "What You See Is What You Certify: Concept-Based Certificates for Unseen Compositions",
@@ -173,6 +367,33 @@
     "water": 0.6041,
     "meters": 0.5617,
     "methods": 0.6095
+   }
+  },
+  {
+   "id": "2611.32755",
+   "version": 1,
+   "title": "ReQOR: Operator-Discrepancy Subspace Repair for Quantization-Conditioned Backdoors in Large Language Models",
+   "abstract": "Quantization-Conditioned Backdoors (QCBs) cause large language models (LLMs) to exhibit malicious behavior after quantization while remaining benign at high precision. Existing defenses often rely on security-guided configuration selection or iterative optimization, but do not identify which quantization-induced changes should be repaired. We isolate module-local quantization effects from upstream drift by evaluating the high-precision and quantized versions of each module on identical states from the quantized inference trajectory, and formulate QCB defense as repairing the resulting same-state operator discrepancies. We propose ReQOR, a training-free defense that identifies the dominant directions of these discrepancies on benign calibration data and restores the full-precision computation along them in closed form, yielding a factorized residual adapter. ReQOR uses neither attack information nor gradient-based optimization and supports both full-span and low-rank repair. Experiments across four LLMs, three PGD-based QCB attacks, three malicious behaviors, and three quantization formats show substantial QCB mitigation while largely preserving benign utility. In additional experiments on a non-PGD outlier-injection attack, existing baselines largely fail, whereas ReQOR remains effective. Further analysis shows that dominant operator-discrepancy directions provide more effective and rank-efficient repair than rank-matched random, low-energy, or raw weight-error directions, while low-rank ReQOR reduces deployment memory overhead.",
+   "authors": [
+    "Wonjune Seo",
+    "Minkyung Park",
+    "Saerom Park"
+   ],
+   "primary": "cs.CR",
+   "categories": [
+    "cs.CR",
+    "cs.AI",
+    "cs.LG"
+   ],
+   "published": "2026-11-24T15:00:23+00:00",
+   "url": "https://arxiv.org/abs/2611.32755",
+   "pdf": "https://arxiv.org/pdf/2611.32755",
+   "score": 0.6062,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5813,
+    "meters": 0.5366,
+    "methods": 0.6062
    }
   },
   {
@@ -282,6 +503,32 @@
    }
   },
   {
+   "id": "2611.32942",
+   "version": 1,
+   "title": "Quantum kernels on breast data: concentration, surrogates, and two ways an advantage gets manufactured",
+   "abstract": "Quantum-kernel advantage claims on breast data are usually a single number: one quantum arm, one comparator, one test split. We asked what that number measures once the full comparator set and selection history are visible. We report three active benchmarks, all exact classical statevector simulations of 8-qubit fidelity kernels with no quantum component in the inference path: a sample-efficiency sweep on Wisconsin Diagnostic Breast Cancer at ten training-set sizes; raw-versus-processed arms on 1,200 M-SYNTH simulated mammograms with a matched closed-form dequantisation surrogate, five classical methods at the same input and eleven kernel families; and a 30-seed selection-inflation measurement on BreastMNIST. A CMMD D1 clinical arm is withdrawn as a result arm because its frozen splits leak the label through patient serial order, a defect reported in a separate study; it is retained only as a worked example. All three active arms are negative. On M-SYNTH raw an apparent +0.1736 (p = 5.2e-06) against a tuned RBF-SVM falls to +0.0019 (p = 0.937) against a random forest at the same input, and a Laplacian kernel wins on validation. On WDBC, with model selection confined to training data, the quantum kernel is below the selected classical arm at every training-set size, with 2 of 200 paired subsamples ahead. Best-of-30 seed selection adds +0.0210 on BreastMNIST. One result does not fit: at bandwidth 2pi the matched closed-form Gaussian surrogate failed to reproduce the M-SYNTH raw kernel (0.5410 against 0.7045, p = 6.3e-06). Comparator choice and selection each produce effects larger than any quantum-classical difference we measured; we give a reporting standard that removes both.",
+   "authors": [
+    "Rana Saad",
+    "Achraf Toufah",
+    "Moulay Youssef El Hafidi"
+   ],
+   "primary": "quant-ph",
+   "categories": [
+    "quant-ph",
+    "cs.LG"
+   ],
+   "published": "2026-11-24T16:46:58+00:00",
+   "url": "https://arxiv.org/abs/2611.32942",
+   "pdf": "https://arxiv.org/pdf/2611.32942",
+   "score": 0.588,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5394,
+    "meters": 0.5437,
+    "methods": 0.588
+   }
+  },
+  {
    "id": "2611.31346",
    "version": 1,
    "title": "What People Choose Not to Say: A Multimodal Benchmark for Fine-Grained Information Manipulation in Conversations",
@@ -309,6 +556,38 @@
     "water": 0.5298,
     "meters": 0.5415,
     "methods": 0.585
+   }
+  },
+  {
+   "id": "2611.32765",
+   "version": 1,
+   "title": "EviCraft: Can Minecraft Agents Find What They Cannot See?",
+   "abstract": "In Minecraft, a common testbed for embodied agents, semantic tools such as mineBlock pick targets from the simulator's loaded world state without a visibility test, so a buried ore the agent has never seen is one call away, and scores cannot show whether the agent searched. We formalize the missing requirement as evidence closure: every decision of an agent system, including those inside its tools, may depend on the world only through facts for which the agent holds evidence. EviCraft is a runtime and benchmark that enforces closure below the agent and makes the admission rule an experimental variable: a perception-grounded regime (G) admits only what is in line of sight or returned by the agent's own actions, and a loaded-state regime (L) reproduces standard tool stacks, with agents, tools, and worlds held fixed. On Survival, the regime effect exceeds the strongest agent's lead: under G, three mid-sized agents reach the diamond in 32%-40% of runs, against 76%-94% under L, and the strongest agent under G scores below each of them under L. In two models, removing only the line-of-sight test closes 93%-96% of the score gap, and loading state only inside tools recovers 70%-98%, so safeguards on observations and queries leave most of the leak open. In open-ended acquisition, the gain from L concentrates in items that depend on buried resources or mobs. Code and benchmark are available at https://github.com/AllenReder/EviCraft",
+   "authors": [
+    "Wenyou Yi",
+    "Lantian Zhang",
+    "Guanlin Chen",
+    "Xingqiu Xu",
+    "Haiyang Sun",
+    "Minrui Huang",
+    "Tianle Liang",
+    "Hao Chen",
+    "Haorui Xu",
+    "Zhou Zhao"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-24T15:03:47+00:00",
+   "url": "https://arxiv.org/abs/2611.32765",
+   "pdf": "https://arxiv.org/pdf/2611.32765",
+   "score": 0.5809,
+   "interest": "water",
+   "scores": {
+    "water": 0.5809,
+    "meters": 0.5523,
+    "methods": 0.5786
    }
   },
   {
@@ -472,6 +751,32 @@
     "water": 0.5535,
     "meters": 0.5534,
     "methods": 0.5446
+   }
+  },
+  {
+   "id": "2611.33119",
+   "version": 1,
+   "title": "MetaFORGE: A Meta-Learning Framework for Harness Optimization in Automated Code Generation for Parallel Computing",
+   "abstract": "Large language models (LLMs) can generate parallel programs, but their correctness and performance depend strongly on the instructions that guide generation. We present \\textsc{MetaFORGE}, an execution-grounded meta-learning framework that iteratively optimizes persistent natural-language skill specifications for MPI C code generation. \\textsc{MetaFORGE} combines correctness testing, compiler diagnostics, static-analysis findings, runtime measurements, and rank-level load-imbalance profiles into a scalar reward that drives textual-gradient refinement, while an external memory distills and retrieves reward-supported optimization knowledge across runs. Across six MPI tasks and three workload sizes, \\textsc{MetaFORGE} improves static-analysis quality, runtime, and load balance relative to zero-shot generation and generally exceeds the evaluated \\textsc{TextGrad} iterative baseline. A model-matched refinement ablation shows that the MetaFORGE advantage persists when its refinement model is reduced to \\texttt{gpt-4o}. An expanded retrieval ablation across all 18 task--workload configurations shows consistent runtime benefit and broad static-analysis and load-balance benefit from retrieved context. Leakage-controlled held-out and zero-update experiments further provide evidence that optimization knowledge persists in both the transferred skill and external memory under the evaluated protocol.",
+   "authors": [
+    "Scott Piersall",
+    "Yang Gao",
+    "Shenyang Liu",
+    "Liqiang Wang"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-24T18:49:19+00:00",
+   "url": "https://arxiv.org/abs/2611.33119",
+   "pdf": "https://arxiv.org/pdf/2611.33119",
+   "score": 0.5503,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5343,
+    "meters": 0.5358,
+    "methods": 0.5503
    }
   }
  ]

@@ -8,15 +8,15 @@
 **Live site: [nyksnightbender.github.io/paper-radar](https://nyksnightbender.github.io/paper-radar/)** (daily and weekly digests, archive, RSS)
 
 <!-- LATEST:START -->
-**Closest new papers, 25 November 2026** (17 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
+**Closest new papers, 25 November 2026** (28 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
 
 | Score | Paper | Topic |
 | ---: | --- | --- |
+| 0.86 | [FourStat: A Dual AutoEncoder Leveraging Frequency and Stationarity for Time Series Anomaly Detection](https://arxiv.org/abs/2611.32714) | Time-series anomaly detection |
+| 0.83 | [Scale-Robust and Global-Aware Representation Learning for Multivariate Time Series Anomaly Detection](https://arxiv.org/abs/2611.32033) | Time-series anomaly detection |
+| 0.76 | [On the Effectiveness of Resampling for Supervised Graph Anomaly Detection](https://arxiv.org/abs/2611.32598) | Time-series anomaly detection |
 | 0.74 | [Conformalized Tree-Based Gradient Ensembles for Out-of-Distribution Detection and Plausible Recourse](https://arxiv.org/abs/2611.31319) | Time-series anomaly detection |
 | 0.73 | [Online outlier-resilient data-driven moving horizon estimation for linear discrete-time systems](https://arxiv.org/abs/2611.32279) | Time-series anomaly detection |
-| 0.66 | [Transferable, Time-Parallel Graph Dynamics via Space-Time Factorization](https://arxiv.org/abs/2611.31479) | Time-series anomaly detection |
-| 0.64 | [Frequency-Conditioned Privacy Auditing of Fine-Tuned Language Models](https://arxiv.org/abs/2611.31581) | Time-series anomaly detection |
-| 0.64 | [Start Where the Data Are: Statistical Priors for One-Step Generation on Manifolds](https://arxiv.org/abs/2611.31856) | Time-series anomaly detection |
 <!-- LATEST:END -->
 
 ## Why
