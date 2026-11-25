@@ -8,15 +8,15 @@
 **Live site: [nyksnightbender.github.io/paper-radar](https://nyksnightbender.github.io/paper-radar/)** (daily and weekly digests, archive, RSS)
 
 <!-- LATEST:START -->
-**Closest new papers, 24 November 2026** (32 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
+**Closest new papers, 25 November 2026** (17 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
 
 | Score | Paper | Topic |
 | ---: | --- | --- |
-| 0.83 | [Toward a Scalable and Adaptive Evaluation Measure for Time Series Anomaly Detection](https://arxiv.org/abs/2611.30385) | Time-series anomaly detection |
-| 0.81 | [SMAD: A Semantics-Guided Multi-Agent Framework for Unsupervised Time-Series Anomaly Detection](https://arxiv.org/abs/2611.28348) | Time-series anomaly detection |
-| 0.78 | [AMP-OD: Active Model Probing for Unsupervised Outlier Model Selection--Extended Version](https://arxiv.org/abs/2611.28488) | Time-series anomaly detection |
-| 0.75 | [Robust Mixture Regressions and EM Algorithms via the Log-Truncated Likelihood](https://arxiv.org/abs/2611.30635) | Time-series anomaly detection |
-| 0.74 | [UACR: Uncertainty-Aware Collaborative Routing for Explainable Industrial Anomaly Inspection](https://arxiv.org/abs/2611.28655) | Time-series anomaly detection |
+| 0.74 | [Conformalized Tree-Based Gradient Ensembles for Out-of-Distribution Detection and Plausible Recourse](https://arxiv.org/abs/2611.31319) | Time-series anomaly detection |
+| 0.73 | [Online outlier-resilient data-driven moving horizon estimation for linear discrete-time systems](https://arxiv.org/abs/2611.32279) | Time-series anomaly detection |
+| 0.66 | [Transferable, Time-Parallel Graph Dynamics via Space-Time Factorization](https://arxiv.org/abs/2611.31479) | Time-series anomaly detection |
+| 0.64 | [Frequency-Conditioned Privacy Auditing of Fine-Tuned Language Models](https://arxiv.org/abs/2611.31581) | Time-series anomaly detection |
+| 0.64 | [Start Where the Data Are: Statistical Priors for One-Step Generation on Manifolds](https://arxiv.org/abs/2611.31856) | Time-series anomaly detection |
 <!-- LATEST:END -->
 
 ## Why

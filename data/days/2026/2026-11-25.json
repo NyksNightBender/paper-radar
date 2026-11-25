@@ -1,0 +1,478 @@
+{
+ "date": "2026-11-25",
+ "generated_at": "2026-11-25T03:02:11+00:00",
+ "model": "BAAI/bge-small-en-v1.5",
+ "interests": [
+  {
+   "key": "water",
+   "name": "Water networks"
+  },
+  {
+   "key": "meters",
+   "name": "Meters and consumption"
+  },
+  {
+   "key": "methods",
+   "name": "Time-series anomaly detection"
+  }
+ ],
+ "count": 17,
+ "papers": [
+  {
+   "id": "2611.31319",
+   "version": 1,
+   "title": "Conformalized Tree-Based Gradient Ensembles for Out-of-Distribution Detection and Plausible Recourse",
+   "abstract": "Counterfactual recourse provides actionable feature adjustments that reverse unfavourable predictions made by automated decision models. However, when recourse search optimizes purely against classifier confidence or narrow proxy scores over gradient-boosted decision trees (GBDT), search procedures can exploit boundary artifacts and low-density regions---an instance of Goodhart's law---yielding out-of-distribution (OOD) recommendations that appear favourable nominally while lacking manifold plausibility. In this paper, we study conformalized OOD gating coupled with actionability-constrained counterfactual search across two tabular benchmarks: Adult and Give Me Some Credit (GMSC). Calibrating finite-sample anomaly gates (gate_IF, gate_LOF, and the conjunctive gate_ALL) at significance level delta = 0.05 over isolation forest, local outlier factor, and k-nearest-neighbor signals, we audit generated counterfactuals against held-out GMM and OCSVM detectors alongside ablation studies (gen10, gen100, and relax). Across matched recourse pairs where both constrained and unconstrained searches succeed, gate_ALL significantly reduces held-out OCSVM flags on Adult (N=541, Delta flag_OCSVM = -0.0296, p_Holm = 4.0e-4) and lowers both held-out flags on GMSC (N=540, Delta flag_OCSVM = -0.0346, p = 1.0751e-4; Delta flag_GMM = -0.1663, p = 3.5679e-16) while increasing matched recourse cost (Delta cost = +0.3035, p = 1.3365e-5) and narrowing overall feasibility. Our findings formalize the cost--feasibility--plausibility trade-off and demonstrate how conformal OOD gating audits recourse reliability on tabular ensembles.",
+   "authors": [
+    "Mariam Zakaria Moussa Ali"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-23T08:04:46+00:00",
+   "url": "https://arxiv.org/abs/2611.31319",
+   "pdf": "https://arxiv.org/pdf/2611.31319",
+   "score": 0.7425,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6575,
+    "meters": 0.6369,
+    "methods": 0.7425
+   }
+  },
+  {
+   "id": "2611.32279",
+   "version": 1,
+   "title": "Online outlier-resilient data-driven moving horizon estimation for linear discrete-time systems",
+   "abstract": "This paper addresses data-driven state estimation for linear systems of which online output measurements may be corrupted by sparse outliers of arbitrary magnitude. Using only offline input-state-output data without explicitly identifying a system model, we propose an outlier-resilient data-driven moving horizon estimation scheme, termed OORD-MHE, based on Willems' fundamental lemma. The scheme employs a truncated-quadratic loss on the output residuals, parameterized by a truncation threshold, to mitigate the influence of online outliers. We establish sufficient conditions under which the resulting estimation error remains uniformly bounded. Simulation results demonstrate that the proposed OORD-MHE scheme generates accurate state estimates in the presence of sparse online outliers.",
+   "authors": [
+    "Jingshi Yao",
+    "Zenghong Huang",
+    "Xiaojie Li",
+    "Xunyuan Yin"
+   ],
+   "primary": "eess.SY",
+   "categories": [
+    "eess.SY"
+   ],
+   "published": "2026-11-24T09:43:34+00:00",
+   "url": "https://arxiv.org/abs/2611.32279",
+   "pdf": "https://arxiv.org/pdf/2611.32279",
+   "score": 0.7321,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7006,
+    "meters": 0.6769,
+    "methods": 0.7321
+   }
+  },
+  {
+   "id": "2611.31479",
+   "version": 1,
+   "title": "Transferable, Time-Parallel Graph Dynamics via Space-Time Factorization",
+   "abstract": "Time-parallel neural operators (FNO and successors) have transformed PDE surrogates on regular grids. Mesh-based operators (MeshGraphNets, Transolver) extend operator learning to irregular geometries, but jointly learning across diverse topologies while retaining non-recurrent temporal evaluation remains challenging. We propose space-time factorization: partition the model into local temporal operators (learned, graph-independent) and a spatial mixer that propagates information across nodes without graph-dependent learned parameters. This structural condition lets the same parameters run on unseen graphs; non-recurrent instances also admit time-parallel evaluation. Accurate zero-shot transfer further depends on controlling three information leaks (graph-dependent weights, graph-specific features, and graph-correlated training distributions) and on suitable task physics and training coverage. The protocol applies to two distinct spatial-mixer families, fixed-spectral and learned-attention. We validate the principle in three domains. For floodwave propagation in river networks, a 27K-parameter model trained on the Yangtze transfers zero-shot to the Mississippi with median NSE 0.998 in boundary-conditioned operational evaluation, training 5.5x faster than a stabilized recurrent baseline. On cross-geometry Navier-Stokes, the three-seed SepFNO mean relative vorticity error on five unseen targets falls by about 28% from 5 to 12 training geometries, with a consistent single-run SepTransolver trend. On cross-city traffic forecasting, zero-shot transfer reaches within 12.9% of an oracle trained on the target city. Across settings, cross-geometry error decreases with both the number of training geometries and their relatedness to the test, at a rate depending on the spatial mixer. This opens the path to pooled-data, foundation-style models for graph dynamics on irregular topologies.",
+   "authors": [
+    "Wencong Yang",
+    "Chaopeng Shen",
+    "Abdolmehdi Behroozi"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "physics.geo-ph"
+   ],
+   "published": "2026-11-23T19:50:40+00:00",
+   "url": "https://arxiv.org/abs/2611.31479",
+   "pdf": "https://arxiv.org/pdf/2611.31479",
+   "score": 0.6649,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6534,
+    "meters": 0.6246,
+    "methods": 0.6649
+   }
+  },
+  {
+   "id": "2611.31581",
+   "version": 1,
+   "title": "Frequency-Conditioned Privacy Auditing of Fine-Tuned Language Models",
+   "abstract": "Large language models are increasingly fine-tuned on sensitive data, where the same person's information may appear multiple times across records. This can cause models to memorize sensitive information, but memorization does not necessarily mean that the information can be recovered. A more serious privacy risk arises when the model begins to reproduce that information during generation. In this paper, we study how often sensitive information must appear in the fine-tuning data before it becomes recoverable. Across four language models, we vary the frequency of email addresses and phone numbers from $1\\times$ to $50\\times$ and compare standard fine-tuning, gradient clipping, and differentially private training. We find that the number of repetitions required before sensitive information becomes recoverable varies substantially across models. Gradient clipping can delay extraction, but it does not consistently prevent leakage at high repetition. DP-SGD at $\\varepsilon=5$ produces zero observed extraction through $50\\times$ repetition across all four models under the attacks we test, although the utility cost varies by model. These findings characterize how observed extraction varies across sensitive-data frequencies, model families, and training mechanisms, and highlight substantial differences in extraction behavior across models. Code and data are publicly available.",
+   "authors": [
+    "Aymen Noor",
+    "Ke Lyu",
+    "Honglu Jiang"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-23T21:22:08+00:00",
+   "url": "https://arxiv.org/abs/2611.31581",
+   "pdf": "https://arxiv.org/pdf/2611.31581",
+   "score": 0.6367,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5867,
+    "meters": 0.6008,
+    "methods": 0.6367
+   }
+  },
+  {
+   "id": "2611.31856",
+   "version": 1,
+   "title": "Start Where the Data Are: Statistical Priors for One-Step Generation on Manifolds",
+   "abstract": "Fast generation on manifolds is important for scientific applications such as protein design, yet existing one-step generators often produce spurious samples in low-density gaps between data modes. Our analysis highlights the mismatch between uniform noise and concentrated data, motivating a statistical prior that captures the data's coarse structure. We first estimate this prior by fitting mixtures of tangent-space Gaussians through geometry-aware moment matching. However, independent noise-data pairing can still connect different modes and weaken the benefit of the fitted prior. We therefore introduce posterior coupling, which samples a latent component conditioned on each data point and draws its paired noise from that component. To extend this approach to long torsion-angle chains, where full-covariance mixtures become costly, we use a hidden Markov prior to model sequential dependence with shared parameters. The resulting framework plugs into existing one-step training pipelines while retaining the generator architecture, training objective, and single network evaluation at inference. Experiments on spheres, tori, and SO(3) demonstrate substantial improvements across multiple generators, reducing distributional error by up to $125\\times$ and the protein Ramachandran outlier rate from 12.1% to 0.55%.",
+   "authors": [
+    "Yuyao Wang",
+    "Haoliang Sun",
+    "Xiankai Lu",
+    "Xinxin Zhang",
+    "Yongshun Gong"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.CV"
+   ],
+   "published": "2026-11-24T02:51:37+00:00",
+   "url": "https://arxiv.org/abs/2611.31856",
+   "pdf": "https://arxiv.org/pdf/2611.31856",
+   "score": 0.6361,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5605,
+    "meters": 0.5613,
+    "methods": 0.6361
+   }
+  },
+  {
+   "id": "2611.31627",
+   "version": 1,
+   "title": "What You See Is What You Certify: Concept-Based Certificates for Unseen Compositions",
+   "abstract": "Concept-based models justify a decision by concepts they claim to see, decoded through an explicit ontology. Yet concept predictions are known to leak label information, ignore locality, and be poorly grounded on new attribute combinations. A decision decoded from such concepts can satisfy the ontology and still be wrong, so we ask when it can serve as a certificate. On unseen combinations of familiar parts, a joint concept bottleneck model and a concept embedding model, trained as is standard, certify wrong classes 93-94% of the time despite a correct ontology (60% for a joint model trained only on visible parts and gated by a localizer). The joint model's part errors copy co-occurring values more often than chance (cross-concept shortcutting). Treating the ontology as an error-detecting code, we show that a certificate needs visible evidence excluding every rival, unseen parts reported as such, and rare misreads not driven by a shared shortcut. A minimal reference design, OCVE, reads each part from a local crop in its own forward pass. On unseen FunnyBirds classes, it certifies 52% of images at 0.4% risk, against 14% for mask-pooled features and 33% for full-image part readers (5.6% when trained and gated alike), at similar zero-shot accuracy. The best baselines, even calibrated or restricted to unseen classes, and a decoder counting only agreeing parts remain about 3-8 times riskier. On CUB, isolated region readers are more accurate than an attribute-prototype model (63.1% vs. 55.3%) and certify unseen species at about 6 points less risk than it and about 10 points less than features pooled in the same keypoint boxes. On real traffic signs, isolated readers lower certified risk from 99.8% to 67%, which is still far too high; most remaining errors are misread pictograms. On seen classes the ontology brings no gain over a fairly trained black box, and isolation costs accuracy.",
+   "authors": [
+    "Phuc Linh Ngo",
+    "Thang Nguyen Duc",
+    "Truong Thanh Hung Nguyen",
+    "Hung Cao"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG"
+   ],
+   "published": "2026-11-23T22:15:03+00:00",
+   "url": "https://arxiv.org/abs/2611.31627",
+   "pdf": "https://arxiv.org/pdf/2611.31627",
+   "score": 0.6095,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6041,
+    "meters": 0.5617,
+    "methods": 0.6095
+   }
+  },
+  {
+   "id": "2611.32393",
+   "version": 1,
+   "title": "Fractal Neural Synthesis: Constant-Storage Procedural Weight Derivation via Complex Quadratic Boundary Dynamics",
+   "abstract": "Conventional neural networks store synaptic parameters as explicit tensors whose persistent Flash footprint scales linearly (O(W)) with parameter count, constraining resource-limited edge microcontrollers. We formulate and systematically evaluate Fractal Neural Synthesis (FNS), a procedural weight derivation architecture that replaces hidden-layer matrices with a constant 24-byte coordinate seed Theta = (c_x, c_y, ell) in F_64^3 anchored near the complex quadratic bifurcation boundary dM of f_c(z) = z^2 + c. We introduce a large-bailout (R = 256) smooth escape kernel, four zero-overhead geometric sampling apertures--Cartesian Grid, coprime 3x3 Rule-of-Thirds (Z/9Z), phi-Vogel spiral, and multi-scale Harmonic Tripod--and prove conditional Kolmogorov (K_Kolm <= 192 + c_0 bits) and Shannon entropy bounds. Across magnifications zeta in [10^0, 10^8], C^1 Fourier and lattice-noise bases collapse to post-standardization rank ~2.25 and SHA-256 PRNG exhibits avalanche discontinuity (rho ~ 0.019, 50.6% micro-step retention), whereas dM uniquely sustains both rank (~10.0) and local continuity (rho in [0.81, 0.97], 89.2% retention). Under leak-free 10-fold CV across four zero-scaler-byte non-linear benchmarks, FNS with an INT8 readout surpasses 0-hidden Linear-INT8 by +3.6 to +10.8 pp while delivering 10.7x-129x total Flash reduction (725x-2,773x hidden reduction) relative to converged Float32 MLPs (90.30% Ionosphere in 285 B; 97.22% Optical Digits in 2,598 B; 97.90% PenDigits in 2,598 B; 87.00% Satimage in 1,570 B).",
+   "authors": [
+    "Volkan Dagli",
+    "Zerrin Dagli",
+    "Daghan Dagli"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.NE"
+   ],
+   "published": "2026-11-24T10:59:36+00:00",
+   "url": "https://arxiv.org/abs/2611.32393",
+   "pdf": "https://arxiv.org/pdf/2611.32393",
+   "score": 0.6059,
+   "interest": "water",
+   "scores": {
+    "water": 0.6059,
+    "meters": 0.5935,
+    "methods": 0.6035
+   }
+  },
+  {
+   "id": "2611.32261",
+   "version": 1,
+   "title": "A quantum-inspired spiking variational autoencoder for robust anomaly detection at the LHC",
+   "abstract": "Model-agnostic searches for new physics at the Large Hadron Collider utilise unsupervised anomaly detection, where quantum and neuromorphic detectors represent potential approaches. We develop the first fully spiking variational autoencoder, a quantum-inspired spiking variational autoencoder (QSVAE), built on the quantum-inspired leaky integrate-and-fire (QLIF) neuron. In this work we recast the neuron from a measurement-based circuit to a differentiable computational unit. This neuron is benchmarked against other classical, spiking, and quantum models on an LHC di-jet latent space. We show that under noise perturbations the QLIF network retains $0.95$ of its clean accuracy, while accuracy retention for twelve classical models falls to $0.74$-$0.85$. The QLIF anomaly scores respond $3.5$-fold less to the noise perturbation than any of the control model's scores. We compare against a periodic classical control that reproduces the QLIF effect, isolating it to the $\\sin^2$ membrane map. This membrane map is a native regulariser that decouples robustness from model capacity supplied by the qubit state space. We demonstrate this through several benchmarks and ablation studies to characterise the performance landscape of the quantum-neuromorphic model space.",
+   "authors": [
+    "Dean Brand",
+    "Donovan Slabbert",
+    "Chanelle Matadah Manfouo",
+    "Francesco Petruccione"
+   ],
+   "primary": "quant-ph",
+   "categories": [
+    "quant-ph",
+    "physics.data-an"
+   ],
+   "published": "2026-11-24T09:32:13+00:00",
+   "url": "https://arxiv.org/abs/2611.32261",
+   "pdf": "https://arxiv.org/pdf/2611.32261",
+   "score": 0.6042,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6005,
+    "meters": 0.5704,
+    "methods": 0.6042
+   }
+  },
+  {
+   "id": "2611.32418",
+   "version": 1,
+   "title": "Sequences for Flat-Top Beams",
+   "abstract": "Flat-top beams have numerous applications in radar and communication systems. Sequences with diverging merit factors can approach the ideal omnidirectional beams but do not directly apply to flat-top beams, which require simultaneous control of passband ripple and stopband leakage. To bridge this gap, we study the asymptotic behavior of both quantities of flat-top beams by using tools of Fourier analysis. We establish contrasting results for sequences with finite or infinite alphabets. For sequences with finite alphabet, including binary and quaternary ones, their passband ripple and stopband leakage cannot simultaneously vanish as the sequence length grows to infinity. For sequences with infinite alphabet, however, both requirements are satisfied simultaneously by the generalized step-chirp (GSC) sequences if and only if the length-bandwidth product $Nγ$ goes to infinity and the distance of the step size $a$ from $\\{0,1,\\tfrac12,\\tfrac13,\\ldots\\}$ goes to zero. Besides, both quantities vanish at rate $O((Nγ)^{-1/2})$ if $a\\in \\{1,\\tfrac12,\\tfrac13,\\ldots\\}$.These results broaden the scope of classical sequence design beyond full-band spectral flatness and provide a theoretical foundation for flat-top beam synthesis.",
+   "authors": [
+    "Cheng Du"
+   ],
+   "primary": "cs.IT",
+   "categories": [
+    "cs.IT",
+    "eess.SP"
+   ],
+   "published": "2026-11-24T11:21:57+00:00",
+   "url": "https://arxiv.org/abs/2611.32418",
+   "pdf": "https://arxiv.org/pdf/2611.32418",
+   "score": 0.5941,
+   "interest": "water",
+   "scores": {
+    "water": 0.5941,
+    "meters": 0.5625,
+    "methods": 0.5559
+   }
+  },
+  {
+   "id": "2611.32302",
+   "version": 1,
+   "title": "Query-Guided Visual Minimization for Selective Disclosure to Cloud VLMs",
+   "abstract": "Cloud-hosted vision-language models (VLMs) require sending images beyond the user's local trust boundary, potentially exposing sensitive information the query does not need. We study query-guided visual minimization: a trusted local transformation preserves query-relevant visual content and reduces unnecessary disclosure before transmission. Unlike query-agnostic anonymization, it preserves the same sensitive content when the query requires it and suppresses it otherwise. We introduce QGVM, a framework that combines query grounding with an independent sensitive-item inventory, determines disclosure necessity at the type, instance, and text-content levels, and renders a minimized image for a black-box downstream VLM. We evaluate QGVM on complementary benchmarks measuring task utility, directly recoverable sensitive information, and inferential geolocation leakage. With OpenAI GPT-6.1 Sol, QGVM achieves 85.3% DoxBench answer correctness versus 77.5% for PGP, while a separately prompted Sol geolocation attacker succeeds within 1 km on 5.8% of QGVM images versus 25.7% of unprotected images. On Scene-Privacy, QGVM reduces face re-identification from 27.7% (PGP) to 4.5%. On held-out BIV-Priv-Seg, unnecessary private-text recovery falls from 33.9% (PGP) to 15.3%. To verify that disclosure is query-dependent, we evaluate paired queries that either require or do not require the same sensitive information. QGVM achieves 69.6% correct disclosure switching, compared with 29.1% for grounding-only cropping. These findings highlight the value of distinguishing visual relevance from disclosure necessity, while revealing the privacy-utility trade-offs of selective visual disclosure.",
+   "authors": [
+    "Pedram Zaree",
+    "Kleomenis Katevas",
+    "Vandana Rajan",
+    "Nael Abu-Ghazaleh",
+    "Hamed Haddadi"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.CR"
+   ],
+   "published": "2026-11-24T09:59:50+00:00",
+   "url": "https://arxiv.org/abs/2611.32302",
+   "pdf": "https://arxiv.org/pdf/2611.32302",
+   "score": 0.5932,
+   "interest": "water",
+   "scores": {
+    "water": 0.5932,
+    "meters": 0.5751,
+    "methods": 0.5865
+   }
+  },
+  {
+   "id": "2611.31346",
+   "version": 1,
+   "title": "What People Choose Not to Say: A Multimodal Benchmark for Fine-Grained Information Manipulation in Conversations",
+   "abstract": "Recent advances in MLLMs have improved social understanding, enabling models to recognize emotions and distinguish truthful from deceptive behaviors. However, existing benchmarks largely focus on coarse-grained emotion recognition or binary truth-deception detection, overlooking the diverse ways people manipulate information in conversations, such as withholding, leakage, fabrication, evasion, and defensive counterclaim. Understanding these behaviors requires reasoning about underlying facts, participant knowledge, and conversational context, making them difficult to evaluate reliably. To address this gap, we introduce InfoCon, a multimodal benchmark for fine-grained information manipulation in conversations. InfoCon identifies six fine-grained strategies and derives a coarse consistency label from their factual and interactional relations. We develop an evidence-grounded multi-agent annotation framework to construct and verify reliable labels from rich contextual evidence. We benchmark representative multimodal models and systematically analyze their fine-grained information manipulation understanding, providing a testbed beyond binary truth-deception judgments.",
+   "authors": [
+    "Yuhan Bian",
+    "Zhaokai Liang",
+    "Jia Wang",
+    "Haoyu Liu",
+    "Yu Chen",
+    "Jianfeng Qu",
+    "Zhixu Li"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "cs.CL"
+   ],
+   "published": "2026-11-23T17:57:08+00:00",
+   "url": "https://arxiv.org/abs/2611.31346",
+   "pdf": "https://arxiv.org/pdf/2611.31346",
+   "score": 0.585,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5298,
+    "meters": 0.5415,
+    "methods": 0.585
+   }
+  },
+  {
+   "id": "2611.32290",
+   "version": 1,
+   "title": "$ε$-Seg++: Ensembling Across Hierarchy and Training Time for Label-Efficient EM Segmentation",
+   "abstract": "Semantic segmentation of electron microscopy (EM) volumes is a central step in quantitative cell biology, but dense voxel-wise annotation is prohibitively expensive. $ε$-Seg showed that a hierarchical variational autoencoder trained on sparsely annotated voxels can yield competitive segmentations, but it classifies from its topmost latent level only and operates exclusively on 2D patches. We introduce $ε$-Seg++, which places a semantic expert at every level of the hierarchy and consolidates their predictions with a parameter-free product of experts. We further enable 3D inputs through a leakage-free sub-volume splitting protocol, which allows 2D and 3D models to be compared under identical sparse supervision. Because validation labels are just as scarce as training labels, we treat checkpoint selection as part of the method and average the top-ranked checkpoints, a second ensemble, this time across training time. On the BetaSeg FIB-SEM dataset, the multi-level experts improve 2D mean Dice by about 0.1 at 2,500 training labels. With up to 600 training labels, the 2D model matches or exceeds 3D $ε$-Seg at about one eleventh of its prediction cost. Above roughly a thousand labels, 3D inputs dominate, and at matched annotation cost 3D $ε$-Seg++ reaches a mean Dice of 0.905 versus 0.880 for D3PM, while predicting between 5.4 and 27 times faster (with our checkpoint ensemble or a single model, respectively). Checkpoint ensembling matches single-best selection on average and markedly improves the worst case when the validation set is small.",
+   "authors": [
+    "Edoardo Giacomello",
+    "Sheida Rahnamai Kordasiabi",
+    "Mehdi Seifi",
+    "Florian Jug"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.LG"
+   ],
+   "published": "2026-11-24T09:53:03+00:00",
+   "url": "https://arxiv.org/abs/2611.32290",
+   "pdf": "https://arxiv.org/pdf/2611.32290",
+   "score": 0.5788,
+   "interest": "methods",
+   "scores": {
+    "water": 0.527,
+    "meters": 0.5436,
+    "methods": 0.5788
+   }
+  },
+  {
+   "id": "2611.31347",
+   "version": 1,
+   "title": "Antares-Smaug: Adversarial Names, Tokens and Attack Rewrites: Sanitisers Miss Unseen Generalisations",
+   "abstract": "Laya is an open decision model: given a text, a question and K named options with descriptions, it returns one probability per option in a single pass, and software may act on the answer unseen. We attack six Laya models with 81 programmatic edits of 566 synthetic items (injected sentences, label leaks, edited descriptions, decoy options, invisible and look-alike characters, floods) and report the share of correctly answered items hijacked or lost, with bootstrap intervals. Attack wordings that no defence was built from win the attacker's option on 59% of items for released Laya and 36% for fine-tune v1 (trained on 109 written injections). An injection works through the option name: a sentence naming an option steers the released model even when negated (32%), while an imperative naming no option does not (5%). Option descriptions barely matter (2%). Character edits alone cost v1 up to 72% of right answers. A sanitiser frozen before any held-out result cuts the attacks it was built from by 72% but held-out sentence attacks by 27%, and an attacker who picks the best of 34 held-out strings per item restores success to 84% (mean string 18%). The same oracle takes the model fine-tuned on the four build families of injected sentences from 5% (mean string) to 58%. Fine-tuning on build families only (against an unchanged-rows control) cuts held-out sentence attacks (three held-out families) from 33% to 3% but character edits only from 25% to 20%. A label-free check that deletes the option names and measures the shift flags held-out sentence attacks (AUROC 0.95) but not character edits (0.46), and thresholds set on dev schemas for 5% false alarms gave 8% to 18% on an unseen schema and other languages. All data are synthetic with LLM labels, on one backbone. Several planned runs (other checkpoints, a second seed, some fine-tunes) were not run.",
+   "authors": [
+    "Mohammed Nayeem Khan",
+    "Akhil P"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-23T18:04:59+00:00",
+   "url": "https://arxiv.org/abs/2611.31347",
+   "pdf": "https://arxiv.org/pdf/2611.31347",
+   "score": 0.5741,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5233,
+    "meters": 0.5255,
+    "methods": 0.5741
+   }
+  },
+  {
+   "id": "2611.31429",
+   "version": 1,
+   "title": "Leaks by Installments: Cross-Session Answer Disclosure in LLM Tutors and a Ledger-Based Defense",
+   "abstract": "Tutors built on large language models (LLMs) are told not to give away answers, but a learner does not have to ask for the answer all at once. Existing safeguards judge each reply within the current conversation, so a learner can open a new session, reword the problem, or request a worked solution to the same problem with different numbers. We call this cross-session disclosure and propose a defense: a persistent, per-learner disclosure ledger. For every problem a learner brings, the system builds a typed solution graph. Before a reply is released, a gate matches the reply's own content, not the learner's wording, against the ledger by result values and by type-labeled solution structure, then computes which steps the learner could now derive. The reply is withheld if that set reaches the final answer or exceeds a budget. In a simulation of 3,000 problems, the ledger reduced leakage through renumbered practice variants from 100% to 10.6% while honest learners completed 94-99.5% of problems. With two real LLM tutors (Qwen2.5-3B-Instruct and Phi-3.5-mini-instruct) on 60 problems, leakage through renumbered variants fell from 0.58 to 0.08 and from 1.00 to 0.18, with 98% honest completion. The ledger did not reduce split requests beyond a per-session gate in the live runs. All acceptance criteria were fixed before each run.",
+   "authors": [
+    "Venkata Muttineni",
+    "Karthik Narayan",
+    "Christopher David"
+   ],
+   "primary": "cs.CR",
+   "categories": [
+    "cs.CR",
+    "cs.AI",
+    "cs.CL",
+    "cs.CY"
+   ],
+   "published": "2026-11-23T19:15:18+00:00",
+   "url": "https://arxiv.org/abs/2611.31429",
+   "pdf": "https://arxiv.org/pdf/2611.31429",
+   "score": 0.5636,
+   "interest": "water",
+   "scores": {
+    "water": 0.5636,
+    "meters": 0.5394,
+    "methods": 0.5588
+   }
+  },
+  {
+   "id": "2611.32188",
+   "version": 1,
+   "title": "Blaming the Machine, Billing the Victim? How Mock Jurors Reassign Fault from Generative AI Systems and Respond to Liability Cliffs in Tort",
+   "abstract": "Generative AI complicates tort liability attribution when people blame a generative AI system that cannot itself bear legally relevant fault. We investigate where this blame goes when fault must be allocated among legal persons, and whether American discontinuous apportionment doctrines influence mock jurors' factual findings of fault. Such doctrines include Contributory negligence, Joint and several liability, and their 50% or 51% variations, all of which have a fault-percentage threshold or a \"cliff\" where the victim-entitled compensation (or a defendant's liability) jumps to zero (or to all compensatory damages). Our pre-registered human subjects experiment (N=199 Prolific participants) shows that as many U.S. mock jurors (36%) blame the AI system itself, the AI blame often \"leaks\" to the victim or to the AI user (in 27% to 73% of our AI-blaming records, depending on how leakage is calculated). Although mock jurors rarely change their blame assignment from one side of the liability cliff to the other, these participants do not acknowledge the legal doctrine or its monetary consequence when explaining their changes. Our empirical results illustrate how a narrow doctrinal exception in tort, carving out \"joint and several liability\" for those deploying or using Generative AI without reasonable care, might mitigate the impact of blame leakage on victims' deserved compensation without introducing significant jury nullification risks.",
+   "authors": [
+    "Tin Trung Nguyen",
+    "Jiannan Xu",
+    "Bao Kham Chau",
+    "Hal Daumé",
+    "Zubin Jelveh"
+   ],
+   "primary": "cs.HC",
+   "categories": [
+    "cs.HC",
+    "cs.AI"
+   ],
+   "published": "2026-11-24T08:39:12+00:00",
+   "url": "https://arxiv.org/abs/2611.32188",
+   "pdf": "https://arxiv.org/pdf/2611.32188",
+   "score": 0.5614,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5517,
+    "meters": 0.5207,
+    "methods": 0.5614
+   }
+  },
+  {
+   "id": "2611.32232",
+   "version": 1,
+   "title": "MYSTIQUE: Few-Shot Facial Identity Transfer with Performance Preservation",
+   "abstract": "In visual effects, identity transfer replaces the identity in a driving image with that of a target person, while preserving the expression, lighting, pose and scene of that image. Paired ground truth is rarely available, so many methods are trained by self-reconstruction, where the model can learn a shortcut by copying identity cues from the driving image. This shortcut causes identity leakage at inference, where the driving image shows a different person. Our key observation is that leakage can enter through any input that reads the driving image. We therefore present MYSTIQUE, a diffusion-based identity transfer method that takes identity from a set of the target's photos and reads expression, lighting and scene through separate streams. It learns to disentangle identity from the other streams through multi-stage training, with disentanglement strategies at their inputs: a random block mask whose boundaries do not follow the face outline, self-augmentation, which randomly changes the face shape in the expression input and keeps its expression, and face randomization, which replaces the person in the expression and lighting inputs while the ground truth stays the driving image. At inference, we also warp the lighting input onto the face shape of a first pass, which reduces face-shape leakage through the lighting stream. Since face-recognition scores and human judgments each have limits, we evaluate identity with both, together with face-shape metrics on rendered faces of known shape. In a user study, raters judge MYSTIQUE's results more like the target than those of each compared method. Among these methods, MYSTIQUE also recovers the target's face shape most accurately, and its recognition score gains the most as more photos of the target are given.",
+   "authors": [
+    "Shihan Cheng",
+    "David Hyde",
+    "Junting Deng",
+    "Michael Bao",
+    "Paul Debevec",
+    "Roshni Cooper",
+    "Soshi Shimada"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.GR",
+    "cs.LG"
+   ],
+   "published": "2026-11-24T09:13:10+00:00",
+   "url": "https://arxiv.org/abs/2611.32232",
+   "pdf": "https://arxiv.org/pdf/2611.32232",
+   "score": 0.5561,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5367,
+    "meters": 0.5096,
+    "methods": 0.5561
+   }
+  },
+  {
+   "id": "2611.31299",
+   "version": 1,
+   "title": "PEACE-TEST-PROTOCOL: Polarization-Keyed Examination Papers and Mandatory Issued Eyewear that Displace AI Glasses and Extend Universal Design",
+   "abstract": "Camera-equipped AI glasses turn an examination page into a query for a remote vision-language model. Device detection targets possession, and our companion work SEOYUN targets the model. PEACE-TEST-PROTOCOL instead changes who owns the eyewear. Every candidate wears authority-issued glasses for the whole session, and the question paper is printed so that it can be read only through them. As in cinema stereoscopy, a patterned laminate encodes the text in the handedness of circular polarization rather than in brightness. The page looks uniformly grey to the naked eye and to unfiltered cameras, and the issued circular analyzer reveals the text. Compulsory issued eyewear turns the smart-glasses form factor against itself. The face position is occupied by a device the authority supplies and collects, and a camera anywhere else needs its own analyzer. Spectacle wearers receive prescription inserts in the issued frame, low-vision candidates may use an offline assistive mixed-reality tier, and blind candidates keep braille, audio, and screen-reader formats. We derive the luminance and contrast budget and show why circular keying tolerates head tilt. A simulation study supports the analysis. A spectral Mueller model confirms tilt invariance and invisibility to linear-polarization cameras, but a 1 degree axis misregistration leaks a few percent of contrast. A capture-and-OCR experiment on English and Korean text shows that video averaging can recover leakage too weak to read in a single frame, so leakage must be bounded against the adversary's total photon budget. Data from 151 observers and 28 cameras show that spectral (metameric) keys are visible to all of them. The key carries no secrecy, and filtered covert cameras remain possible. All results are simulations; no prototypes, physical measurements, or human-subject results are reported.",
+   "authors": [
+    "Dohyeon Kwon"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.CR"
+   ],
+   "published": "2026-11-21T09:28:09+00:00",
+   "url": "https://arxiv.org/abs/2611.31299",
+   "pdf": "https://arxiv.org/pdf/2611.31299",
+   "score": 0.5535,
+   "interest": "water",
+   "scores": {
+    "water": 0.5535,
+    "meters": 0.5534,
+    "methods": 0.5446
+   }
+  }
+ ]
+}
