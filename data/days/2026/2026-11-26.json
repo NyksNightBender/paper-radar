@@ -1,0 +1,132 @@
+{
+ "date": "2026-11-26",
+ "generated_at": "2026-11-26T02:12:37+00:00",
+ "model": "BAAI/bge-small-en-v1.5",
+ "interests": [
+  {
+   "key": "water",
+   "name": "Water networks"
+  },
+  {
+   "key": "meters",
+   "name": "Meters and consumption"
+  },
+  {
+   "key": "methods",
+   "name": "Time-series anomaly detection"
+  }
+ ],
+ "count": 4,
+ "papers": [
+  {
+   "id": "2611.33238",
+   "version": 1,
+   "title": "Sequential Testing on Complex and High Dimensional Data Streams Leveraging Unsupervised Model Errors",
+   "abstract": "We propose two general, distribution-free test statistics for binary Sequential Hypothesis Testing (SHT) and Sequential Change Point Detection (SCPD) respectively, in streaming environments where the data (e.g., network traffic metadata) are too complicated for the exact probabilistic modeling required by conventional likelihood ratio-driven tests. Our framework also addresses the challenge of information asymmetry, where data is available only from the null/pre-change regime and not from the alternative/post-change one such as zero-day attacks or emerging disease related regimes. The proposed statistics monitor the errors of a predictive or reconstructive machine learning model trained solely on null/pre-change data, relying on imperfect generalization (the model's performance will degrade when deployed on data from the alternative/post-change class). Under mild assumptions on the model's errors, we establish rigorous analytical guarantees: strict non-asymptotic error control for SHT, and explicit bounds on the Average Run Length (ARL) and the Expected Detection Delay (EDD) for SCPD. Extensive evaluations in target tracking, chaotic dynamical systems, and real-world network security datasets, demonstrate that our framework consistently satisfies prescribed constraints where existing algorithms succumb to inflated missed detections and/or false alarms. Finally, because our methods operate on scalar errors without requiring online retraining or kernel evaluations, they are highly scalable.",
+   "authors": [
+    "George Stamatelis",
+    "Iordanis Koutsopoulos"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-24T13:00:45+00:00",
+   "url": "https://arxiv.org/abs/2611.33238",
+   "pdf": "https://arxiv.org/pdf/2611.33238",
+   "score": 0.7455,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7314,
+    "meters": 0.6557,
+    "methods": 0.7455
+   }
+  },
+  {
+   "id": "2611.33223",
+   "version": 1,
+   "title": "CLEAR: A Contrastive-Masked Foundation Model for BESIII Event Understanding",
+   "abstract": "The increasing diversity and complexity of decay channels at high energy physics experiments pose a challenge to analysis workflows, which require time-consuming, labor-intensive channel-specific selections and optimization. This motivates the development of foundation models capable of learning a unified representation transferable across different channels. In this paper, we introduce CLEAR (Contrastive Learning for Event Attention-based Representation), a foundation model designed for physics analysis at BESIII that combines masked modeling and contrastive learning to support decay channel classification and anomaly detection. Masked modeling trains the encoder to predict masked particle features by learning inter-particle correlations, while contrastive learning improves the local clusterability and linear separability of the representation space for discrimination. By further examining the balance between alignment and uniformity, we investigate how contrastive learning shapes the local neighborhood geometry of the representation space and how this geometry relates to classification and anomaly detection performance. Decay channel classification favors a balance between alignment and uniformity, whereas anomaly detection benefits from a greater relative weight on uniformity. For exclusive final-state identification, CLEAR achieves higher signal efficiency than conventional cut-based methods at matched purity and provides a framework that can potentially be extended to other high-energy physics experiments.",
+   "authors": [
+    "Jingde Chen",
+    "Zijie Shang",
+    "Tong Liu",
+    "Yao Zhang",
+    "Beijiang Liu",
+    "Changzheng Yuan",
+    "Xiongfei Wang",
+    "Ke Li"
+   ],
+   "primary": "physics.data-an",
+   "categories": [
+    "physics.data-an",
+    "hep-ex"
+   ],
+   "published": "2026-11-24T07:29:33+00:00",
+   "url": "https://arxiv.org/abs/2611.33223",
+   "pdf": "https://arxiv.org/pdf/2611.33223",
+   "score": 0.6303,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6135,
+    "meters": 0.5667,
+    "methods": 0.6303
+   }
+  },
+  {
+   "id": "2611.33672",
+   "version": 1,
+   "title": "Node Differential Privacy via Node-Stable Graph Projections",
+   "abstract": "Node-differentially private algorithms enable learning on network-structured datasets in which records reflect interactions among individuals. They protect the privacy of each individual's information, including all their associated records. A key challenge in the design of such algorithms is to exploit the structure of realistic graphs---where most nodes have low degree---to achieve high accuracy, without compromising on the worst-case privacy guarantee. In this work we give two new tools for designing accurate, computationally efficient node-differentially private algorithms. First, we give a nearly linear time, randomized, node-stable graph projection: the projection leaves graphs of maximum degree $D$ unchanged, maps arbitrary graphs to subgraphs of maximum degree $\\hat D \\approx D$, and ensures that changing one node of the input graph has only a small effect on the distribution of the edges selected among the remaining vertices. Unlike prior approaches, which abstain when the input violates the degree bound, our projection acts as degree clipping: even when $D$ is set well below the true maximum degree (trading truncation bias at high-degree outliers for lower privacy noise), it retains at least as many edges as a maximal $D$-bounded subgraph. Second, for graphs with bounded edge weights, we give a deterministic nearly linear time Lipschitz extension for the total edge weight that agrees with the original sum on graphs of maximum degree $D$ yet is $D$-Lipschitz on all graphs. Finally, we show how to apply these methods to design node-private algorithms for high-dimensional vector summation and gradient descent on datasets where records are associated with graph edges, such as email threads.",
+   "authors": [
+    "Ishaq Aden-Ali",
+    "Adam Sealfon",
+    "Adam Smith",
+    "Thomas Steinke",
+    "Jonathan Ullman"
+   ],
+   "primary": "cs.CR",
+   "categories": [
+    "cs.CR",
+    "cs.DS",
+    "cs.LG"
+   ],
+   "published": "2026-11-25T02:37:05+00:00",
+   "url": "https://arxiv.org/abs/2611.33672",
+   "pdf": "https://arxiv.org/pdf/2611.33672",
+   "score": 0.622,
+   "interest": "water",
+   "scores": {
+    "water": 0.622,
+    "meters": 0.565,
+    "methods": 0.608
+   }
+  },
+  {
+   "id": "2611.33741",
+   "version": 1,
+   "title": "FlashProve-Next: Verifiable Inference for Production LLM APIs",
+   "abstract": "Clients of closed-weight LLM APIs cannot verify whether a provider ran the advertised model, precision, hidden prompt, and reasoning budget. Existing approaches either trust hardware or third parties, or re-prove every layer of an integer surrogate at high cost while diverging from native floating-point serving. FlashProve-Next produces verifiable, zero-knowledge-masked proofs for individual LLM API responses without modifying native serving (bf16/fp8/mxfp4, random sampling, FlashAttention, CUDA graphs, batching, prefix caching) and without disclosing weights, hidden prompts, hidden reasoning, or activations (dense profiles fix coarse geometry; cross-architecture hiding is deferred). A non-depleting Reed-Solomon weight commitment model_id opens inside proofs via hidden column openings, while local per-operator rounding contracts remove integer surrogates and the refusal-bit leak. Cost-weighted spot-checking supports non-interactive public verification (NI-315, $\\varepsilon \\le 2^{-40}$, $Q \\le 2^{64}$) and external-seed C_pre mode (ExtSeed-153, $\\varepsilon \\le 2^{-20}$, $Q_{\\rm samp} \\le 2^{30}$). Twenty-eight Lean 4 modules (696 declarations, zero sorry, standard axioms only) mechanize round-by-round soundness, bucketed sampling, $\\mathbb{F}_{p^3}$ constrained-mask binding, causal masking, six IR gadgets, and executable FPN2 verifiers. Five-model Blackwell calibration gives zero false rejections across 1.85M GEMM/MoE blocks and 1.96M non-GEMM rows. Our zero-Phase-2 folded backend (folded ZK simulator open) proves Qwen3-0.6B ExtSeed-153 (1.47B cells, 8 MiB) in 450.2 s GPU (10.76 s CPU) at unique-decoding $Q=128$, passes a 14/14 cheating matrix, and scales to 36-layer Qwen3-4B (dev $4+2$) and live vLLM Qwen3-30B-A3B-FP8 Relation 6 (1.49 s prove, 23.4 ms Rust verify, public weight tiles). Rust fpn-verify checks 8 MiB FPN2 Relation 2 proofs in 10.1 ms on CPU.",
+   "authors": [
+    "Liang Song"
+   ],
+   "primary": "cs.CR",
+   "categories": [
+    "cs.CR",
+    "cs.AI",
+    "cs.LG"
+   ],
+   "published": "2026-11-25T04:01:37+00:00",
+   "url": "https://arxiv.org/abs/2611.33741",
+   "pdf": "https://arxiv.org/pdf/2611.33741",
+   "score": 0.6172,
+   "interest": "water",
+   "scores": {
+    "water": 0.6172,
+    "meters": 0.575,
+    "methods": 0.5997
+   }
+  }
+ ]
+}
