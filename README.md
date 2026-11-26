@@ -8,14 +8,15 @@
 **Live site: [nyksnightbender.github.io/paper-radar](https://nyksnightbender.github.io/paper-radar/)** (daily and weekly digests, archive, RSS)
 
 <!-- LATEST:START -->
-**Closest new papers, 26 November 2026** (4 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
+**Closest new papers, 26 November 2026** (11 scanned, [full digest](https://nyksnightbender.github.io/paper-radar/))
 
 | Score | Paper | Topic |
 | ---: | --- | --- |
 | 0.75 | [Sequential Testing on Complex and High Dimensional Data Streams Leveraging Unsupervised Model Errors](https://arxiv.org/abs/2611.33238) | Time-series anomaly detection |
-| 0.63 | [CLEAR: A Contrastive-Masked Foundation Model for BESIII Event Understanding](https://arxiv.org/abs/2611.33223) | Time-series anomaly detection |
-| 0.62 | [Node Differential Privacy via Node-Stable Graph Projections](https://arxiv.org/abs/2611.33672) | Water networks |
-| 0.62 | [FlashProve-Next: Verifiable Inference for Production LLM APIs](https://arxiv.org/abs/2611.33741) | Water networks |
+| 0.73 | [Doppler RaDAR Single-Frame Anomaly Detection and Consistency Assessment by Velocity-Conditioned Gaussian Spectral Modeling](https://arxiv.org/abs/2611.34639) | Time-series anomaly detection |
+| 0.72 | [Asymptotically Efficient Finite Impulse Response System Identification without Noise Knowledge](https://arxiv.org/abs/2611.34039) | Time-series anomaly detection |
+| 0.71 | [Change Point Detection with Generative Models](https://arxiv.org/abs/2611.34228) | Time-series anomaly detection |
+| 0.68 | [LatENSO v1.0: a learned latent state of the tropical Pacific for seasonal ENSO operators and forecasting](https://arxiv.org/abs/2611.34296) | Time-series anomaly detection |
 <!-- LATEST:END -->
 
 ## Why

@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "generated_at": "2026-11-26T02:12:37+00:00",
+ "generated_at": "2026-11-26T09:30:33+00:00",
  "model": "BAAI/bge-small-en-v1.5",
  "interests": [
   {
@@ -16,7 +16,7 @@
    "name": "Time-series anomaly detection"
   }
  ],
- "count": 4,
+ "count": 11,
  "papers": [
   {
    "id": "2611.33238",
@@ -41,6 +41,168 @@
     "water": 0.7314,
     "meters": 0.6557,
     "methods": 0.7455
+   }
+  },
+  {
+   "id": "2611.34639",
+   "version": 1,
+   "title": "Doppler RaDAR Single-Frame Anomaly Detection and Consistency Assessment by Velocity-Conditioned Gaussian Spectral Modeling",
+   "abstract": "Reliable speed-over-ground estimation is essential for automated railway vehicles. However, the accuracy of a velocity estimate alone does not indicate whether the underlying RaDAR measurement is physically plausible. This paper introduces a velocity-conditioned Gaussian spectral modeling framework for anomaly detection and velocity consistency assessment. A neural encoder estimates the vehicle velocity from complex Doppler spectra, while a Gaussian decoder models the expected spectral distribution conditioned on a velocity estimate. Three complementary inference-time online indicators are derived: the spectral anomaly score (SAS), conditional anomaly score (CAS), and absolute velocity disagreement (AVD). Experiments demonstrate the sensitivity of the scores to velocity deviations. Under controlled spectral anomalies, SAS and CAS outperform conventional spectral indicators in most conditions. Furthermore, AVD exhibits strong correlations with actual velocity estimation errors (Pearson $r>0.99$) for the investigated extra-peak and local anomalies. These results demonstrate the potential of online conditional spectral modeling to assess measurement plausibility and velocity estimation reliability without requiring ground-truth velocities during inference.",
+   "authors": [
+    "Malte Stelzer",
+    "Timo Bartels",
+    "Dinu Mihailescu-Stoica",
+    "Niko Harnge",
+    "Sören Kohnert",
+    "Florian Poprawa",
+    "Marc Zeller",
+    "Tim Fingscheidt"
+   ],
+   "primary": "eess.SP",
+   "categories": [
+    "eess.SP"
+   ],
+   "published": "2026-11-25T16:21:18+00:00",
+   "url": "https://arxiv.org/abs/2611.34639",
+   "pdf": "https://arxiv.org/pdf/2611.34639",
+   "score": 0.7258,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6753,
+    "meters": 0.6332,
+    "methods": 0.7258
+   }
+  },
+  {
+   "id": "2611.34039",
+   "version": 1,
+   "title": "Asymptotically Efficient Finite Impulse Response System Identification without Noise Knowledge",
+   "abstract": "Efficient identification of finite impulse response systems under unknown or heavy-tailed noise remains a challenge in system identification. Classical estimators, including least squares (LS) and robust alternatives like least absolute deviations (LAD), are often sensitive to outliers or statistically inefficient when noise characteristics deviate from their underlying assumptions. To address this, we propose a novel class of adaptive estimators that achieves asymptotic efficiency without requiring prior knowledge of the noise distribution. Our approach leverages kernel density estimation to construct two nonparametric maximum likelihood-type estimators: the estimated maximum likelihood estimator (eMLE) and the estimated profiled MLE (epMLE). These estimators approximate the likelihood using residuals from consistent initial estimates, avoiding parametric assumptions on the noise. We establish theoretical guarantees showing that, under mild regularity conditions, both eMLE and epMLE are consistent, asymptotically normal, and attain the Cramér--Rao lower bound, thereby achieving asymptotic efficiency. Additionally, we develop computationally efficient one-step Newton--Raphson algorithms that implement these estimators without sacrificing asymptotic efficiency. Extensive simulations across various noise distributions confirm that the proposed methods outperform classical LS and LAD estimators in both robustness and accuracy, often matching oracle MLE performance.",
+   "authors": [
+    "Zichen Liu",
+    "Biqiang Mu"
+   ],
+   "primary": "eess.SY",
+   "categories": [
+    "eess.SY",
+    "math.ST",
+    "stat.ML"
+   ],
+   "published": "2026-11-25T09:21:11+00:00",
+   "url": "https://arxiv.org/abs/2611.34039",
+   "pdf": "https://arxiv.org/pdf/2611.34039",
+   "score": 0.7215,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7038,
+    "meters": 0.6681,
+    "methods": 0.7215
+   }
+  },
+  {
+   "id": "2611.34228",
+   "version": 1,
+   "title": "Change Point Detection with Generative Models",
+   "abstract": "Change point detection (CPD) methods aim to identify abrupt changes in the properties of time series, which is a key problem in numerous fields. A major class of CPD approaches relies on computing a CPD score, which is either a discrepancy or divergence between two subsequent samples, called windows. A fundamental limitation of window-based CPD is the 'sample size bottleneck.' To ensure temporal precision, windows must be small; however, small samples provide insufficient statistical evidence for the classifiers and deep-learning models currently used to compute CPD scores. This leads to high variance in the scores and frequent mispredictions. Our study tackles this issue by exploring generative models for window augmentation, effectively expanding available data to improve CPD quality. Experiments on synthetic and real data demonstrate that the proposed approach significantly enhances CPD. Specifically, we show that this approach allows simple classifiers to outperform complex deep-learning baselines by stabilizing the CPD score distribution.",
+   "authors": [
+    "Tigran Ramazyan",
+    "Denis Derkach",
+    "Mikhail Hushchyn"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "stat.ML"
+   ],
+   "published": "2026-11-25T11:51:49+00:00",
+   "url": "https://arxiv.org/abs/2611.34228",
+   "pdf": "https://arxiv.org/pdf/2611.34228",
+   "score": 0.7137,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6246,
+    "meters": 0.6538,
+    "methods": 0.7137
+   }
+  },
+  {
+   "id": "2611.34296",
+   "version": 1,
+   "title": "LatENSO v1.0: a learned latent state of the tropical Pacific for seasonal ENSO operators and forecasting",
+   "abstract": "Here we present LatENSO v1.0, a machine-learning forecast system for the El Niño-Southern Oscillation (ENSO) built around a learned, 32-dimensional state of the tropical Pacific. A Swin-transformer autoencoder compresses thirteen monthly-averaged ocean and atmosphere fields into 32 numbers, trained to reconstruct the fields, with no forecast target. The 32 numbers rebuild the fields as well as O(100) empirical orthogonal functions. Two seasonal operators use this state. The first is the extended nonlinear recharge oscillator (XRO) with two directions of the learned state among its variables; we call it XRO-lat. The second is a Floquet modal operator (FMO) of three damped oscillators, which forecasts a correction added to a least-squares base forecast made from four observed predictors. We evaluate both against the recharge oscillator, XRO and a deep echo-state network (DESN), all refitted on identical data, cross-validation folds and verification windows (1981-2024). Over lead times of 1-18 months, XRO-lat reaches an anomaly correlation coefficient (ACC) of 0.673, the highest of all tropical-Pacific-only (in-domain) systems and statistically indistinguishable from XRO and DESN with their eight remote-basin indices (0.685 and 0.667). From lead 15 to lead 24 it is the most skillful of all systems. Over leads 1-18, the FMO forecast (0.619) is statistically indistinguishable from every in-domain reference model (0.631-0.654). What the FMO adds to its base forecast, 0.054 in ACC, is carried by its Floquet propagation, whose generator consistently holds a prominent quasi-biennial oscillator. At leads 3-9 the FMO trails XRO, DESN and the in-domain XRO, a deficit partly attributable to its base. LatENSO combines competitive skill with trustworthiness: a compact state whose physical content can be inspected, and fully open access to code, weights and data.",
+   "authors": [
+    "Milad Panahi",
+    "Annalisa Bracco"
+   ],
+   "primary": "physics.ao-ph",
+   "categories": [
+    "physics.ao-ph",
+    "cs.LG",
+    "physics.geo-ph"
+   ],
+   "published": "2026-11-25T12:49:39+00:00",
+   "url": "https://arxiv.org/abs/2611.34296",
+   "pdf": "https://arxiv.org/pdf/2611.34296",
+   "score": 0.6813,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6446,
+    "meters": 0.6438,
+    "methods": 0.6813
+   }
+  },
+  {
+   "id": "2611.34445",
+   "version": 1,
+   "title": "Travelling-Wave-Based Protection of DC Hubs in Bipolar HVDC Grids",
+   "abstract": "This paper presents a stationary wavelet transform (SWT)-based method for DC fault detection and classification in a three-terminal bipolar modular multilevel converter (MMC)-based HVDC system with a dedicated metallic return (DMR). The system incorporates DC switching stations (DCSSs) with interconnected DC circuit breakers (DCCBs). The method uses line-mode voltage wavelet detail energy for fault detection and wavelet detail energy derived from pole voltages and DMR current for fault classification, distinguishing pole-to-pole, pole-to-ground, and pole-to-DMR faults. Its performance is evaluated using a real-time hardware-in-the-loop (HIL) platform integrating an real-time digital simulator (RTDS) with embedded processing hardware. Busbar and cable faults with varying fault types, resistances, and locations are investigated. The results demonstrate the feasibility of real-time implementation and characterize the effects of fault location and travelling-wave propagation on transient energy and protection response time. The effectiveness of pole-voltage and DMR-current detail energy features in distinguishing fault types is also evaluated.",
+   "authors": [
+    "Rahul Rane",
+    "Victor Daniel Reyes Dreke",
+    "Wilhelm Winter",
+    "Aleksandra Lekić"
+   ],
+   "primary": "eess.SY",
+   "categories": [
+    "eess.SY"
+   ],
+   "published": "2026-11-25T14:24:50+00:00",
+   "url": "https://arxiv.org/abs/2611.34445",
+   "pdf": "https://arxiv.org/pdf/2611.34445",
+   "score": 0.6766,
+   "interest": "water",
+   "scores": {
+    "water": 0.6766,
+    "meters": 0.6499,
+    "methods": 0.6272
+   }
+  },
+  {
+   "id": "2611.34707",
+   "version": 1,
+   "title": "When the Proxy Is Wrong: Mismatch-Corrected Bandits for Adaptive Data Sampling",
+   "abstract": "Data allocation methods often use a small proxy model to select training data for a larger target model. However, this proxy can rank data differently from the target, leading to suboptimal training performance. To address this problem, we model the mismatch between the proxy and target models and incorporate it into the allocation decision. To do so, the problem is cast as a multi-fidelity bandit, where each arm is a data intervention. The proxy reward is observed every round, whereas the target reward is revealed only on rare audits of the same update. These paired observations identify arm-wise mismatches without assuming a shared offset or preservation of rankings. Mismatch-corrected bandits correct the proxy with paired residuals, audit only uncertain decisions, and pace the audit budget over training. From a theoretical viewpoint, we prove a regret decomposition and lower bounds under stationarity. These bounds show that proxy-only allocation can incur linear regret and that a minimum number of paired audits is necessary. Under abrupt changes, using the audit budget early can also incur linear regret. A sliding-window policy that spreads audits over training achieves regret of order $\\sqrt{Γ_T T\\log T}$ where $Γ_T$ denotes the number of change points. Experimentally, we test the approach in a closed-loop proof of concept on CivilComments-WILDS, where BERT-Small guides the training of BERT-Large. Mismatch correction improves worst-group accuracy over a target-only policy with the same target-model budget. Spreading audits over training improves worst-group accuracy by 6.3 to 10.5 percentage points at the same audit count.",
+   "authors": [
+    "Amine Saadi",
+    "Elissa Mhanna",
+    "Raphaël Féraud",
+    "Gwénolé Lecorvé"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CL"
+   ],
+   "published": "2026-11-25T17:00:51+00:00",
+   "url": "https://arxiv.org/abs/2611.34707",
+   "pdf": "https://arxiv.org/pdf/2611.34707",
+   "score": 0.6518,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5929,
+    "meters": 0.5751,
+    "methods": 0.6518
    }
   },
   {
@@ -126,6 +288,31 @@
     "water": 0.6172,
     "meters": 0.575,
     "methods": 0.5997
+   }
+  },
+  {
+   "id": "2611.34781",
+   "version": 1,
+   "title": "Comparative Study of Deep Learning Architectures for Brain Tumour Classification",
+   "abstract": "Accurate and early classification of brain tumours from magnetic resonance imaging (MRI) is essential for treatment planning, yet many published deep learning studies are trained and tested on small, single-source datasets, reporting accuracies that may not hold outside these datasets. This study compares six deep learning architectures for four-class classification (healthy, meningioma, glioma and pituitary tumour): a baseline convolutional neural network (CNN), an attention-based CNN, ShuffleNet, and EfficientNet-B0, ResNet-50 and Xception augmented with the Convolutional Block Attention Module (CBAM). The models were trained on a corpus assembled from four publicly available MRI datasets. Because these datasets carry no patient identifiers, a leakage-aware pipeline was developed that removes exact duplicates using MD5 hashing (550 images) and near-duplicates using perceptual hashing (8,024 images), and assigns visually similar images to the same fold during 5-fold group cross-validation. A leave-one-dataset-out (LODO) test on a fully held-out dataset was used to measure cross-dataset generalisation. Under a conventional random split, ShuffleNet achieved 97.1% accuracy with 1.2M parameters. Under leakage-aware group K-fold cross-validation, ShuffleNetV2 (98.41%) and EfficientNet-B0 (98.23%) were statistically indistinguishable (paired t-test, p = 0.19), and both significantly outperformed the custom CNNs. On the held-out dataset, accuracy dropped for every model: EfficientNet-B0 generalised best (78.4%), while ShuffleNetV2 fell to 66.2%. Glioma-meningioma confusion was the dominant error mode, and Grad-CAM maps showed that predictions were driven by tumour regions. These results indicate that in-distribution accuracy alone overstates real-world performance and that leakage-aware and cross-dataset evaluation should be reported alongside it.",
+   "authors": [
+    "Prisha Gupta",
+    "Pradeep Kumar Gupta"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.LG"
+   ],
+   "published": "2026-11-25T17:40:22+00:00",
+   "url": "https://arxiv.org/abs/2611.34781",
+   "pdf": "https://arxiv.org/pdf/2611.34781",
+   "score": 0.588,
+   "interest": "methods",
+   "scores": {
+    "water": 0.5594,
+    "meters": 0.5431,
+    "methods": 0.588
    }
   }
  ]
