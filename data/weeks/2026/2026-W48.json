@@ -1,0 +1,311 @@
+{
+ "week": "2026-W48",
+ "start": "2026-11-23",
+ "end": "2026-11-26",
+ "days": [
+  "2026-11-23",
+  "2026-11-24",
+  "2026-11-25",
+  "2026-11-26"
+ ],
+ "generated_at": "2026-11-28T01:59:07+00:00",
+ "model": "BAAI/bge-small-en-v1.5",
+ "interests": [
+  {
+   "key": "water",
+   "name": "Water networks"
+  },
+  {
+   "key": "meters",
+   "name": "Meters and consumption"
+  },
+  {
+   "key": "methods",
+   "name": "Time-series anomaly detection"
+  }
+ ],
+ "count": 86,
+ "papers": [
+  {
+   "id": "2611.32714",
+   "version": 1,
+   "title": "FourStat: A Dual AutoEncoder Leveraging Frequency and Stationarity for Time Series Anomaly Detection",
+   "abstract": "While numerous studies have focused on multivariate time series anomaly detection, many existing methods perform poorly or are not directly applicable to univariate settings. We introduce FourStat, a dual-model framework for univariate time series anomaly detection that combines two complementary approaches. The Fourier Autoencoder (FAE) captures global patterns like seasonality through frequency-domain analysis, while the Stationary Autoencoder (SAE) focuses on local structures by enforcing statistical stationarity. We also propose a new evaluation metric called Perfect Point that assesses whether perfect F1-scores can be achieved directly from anomaly scores, eliminating thresholding subjectivity. Results demonstrate that FourStat outperforms existing baselines, particularly on challenging anomaly types, while the new metric provides clearer insights into model performance gaps and advantages.",
+   "authors": [
+    "Saman Hadian",
+    "Ramtin Moslemi",
+    "Mohammad Mohammadi",
+    "Sarina Heshmati",
+    "Siavash Ahmadi",
+    "Babak Hossein Khalaj",
+    "Mohammad Hossein Rohban"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-24T14:37:50+00:00",
+   "url": "https://arxiv.org/abs/2611.32714",
+   "pdf": "https://arxiv.org/pdf/2611.32714",
+   "score": 0.8551,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7159,
+    "meters": 0.7303,
+    "methods": 0.8551
+   },
+   "date": "2026-11-25"
+  },
+  {
+   "id": "2611.32033",
+   "version": 1,
+   "title": "Scale-Robust and Global-Aware Representation Learning for Multivariate Time Series Anomaly Detection",
+   "abstract": "Multivariate time series anomaly detection (MTSAD) is an essential task for identifying abnormal system behaviors and supporting reliable operations across diverse real-world applications. Despite substantial advances in MTSAD, two key challenges in representation learning remain underexplored: (C1) how to learn scale-robust temporal representations that capture anomalies across different temporal scales and (C2) how to learn global-aware relational representations that capture inter-series dependencies by incorporating series-level global characteristics beyond local windows. To address these challenges, we propose STAGER, a novel method that jointly learns two complementary representations: scale-robust temporal and global-aware relational representations. Specifically, STAGER employs (1) a scale-robust temporal encoder that constructs a multi-scale temporal directed acyclic graph (DAG) to learn scale-robust temporal representations and (2) a global-aware relational encoder that incorporates learnable series-level global embeddings into the temporal representations and models inter-series relationships through graph neural networks. Two complementary auxiliary objectives further enhance the distinctiveness of the global embeddings. Extensive experiments on three real-world benchmark datasets demonstrate that STAGER achieves the best average rank among ten evaluated MTSAD methods across three evaluation metrics. Ablation and sensitivity analyses validate the effectiveness of the proposed components and auxiliary objectives, while efficiency evaluations demonstrate that STAGER achieves a favorable trade-off between detection performance and inference time compared with existing methods.",
+   "authors": [
+    "Gyuwon Lee",
+    "Saejoon Park",
+    "Won-Seok Hwang",
+    "Bogoan Kim",
+    "Yunyong Ko"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-24T06:15:23+00:00",
+   "url": "https://arxiv.org/abs/2611.32033",
+   "pdf": "https://arxiv.org/pdf/2611.32033",
+   "score": 0.8324,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7089,
+    "meters": 0.713,
+    "methods": 0.8324
+   },
+   "date": "2026-11-25"
+  },
+  {
+   "id": "2611.30385",
+   "version": 1,
+   "title": "Toward a Scalable and Adaptive Evaluation Measure for Time Series Anomaly Detection",
+   "abstract": "Time Series Anomaly Detection (TSAD) is a fundamental task for time series analytics. Unlike other domains, where anomaly detection mainly focuses on point-based anomalies, TSAD must also handle range-based anomalies. Nevertheless, TSAD methods are commonly evaluated with measures inherited from classification, such as Precision and Recall, which require a threshold, or with threshold-independent ones, such as AUC, which ignore the temporal aspect of anomalies. To address these issues, the Volume Under the Surface (VUS) measure scores detectors across all thresholds and a range of buffer lengths and has been widely adopted. However, VUS has two limitations. First, VUS is computationally expensive, requiring 7 hours and 38 minutes to evaluate 32 detectors on the 870 TSB-AD time series. Second, VUS applies the same buffer lengths to every anomaly and detector, which can yield over-optimistic scores that hinder discrimination between accurate and mediocre detectors. We first introduce FastVUS, which computes VUS exactly and on average 76x faster by (i) computing all buffers in parallel, (ii) pruning irrelevant buffers for the existence reward, (iii) casting the confusion matrix as a single reduced matrix multiplication, (iv) computing VUS for every buffer length in one pass, and (v) discarding non-anomalous regions with a global mask. We also develop FastVUS-GPU, which recasts every step as batched tensor operations and reaches an average 304x speedup with a maximum error of $5\\times10^{-3}$. Building on FastVUS, we introduce AutoVUS, an adaptive extension that compares each detection against a random baseline and selects the buffer length that maximizes the gain over it. Our case studies show that AutoVUS reduces over-optimistic scores and better separates accurate from mediocre detectors. We release FastVUS and AutoVUS as open source to promote time-aware evaluation at scale.",
+   "authors": [
+    "Emmanouil Sylligardos",
+    "Mingyi Huang",
+    "John Paparrizos",
+    "Pierre Senellart",
+    "Paul Boniol"
+   ],
+   "primary": "cs.DB",
+   "categories": [
+    "cs.DB",
+    "cs.LG"
+   ],
+   "published": "2026-11-23T09:46:50+00:00",
+   "url": "https://arxiv.org/abs/2611.30385",
+   "pdf": "https://arxiv.org/pdf/2611.30385",
+   "score": 0.8276,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7013,
+    "meters": 0.7133,
+    "methods": 0.8276
+   },
+   "date": "2026-11-24"
+  },
+  {
+   "id": "2611.28348",
+   "version": 1,
+   "title": "SMAD: A Semantics-Guided Multi-Agent Framework for Unsupervised Time-Series Anomaly Detection",
+   "abstract": "Time-series anomaly detection (TSAD) lacks a one-size-fits-all detector for heterogeneous data and anomaly types. Existing automation is limited by implicit objectives, potentially unreliable historical knowledge, or high computational costs. More fundamentally, it selects how to detect anomalies without explicitly defining what to detect. We propose SMAD, an LLM-based multi-agent framework that translates anomaly intent into executable, testable detection pipelines. Rather than selecting detectors against an implicit target, SMAD establishes a natural-language semantic contract grounded in measurable time-series properties, specifying target event patterns, expected score responses, and validation questions. This contract governs both detector construction and evaluation: LLM agents propose pipelines, while contract-matched synthetic interventions provide label-free evidence from the target series to assess semantic coverage and guide iterative self-refinement. A semantics-aware ensemble integrates validated candidates and attributes each alert to contributing detectors and supporting evidence. On univariate and multivariate TSAD benchmarks, SMAD improves detection performance over the strongest baseline by 11.5% and 9.6%, respectively, while outperforming general-purpose coding agents at 2-5x lower language-model token cost.",
+   "authors": [
+    "Qinghua Liu",
+    "Junpeng Wang",
+    "Mingzhi Hu",
+    "Menghai Pan",
+    "Shubham Jain",
+    "Yuzhong Chen",
+    "Yan Zheng",
+    "Yiwei Cai",
+    "John Paparrizos"
+   ],
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-20T22:00:23+00:00",
+   "url": "https://arxiv.org/abs/2611.28348",
+   "pdf": "https://arxiv.org/pdf/2611.28348",
+   "score": 0.815,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7122,
+    "meters": 0.709,
+    "methods": 0.815
+   },
+   "date": "2026-11-24"
+  },
+  {
+   "id": "2611.28488",
+   "version": 1,
+   "title": "AMP-OD: Active Model Probing for Unsupervised Outlier Model Selection--Extended Version",
+   "abstract": "Outlier detection is often deployed in fully unsupervised settings, where labels are unavailable and practitioners must choose a detector without direct performance feedback. Existing unsupervised outlier model selection methods predict detector quality from static meta-features and historical performance on meta-datasets, but they commit before observing how any detector behaves on the target dataset. We propose AMP-OD, an execution-conditioned probe-then-commit framework. AMP-OD runs a small number of inexpensive probe detectors, uses their score patterns as target-dataset evidence, and then selects a final detector from a larger candidate pool. To interpret unlabeled probe responses, we introduce a Leave-One-Out Family Probe Posterior (LOO-FPP), which converts probe score patterns into gated detector-family evidence while reducing self-validation in pseudo-label construction. AMP-OD further combines this evidence with historical reliability through a warm-start prior, a sequential probe/stop policy, and lower-confidence-bound arbitration. Extensive experiments and ablation studies show that detector responses provide useful evidence beyond static meta-features, with the LOO-FPP and conservative arbitration as key contributors.",
+   "authors": [
+    "Hong-Phuc Phan",
+    "Tuan-Anh Vu",
+    "Tung Kieu",
+    "Son Ha Xuan",
+    "Sean Bin Yang",
+    "Bin Yang",
+    "Christian S. Jensen"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-21T02:09:03+00:00",
+   "url": "https://arxiv.org/abs/2611.28488",
+   "pdf": "https://arxiv.org/pdf/2611.28488",
+   "score": 0.7789,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6545,
+    "meters": 0.6539,
+    "methods": 0.7789
+   },
+   "date": "2026-11-24"
+  },
+  {
+   "id": "2611.32598",
+   "version": 1,
+   "title": "On the Effectiveness of Resampling for Supervised Graph Anomaly Detection",
+   "abstract": "Class imbalance and scarce anomaly labels motivate oversampling in supervised graph anomaly detection (GAD), but its benefits across detectors and benchmarks remain unclear. In the low-label setting of GADBench, with 20 labelled anomalies and 80 labelled normal nodes, we compare class weighting and up to six oversampling strategies in ten detector configurations from three families: graph neural networks (GNNs), tree ensembles on neighbourhood-aggregated features, and tabular foundation models, on 17 datasets. On the eight datasets with organic anomalies, no strategy has a statistically resolved average gain in any configuration, and which nodes are labelled matters as much as the strategy. On the nine datasets with injected anomalies, Gaussian-noise oversampling (ROSE) gains up to 5.2 AUPRC points in four of the six tree and tabular foundation model configurations, and in all six only on attribute-swap anomalies; in four GNNs its gain is not distinguishable from zero. This gain depends on the injection recipe, which gives swapped nodes an atypical feature norm: it is no longer distinguishable from zero when the swap uses a single random donor or preserves the norm, although most detectors then also stop detecting the swaps. Over the 17 datasets, tuning the tree detectors adds about three points, as much as ROSE, and cuts ROSE's gain by about half or more. With the same source nodes and class weight, sampled graph views are not distinguishable from plain copies of those nodes. We recommend tuning baselines, repeating labelled splits, reporting organic and injected anomalies separately, and checking label-free degree and feature-norm baselines.",
+   "authors": [
+    "Cyril Perosino",
+    "Rino Di Chiara",
+    "Hamida Seba"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-24T13:36:12+00:00",
+   "url": "https://arxiv.org/abs/2611.32598",
+   "pdf": "https://arxiv.org/pdf/2611.32598",
+   "score": 0.7615,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6797,
+    "meters": 0.6467,
+    "methods": 0.7615
+   },
+   "date": "2026-11-25"
+  },
+  {
+   "id": "2611.30635",
+   "version": 1,
+   "title": "Robust Mixture Regressions and EM Algorithms via the Log-Truncated Likelihood",
+   "abstract": "Finite mixture regression is sensitive to gross residual outliers when component errors are modeled by Gaussian likelihoods. We propose a log-truncated likelihood for mixture regression. The likelihood is obtained by integrating a logarithmically growing Catoni-type score and exponentiating the negative integrated score, producing a proper location-scale density with a reusable normalizing constant and EM-compatible responsibilities. Although the induced density itself is lighter than exponential and has all moments, its likelihood score grows only logarithmically; this distinction yields a smooth residual-robust estimator that can be stably fitted when the data are generated from Laplace, Pareto, or even infinite-variance heavy-tailed error mechanisms. We derive deterministic tail envelopes, the location-scale decomposition of the normalizing constant, a rejection sampler, a lower-bounded mixing-weight update, a unique componentwise scale update, and a constrained generalized EM algorithm. The theory gives monotonicity of the observed likelihood and a local population-to-sample perturbation guarantee under standard compactness, contraction, and numerical-accuracy conditions. Simulations and applications to insurance claim severity and crypto return innovations show that the method is a competitive smooth likelihood-based alternative to Gaussian and pseudo-robust EM procedures, especially in residual-outlier regimes, while also clarifying its limitations under high leverage and extremely adversarial contamination.",
+   "authors": [
+    "Huiming Zhang",
+    "Longkun Hao"
+   ],
+   "primary": "stat.ME",
+   "categories": [
+    "stat.ME",
+    "cs.LG",
+    "math.ST"
+   ],
+   "published": "2026-11-23T13:01:35+00:00",
+   "url": "https://arxiv.org/abs/2611.30635",
+   "pdf": "https://arxiv.org/pdf/2611.30635",
+   "score": 0.7499,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6511,
+    "meters": 0.6271,
+    "methods": 0.7499
+   },
+   "date": "2026-11-24"
+  },
+  {
+   "id": "2611.33238",
+   "version": 1,
+   "title": "Sequential Testing on Complex and High Dimensional Data Streams Leveraging Unsupervised Model Errors",
+   "abstract": "We propose two general, distribution-free test statistics for binary Sequential Hypothesis Testing (SHT) and Sequential Change Point Detection (SCPD) respectively, in streaming environments where the data (e.g., network traffic metadata) are too complicated for the exact probabilistic modeling required by conventional likelihood ratio-driven tests. Our framework also addresses the challenge of information asymmetry, where data is available only from the null/pre-change regime and not from the alternative/post-change one such as zero-day attacks or emerging disease related regimes. The proposed statistics monitor the errors of a predictive or reconstructive machine learning model trained solely on null/pre-change data, relying on imperfect generalization (the model's performance will degrade when deployed on data from the alternative/post-change class). Under mild assumptions on the model's errors, we establish rigorous analytical guarantees: strict non-asymptotic error control for SHT, and explicit bounds on the Average Run Length (ARL) and the Expected Detection Delay (EDD) for SCPD. Extensive evaluations in target tracking, chaotic dynamical systems, and real-world network security datasets, demonstrate that our framework consistently satisfies prescribed constraints where existing algorithms succumb to inflated missed detections and/or false alarms. Finally, because our methods operate on scalar errors without requiring online retraining or kernel evaluations, they are highly scalable.",
+   "authors": [
+    "George Stamatelis",
+    "Iordanis Koutsopoulos"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-24T13:00:45+00:00",
+   "url": "https://arxiv.org/abs/2611.33238",
+   "pdf": "https://arxiv.org/pdf/2611.33238",
+   "score": 0.7455,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7314,
+    "meters": 0.6557,
+    "methods": 0.7455
+   },
+   "date": "2026-11-26"
+  },
+  {
+   "id": "2611.31319",
+   "version": 1,
+   "title": "Conformalized Tree-Based Gradient Ensembles for Out-of-Distribution Detection and Plausible Recourse",
+   "abstract": "Counterfactual recourse provides actionable feature adjustments that reverse unfavourable predictions made by automated decision models. However, when recourse search optimizes purely against classifier confidence or narrow proxy scores over gradient-boosted decision trees (GBDT), search procedures can exploit boundary artifacts and low-density regions---an instance of Goodhart's law---yielding out-of-distribution (OOD) recommendations that appear favourable nominally while lacking manifold plausibility. In this paper, we study conformalized OOD gating coupled with actionability-constrained counterfactual search across two tabular benchmarks: Adult and Give Me Some Credit (GMSC). Calibrating finite-sample anomaly gates (gate_IF, gate_LOF, and the conjunctive gate_ALL) at significance level delta = 0.05 over isolation forest, local outlier factor, and k-nearest-neighbor signals, we audit generated counterfactuals against held-out GMM and OCSVM detectors alongside ablation studies (gen10, gen100, and relax). Across matched recourse pairs where both constrained and unconstrained searches succeed, gate_ALL significantly reduces held-out OCSVM flags on Adult (N=541, Delta flag_OCSVM = -0.0296, p_Holm = 4.0e-4) and lowers both held-out flags on GMSC (N=540, Delta flag_OCSVM = -0.0346, p = 1.0751e-4; Delta flag_GMM = -0.1663, p = 3.5679e-16) while increasing matched recourse cost (Delta cost = +0.3035, p = 1.3365e-5) and narrowing overall feasibility. Our findings formalize the cost--feasibility--plausibility trade-off and demonstrate how conformal OOD gating audits recourse reliability on tabular ensembles.",
+   "authors": [
+    "Mariam Zakaria Moussa Ali"
+   ],
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-23T08:04:46+00:00",
+   "url": "https://arxiv.org/abs/2611.31319",
+   "pdf": "https://arxiv.org/pdf/2611.31319",
+   "score": 0.7425,
+   "interest": "methods",
+   "scores": {
+    "water": 0.6575,
+    "meters": 0.6369,
+    "methods": 0.7425
+   },
+   "date": "2026-11-25"
+  },
+  {
+   "id": "2611.28655",
+   "version": 1,
+   "title": "UACR: Uncertainty-Aware Collaborative Routing for Explainable Industrial Anomaly Inspection",
+   "abstract": "Industrial anomaly inspection requires not only accurate anomaly discrimination but also trustworthy explanations for operators, while satisfying the strict latency constraints of online inspection. Existing methods, however, typically apply a fixed computational path to all samples, making it difficult to strike a good balance among detection accuracy, inference efficiency, and interpretability. To address this issue, we propose UACR, an uncertainty-aware collaborative routing framework for explainable industrial anomaly inspection. UACR aims to deliver reliable anomaly decisions together with operator-facing explanations under the online inspection budget, while adaptively allocating computation so that ambiguous cases receive deeper scrutiny. The framework consists of two stages. Stage I, Offline Training and Routing Hyperparameter Search, learns the anomaly inspection modules and calibrates the uncertainty estimator that drives routing. Stage II, Uncertainty-Aware Adaptive Routing, collaboratively dispatches each input across inspection paths according to its estimated uncertainty. Experimental results on multiple public datasets show that UACR achieves over 5.16% improvement in accuracy compared to the baseline method, while reducing latency by over 31.5%. It also enhances the interpretability of industrial detection by over 15%.",
+   "authors": [
+    "Yiwei Li",
+    "Qiyang Chen",
+    "Zheming Yang"
+   ],
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.LG"
+   ],
+   "published": "2026-11-21T08:35:29+00:00",
+   "url": "https://arxiv.org/abs/2611.28655",
+   "pdf": "https://arxiv.org/pdf/2611.28655",
+   "score": 0.7374,
+   "interest": "methods",
+   "scores": {
+    "water": 0.7298,
+    "meters": 0.6509,
+    "methods": 0.7374
+   },
+   "date": "2026-11-24"
+  }
+ ]
+}
