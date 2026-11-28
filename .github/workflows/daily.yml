@@ -2,7 +2,8 @@ name: Daily digest
 
 # arXiv announces new papers Sunday to Thursday evenings (US Eastern), around midnight UTC.
 # Four slots a day make sure a late or skipped scheduled run never loses a digest; runs that
-# find nothing new exit without committing.
+# find nothing new exit without committing, but still republish the site if the last Pages
+# deploy failed.
 on:
   schedule:
     - cron: "17 1 * * *"
@@ -24,6 +25,7 @@ jobs:
     timeout-minutes: 20
     permissions:
       contents: write
+      deployments: read # lets the decide step see whether the last Pages deploy worked
     outputs:
       publish: ${{ steps.decide.outputs.publish }}
     steps:
@@ -58,8 +60,22 @@ jobs:
         env:
           EVENT: ${{ github.event_name }}
           WRITTEN: ${{ steps.fetch.outputs.written }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           if [ "$EVENT" != "schedule" ] || { [ -n "$WRITTEN" ] && [ "$WRITTEN" != "0" ]; }; then
+            echo "publish=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          # No new digest, but if the last deploy failed (GitHub Pages has outages), the live
+          # site is behind the data. Publish again now instead of waiting for the next digest.
+          api="repos/$GITHUB_REPOSITORY/deployments"
+          id=$(gh api "$api?environment=github-pages&per_page=1" --jq '.[0].id // empty' || true)
+          state=""
+          if [ -n "$id" ]; then
+            state=$(gh api "$api/$id/statuses?per_page=1" --jq '.[0].state // empty' || true)
+          fi
+          if [ "$state" != "success" ]; then
+            echo "Last Pages deploy: ${state:-unknown}. Publishing again."
             echo "publish=true" >> "$GITHUB_OUTPUT"
           fi
 
